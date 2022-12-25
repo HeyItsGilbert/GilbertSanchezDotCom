@@ -6,17 +6,17 @@ weight = 1
 rtl = false
 
 title = "Hey! It's Gilbert!"
-# logo = "img/logo.jpg"
-description = "My awesome website"
+# header.logo = "img/profile.png"
+description = "Señor Systems Engineer, Tinkerer, & Record Collector"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "Monday, January 2, 2006"
 
 [author]
   name = "Gilbert Sanchez"
-  # image = "img/author.jpg"
+  image = "img/profile.png"
   headline = "Not just good. Good enough."
-  # bio = "A little bit about you"
+  bio = "Not just good. Good enough."
   # links = [
   #   { email = "mailto:hello@your_domain.com" },
   #   { link = "https://link-to-some-website.com/" },
