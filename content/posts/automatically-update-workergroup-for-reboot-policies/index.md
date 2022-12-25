@@ -13,14 +13,14 @@ title = "Automatically Update Workergroup for Reboot Policies"
 
 We are currently using two reboot policies that restart half of our servers (based on workergroups) on a weekly basis. Since we scale these environments up on a semi-regular basis it was becoming very annoying to add a server each time a new server was spun up. 
 
-# Requirements
+## Requirements
 * Numbered servers *(e.g. End of server name 00, 02, etc.)*
 * [Citrix Powershell SDK](http://www.citrix.com/downloads/xenapp/sdks/powershell-sdk.html)
 * A mechanism to run this on a regular basis (Scheduled Task, etc.)
 * A way to identify non-xenapp servers (Infrastructure like ZDC, etc.)
 * Citrix XenApp policies to reboot the servers
 
-# Script Step Through
+## Script Step Through
 
 1. Open powershell and load the citrix snapins `Add-PSSnapin Citrix*`
 1. First we get all the servers in the zone. `$servers = Get-XAServer`
@@ -33,7 +33,7 @@ We are currently using two reboot policies that restart half of our servers (bas
 1. We then repeat for odds and assign to Sunday's workergroup.
 1. Celebrate!
 
-# Complete Script
+## Complete Script
 
 ```powershell
 # Load Citrix Snapin's

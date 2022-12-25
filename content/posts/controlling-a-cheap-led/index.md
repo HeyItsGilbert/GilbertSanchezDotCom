@@ -3,7 +3,6 @@ categories = ["Docker", "Arduino"]
 date = 2020-12-31T20:11:55Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2020/12/light-bulb-1553249_1280.png"
 slug = "controlling-a-cheap-led"
 summary = "A left over LED and a few spare parts turns into a fun and potential useful project."
 tags = ["Docker", "Arduino"]
@@ -60,13 +59,13 @@ This will likely be a 2 part post since I'm still writing the client and I want 
 
 ## Schematic
 
-{{< figure src="__GHOST_URL__/content/images/2021/01/20210101_114447.jpg" caption="My poorly drawn schematic." >}}
+{{< figure src="/images/2021/01/20210101_114447.jpg" caption="My poorly drawn schematic." >}}
 
 ## Final Prototype Board
 
-{{< figure src="__GHOST_URL__/content/images/2021/01/20201231_125330.jpg" caption="Top of the prototype board." >}}
+{{< figure src="/images/2021/01/20201231_125330.jpg" caption="Top of the prototype board." >}}
 
-{{< figure src="__GHOST_URL__/content/images/2021/01/20201231_125319.jpg" caption="Underside of the prototype board" >}}
+{{< figure src="/images/2021/01/20201231_125319.jpg" caption="Underside of the prototype board" >}}
 
 ## Docker Config
 

@@ -16,8 +16,8 @@ enableCodeCopy = true
 # robots = ""
 
 [header]
-  layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  #logo = "img/profile.png"
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
+  logo = "img/logo.png"
   showTitle = true
 
 [footer]
@@ -43,7 +43,7 @@ enableCodeCopy = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
+  showTableOfContents = true
   showTaxonomies = false
   showWordCount = false
   showComments = false

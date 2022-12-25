@@ -3,7 +3,6 @@ categories = ["PowerShell", "MQTT", "IOT", "HomeAssistant"]
 date = 2021-01-05T15:39:56Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2021/01/network-782707_1280.png"
 slug = "controlling-a-cheap-neon-led-pt-2"
 summary = "Part 2 of turning a cheap LED light and making it smart. MQTT, HomeAssistant, and PowerShell!"
 tags = ["PowerShell", "MQTT", "IOT", "HomeAssistant"]
@@ -16,7 +15,7 @@ This is part 2 of my controlling a cheap LED adventure. In part 1 we looked at t
 
 In the following I'll be going over the MQTT client on my desktop, how to add the light to the MQTT broker, and how I track the state in Home Assistant
 
-# MQTT Configuration
+## MQTT Configuration
 
 So in my last post I mentioned spinning up an MQTT broker docker container but I didn't really go into how to configure the client. The Arduino code calls out subscribing to a `homeassistant/binary_sensor/office/lightning` but what is that really doing?
 
@@ -32,7 +31,7 @@ For mosquitto pub, you have the host ip (`-h`), port (`-p`), topic  (`-t`), and 
 
 Important note: If you send a blank message, that will delete the topic.
 
-# Home Assistant
+## Home Assistant
 
 So with some data in your MQTT broker, you can now point your home assistant setup to it.
 
@@ -48,11 +47,11 @@ If you have your broker configured, you can try to set the state of your device.
 
 Should result in:
 
-{{< figure src="__GHOST_URL__/content/images/2021/01/image.png" >}}
+{{< figure src="/images/2021/01/image.png" >}}
 
 HomeAssistant default MQTT discovery happens under `homeassistant` path prefix and approved component name which should have made this process easier. See: [https://www.home-assistant.io/docs/mqtt/discovery/#motion-detection-binary-sensor](https://www.home-assistant.io/docs/mqtt/discovery/#motion-detection-binary-sensor).
 
-# PowerShell Client
+## PowerShell Client
 
 Luckily PowerShell is built on .Net which means we can use .Net libraries if they're available. I found an article by Jack Gruber ([PowerShell and MQTT](https://jackgruber.github.io/2019-06-05-ps-mqtt/)) where he walks through a few examples of using MQTT with PowerShell. The first obvious thing is the grab the M2Mqtt library.
 
@@ -98,7 +97,7 @@ do {
 } while ($True)
 ```
 
-## Client v1
+### Client v1
 
 So the first version has some tweaks. We get all the processes running and the check if any of our `$procs` show up. The `$procs` is an array where we can add multiple executables (i.e. BlueJeans, Zoom, Discord, etc.). We then only `Publish` to the broker if the state has changed. This should reduce the noise.
 
@@ -106,7 +105,7 @@ So the first version has some tweaks. We get all the processes running and the c
 Add-Type -Path "M2Mqtt.Net.dll"
 $MqttClient = [uPLibrary.Networking.M2Mqtt.MqttClient]("192.168.138.900")
 $Mqttclient.Connect([guid]::NewGuid())
-# Prompt for list of process or load from config
+## Prompt for list of process or load from config
 $procs = @(
     'notepad'
 )

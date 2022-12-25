@@ -1,9 +1,8 @@
 +++
 categories = ["OSX"]
 date = 2014-02-04T06:09:16Z
-description = ""
+description = "A walkthrough on making a CIDR calculator for Alfred."
 draft = false
-image = "__GHOST_URL__/content/images/2018/03/VqMR3ah.png"
 slug = "cidr-calculator-for-alfred"
 summary = "A simple plugin"
 tags = ["OSX"]
@@ -30,8 +29,8 @@ I've been running Alfred with the Powerpack for a while and I figured this shoul
 
 I recommend installing Alfred + Powerpack and homebrew first. Using homebrew you can install whatmask fairly easily: `brew install whatmask`.
 
-# Explanation of Workflow
-## Step 1: CIDR Calculator Workflow
+## Explanation of Workflow
+### Step 1: CIDR Calculator Workflow
 Here is the php code that's actually running against whatmask. It takes all the lines with useful information and returns them as options for Alfred.
 
 This code uses the Workflows.php class by David Furguson (http://dferg.us/workflows-class/)
@@ -57,9 +56,9 @@ foreach ($resultLines as $line)
 echo $w->toxml();
 ```
 
-## Step 2: Clean Up Selection
+### Step 2: Clean Up Selection
 The content of that workflow is then piped to `echo "{query}" | sed 's/.*\: \(.*\)$/\1/g'` to return only the necessary data.
 
-## Step 3: Print and Put in Clipboard
+### Step 3: Print and Put in Clipboard
 That then is passed to Large Type (cause why not?) and then to the clipboard (the actual useful bit).
 

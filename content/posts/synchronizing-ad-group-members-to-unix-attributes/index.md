@@ -13,18 +13,18 @@ title = "Synchronizing AD Group Members to Unix Attributes"
 
 Auditors are sticklers (as they're meant to be). They, like many of us in the IT world, want clean data. So what happens when you grant a user unix access via AD but don't clean it up?
 
-## What
+# What
 A disabled AD account with unix access cannot login, but would still show up in our reports. This made for a lot of questions from auditors which equals sad sysadmins.
 
-## How
+# How
 I decided to solve this using by using our AD groups. As part of our term process we remove the termed employee from any group they were a part of (distribution and security). So, for us, the source of truth was AD.
 
-## Prerequisites
+# Prerequisites
 * Powershell
 * Quest Powershell Modules
 * Scheduling mechanism (Task, etc.)
 
-## Complete Code
+# Complete Code
 ```powershell
 $groups = Get-QADGroup -SearchRoot "company.com/UnixGroups"
 foreach ($group in $groups) {

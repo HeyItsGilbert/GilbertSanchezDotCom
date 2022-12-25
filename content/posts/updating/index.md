@@ -1,11 +1,9 @@
 +++
 date = 2022-08-03T14:24:39Z
-description = ""
-draft = true
-image = "__GHOST_URL__/content/images/2022/08/Screen-Shot-2022-08-03-at-7.25.42-AM.png"
-slug = "updating"
+description = "Learn how to add icons to your PowerShell module."
+draft = false
+slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
-
 +++
 
 
@@ -20,6 +18,3 @@ All of my modules are based on Stucco ([https://github.com/devblackops/Stucco](h
 2. Find an appropriate Creative Commons icon
 3. Upload the image to Github
 4. Update the PowerShell Module Metadata file (PSD1) to point to the new image.
-
-
-
