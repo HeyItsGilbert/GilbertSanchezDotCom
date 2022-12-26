@@ -1,7 +1,7 @@
 +++
 date = 2022-08-03T14:24:39Z
 description = "Learn how to add icons to your PowerShell module."
-draft = false
+draft = true
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
 +++
