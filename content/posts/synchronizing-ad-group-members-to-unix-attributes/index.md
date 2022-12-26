@@ -1,5 +1,4 @@
 +++
-categories = ["PowerShell", "Active Directory"]
 date = 2015-09-30T17:30:58Z
 description = ""
 draft = false
