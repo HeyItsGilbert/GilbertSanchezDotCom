@@ -10,5 +10,7 @@ enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
 
+disqusShortname = "gilbertsanchez" 
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
