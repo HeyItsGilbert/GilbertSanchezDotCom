@@ -1,5 +1,4 @@
 +++
-categories = ["PowerShell"]
 date = 2022-06-17T16:23:39Z
 description = ""
 draft = false

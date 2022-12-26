@@ -1,5 +1,4 @@
 +++
-categories = ["Docker", "Arduino"]
 date = 2020-12-31T20:11:55Z
 description = ""
 draft = false

@@ -1,5 +1,4 @@
 +++
-categories = ["PowerShell", "MQTT", "IOT", "HomeAssistant"]
 date = 2021-01-05T15:39:56Z
 description = ""
 draft = false

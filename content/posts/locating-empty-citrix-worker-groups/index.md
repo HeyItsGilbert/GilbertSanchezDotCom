@@ -1,5 +1,4 @@
 +++
-categories = ["Citrix", "PowerShell"]
 date = 2014-03-18T16:04:43Z
 description = ""
 draft = false
