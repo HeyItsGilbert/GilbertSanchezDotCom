@@ -1,6 +1,6 @@
 +++
 date = 2020-12-31T20:11:55Z
-description = ""
+description = "A left over LED and a few spare parts turns into a fun and potential useful project."
 draft = false
 slug = "controlling-a-cheap-led"
 summary = "A left over LED and a few spare parts turns into a fun and potential useful project."

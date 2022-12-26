@@ -3,7 +3,7 @@ date = 2014-02-04T06:09:16Z
 description = "A walkthrough on making a CIDR calculator for Alfred."
 draft = false
 slug = "cidr-calculator-for-alfred"
-summary = "A simple plugin"
+summary = "A walkthrough on making a CIDR calculator for Alfred."
 tags = ["OSX"]
 title = "CIDR Calculator for Alfred"
 +++

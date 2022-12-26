@@ -1,9 +1,9 @@
 +++
 date = 2021-01-05T15:39:56Z
-description = ""
+description = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 draft = false
 slug = "controlling-a-cheap-neon-led-pt-2"
-summary = "Part 2 of turning a cheap LED light and making it smart. MQTT, HomeAssistant, and PowerShell!"
+summary = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 tags = ["PowerShell", "MQTT", "IOT", "HomeAssistant"]
 title = "Controlling a Cheap \"Neon\" LED, Pt 2"
 

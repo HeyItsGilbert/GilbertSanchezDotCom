@@ -3,10 +3,9 @@ date = 2014-08-10T21:41:41Z
 description = ""
 draft = false
 slug = "automatically-update-workergroup-for-reboot-policies"
-summary = "We are currently using two reboot policies that restart half of our servers (based on workergroups) on a weekly basis. Since we scale these environments up on a semi-regular basis it was becoming very annoying to add a server each time a new server was spun up. "
+summary = "A simple script to keep XenApp servers in reboot workergroups."
 tags = ["Citrix", "PowerShell"]
 title = "Automatically Update Workergroup for Reboot Policies"
-
 +++
 
 

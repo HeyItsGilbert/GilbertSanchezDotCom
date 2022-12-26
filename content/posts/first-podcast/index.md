@@ -1,12 +1,11 @@
 +++
 date = 2022-06-17T16:23:39Z
-description = ""
+description = "Small update about my first podcast interview"
+summary = "Small update about my first podcast interview"
 draft = false
-image = "https://images.unsplash.com/photo-1589903308904-1010c2294adc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fHBvZGNhc3R8ZW58MHx8fHwxNjU1NDgyOTQ3&ixlib=rb-1.2.1&q=80&w=2000"
 slug = "first-podcast"
 tags = ["PowerShell"]
 title = "First Podcast!"
-
 +++
 
 
