@@ -1,15 +1,15 @@
 +++
 date = 2014-03-18T16:04:43Z
-description = ""
+description = "Get a quick count of Citrix workergrop app/server counts."
+summary = "Get a quick count of Citrix workergrop app/server counts."
 draft = false
 slug = "locating-empty-citrix-worker-groups"
 tags = ["Citrix", "PowerShell"]
 title = "Locating Empty Citrix Worker Groups"
-
 +++
 
 
-I have an environment that is currently transitioning from ~20 workergroups down to about 5. This tranisition includes moving to a "common" workergroup that will contain most of the users. As we transition groups we found that many of the older groups were deprecated and have no members. Rather than dig into the 50+ servers, we'll use a little bit of powershell magic to find the answer.
+I have an environment that is currently transitioning from ~20 workergroups down to about 5. This transition includes moving to a "common" workergroup that will contain most of the users. As we transition groups we found that many of the older groups were deprecated and have no members. Rather than dig into the 50+ servers, we'll use a little bit of powershell magic to find the answer.
 
 ### Prerequisite
 * Citrix powershell modules.
@@ -40,4 +40,3 @@ You can save that to a variable and sort it using ```$var | ?{ $_.Count -eq "0" 
 ---
 
 Hopefully this helps you out. If you have any questions, feel free to contact me using the contact form linked at the top!
-

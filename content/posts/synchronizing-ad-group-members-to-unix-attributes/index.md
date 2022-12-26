@@ -1,12 +1,11 @@
 +++
 date = 2015-09-30T17:30:58Z
-description = ""
+description = "Easily synchronize unix group members (in AD) with the current AD group members."
+summary = "Easily synchronize unix group members (in AD) with the current AD group members."
 draft = false
 slug = "synchronizing-ad-group-members-to-unix-attributes"
-summary = "Easily synchronize unix group members (in AD) with the current AD group members."
 tags = ["PowerShell", "Active Directory"]
 title = "Synchronizing AD Group Members to Unix Attributes"
-
 +++
 
 

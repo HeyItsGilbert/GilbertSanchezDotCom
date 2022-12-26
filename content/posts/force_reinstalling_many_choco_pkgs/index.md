@@ -1,10 +1,10 @@
 +++
 date = 2022-10-27T21:59:01Z
-description = ""
+description = "A quick walk through and script on force reinstalling Chocolatey apps."
+summary = "A quick walk through and script on force reinstalling Chocolatey apps."
 draft = true
-slug = "generating-a"
+slug = "force_reinstalling_many_choco_pkgs"
 title = "Force Reinstalling Many Choco Packages"
-
 +++
 
 
@@ -51,6 +51,3 @@ $XmlObjectWriter.Close()
 
 Write-Host "Now you can run: choco install -fy $XmlFilePath"
 ```
-
-
-
