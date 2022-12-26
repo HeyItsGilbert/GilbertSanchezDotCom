@@ -1,5 +1,5 @@
 +++
-date = 2022-08-03T14:24:39Z
+date = 2022-12-26T14:24:39Z
 description = "Learn how to add icons to your PowerShell module."
 summary = "Learn how to add icons to your PowerShell module."
 draft = false
