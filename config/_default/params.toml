@@ -44,9 +44,9 @@ enableCodeCopy = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
-  showComments = false
+  showComments = true
   sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email"]
 
 [list]

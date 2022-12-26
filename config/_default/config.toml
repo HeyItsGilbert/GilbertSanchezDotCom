@@ -11,6 +11,7 @@ paginate = 10
 summaryLength = 0
 
 disqusShortname = "gilbertsanchez" 
+googleAnalytics = "G-CWJLL32MYW"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
