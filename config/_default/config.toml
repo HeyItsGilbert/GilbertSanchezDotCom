@@ -4,7 +4,7 @@
 
 baseURL = "https://gilbertsanchez.com/"
 defaultContentLanguage = "en"
-theme = "congo"
+#theme = "congo"
 
 enableRobotsTXT = true
 paginate = 10
