@@ -4,7 +4,7 @@ description = "Build a pipeline from your YouTube Playlist to Readwise!"
 summary = "Build a pipeline from your YouTube Playlist to Readwise!"
 draft = true
 slug = "youtube_playlist_to_readwise"
-title = "Syncing your YouTube Playlist to Readise Reader"
+title = "Syncing your YouTube Playlist to Readwise Reader"
 +++
 
 ## The Situation
@@ -56,7 +56,7 @@ To continue the checklist…
 
 8. Click "Run custom code"
 9. Change the code from "nodejs" to "python"
-10. Click "Add an App" which will let you add the readwise authentication token
+10. Click "Add an App" which will let you add the Readwise authentication token
 11. Next you can add the following code
 
 ```python
