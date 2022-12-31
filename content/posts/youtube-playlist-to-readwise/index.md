@@ -2,7 +2,7 @@
 date = 2022-12-30
 description = "Build a pipeline from your YouTube Playlist to Readwise!"
 summary = "Build a pipeline from your YouTube Playlist to Readwise!"
-draft = true
+draft = false
 slug = "youtube_playlist_to_readwise"
 title = "Syncing your YouTube Playlist to Readwise Reader"
 +++
@@ -53,7 +53,7 @@ make sure you are getting the right data.
 1. Login to your YouTube account
 1. Set your "Playlist ID" and the name of this source.
 1. Click the Plus sign to setup the next step
-  This is where it gets a little trickier. While Pipedream is aware of Readwise, it
+    - This is where it gets a little trickier. While Pipedream is aware of Readwise, it
   is unaware of the Readwise Reader API. You can still authenticate for Readwise
   but you'll need to use some custom code to hit that specific endpoint.
 1. Click "Run custom code"
