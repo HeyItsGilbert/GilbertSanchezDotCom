@@ -12,7 +12,7 @@ title = "Syncing your YouTube Playlist to Readwise Reader"
 I've been using Readwise reader for about a month and I've been enjoying
 it. I'm knee deep in the Readwise + Obsidian note band wagon. I'm also a fan of
 watching technical videos on the couch. I found myself watching YouTube videos
-on my TV and wanting to take notes on them. I create a playlist called 'TVZ'
+on my TV and wanting to take notes on them. I created a playlist called 'TVZ'
 (based on [Nicole van der Hoven](https://nicolevanderhoeven.com/)'s different
 videos on Obsidian and note taking).
 
@@ -24,40 +24,42 @@ videos that weren't getting processed.
 
 ## The Action
 
-I discovered the Readwise Reader API which accepts any address. What I needed to do
-was then list my specific playlist )which shouldn't be too tough given that
-YouTube has a very robust API) and pass it along.
+I discovered the Readwise Reader API which enables you to save any URL. That
+plus them going public and offering a YouTube solution meant I could start
+saving and highlighting videos. What I needed to do was list out my specific
+playlist (not difficult with the YouTube API) and pass the video addresses along
+to the Readwise API.
 
 While I could write a script that maybe runs on a cron, I thought there must be
 something easier. I discovered Pipedream which lets you essentially chain several
 API's together. It also handles the authentication part for you by prompting
 you to login as needed.
 
+To start you'll want to setup two things:
+
+1. Create a YouTube playlist that you want to sync
+2. Sign up for a [Pipedream](https://pipedream.com) account.
+
 {{< alert "lightbulb" >}}
 **Note!** You can run tests throughout the workflow setup. This enables you to
 make sure you are getting the right data.
 {{< /alert >}}
 
-1. Create a Pipedream account
-2. Create a new workflow
-3. Search for YouTube (Data API) - Not the "Custom App" version.
+1. Create a new workflow
+2. Search for YouTube (Data API) - Not the "Custom App" version.
   {{< figure src="/images/2022/12/youtube_source.png" caption="Searching for YouTube data source" >}}
-4. Search for "New Videos in Playlist"
+1. Search for "New Videos in Playlist"
   {{< figure src="/images/2022/12/playlist_trigger.png" caption="New Videos in Playlist option" >}}
-5. Login to your YouTube account
-6. Set your "Playlist ID" and the name of this source.
-7. Click the Plus sign to setup the next step
-
-This is where it gets a little trickier. While Pipedream is aware of Readwise, it
-is unaware of the Readwise Reader API. You can still authenticate for Readwise
-but you'll need to use some custom code to hit that specific endpoint.
-
-To continue the checklist…
-
-8. Click "Run custom code"
-9. Change the code from "nodejs" to "python"
-10. Click "Add an App" which will let you add the Readwise authentication token
-11. Next you can add the following code
+1. Login to your YouTube account
+1. Set your "Playlist ID" and the name of this source.
+1. Click the Plus sign to setup the next step
+  This is where it gets a little trickier. While Pipedream is aware of Readwise, it
+  is unaware of the Readwise Reader API. You can still authenticate for Readwise
+  but you'll need to use some custom code to hit that specific endpoint.
+1. Click "Run custom code"
+1. Change the code from "nodejs" to "python"
+1. Click "Add an App" which will let you add the Readwise authentication token
+1. Next you can add the following code
 
 ```python
 import requests
@@ -71,11 +73,13 @@ def handler(pd: "pipedream"):
   return r.json()
 ```
 
+Save your workstream and feel free to test it through.
+
 ## The Result
 
-Now every 15 minutes (how often I configured my workflow) my playlist is checked
-for new videos. This means during my regular Readwise reviews I have a chance to
-start creating highlights for my YouTube videos.
+Now every 15 minutes (how often I configured my workflow) the workflow scans my
+playlist for new videos. This means during my regular Readwise reviews I have a
+chance to start creating highlights for my YouTube videos.
 
 ## Resources
 
