@@ -7,29 +7,50 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "date",
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
           "name": "date",
-          "type": "datetime"
+          "type": "datetime",
+          "isPublishDate": true
         },
         {
-          "title": "description",
+          "title": "Description",
           "name": "description",
-          "type": "string"
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
         },
         {
-          "title": "summary",
+          "title": "Summary",
           "name": "summary",
-          "type": "string"
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
         },
         {
-          "title": "draft",
+          "title": "Draft",
           "name": "draft",
           "type": "boolean"
         },
         {
-          "title": "title",
-          "name": "title",
-          "type": "string"
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
         }
       ]
     }
@@ -44,6 +65,10 @@
     {
       "title": "posts",
       "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "assets",
+      "path": "[[workspace]]/assets"
     }
   ],
   "frontMatter.taxonomy.tags": [

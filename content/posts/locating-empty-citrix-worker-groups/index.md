@@ -1,29 +1,37 @@
 +++
-date = 2014-03-18T16:04:43Z
+date = 2014-03-18T16:04:43.000Z
 description = "Get a quick count of Citrix workergrop app/server counts."
 summary = "Get a quick count of Citrix workergrop app/server counts."
 draft = false
 slug = "locating-empty-citrix-worker-groups"
-tags = ["Citrix", "PowerShell"]
+tags = [ "Citrix", "PowerShell" ]
 title = "Locating Empty Citrix Worker Groups"
+lastmod = "2023-01-01T17:05:42.392Z"
 +++
 
 
-I have an environment that is currently transitioning from ~20 workergroups down to about 5. This transition includes moving to a "common" workergroup that will contain most of the users. As we transition groups we found that many of the older groups were deprecated and have no members. Rather than dig into the 50+ servers, we'll use a little bit of powershell magic to find the answer.
+I have an environment that is currently transitioning from ~20 workergroups down
+to about 5. This transition includes moving to a "common" workergroup that will
+contain most of the users. As we transition groups we found that many of the
+older groups were deprecated and have no members. Rather than dig into the 50+
+servers, we'll use a little bit of powershell magic to find the answer.
 
-### Prerequisite
+## Prerequisite
+
 * Citrix powershell modules.
 * Powershell v3 (not required but the customobject code is written in v3)
 
-#Code
+## Code
 
-## Explanation
+### Explanation
 
 * First we must get all the worker groups with `Get-XAWorkerGroups`
-* Then for each of those we have get all the applications with `Get-XAApplications` and save that as Count
-* While we're at it we'll also get a list of all the servers (for later clean up)
+* Then for each of those we have get all the applications with
+  `Get-XAApplications` and save that as Count
+* While we're at it we'll also get a list of all the servers (for later clean
+  up)
 
-## Complete Code
+### Complete Code
 
 ```powershell
 get-xaworkergroup * -ComputerName ZDCSERVER.domain | Foreach {
