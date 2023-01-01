@@ -1,14 +1,18 @@
 +++
-date = 2022-10-27T21:59:01Z
+date = 2022-10-27T21:59:01.000Z
 description = "A quick walk through and script on force reinstalling Chocolatey apps."
 summary = "A quick walk through and script on force reinstalling Chocolatey apps."
 draft = true
-slug = "force_reinstalling_many_choco_pkgs"
+slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
+keywords = [ "powershell" ]
+lastmod = "2022-12-31T23:44:56.843Z"
 +++
 
 
+Choco supports pointing to an xml. Stuff
 
+Our issue
 
 ```powershell
 # Get a list of all your local (-l) choco apps in a simple to parse (-r) format 

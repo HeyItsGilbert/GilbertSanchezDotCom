@@ -1,0 +1,86 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
+          "name": "date",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean"
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "assets",
+      "path": "[[workspace]]/assets"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "Active Directory",
+    "Arduino",
+    "Citrix",
+    "Docker",
+    "HomeAssistant",
+    "IOT",
+    "MQTT",
+    "OSX",
+    "PowerShell"
+  ],
+  "frontMatter.taxonomy.categories": []
+}
