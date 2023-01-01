@@ -1,0 +1,61 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "boolean"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "Active Directory",
+    "Arduino",
+    "Citrix",
+    "Docker",
+    "HomeAssistant",
+    "IOT",
+    "MQTT",
+    "OSX",
+    "PowerShell"
+  ],
+  "frontMatter.taxonomy.categories": []
+}
