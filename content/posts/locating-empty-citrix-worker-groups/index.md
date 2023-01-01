@@ -3,10 +3,11 @@ date = 2014-03-18T16:04:43.000Z
 description = "Get a quick count of Citrix workergrop app/server counts."
 summary = "Get a quick count of Citrix workergrop app/server counts."
 draft = false
+aliases = [ "/locating-empty-citrix-worker-groups/" ]
 slug = "locating-empty-citrix-worker-groups"
 tags = [ "Citrix", "PowerShell" ]
 title = "Locating Empty Citrix Worker Groups"
-lastmod = "2023-01-01T17:05:42.392Z"
+lastmod = "2023-01-01T17:46:49.513Z"
 +++
 
 

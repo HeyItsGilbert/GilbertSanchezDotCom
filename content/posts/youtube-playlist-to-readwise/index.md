@@ -1,11 +1,11 @@
 +++
-date = "2022-12-31T02:00:00.000Z"
+date = "2022-12-31T02:00:00.000-8"
 description = "Build a pipeline from your YouTube Playlist to Readwise!"
 summary = "Build a pipeline from your YouTube Playlist to Readwise!"
 draft = false
 slug = "youtube_playlist_to_readwise"
 title = "Syncing your YouTube Playlist to Readwise Reader"
-lastmod = "2023-01-01T04:30:42.841Z"
+lastmod = "2023-01-01T17:38:49.576Z"
 keywords = [ "python", "readwise" ]
 tags = [ "Python", "Readwise", "Obsidian" ]
 +++

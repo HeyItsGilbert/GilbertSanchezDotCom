@@ -1,11 +1,13 @@
 +++
-date = 2014-08-10T21:41:41Z
+date = 2014-08-10T21:41:41.000Z
 description = ""
 draft = false
+aliases = [ "/automatically-update-workergroup-for-reboot-policies/" ]
 slug = "automatically-update-workergroup-for-reboot-policies"
 summary = "A simple script to keep XenApp servers in reboot workergroups."
-tags = ["Citrix", "PowerShell"]
+tags = [ "Citrix", "PowerShell" ]
 title = "Automatically Update Workergroup for Reboot Policies"
+lastmod = "2023-01-01T17:46:30.812Z"
 +++
 
 
