@@ -2,11 +2,12 @@
 date = 2014-02-04T06:09:16.000Z
 description = "A walkthrough on making a CIDR calculator for Alfred."
 draft = false
+aliases = [ "/cidr-calculator-for-alfred/" ]
 slug = "cidr-calculator-for-alfred"
 summary = "A walkthrough on making a CIDR calculator for Alfred."
 tags = [ "OSX" ]
 title = "CIDR Calculator for Alfred"
-lastmod = "2023-01-01T17:08:55.335Z"
+lastmod = "2023-01-01T17:50:53.648Z"
 +++
 
 

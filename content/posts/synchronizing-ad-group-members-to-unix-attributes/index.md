@@ -3,11 +3,11 @@ date = 2015-09-30T17:30:58.000Z
 description = "Easily synchronize unix group members (in AD) with the current AD group members."
 summary = "Easily synchronize unix group members (in AD) with the current AD group members."
 draft = false
-aliases = [ "synchronizing-ad-group-members-to-unix-attributes" ]
+aliases = [ "/synchronizing-ad-group-members-to-unix-attributes/" ]
 slug = "synchronizing-ad-group-members-to-unix-attributes"
 tags = [ "PowerShell", "Active Directory" ]
 title = "Synchronizing AD Group Members to Unix Attributes"
-lastmod = "2023-01-01T17:48:02.225Z"
+lastmod = "2023-01-01T17:50:26.229Z"
 +++
 
 

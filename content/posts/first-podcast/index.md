@@ -3,11 +3,11 @@ date = 2022-06-17T16:23:39.000Z
 description = "Small update about my first podcast interview"
 summary = "Small update about my first podcast interview"
 draft = false
-aliases = [ "first-podcast" ]
+aliases = [ "/first-podcast/" ]
 slug = "first-podcast"
 tags = [ "PowerShell", "Presentation" ]
 title = "First Podcast!"
-lastmod = "2023-01-01T17:47:20.238Z"
+lastmod = "2023-01-01T17:51:19.550Z"
 +++
 
 

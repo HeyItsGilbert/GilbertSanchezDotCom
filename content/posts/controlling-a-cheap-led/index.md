@@ -2,12 +2,12 @@
 date = 2020-12-31T20:11:55.000Z
 description = "A left over LED and a few spare parts turns into a fun and potential useful project."
 draft = false
-aliases = [ "controlling-a-cheap-led" ]
+aliases = [ "/controlling-a-cheap-led/" ]
 slug = "controlling-a-cheap-led"
 summary = "A left over LED and a few spare parts turns into a fun and potential useful project."
 tags = [ "Docker", "Arduino" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 1'
-lastmod = "2023-01-01T17:47:05.937Z"
+lastmod = "2023-01-01T17:51:02.492Z"
 +++
 
 
