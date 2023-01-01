@@ -2,11 +2,12 @@
 date = 2021-01-05T15:39:56.000Z
 description = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 draft = false
+aliases = [ "controlling-a-cheap-neon-led-pt-2" ]
 slug = "controlling-a-cheap-neon-led-pt-2"
 summary = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 tags = [ "PowerShell", "MQTT", "IOT", "HomeAssistant" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 2'
-lastmod = "2023-01-01T15:57:50.753Z"
+lastmod = "2023-01-01T17:47:44.403Z"
 +++
 
 
