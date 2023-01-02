@@ -7,7 +7,7 @@ aliases = [ "/synchronizing-ad-group-members-to-unix-attributes/" ]
 slug = "synchronizing-ad-group-members-to-unix-attributes"
 tags = [ "PowerShell", "Active Directory" ]
 title = "Synchronizing AD Group Members to Unix Attributes"
-lastmod = "2023-01-01T17:50:26.229Z"
+lastmod = "2023-01-01T20:15:05.617Z"
 +++
 
 

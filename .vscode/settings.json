@@ -1,5 +1,6 @@
 {
-  "frontMatter.preview.host": "http://localhost:1313/posts",
+  "frontMatter.preview.host": "http://localhost:1313/",
   "frontMatter.content.autoUpdateDate": true,
-  "[markdown]": {}
+  "[markdown]": {},
+  "frontMatter.dashboard.openOnStart": true
 }

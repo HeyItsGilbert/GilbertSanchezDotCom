@@ -7,7 +7,8 @@ slug = "controlling-a-cheap-led"
 summary = "A left over LED and a few spare parts turns into a fun and potential useful project."
 tags = [ "Docker", "Arduino" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 1'
-lastmod = "2023-01-01T17:51:02.492Z"
+lastmod = "2023-01-01T20:14:52.347Z"
+preview = "feature.png"
 +++
 
 

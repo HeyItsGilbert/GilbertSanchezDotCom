@@ -6,7 +6,8 @@ draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
 tags = [ "PowerShell", "Github" ]
-lastmod = "2023-01-01T17:01:37.162Z"
+lastmod = "2023-01-01T20:14:30.016Z"
+preview = "feature.png"
 +++
 
 Recently I saw Adam Bacon talking about updating his modules and I noticed how

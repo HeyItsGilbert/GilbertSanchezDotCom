@@ -7,7 +7,8 @@ slug = "controlling-a-cheap-neon-led-pt-2"
 summary = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 tags = [ "PowerShell", "MQTT", "IOT", "HomeAssistant" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 2'
-lastmod = "2023-01-01T17:51:10.257Z"
+lastmod = "2023-01-01T20:14:48.274Z"
+preview = "feature.png"
 +++
 
 

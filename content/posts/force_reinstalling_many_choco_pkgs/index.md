@@ -5,10 +5,23 @@ summary = "A quick walk through and script on force reinstalling Chocolatey apps
 draft = true
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
-keywords = [ "powershell" ]
-lastmod = "2022-12-31T23:44:56.843Z"
+keywords = [ "powershell", "chocolatey" ]
+lastmod = "2023-01-02T16:11:49.213Z"
+tags = [ "Chocolatey", "PowerShell" ]
+type = "posts"
 +++
 
+Earlier this year a made a pretty nasty mistake that resulted in several
+Chocolatey packages to get partially removed. I say partially because the binary
+files were gone but the Chocolatey metadata was still in tact.
+
+## Situation
+
+## Problem
+
+## Action
+
+## Resolution
 
 Choco supports pointing to an xml. Stuff
 
