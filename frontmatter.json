@@ -33,7 +33,8 @@
         {
           "title": "Draft",
           "name": "draft",
-          "type": "boolean"
+          "type": "boolean",
+          "default": true
         },
         {
           "title": "Last Modified",
@@ -44,13 +45,116 @@
         {
           "title": "Slug",
           "name": "slug",
-          "type": "string",
+          "type": "slug",
           "single": true
         },
         {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "choice",
+          "multiple": true,
+          "choices": [
+            "powershell",
+            "chocolatey"
+          ]
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "default",
+            "posts"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "posts",
+      "pageBundle": true,
+      "previewPath": "posts/",
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
+          "name": "date",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "single": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "list",
+          "default": "{{dynamicKeywords}}"
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "default",
+            "posts"
+          ]
         }
       ]
     }
@@ -64,7 +168,9 @@
     },
     {
       "title": "posts",
-      "path": "[[workspace]]/content/posts"
+      "path": "[[workspace]]/content/posts",
+      "previewPath": "posts/",
+      "filePrefix": null
     },
     {
       "title": "assets",
@@ -82,5 +188,34 @@
     "OSX",
     "PowerShell"
   ],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.content.snippets": {
+    "Call Out": {
+      "description": "Create a call out box",
+      "body": [
+        "{{< alert \"twitter\" >}}",
+        "Don't forget to [follow me](https://twitter.com/jpanther) on Twitter.",
+        "{{< /alert >}}"
+      ],
+      "fields": []
+    },
+    "Figure": {
+      "description": "",
+      "body": [
+        "{{< figure",
+        "    src=\"[[&mediaUrl]]\"",
+        "    alt=\"[[alt]]\"",
+        "    caption=\"[[caption]]\"",
+        "    >}}"
+      ],
+      "isMediaSnippet": true
+    }
+  },
+  "frontMatter.content.placeholders": [
+    {
+      "id": "dynamicKeywords",
+      "script": "./scripts/dynamicKeywords.py",
+      "command": "python3.8"
+    }
+  ]
 }

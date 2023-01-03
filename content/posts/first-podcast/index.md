@@ -7,7 +7,8 @@ aliases = [ "/first-podcast/" ]
 slug = "first-podcast"
 tags = [ "PowerShell", "Presentation" ]
 title = "First Podcast!"
-lastmod = "2023-01-01T17:51:19.550Z"
+lastmod = "2023-01-02T21:57:34.620Z"
+preview = "feature.jpeg"
 +++
 
 

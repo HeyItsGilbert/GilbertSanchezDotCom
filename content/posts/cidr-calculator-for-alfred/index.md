@@ -7,7 +7,8 @@ slug = "cidr-calculator-for-alfred"
 summary = "A walkthrough on making a CIDR calculator for Alfred."
 tags = [ "OSX" ]
 title = "CIDR Calculator for Alfred"
-lastmod = "2023-01-01T17:50:53.648Z"
+lastmod = "2023-01-01T20:48:06.876Z"
+preview = "feature.png"
 +++
 
 
