@@ -6,26 +6,20 @@ draft = true
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
 keywords = [ "powershell", "chocolatey" ]
-lastmod = "2023-01-02T16:11:49.213Z"
+lastmod = "2023-01-02T23:02:53.869Z"
 tags = [ "Chocolatey", "PowerShell" ]
 type = "posts"
 +++
 
-Earlier this year a made a pretty nasty mistake that resulted in several
-Chocolatey packages to get partially removed. I say partially because the binary
-files were gone but the Chocolatey metadata was still in tact.
+Earlier this year a made a pretty nasty mistake that resulted in several Chocolatey packages getting partially removed. I say partially because the binary files were gone but the Chocolatey metadata was still in tact.
 
-## Situation
+## Config Management should fix this...
 
-## Problem
+Now normally if something gets uninstalled a config manager would attempt to reinstall, but because the package metadata 
 
 ## Action
 
-## Resolution
-
 Choco supports pointing to an xml. Stuff
-
-Our issue
 
 ```powershell
 # Get a list of all your local (-l) choco apps in a simple to parse (-r) format 
@@ -68,3 +62,7 @@ $XmlObjectWriter.Close()
 
 Write-Host "Now you can run: choco install -fy $XmlFilePath"
 ```
+
+## Resolution
+
+Now with the script we've created an XML file that we can point Chocolatey too.

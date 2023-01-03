@@ -33,67 +33,8 @@
         {
           "title": "Draft",
           "name": "draft",
-          "type": "boolean"
-        },
-        {
-          "title": "Last Modified",
-          "name": "lastmod",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Slug",
-          "name": "slug",
-          "type": "slug",
-          "single": true
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Article preview",
-          "name": "preview",
-          "type": "image",
-          "isPreviewImage": true,
-          "default": "feature.png"
-        }
-      ]
-    },
-    {
-      "name": "posts",
-      "pageBundle": true,
-      "previewPath": "posts/",
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Date Published",
-          "name": "date",
-          "type": "datetime",
-          "isPublishDate": true
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string",
-          "description": "The text description for the article. It is used in the HTML metadata"
-        },
-        {
-          "title": "Summary",
-          "name": "summary",
-          "type": "string",
-          "description": "This is the Markdown string to be used as the summary for this article."
-        },
-        {
-          "title": "Draft",
-          "name": "draft",
-          "type": "boolean"
+          "type": "boolean",
+          "default": true
         },
         {
           "title": "Last Modified",
@@ -123,15 +64,97 @@
           "title": "keywords",
           "name": "keywords",
           "type": "choice",
+          "multiple": true,
           "choices": [
             "powershell",
             "chocolatey"
           ]
         },
         {
-          "title": "type",
+          "title": "Type",
           "name": "type",
-          "type": "string"
+          "type": "choice",
+          "choices": [
+            "default",
+            "posts"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "posts",
+      "pageBundle": true,
+      "previewPath": "posts/",
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
+          "name": "date",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
+        },
+        {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "single": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "list",
+          "default": "{{dynamicKeywords}}"
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "default",
+            "posts"
+          ]
         }
       ]
     }
@@ -146,7 +169,8 @@
     {
       "title": "posts",
       "path": "[[workspace]]/content/posts",
-      "previewPath": "posts/"
+      "previewPath": "posts/",
+      "filePrefix": null
     },
     {
       "title": "assets",
@@ -186,5 +210,12 @@
       ],
       "isMediaSnippet": true
     }
-  }
+  },
+  "frontMatter.content.placeholders": [
+    {
+      "id": "dynamicKeywords",
+      "script": "./scripts/dynamicKeywords.py",
+      "command": "python3.8"
+    }
+  ]
 }
