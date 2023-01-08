@@ -5,8 +5,8 @@ description: Learn why Stucco is such a powerfull module template. Includes a wa
   from creating a module to publishing to the PowerShell Gallery!
 summary: Learn why Stucco is such a powerfull module template. Includes a walk through
   from creating a module to publishing to the PowerShell Gallery!
-draft: true
-lastmod: 2023-01-08T15:47:15.524Z
+draft: false
+lastmod: 2023-01-08T16:41:41.521Z
 slug: stucco-create-powershell-module
 tags:
   - PowerShell
