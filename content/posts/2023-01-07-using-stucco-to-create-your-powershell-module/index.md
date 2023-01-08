@@ -6,7 +6,7 @@ description: Learn why Stucco is such a powerfull module template. Includes a wa
 summary: Learn why Stucco is such a powerfull module template. Includes a walk through
   from creating a module to publishing to the PowerShell Gallery!
 draft: false
-lastmod: 2023-01-08T16:41:41.521Z
+lastmod: 2023-01-08T23:37:57.637Z
 slug: stucco-create-powershell-module
 tags:
   - PowerShell
@@ -114,10 +114,70 @@ you will check it out on your machine where you have Stucco installed.
 
 ### Create Your Modules {#create}
 
-It's as simple…
+It's as simple… `New-StuccoModule`. Here's an Example.
 
 ```powershell 
-New-StuccoModule
+ New-StuccoModule
+
+cmdlet New-StuccoModule at command pipeline position 1
+Supply values for the following parameters:
+DestinationPath: .
+  ____  _           _
+ |  _ \| | __ _ ___| |_ ___ _ __
+ | |_) | |/ _` / __| __/ _ \ '__|
+ |  __/| | (_| \__ \ ||  __/ |
+ |_|   |_|\__,_|___/\__\___|_|
+                                            v1.1.3
+==================================================
+Enter the name of the module: ExampleModule
+Enter a description of the module: An example
+Enter the version number (1.2.3) for the module (0.1.0):
+Enter your full name (Gilbert Sanchez):
+Select a license for your module
+[A] Apache  [M] MIT  [N] None  [?] Help (default is "M"):
+Do you want to include a Code of Conduct?
+[Y] Yes  [N] No  [?] Help (default is "N"):
+Do you want to include MkDocs support?
+[Y] Yes  [N] No  [?] Help (default is "N"):
+Will you be using PowerShell classes?
+[Y] Yes  [N] No  [?] Help (default is "Y"):
+Do you want to use PlatyPS for help documentation?
+[Y] Yes  [N] No  [?] Help (default is "Y"):
+Do you want to include VSCode dev container support?
+[Y] Yes  [N] No  [?] Help (default is "N"):
+Do you want to include CI/CD support?
+[A] AppVeyor  [P] Azure Pipelines  [H] GitHub Actions  [G] GitLab CI  [J] Jenkins CI  [M] MJenkins CI(MultiStage)  [N] None  [?] Help (default is "H"):
+Destination path: /Users/gsanchez/repos/ExampleModule
+Creating an opinionated high-quality PowerShell module with psake tasks and GitHub meta documents
+.
+   Create ExampleModule/ExampleModule.psd1
+   Create .gitignore
+   Create .gitattributes
+   Create build.ps1
+   Create psakeFile.ps1
+   Create requirements.psd1
+   Create .github/workflows/CI.yaml
+   Create .github/CONTRIBUTING.md
+   Create .github/ISSUE_TEMPLATE.md
+   Create .github/PULL_REQUEST_TEMPLATE.md
+   Create CHANGELOG.md
+   Create README.md
+   Create ExampleModule/Classes/classA.ps1
+   Create ExampleModule/Private/GetHelloWorld.ps1
+   Create ExampleModule/Public/Get-HelloWorld.ps1
+   Create tests/Help.tests.ps1
+   Create tests/Manifest.tests.ps1
+   Create tests/Meta.tests.ps1
+   Create tests/MetaFixers.psm1
+   Create tests/ScriptAnalyzerSettings.psd1
+   Create .vscode/extensions.json
+   Create .vscode/settings.json
+   Create .vscode/tasks.json
+   Create LICENSE
+   Create docs/en-US/about_ExampleModule.help.md
+   Create ExampleModule/ExampleModule.psm1
+
+Your new PowerShell module project [ExampleModule] has been created
 ```
 
 If you follow the prompts you'll get the right files. Easy! Next you'll want to
@@ -147,7 +207,99 @@ At this point you'll see the build output. You can see how all the dependant
 tasks are executed before testing.
 
 ```powershell
+./build.ps1 -Task Test
+Task: INIT
 
+Build System Details:
+Build Module:       PowerShellBuild:0.6.1
+PowerShell Version: 7.3.0
+
+Environment variables:
+BHPSModulePath      /Users/gsanchez/repos/ExampleModule/ExampleModule
+BHProjectName       ExampleModule
+BHPSModuleManifest  /Users/gsanchez/repos/ExampleModule/ExampleModule/ExampleModule.psd1
+BHBuildNumber       0
+BHProjectPath       /Users/gsanchez/repos/ExampleModule
+BHBuildSystem       Unknown
+BHModulePath        /Users/gsanchez/repos/ExampleModule/ExampleModule
+BHBuildOutput       /Users/gsanchez/repos/ExampleModule/Output/ExampleModule/0.1.0
+Task: CLEAN
+
+Task: STAGEFILES
+
+Task: GENERATEMARKDOWN
+
+WARNING: [Update-MarkdownHelp] 01/08/2023 15:37:27 Path '/Users/gsanchez/repos/ExampleModule/docs/en-US' does not contain any markdown files.
+Task: GENERATEMAML
+
+Task: BUILDHELP
+
+Task: PESTER
+
+Pester v5.3.3
+
+Starting discovery in 3 files.
+Discovery found 21 tests in 288ms.
+Running tests.
+
+Running tests from '/Users/gsanchez/repos/ExampleModule/tests/Help.tests.ps1'
+Describing Test help for Get-HelloWorld
+  [+] Help is not auto-generated 61ms (36ms|25ms)
+  [+] Has description 10ms (9ms|1ms)
+  [+] Has example code 18ms (16ms|1ms)
+  [+] Has example help 4ms (2ms|1ms)
+ Context Parameter Value
+   [+] Has description 8ms (5ms|3ms)
+   [+] Has correct [mandatory] value 23ms (22ms|1ms)
+   [+] Has correct parameter type 6ms (5ms|1ms)
+
+Running tests from '/Users/gsanchez/repos/ExampleModule/tests/Manifest.tests.ps1'
+Describing Module manifest
+ Context Validation
+   [+] Has a valid manifest 6ms (4ms|2ms)
+   [+] Has a valid name in the manifest 18ms (17ms|1ms)
+   [+] Has a valid root module 9ms (5ms|4ms)
+   [+] Has a valid version in the manifest 19ms (15ms|4ms)
+   [+] Has a valid description 10ms (7ms|3ms)
+   [+] Has a valid author 13ms (10ms|3ms)
+   [+] Has a valid guid 48ms (45ms|3ms)
+   [+] Has a valid copyright 42ms (3ms|38ms)
+   [+] Has a valid version in the changelog 5ms (3ms|1ms)
+   [+] Changelog and manifest versions are the same 7ms (5ms|2ms)
+
+Describing Git tagging
+  [!] Is tagged with a valid version 3ms (0ms|3ms)
+  [!] Matches manifest version 1ms (0ms|1ms)
+
+Running tests from '/Users/gsanchez/repos/ExampleModule/tests/Meta.tests.ps1'
+Describing Text files formatting
+ Context File encoding
+   [+] No text file uses Unicode/UTF-16 encoding 4ms (3ms|2ms)
+ Context Indentations
+   [+] No text file use tabs for indentations 4ms (2ms|1ms)
+Tests completed in 1.16s
+Tests Passed: 19, Failed: 0, Skipped: 2 NotRun: 0
+Task: ANALYZE
+
+Task: TEST
+
+
+psake succeeded executing ./psakeFile.ps1
+
+Task: BUILD TIME REPORT
+Name             Duration
+----             --------
+Init             00:00:00.086
+Clean            00:00:00.002
+StageFiles       00:00:00.169
+GenerateMarkdown 00:00:00.399
+GenerateMAML     00:00:00.260
+BuildHelp        00:00:00.001
+Build            00:00:00.000
+Pester           00:00:01.954
+Analyze          00:00:00.626
+Test             00:00:00.000
+Total:           00:00:03.609
 ```
 
 ### Commit Your Code {#commit}
