@@ -1,40 +1,87 @@
 +++
-date = 2022-10-27T21:59:01.000Z
+date = "2023-01-15T18:12:18.706Z"
 description = "A quick walk through and script on force reinstalling Chocolatey apps."
 summary = "A quick walk through and script on force reinstalling Chocolatey apps."
 draft = true
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
 keywords = [ "powershell", "chocolatey" ]
-lastmod = "2023-01-02T23:02:53.869Z"
+lastmod = "2023-01-15T18:12:21.319Z"
 tags = [ "Chocolatey", "PowerShell" ]
 type = "posts"
 +++
 
-Earlier this year a made a pretty nasty mistake that resulted in several Chocolatey packages getting partially removed. I say partially because the binary files were gone but the Chocolatey metadata was still in tact.
+Earlier last year a made a pretty nasty mistake that resulted in several
+Chocolatey packages getting partially removed. I say partially because the
+binary files were gone but the Chocolatey metadata was still in tact.
 
-## Config Management should fix this...
+## Configuration Management should fix this… right?
 
-Now normally if something gets uninstalled a config manager would attempt to reinstall, but because the package metadata 
+Now normally if something gets uninstalled a configuration manager would attempt
+to reinstall, but because the Chocolatey metadata still shows as installed, the
+config manager would skip it.
 
-## Action
+## Chocolatey Packages.config
 
-Choco supports pointing to an xml. Stuff
+Choco supports pointing to an xml manifest file as a source of the packages
+needing to be installed. See [Packages.config](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config). For our example we want something very simple with just a package id and a version.
+
+## Let's create our packages.config
+
+Let's get a list of our packages in a format that's easily parsable with the
+LimitOutput flag `-r`. We also only want local packages so we'll use the local
+flag `-l`.
+
+{{< alert "circle-info" >}}
+The `-r` returns a list with a `|` as a delimiter.
+{{< /alert >}}
 
 ```powershell
+$apps = choco list -lr
+```
+
+`$apps` at this point is all our apps so we'll want to filter it down.
+
+```powershell
+$subset = $apps | Select-String -Pattern $regex
+```
+
+You'll probably want to inspect this to make sure you have all your expected
+packages.
+
+From here you'll need to create the XML. Luckily PowerShell has the
+`System.XML.XmlWriter` object. I'll spare you the gory bits (which you can see
+in the complete script), but at a high level it…
+
+1. Sets up the XML settings (indentation)
+2. Creates an XML file with the settings
+3. Starts creating the XML with the packages element
+4. Loops over each app in `$subset` and adds a package element
+5. Ends the elements
+6. Closes and writes the doc
+
+## Complete Script
+
+I put the two variables you'll need to edit at the top. The script won't execute
+anything other then creating a config file. You'll still need to ask choco to
+install it.
+
+```powershell
+# Update fhe following tool for your scenario
+$regex = '^YourRegExPatternHere$'
+# Where you want to save your file. It should have .config extension
+$XmlFilePath = "C:\tools\package_fix.config"
+
 # Get a list of all your local (-l) choco apps in a simple to parse (-r) format 
 $apps = choco list -lr
 
 # Select a subset off apps that you want to reinstall
-$regex = '^YourRegExPatternHere$'
 $subset = $apps | Select-String -Pattern $regex
 
 # Begin building the XML
 $xmlObjectsettings = New-Object System.Xml.XmlWriterSettings
 $xmlObjectsettings.Indent = $true
 
-# Where you want to save your file. It should have .config extension
-$XmlFilePath = "C:\tools\package_fix.config"
 $XmlObjectWriter = [System.XML.XmlWriter]::Create(
   $XmlFilePath,
   $xmlObjectsettings

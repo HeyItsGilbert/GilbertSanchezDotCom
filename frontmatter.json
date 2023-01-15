@@ -217,5 +217,8 @@
       "script": "./scripts/dynamicKeywords.py",
       "command": "python3.8"
     }
-  ]
+  ],
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.preview.host": "http://localhost:1313/"
 }
