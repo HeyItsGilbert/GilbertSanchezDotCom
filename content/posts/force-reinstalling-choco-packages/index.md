@@ -2,11 +2,11 @@
 date = "2023-01-15T18:12:18.706Z"
 description = "A quick walk through and script on force reinstalling Chocolatey apps."
 summary = "A quick walk through and script on force reinstalling Chocolatey apps."
-draft = true
+draft = false
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
 keywords = [ "powershell", "chocolatey" ]
-lastmod = "2023-01-15T18:12:21.319Z"
+lastmod = "2023-01-15T18:16:37.482Z"
 tags = [ "Chocolatey", "PowerShell" ]
 type = "posts"
 +++
