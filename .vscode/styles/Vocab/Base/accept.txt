@@ -9,3 +9,8 @@ devblackops
 psmodulecache
 PSDepends
 Unsplash
+choco
+config
+xml
+XML
+parsable

@@ -6,7 +6,7 @@ draft = false
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"
 keywords = [ "powershell", "chocolatey" ]
-lastmod = "2023-01-15T18:16:37.482Z"
+lastmod = "2023-01-16T19:32:06.122Z"
 tags = [ "Chocolatey", "PowerShell" ]
 type = "posts"
 +++
@@ -19,12 +19,14 @@ binary files were gone but the Chocolatey metadata was still in tact.
 
 Now normally if something gets uninstalled a configuration manager would attempt
 to reinstall, but because the Chocolatey metadata still shows as installed, the
-config manager would skip it.
+config manager would skip it. So how can we fix it?
 
 ## Chocolatey Packages.config
 
-Choco supports pointing to an xml manifest file as a source of the packages
-needing to be installed. See [Packages.config](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config). For our example we want something very simple with just a package id and a version.
+Chocolatey supports pointing to an XML manifest file as a source of the packages
+needing to be installed. See
+[Packages.config](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config).
+For our example we want something simple with just a package id and a version.
 
 ## Let's create our packages.config
 
@@ -40,9 +42,12 @@ The `-r` returns a list with a `|` as a delimiter.
 $apps = choco list -lr
 ```
 
-`$apps` at this point is all our apps so we'll want to filter it down.
+`$apps` at this point is all our apps so we'll want to filter it down. We will
+want to create a pattern match to identify our packages (if possible). In the
+following example I'll search for all packages that start with `foo`.
 
 ```powershell
+$regex = "^foo"
 $subset = $apps | Select-String -Pattern $regex
 ```
 
@@ -55,10 +60,10 @@ in the complete script), but at a high level it…
 
 1. Sets up the XML settings (indentation)
 2. Creates an XML file with the settings
-3. Starts creating the XML with the packages element
-4. Loops over each app in `$subset` and adds a package element
-5. Ends the elements
-6. Closes and writes the doc
+3. Starts creating the XML content with the `packages` element
+4. Loops over each app in `$subset` and adds a `package` element
+5. Ends the `packages` elements
+6. Closes and writes the file
 
 ## Complete Script
 
@@ -112,4 +117,13 @@ Write-Host "Now you can run: choco install -fy $XmlFilePath"
 
 ## Resolution
 
-Now with the script we've created an XML file that we can point Chocolatey too.
+Now with the script we've created an XML file that we can point Chocolatey to.
+The last output will be a command you can copy and paste to have choco do the
+install.
+
+While my example started with a need to reinstall, you could imagine a scenario
+where we want to generate a set of files to install. Let me know if you think of
+anything cool!
+
+Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett Jordan</a> on <a href="https://unsplash.com/photos/ehKaEaZ5VuU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
