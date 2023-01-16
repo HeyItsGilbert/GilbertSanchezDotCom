@@ -1,7 +1,4 @@
 {
-  "frontMatter.preview.host": "http://localhost:1313/",
-  "frontMatter.content.autoUpdateDate": true,
   "[markdown]": {},
-  "frontMatter.dashboard.openOnStart": true,
   "python.formatting.provider": "black"
 }
