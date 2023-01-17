@@ -157,6 +157,76 @@
           ]
         }
       ]
+    },
+    {
+      "name": "projects",
+      "pageBundle": false,
+      "previewPath": "projects/",
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
+          "name": "date",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
+        },
+        {
+          "title": "Show Reading Time",
+          "name": "showReadingTime",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "title": "externalUrl",
+          "name": "externalUrl",
+          "type": "string"
+        },
+        {
+          "title": "_build",
+          "name": "_build",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "render",
+              "name": "render",
+              "type": "string"
+            },
+            {
+              "title": "list",
+              "name": "list",
+              "type": "string"
+            }
+          ]
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",
@@ -175,6 +245,11 @@
     {
       "title": "assets",
       "path": "[[workspace]]/assets"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects",
+      "previewPath": "projects/"
     }
   ],
   "frontMatter.taxonomy.tags": [
@@ -184,6 +259,7 @@
     "Docker",
     "HomeAssistant",
     "IOT",
+    "Linting",
     "MQTT",
     "OSX",
     "PowerShell"
