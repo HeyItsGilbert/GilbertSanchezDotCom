@@ -3,7 +3,9 @@ title: BeneathTheCanals
 date: 2021-08-26
 summary: A PowerShell module companion for the Beneath The Canals game.
 showReadingTime: true
-lastmod: 2023-01-17T05:25:20.560Z
+showDateUpdated: false
+thumbnail: feature.png
+lastmod: 2023-01-17T14:53:03.021Z
 tags:
   - PowerShell
   - RPG

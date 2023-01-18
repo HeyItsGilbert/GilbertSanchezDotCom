@@ -160,7 +160,7 @@
     },
     {
       "name": "projects",
-      "pageBundle": false,
+      "pageBundle": true,
       "previewPath": "projects/",
       "fileType": "md",
       "fields": [
