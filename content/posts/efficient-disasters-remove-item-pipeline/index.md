@@ -1,12 +1,12 @@
 ---
 title: "Efficient Disasters: Remove-Item In the Pipeline"
-date: 2023-01-29T23:11:43.210Z
+date: 2023-01-31T03:29:44.653Z
 description: I walk through my most painful mistake of 2022. Using Remove-Item in a
   Pipeline can be efficient, but it can also be a disaster.
 summary: I walk through my most painful mistake of 2022. Using Remove-Item in a
   Pipeline can be efficient, but it can also be a disaster.
 draft: false
-lastmod: 2023-01-31T03:24:42.453Z
+lastmod: 2023-01-31T03:31:06.134Z
 slug: efficient-disasters-remove-item-pipeline
 tags:
   - PowerShell
@@ -184,6 +184,8 @@ tested for that scenario.
 I literally saw this coming since I was cautious about using `Remove-Item` and
 still stepped on this land mine. By sharing my mistakes I hope that you come to
 realize that no one is perfect, or at least you had a good laugh!
+
+Thanks to Steven Judd for reviewing this post! If only I had you review my PR…
 
 Photo by <a href="https://unsplash.com/de/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a> on <a href="https://unsplash.com/photos/jZXZvw2CdqY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
