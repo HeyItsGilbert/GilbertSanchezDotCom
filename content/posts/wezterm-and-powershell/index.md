@@ -4,11 +4,14 @@ date: 2023-07-18T03:52:32.786Z
 description: A walkthrough on how I use PowerShell via WezTerm
 summary: ""
 draft: true
-lastmod: 2023-07-18T04:26:29.723Z
+lastmod: 2023-07-22T20:47:34.636Z
 slug: ""
 tags: []
 preview: feature.png
-keywords: powershell, wezterm, starship
+keywords:
+  - powershell
+  - starship
+  - wezterm
 type: posts
 ---
 
@@ -28,28 +31,67 @@ This should make it clear that my goal is to make my profile and settings work
 on any terminal. When the next hotness comes out, I want to be able to put it to
 the test without starting fresh.
 
-# Prompts: bespoke, oh-my-posh, and starship
-Bespoke 
-
-# Colors
-ASCII, Unicode. Difference between shells.
-
-# Escape Codes
-What are they used for? How can 
-
-
 ---
 
 This post is long overdue and is a series of findings I've had over time. This
-is likely only a snapshot and what continues to evolve, but I'm hoping that
-someone finds this useful (or more likely helps me remember). By the end you
-should know a bit more about terminals, shells, and prompts. I'll also be
-covering some handy 
+is likely only a snapshot of what continues to evolve, but I'm hoping that
+someone finds this useful (or more likely, helps me remember). By the end you
+should know a bit more about terminals, shells, prompts, escape codes, and
+more.
 
-# Why does this matter?
+## Why does this matter?
 
 I regularly work on multiple OS's in my day to day job so it's not unusual for
-me to have a mac, linux, and windows machine running on my desk. I've been a
-long time user of iTerm2 on the Mac and I really enjoyed a lot of it's features.
+me to have a mac, linux, and windows machine running on my desk. Context switching
+can cost time, and lead to mistakes. It's also annoying that a keyboard combo
+works on OS/Shell/etc. and doesn't in another. While these don't solve all the
+cost of context switching, they do make my terminal experience consistent.
 
+## Terminals
+
+What is a terminal? It is the application used to communicate and display
+information for a system(s). These applications can connect to a Shell on a
+local or remote machine.
+
+Some examples are:
+
+- WezTerm ({{< icon "microsot" >}}{{< icon "apple" >}}{{< icon "falinux" >}})
+- Windows Terminal ({{< icon "microsot" >}})
+- ConEmu ({{< icon "microsot" >}})
+- Terminal ({{< icon "apple" >}})
+- iTerm ({{< icon "apple" >}})
+- So many more...
+
+## Shells
+
+This is the user interface used by a terminal to interpret commands by you the
+user.
+
+Some examples are:
+
+- Bash
+- ZSH
+- PowerShell
+- Cmd
+- Fish
+
+## Prompt
+
+The prompt is what your Shell returns to you and can either be a simple character
+to something more complex.
+
+Some examples are:
+
+- Hand crafted
+- oh-my-posh
+- starship
+
+## Escape Codes
+
+Escape codes are ways for you (or more often your prompt) to give your shell a
+set of instructions.
+
+https://en.wikipedia.org/wiki/ANSI_escape_code
+
+## Colors: ASCII, Unicode
 
