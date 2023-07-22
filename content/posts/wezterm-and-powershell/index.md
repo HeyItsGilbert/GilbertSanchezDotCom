@@ -3,8 +3,8 @@ title: WezTerm and PowerShell
 date: 2023-07-18T03:52:32.786Z
 description: A walkthrough on how I use PowerShell via WezTerm
 summary: ""
-draft: true
-lastmod: 2023-07-22T20:47:34.636Z
+draft: false
+lastmod: 2023-07-22T20:56:07.105Z
 slug: ""
 tags: []
 preview: feature.png
@@ -13,24 +13,6 @@ keywords:
   - starship
   - wezterm
 type: posts
----
-
-# Why Am I writing about this? What qualifications do I have?
-This intro should set the stage for my level of expertise in xplat work. It
-should also make clear that I'm only learning some of these things now.
-
-# iTerm, ConEmu, and Windows Terminal
-This should explain my experience with other terminals. Some of the very helpful
-features (that may be referenced later).
-
-# WezTerm: What it is, and why its awesome
-Rust. LUA scripting means there's a lot of power available.
-
-# Dealers choice
-This should make it clear that my goal is to make my profile and settings work
-on any terminal. When the next hotness comes out, I want to be able to put it to
-the test without starting fresh.
-
 ---
 
 This post is long overdue and is a series of findings I've had over time. This
@@ -46,6 +28,14 @@ me to have a mac, linux, and windows machine running on my desk. Context switchi
 can cost time, and lead to mistakes. It's also annoying that a keyboard combo
 works on OS/Shell/etc. and doesn't in another. While these don't solve all the
 cost of context switching, they do make my terminal experience consistent.
+
+## Dealers choice
+TODO: This should make it clear that my goal is to make my profile and settings work
+on any terminal. When the next hotness comes out, I want to be able to put it to
+the test without starting fresh.
+
+My overall goal is to create a profile that can easily travel between machines.
+It should also be easy for me to add machine specific options
 
 ## Terminals
 
@@ -89,9 +79,17 @@ Some examples are:
 ## Escape Codes
 
 Escape codes are ways for you (or more often your prompt) to give your shell a
-set of instructions.
+set of instructions. Some of these are known as "Operating System Commands"
 
-https://en.wikipedia.org/wiki/ANSI_escape_code
+- ANSI Escape Code https://en.wikipedia.org/wiki/ANSI_escape_code
+- WezTerm Shell Integration https://wezfurlong.org/wezterm/shell-integration.html
 
 ## Colors: ASCII, Unicode
 
+One way to apply colors to your terminal is to use ASCII codes. This tells your
+terminal to use a certain color. Most terminals offer a way to theme your shell
+my saying the "black" actually this hue of purple. Another way is to use a
+unicode character that your shell can interpret as a color.
+
+# WezTerm: What it is, and why its awesome
+Rust. LUA scripting means there's a lot of power available.
