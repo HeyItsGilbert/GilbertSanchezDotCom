@@ -1,25 +1,30 @@
 ---
-title: WezTerm and PowerShell
+title: Terminals, Shells, and Prompts
 date: 2023-07-18T03:52:32.786Z
-description: A walkthrough on how I use PowerShell via WezTerm
+description: Part one of brief walkthrough on how I use PowerShell via WezTerm
 summary: ""
 draft: false
-lastmod: 2023-07-23T01:10:49.829Z
+lastmod: 2023-07-23T19:57:47.761Z
 slug: ""
-tags: []
+tags:
+  - PowerShell
 preview: feature.png
 keywords:
   - powershell
+  - shell
   - starship
+  - terminal
   - wezterm
+  - prompt
 type: posts
 ---
 
-This post is long overdue and is a series of findings I've had over time. This
-is likely only a snapshot of what continues to evolve, but I'm hoping that
-someone finds this useful (or more likely, helps me remember). By the end you
-should know a bit more about terminals, shells, prompts, escape codes, and
-more. I'll then show you how I'm set up and how you can copy the parts you like.
+This post (first in the series) is long overdue and is a series of findings I've
+had over time. This is likely only a snapshot of what continues to evolve, but
+I'm hoping that someone finds this useful (or more likely, helps me remember).
+By the end you should know a bit more about terminals, shells, prompts, escape
+codes, and more. I'll then show you how I'm set up and how you can copy the
+parts you like.
 
 ## Why does this matter?
 
@@ -35,7 +40,7 @@ cost of context switching, they do make my terminal experience consistent.
 2. Allow flexibility to add machine/environment specific options (e.g. work).
 3. Allow ability to swap any component when I see the next new shiny thing.
 
-## Crash Course on Terminology
+## Crash Course on Terminals, etc.
 
 I want this to be as accessible as possible so I'll "briefly" explain the
 different components. Also, as an engineer I have to explain all the details or
@@ -79,27 +84,28 @@ to something more complex. This will need be written to support your shell.
 
 Some examples are:
 
-- [Oh My Zsh](https://ohmyz.sh/)
-- [Oh My Posh](https://ohmyposh.dev/)
-- [Starship](https://starship.rs/)
+- [Oh My Zsh](https://ohmyz.sh/) (zsh only)
+- [Oh My Posh](https://ohmyposh.dev/) (many shells - written in Go)
+- [Starship](https://starship.rs/) (many shells - written in Rust)
 
 ### Escape Codes
 
 Escape codes are ways for you (or more often your prompt) to give your shell a
-set of instructions. Some of these are known as "Operating System Commands"
+set of instructions. Some of these are known as "Operating System Commands".
+These are often how you get "shell integration".
 
-- ANSI Escape Code https://en.wikipedia.org/wiki/ANSI_escape_code
-- WezTerm Shell Integration https://wezfurlong.org/wezterm/shell-integration.html
+- [ANSI Escape Code](https://en.wikipedia.org/wiki/ANSI_escape_code)
+- [WezTerm Shell Integration](https://wezfurlong.org/wezterm/shell-integration.html)
+- [iTerm2 Shell Integration](https://iterm2.com/documentation-shell-integration.html)
+- [Windows Terminal Shell Integration](https://devblogs.microsoft.com/commandline/shell-integration-in-the-windows-terminal/)
 
-### Colors: ASCII, Unicode
+### Colors: ANSI, Unicode
 
-One way to apply colors to your terminal is to use ASCII codes. This tells your
+One way to apply colors to your terminal is to use ANSI color codes. This tells your
 terminal to use a certain color. Most terminals offer a way to theme your shell
 my saying the "black" actually this hue of purple. Another way is to use a
-unicode character that your shell can interpret as a color.
+unicode character that your shell can interpret as a color. Some shells or prompts
+offer easy ways to color your prompt.
 
-## WezTerm: What it is, and why its awesome
-
-Rust. LUA scripting means there's a lot of power available.
-
-##
+- https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+- PowerShell Core offers [PSStyle](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3#psstyle)
