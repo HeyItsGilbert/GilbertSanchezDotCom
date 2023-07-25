@@ -1,14 +1,18 @@
 ---
-title: "My Terminal: WezTerm + PowerShell"
+title: "My Terminal: WezTerm"
 date: 2023-07-23T19:58:05.544Z
-description: ""
-summary: ""
-draft: true
-lastmod: 2023-07-25T17:37:20.011Z
-slug: ""
-tags: []
+description: In this second post of the series I go over my WezTerm config. I also show how I load PowerShell on all OS's.
+summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
+draft: false
+lastmod: 2023-07-25T17:42:57.689Z
+slug: my-terminal-wezterm
+tags:
+  - PowerShell
+  - WezTerm
 preview: feature.png
-keywords: []
+keywords:
+  - WezTerm
+  - PowerShell
 type: posts
 ---
 

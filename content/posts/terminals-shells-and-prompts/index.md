@@ -1,13 +1,15 @@
 ---
 title: Terminals, Shells, and Prompts
 date: 2023-07-18T03:52:32.786Z
-description: Part one of brief walkthrough on how I use PowerShell via WezTerm
-summary: ""
+description: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my settings, but this lays the foundation.
+summary: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my particular settings, but this lays the foundation.
 draft: false
-lastmod: 2023-07-23T19:57:47.761Z
-slug: ""
+lastmod: 2023-07-25T18:05:08.594Z
+slug: terminals-shells-and-prompts
 tags:
   - PowerShell
+  - WezTerm
+  - iTerm
 preview: feature.png
 keywords:
   - powershell
@@ -109,3 +111,7 @@ offer easy ways to color your prompt.
 
 - https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 - PowerShell Core offers [PSStyle](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3#psstyle)
+
+
+Cover Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Philipp Katzenberger</a> on <a href="https://unsplash.com/wallpapers/desktop/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
