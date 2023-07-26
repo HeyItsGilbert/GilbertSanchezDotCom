@@ -4,13 +4,13 @@ date: 2023-07-18T03:52:32.786Z
 description: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my settings, but this lays the foundation.
 summary: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my particular settings, but this lays the foundation.
 draft: false
-lastmod: 2023-07-25T18:05:08.594Z
+lastmod: 2023-07-26T04:18:48.753Z
 slug: terminals-shells-and-prompts
 tags:
   - PowerShell
   - WezTerm
   - iTerm
-preview: feature.png
+preview: feature.jpg
 keywords:
   - powershell
   - shell
@@ -21,20 +21,20 @@ keywords:
 type: posts
 ---
 
-This post (first in the series) is long overdue and is a series of findings I've
-had over time. This is likely only a snapshot of what continues to evolve, but
-I'm hoping that someone finds this useful (or more likely, helps me remember).
-By the end you should know a bit more about terminals, shells, prompts, escape
-codes, and more. I'll then show you how I'm set up and how you can copy the
-parts you like.
+This post, the first in this series, is long overdue and is a collection of my
+findings. This is likely only a snapshot of my set up, but I'm hoping that
+someone finds this useful. By the end of this post you should know a bit more
+about terminals, shells, prompts, escape codes, and their interactions. In the
+following posts I'll show you my configuration and how you can copy the parts
+you like.
 
 ## Why does this matter?
 
-I regularly work on multiple OS's in my day to day job so it's not unusual for
-me to have a mac, linux, and windows machine running on my desk. Context switching
-can cost time, and lead to mistakes. It's also annoying that a keyboard combo
-works on OS/Shell/etc. and doesn't in another. While these don't solve all the
-cost of context switching, they do make my terminal experience consistent.
+I regularly work on multiple OS's in my day to day job and I need to be able to
+quickly jump between any . Context switching can cost time, and lead to
+mistakes. It's also annoying when a keyboard combo works on one OS/Shell/etc.
+and doesn't on another. While these don't solve all the costs of context
+switching, they do make the terminal experience consistent.
 
 ## My goals
 
@@ -42,7 +42,7 @@ cost of context switching, they do make my terminal experience consistent.
 2. Allow flexibility to add machine/environment specific options (e.g. work).
 3. Allow ability to swap any component when I see the next new shiny thing.
 
-## Crash Course on Terminals, etc.
+## Crash Course on Terminals, etc
 
 I want this to be as accessible as possible so I'll "briefly" explain the
 different components. Also, as an engineer I have to explain all the details or
@@ -52,7 +52,7 @@ the comments.
 
 ### Terminals
 
-It is the application used to communicate and display
+The terminal is the application used to communicate and display
 information for a system(s). These applications can connect to a Shell on a
 local or remote machine.
 
@@ -67,8 +67,8 @@ Some examples are:
 
 ### Shells
 
-This is the user interface used by a terminal to interpret commands by you the
-user.
+The shell is the user interface used by a terminal to interpret commands by you
+the user.
 
 Some examples are:
 
@@ -101,7 +101,7 @@ These are often how you get "shell integration".
 - [iTerm2 Shell Integration](https://iterm2.com/documentation-shell-integration.html)
 - [Windows Terminal Shell Integration](https://devblogs.microsoft.com/commandline/shell-integration-in-the-windows-terminal/)
 
-### Colors: ANSI, Unicode
+### Colors: ANSI and Unicode
 
 One way to apply colors to your terminal is to use ANSI color codes. This tells your
 terminal to use a certain color. Most terminals offer a way to theme your shell
@@ -109,9 +109,15 @@ my saying the "black" actually this hue of purple. Another way is to use a
 unicode character that your shell can interpret as a color. Some shells or prompts
 offer easy ways to color your prompt.
 
-- https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+- [Wikipedia: ANSI Escape Codes](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors)
 - PowerShell Core offers [PSStyle](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_ansi_terminals?view=powershell-7.3#psstyle)
 
+---
 
-Cover Photo by <a href="https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Philipp Katzenberger</a> on <a href="https://unsplash.com/wallpapers/desktop/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+Hopefully this was informative and has helped you understand how these different
+components interact. The next post in this series is [My Terminal: WezTerm]({{< ref "my-terminal" >}}).
+
+Cover Photo by
+[Philipp Katzenberger](https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+on
+[Unsplash](https://unsplash.com/wallpapers/desktop/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

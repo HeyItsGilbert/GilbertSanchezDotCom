@@ -4,7 +4,7 @@ date: 2023-07-23T19:58:05.544Z
 description: In this second post of the series I go over my WezTerm config. I also show how I load PowerShell on all OS's.
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
-lastmod: 2023-07-25T17:42:57.689Z
+lastmod: 2023-07-26T04:31:35.622Z
 slug: my-terminal-wezterm
 tags:
   - PowerShell
@@ -124,13 +124,17 @@ table.insert(launch_menu, {
 })
 ```
 
+In the next post I'll be going over my PowerShell profile.
+
 ## Conflicting Keyboard Shortcuts
 
 I love PSReadLine! Once the ability to highlight or jump words was added, I was
 never gonna look back. But here's the first bump. That same shortcut (Ctrl +
-Shift + Left/Right) is used by WezTerm for moving panes. I wanted to keep the
-rest, so I took the standard set and put it in the config.Then I commented out
-the shortcuts I wanted to use.
+Shift + Left/Right) is used by WezTerm for moving panes.
+
+This portion of the config is long and I'll spare you the scrolling. At a high
+level, I created a new table called `keys` and added the standard set of
+shortcuts. Then I commented out the conflicting shortcuts.
 
 ## Selecting Shell Output
 
@@ -167,10 +171,15 @@ config.keys = keys
 config.mouse_bindings = mouse_bindings
 ```
 
+You can see the `color_scheme` here. I've slowly started to shift from Solarized
+to more purple based themes (see this website!).
+
+![A screenshot of my WezTerm](feature.png)
+
 ## Work Overrides
 
-My work module has a function called apply_to_config.
-See more at [Making Your Own LUA Modules](https://wezfurlong.org/wezterm/config/files.html#making-your-own-lua-modules)
+My work module has a function called `apply_to_config`. I can append things to
+my launcher, etc.
 
 ```lua
 -- Allow overwriting for work stuff
@@ -179,9 +188,17 @@ if haswork then
 end
 ```
 
+See more at [Making Your Own LUA Modules](https://wezfurlong.org/wezterm/config/files.html#making-your-own-lua-modules)
+
 ## Finally
 
 The last thing to do is to return the config file.
+
 ```lua
 return config
 ```
+
+---
+
+Hopefully you found something useful for your config. In the next post I'll be
+going over the PowerShell Profile.
