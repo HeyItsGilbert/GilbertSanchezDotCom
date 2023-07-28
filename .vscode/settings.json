@@ -1,4 +1,7 @@
 {
   "[markdown]": {},
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+    "wezterm"
+  ]
 }
