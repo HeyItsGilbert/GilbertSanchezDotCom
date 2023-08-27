@@ -1,10 +1,10 @@
 ---
 title: Terminals, Shells, and Prompts
-date: 2023-07-18T03:52:32.786Z
+date: 2023-08-27T14:55:56.151Z
 description: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my settings, but this lays the foundation.
 summary: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my particular settings, but this lays the foundation.
 draft: false
-lastmod: 2023-07-28T20:50:42.083Z
+lastmod: 2023-08-27T14:56:33.799Z
 slug: terminals-shells-and-prompts
 tags:
   - PowerShell
@@ -34,9 +34,11 @@ I regularly work on multiple OS's in my day-to-day job, and I need to be able to
 quickly jump between any of them. Context switching can cost time, and lead to
 mistakes. It's also annoying when a keyboard combo works on one OS/Shell/etc.
 and not another. While making the terminal consistent between OS's doesn't solve
-all the costs of context switching, they do make the experience more enjoyable.
+all the costs of context switching, it does make the experience more enjoyable.
 
 ## My goals
+
+These are my overall goals with my particular setup.
 
 1. Configs that I can sync between computers of any OS.
 2. Allow flexibility to add machine/environment specific options (e.g. work).
@@ -81,20 +83,21 @@ Some examples are:
 
 ### Prompt
 
-The prompt is what your Shell returns to you and can either be a simple character
-to something more complex. This will need be written to support your shell.
+The prompt is what your [shell](#shells) returns to you and can either be a
+simple character (e.g., `$`, `>`, etc.) or something more complex. Prompts are
+typically written for a specific shell, but some do support multiple.
 
 Some examples are:
 
+- [Starship](https://starship.rs/) (many shells - written in Rust)
 - [Oh My Zsh](https://ohmyz.sh/) (zsh only)
 - [Oh My Posh](https://ohmyposh.dev/) (many shells - written in Go)
-- [Starship](https://starship.rs/) (many shells - written in Rust)
 
 ### Escape Codes
 
 Escape codes are ways to give your shell a set of instructions. Some of these
-are known as "Operating System Commands". Often, you get "shell
-integration" through the use of these codes. While you could pass the codes yourself
+are known as "Operating System Commands" (aka OSC codes). Often, you get "shell
+integration" through the use of these codes. While it's possible to pass the codes yourself
 at the terminal, it's more likely you'll include them in your prompt.
 
 - [ANSI Escape Code](https://en.wikipedia.org/wiki/ANSI_escape_code)
@@ -104,10 +107,12 @@ at the terminal, it's more likely you'll include them in your prompt.
 
 ### Colors: ANSI and Unicode
 
-Using ANSI color codes is a way to apply colors to your terminal. These codes
-tell your terminal to use a certain color. Most terminals offer a way to theme
-your shell by saying the "black" actually a specified hue of purple. Another way
-to apply color is to use Unicode character that your shell can interpret as a
+Using ANSI color codes (which are special escape codes) is a way to apply colors
+to your terminal. These codes tell your terminal to use a certain color for
+foreground or background. Most terminals offer a way to theme your shell by
+replacing a standard color (i.e., black, bright red, etc.) with specific color
+in the terminals expected format (i.e., 256-color, hex, etc.). Another way to
+apply color is to use Unicode character that your shell can interpret as a
 color. Some shells or prompts offer easy ways to color your prompt.
 
 - [Wikipedia: ANSI Escape Codes](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors)
