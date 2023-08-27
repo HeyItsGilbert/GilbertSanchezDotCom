@@ -1,10 +1,10 @@
 ---
 title: "My Terminal: WezTerm"
-date: 2023-07-23T19:58:05.544Z
+date: 2023-08-27T14:57:43.274Z
 description: In this second post of the series I go over my WezTerm config. I also show how I load PowerShell on all OS's.
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
-lastmod: 2023-07-26T04:31:35.622Z
+lastmod: 2023-08-27T15:03:17.935Z
 slug: my-terminal-wezterm
 tags:
   - PowerShell
@@ -25,6 +25,8 @@ You can see the latest copy of my config files here: {{< icon "github" >}}
 
 ## My goals
 
+These are my overall goals with my particular setup.
+
 1. Configs that I can sync between computers of any OS.
 2. Allow flexibility to add machine/environment specific options (e.g. work).
 3. Allow ability to swap any component when I see the next new shiny thing.
@@ -33,12 +35,12 @@ You can see the latest copy of my config files here: {{< icon "github" >}}
 
 [WezTerm](https://wezfurlong.org/wezterm/) was written by Wez Furlong. He's a
 former Meta employee and created tools like Watchman and EdenFS. Hands down one
-of the smartest and humblest engineers I've had the privelege of interacting
+of the smartest and humblest engineers I've had the privilege of interacting
 with. If you're looking for a mentor, Wez offers mentoring at his
 [patreon](https://www.patreon.com/WezFurlong).
 
-WezTerm is written in Rust which is gaining popularity lately. It's configuration
-is based in LUA which unlocks a ton of possibilitie. It's use of a single config
+WezTerm is written in Rust which is gaining popularity lately. Its configuration
+is based in LUA which unlocks a ton of possibilities. It's use of a single config
 file helps me meet all three of [my goals](#my-goals).
 
 If you haven't read the Quick Start for the config, I would recommend starting
@@ -192,7 +194,7 @@ See more at [Making Your Own LUA Modules](https://wezfurlong.org/wezterm/config/
 
 ## Finally
 
-The last thing to do is to return the config file.
+The last thing to do is to return the config.
 
 ```lua
 return config
@@ -200,5 +202,6 @@ return config
 
 ---
 
-Hopefully you found something useful for your config. In the next post I'll be
-going over the PowerShell Profile.
+Hopefully you found something useful for your config. If there's something you
+want to see me go over in more details, let me know in the comments! In the next
+post I'll be going over my PowerShell Profile.
