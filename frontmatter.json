@@ -252,19 +252,6 @@
       "previewPath": "projects/"
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "Active Directory",
-    "Arduino",
-    "Citrix",
-    "Docker",
-    "HomeAssistant",
-    "IOT",
-    "Linting",
-    "MQTT",
-    "OSX",
-    "PowerShell"
-  ],
-  "frontMatter.taxonomy.categories": [],
   "frontMatter.content.snippets": {
     "Call Out": {
       "description": "Create a call out box",
