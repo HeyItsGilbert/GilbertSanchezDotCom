@@ -1,10 +1,10 @@
 ---
 title: "My Shell: PowerShell"
-date: 2023-09-23T04:14:45.167Z
+date: 2023-10-07T17:00:51.381Z
 description: In this third post of the series I go over my PowerShell profile.
 summary: In this third post of the series I go over my PowerShell profile.
-draft: true
-lastmod: 2023-10-07T16:57:54.853Z
+draft: false
+lastmod: 2023-10-07T17:00:56.459Z
 slug: my-shell-powershell
 tags:
   - PowerShell
