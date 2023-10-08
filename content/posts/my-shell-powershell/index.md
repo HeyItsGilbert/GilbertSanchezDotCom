@@ -4,7 +4,7 @@ date: 2023-10-07T17:00:51.381Z
 description: In this third post of the series I go over my PowerShell profile.
 summary: In this third post of the series I go over my PowerShell profile.
 draft: false
-lastmod: 2023-10-07T17:00:56.459Z
+lastmod: 2023-10-08T02:52:26.478Z
 slug: my-shell-powershell
 tags:
   - PowerShell
@@ -210,52 +210,10 @@ if (Get-Command 'starship' -ErrorAction SilentlyContinue) {
 }
 ```
 
-## PowerShell for an Enterprise?
+----
 
-So far I've been talking about an individual profile. But what if you wanted to
-manage a System profile? What about doing that at scale?
-
-At Meta we use Chef, and we publish several cookbooks for the community to use.
-I'm proud to say that one of my major contributions was to the `fb_powershell`
-cookbook.
-
-### System Profiles
-
-I'll spare you the long explanation of API Chef cookbooks
-([learn more](https://github.com/facebook/chef-cookbooks)) but here is an
-example of how you would configure this to manage the Systems profile.
-
-```ruby
-node.default['fb_powershell']['profiles']['AllUsersAllHosts'] = <<EOH
-# Warning: System Profile being Managed By Chef!
-function Start-SuperSpecialEnterpriseApp {
-  # Business logic
-  # Acquiring brownie points for performance review
-}
-EOH
-```
-
-### Installing/Upgrading PowerShell Modules
-
-The cookbook also includes a custom resource called `fb_powershell_module` which
-will use the `PowerShellGet` cmdlets to manage your modules. This is handy if
-you want your module code to be available to your Chef runs. It also takes
-advantage of Ruby's `Gem::Version` to try to upgrade to specific major/minor
-versions if that's what you want. This is especially nice if you stick to
-SemVer.
-
-In this example, we would upgrade the `ContosoModule` to the latest 3.2 version.
-So if you had `3.2.0` installed, but `3.2.1` was available, it would upgrade. It
-wouldn't attempt to update to `3.3` or `4.0`.
-
-```powershell
-fb_powershell_module 'ContosoModule' do
-  action :upgrade
-  version '3.2'
-end
-```
-
----
+I hope this was useful! Feel free to leave feedback or questions. You can find
+me on the PowerShell Discord, or the various social networks linked below.
 
 ## References
 
