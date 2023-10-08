@@ -1,10 +1,10 @@
 ---
 title: "My Shell: PowerShell"
-date: 2023-10-07T17:00:51.381Z
+date: 2023-10-08T16:15:02.506Z
 description: In this third post of the series I go over my PowerShell profile.
 summary: In this third post of the series I go over my PowerShell profile.
 draft: false
-lastmod: 2023-10-08T02:52:26.478Z
+lastmod: 2023-10-08T16:15:03.729Z
 slug: my-shell-powershell
 tags:
   - PowerShell
@@ -181,7 +181,6 @@ $parameters = @{
 Set-PSReadLineKeyHandle
 ```
 
-
 The `prompt` function calls the Initialize-Profile if the global variable isn't
 set. If we don't have starship, then I revert to an old powerline style prompt.
 The old prompt code isn't pretty to look it, but honestly I rarely see it.
@@ -212,8 +211,13 @@ if (Get-Command 'starship' -ErrorAction SilentlyContinue) {
 
 ----
 
-I hope this was useful! Feel free to leave feedback or questions. You can find
-me on the PowerShell Discord, or the various social networks linked below.
+Hopefully you found something useful for your profile. If there's something you
+want to see me go over in more details, let me know in the comments! Feel free
+to leave feedback or questions. You can also find me on the PowerShell Discord,
+or the various social networks linked below.
+
+In my next post I'll be going over escape codes! There's a ton of great content
+out there 
 
 ## References
 
