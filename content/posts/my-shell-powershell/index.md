@@ -4,7 +4,7 @@ date: 2023-10-08T16:15:02.506Z
 description: In this third post of the series I go over my PowerShell profile.
 summary: In this third post of the series I go over my PowerShell profile.
 draft: false
-lastmod: 2023-10-08T16:15:03.729Z
+lastmod: 2023-10-08T16:22:34.478Z
 slug: my-shell-powershell
 tags:
   - PowerShell
@@ -217,10 +217,18 @@ to leave feedback or questions. You can also find me on the PowerShell Discord,
 or the various social networks linked below.
 
 In my next post I'll be going over escape codes! There's a ton of great content
-out there 
+out there.
+
+Shout out again to [@mdgrs](https://mdgrs.hashnode.dev/) for all the awesome
+shell tools like Shell Integration, and Dynamic Titles.
+
+Also thanks to Mr [Andrew Pla](https://twitter.com/AndrewPlaTech) for his
+[`ocgv` function](https://www.youtube.com/watch?v=ciJiWQ4FHHI&t=618s).
 
 ## References
 
 - Optimizing your $Profile https://devblogs.microsoft.com/powershell/optimizing-your-profile/
 - about_Profiles https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3
 - fb_powershell cookbook https://github.com/facebook/chef-cookbooks/tree/main/cookbooks/fb_powershell
+- @mdgrs ShellIntegration script https://gist.github.com/mdgrs-mei/1599cb07ef5bc67125ebffba9c8f1e37
+- @andrewplatech ocgv PS Readline https://www.youtube.com/watch?v=ciJiWQ4FHHI&t=618s
