@@ -2,6 +2,8 @@
   "[markdown]": {},
   "python.formatting.provider": "black",
   "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+    "pipedream",
+    "tvz",
     "wezterm"
   ],
   "frontMatter.dashboard.openOnStart": true
