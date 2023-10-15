@@ -2,7 +2,7 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
+      "name": "toplevel",
       "pageBundle": false,
       "previewPath": null,
       "fields": [
@@ -233,14 +233,13 @@
   "frontMatter.content.publicFolder": "static",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
-    },
-    {
       "title": "posts",
       "path": "[[workspace]]/content/posts",
       "previewPath": "posts/",
-      "filePrefix": null
+      "filePrefix": null,
+      "contentTypes": [
+        "posts"
+      ]
     },
     {
       "title": "assets",
@@ -249,7 +248,17 @@
     {
       "title": "projects",
       "path": "[[workspace]]/content/projects",
-      "previewPath": "projects/"
+      "previewPath": "projects/",
+      "contentTypes": [
+        "projects"
+      ]
+    },
+    {
+      "title": "toplevel",
+      "path": "[[workspace]]/content",
+      "contentTypes": [
+        "toplevel"
+      ]
     }
   ],
   "frontMatter.content.snippets": {
