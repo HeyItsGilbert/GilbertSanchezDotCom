@@ -1,15 +1,20 @@
-+++
-date = "2022-12-31T02:00:00.000-8"
-description = "Build a pipeline from your YouTube Playlist to Readwise!"
-summary = "Build a pipeline from your YouTube Playlist to Readwise!"
-draft = false
-slug = "youtube_playlist_to_readwise"
-title = "Syncing your YouTube Playlist to Readwise Reader"
-lastmod = "2023-10-15T23:10:37.720Z"
-keywords = [ "python", "readwise" ]
-tags = [ "Python", "Readwise", "Obsidian" ]
-preview = "feature.png"
-+++
+---
+date: 2022-12-31T02:00:00.000-8
+description: Build a pipeline from your YouTube Playlist to Readwise!
+summary: Build a pipeline from your YouTube Playlist to Readwise!
+draft: false
+slug: youtube_playlist_to_readwise
+title: Syncing your YouTube Playlist to Readwise Reader
+lastmod: 2023-10-15T23:34:21.031Z
+keywords:
+  - python
+  - readwise
+tags:
+  - Python
+  - Readwise
+  - Obsidian
+preview: feature.png
+---
 
 ## The Situation
 
