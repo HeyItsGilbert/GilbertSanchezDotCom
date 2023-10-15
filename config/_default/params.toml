@@ -17,53 +17,53 @@ mainSections = ["posts", "projects"]
 # robots = ""
 
 [header]
-layout = "basic" # valid options: basic, hamburger, hybrid, custom
-#logo = "img/logo.png"
+  layout = "basic" # valid options: basic, hamburger, hybrid, custom
+  #logo = "img/logo.png"
 showTitle = true
 
 [footer]
-showCopyright = true
-showThemeAttribution = true
-showAppearanceSwitcher = false
-showScrollToTop = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = false
+  showScrollToTop = true
 
 [homepage]
-layout = "profile" # valid options: page, profile, custom
-showRecent = true
+  layout = "profile" # valid options: page, profile, custom
+  showRecent = true
 
 [article]
-showDate = true
-showDateUpdated = false
-showAuthor = true
-showBreadcrumbs = false
-showDraftLabel = true
-showEdit = true
-editURL = "https://github.com/HeyItsGilbert/GilbertSanchezDotCom/tree/main/content"
-editAppendPath = true
-showHeadingAnchors = true
-showPagination = true
-invertPagination = false
-showReadingTime = true
-showTableOfContents = true
-showTaxonomies = true
-showWordCount = false
-showComments = true
-sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email"]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = true
+  editURL = "https://github.com/HeyItsGilbert/GilbertSanchezDotCom/tree/main/content"
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+  showComments = true
+  sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email"]
 
 [list]
-showBreadcrumbs = false
-showSummary = true
-showTableOfContents = false
-showTaxonomies = true
-groupByYear = true
-paginationWidth = 1
-showDateUpdated = false
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showTaxonomies = true
+  groupByYear = true
+  paginationWidth = 1
+  showDateUpdated = true
 
 [sitemap]
-excludedKinds = ["taxonomy", "term"]
+  excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
-showTermCount = true
+  showTermCount = true
 
 [fathomAnalytics]
 # site = "ABC12345"
