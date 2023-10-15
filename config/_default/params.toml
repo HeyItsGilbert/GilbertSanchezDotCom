@@ -6,12 +6,11 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "congo"
-defaultAppearance = "dark"  # valid options: light or dark
+defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = true
-showPagination = true
 
 mainSections = ["posts", "projects"]
 # robots = ""
@@ -19,7 +18,7 @@ mainSections = ["posts", "projects"]
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
   #logo = "img/logo.png"
-showTitle = true
+  showTitle = true
 
 [footer]
   showCopyright = true
@@ -33,12 +32,12 @@ showTitle = true
 
 [article]
   showDate = true
-  showDateUpdated = false
+  showDateUpdated = true
   showAuthor = true
   showBreadcrumbs = false
   showDraftLabel = true
-  showEdit = true
-  editURL = "https://github.com/HeyItsGilbert/GilbertSanchezDotCom/tree/main/content"
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
@@ -57,7 +56,7 @@ showTitle = true
   showTaxonomies = true
   groupByYear = true
   paginationWidth = 1
-  showDateUpdated = true
+  showDateUpdated = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]
@@ -66,11 +65,11 @@ showTitle = true
   showTermCount = true
 
 [fathomAnalytics]
-# site = "ABC12345"
-# domain = "llama.yoursite.com"
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
 
 [verification]
-# google = ""
-# bing = ""
-# pinterest = ""
-# yandex = ""
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
