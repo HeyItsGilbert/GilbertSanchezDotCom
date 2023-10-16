@@ -1,16 +1,16 @@
 ---
 title: PowerShell Chef Cookbook
 date: 2023-10-16T00:15:08.921Z
-description: A very brief intro to how you can use Meta's Chef cookbook to manage PowerShell
-summary: A very brief intro to how you can use Meta's Chef cookbook to manage PowerShell
+description: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
+summary: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
 draft: false
-lastmod: 2023-10-16T00:15:09.845Z
+lastmod: 2023-10-16T00:21:57.977Z
 slug: powershell-chef-cookbook
 tags:
   - Chef
   - PowerShell
   - Enterprise
-preview: null
+preview: feature.jpg
 keywords:
   - Chef
   - PowerShell
@@ -100,3 +100,5 @@ machines, and it's likely something I'll be exploring in the future.
 - [about_Profiles](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3)
 - [about_Telemtry](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_telemetry?view=powershell-7.3)
 - [fb_powershell cookbook](https://github.com/facebook/chef-cookbooks/tree/main/cookbooks/fb_powershell)
+
+Photo by [Henry & Co.](https://unsplash.com/@hngstrm?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/1qlMnKfql5c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
