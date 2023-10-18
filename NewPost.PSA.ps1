@@ -25,7 +25,7 @@ $isMergeToMain =
     $gitHubEvent.ref -eq 'refs/heads/main'
 
 # Diff HEAD with the previous commit
-$diff = git diff --name-only HEAD^ HEAD
+$diff = git diff --name-only HEAD~1..HEAD
 
 # Check if a file under content/ or with the .md extension has changed (added, modified, deleted)
 $SourceDiff = $diff | Where-Object { $_ -match '^content/' -or $_ -match '.md$' }
@@ -41,9 +41,9 @@ if ($isMergeToMain && $HasDiff) {
     $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
     $send = @{
         Text = { "PSA: $title" }
-        WebCard = { @{uri=$_.link} }
+        WebCard = { @{uri=$latest.link} }
         LinkPattern = { @{
-            $_.Title= $_.Link;
+            $latest.Title=$latest.Link;
             PSA='https://github.com/StartAutomating/PSA'
         }} 
     }
