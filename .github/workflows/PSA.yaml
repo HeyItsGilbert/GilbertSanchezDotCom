@@ -1,0 +1,17 @@
+name: PSA on New Post!
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      # Get the current version
+      - uses: actions/checkout@v3
+      - name: SendPSA
+        uses: StartAutomating/PSA@v0.1.4
+        env:
+          AT_PROTOCOL_APP_PASSWORD: ${{ secrets.AT_PROTOCOL_APP_PASSWORD }}
+          AT_PROTOCOL_HANDLE: heyitsgilbert.bsky.social
