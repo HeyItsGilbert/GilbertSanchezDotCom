@@ -11,7 +11,7 @@ jobs:
       # Get the current version
       - uses: actions/checkout@v3
       - name: SendPSA
-        uses: StartAutomating/PSA@v0.1.4
+        uses: StartAutomating/PSA@main
         env:
           AT_PROTOCOL_APP_PASSWORD: ${{ secrets.AT_PROTOCOL_APP_PASSWORD }}
           AT_PROTOCOL_HANDLE: heyitsgilbert.bsky.social
