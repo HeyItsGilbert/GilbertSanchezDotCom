@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'content/**.md'
   workflow_dispatch:
 jobs:
   publish:

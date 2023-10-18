@@ -18,35 +18,27 @@ Get-BskyActorProfile -Actor $env:AT_PROTOCOL_HANDLE -Cache | Out-Host
 
 # There will be a variable, $GitHubEvent, that contains information about the event.
 
-# A fairly common scenario is to perform an annoucement whenever a PR is merged.
 
-$isMergeToMain = 
-    ($gitHubEvent.head_commit.message -match "Merge Pull Request #(?<PRNumber>\d+)") -and 
-    $gitHubEvent.ref -eq 'refs/heads/main'
+$psaModule = Get-Module PSA
 
-# Diff HEAD with the previous commit
-$diff = git diff --name-only HEAD~1..HEAD
+# Netlify takes a few minutes so we'll do the one thing we tell people to never do. Sleep
+Start-Sleep -Seconds (60 * 3)
 
-# Check if a file under content/ or with the .md extension has changed (added, modified, deleted)
-$SourceDiff = $diff | Where-Object { $_ -match '^content/' -or $_ -match '.md$' }
-$HasDiff = $SourceDiff.Length -gt 0
-
-if ($isMergeToMain && $HasDiff) {
-    $psaModule = Get-Module PSA
-
-    # Netlify takes a few minutes so we'll do the one thing we tell people to never do. Sleep
-    Start-Sleep -Seconds (60 * 3)
-
-    $latest = Invoke-RestMethod "https://gilbertsanchez.com/index.xml" | Select-Object -First 1
-    $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
-    $send = @{
-        Text = { "PSA: $title" }
-        WebCard = { @{uri=$latest.link} }
-        LinkPattern = { @{
-            $latest.Title=$latest.Link;
-            PSA='https://github.com/StartAutomating/PSA'
-        }} 
-    }
-    Send-AtProto @send
-    return
+$latest = Invoke-RestMethod "https://gilbertsanchez.com/index.xml" | Select-Object -First 1
+# Check if latest post was published today
+# Sometimes I forget to update the exact time but the day is usually accurate
+if([DateTime]$latest.pubDate -gt $(Get-Date)){
+  $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
+  $send = @{
+    Text = { "PSA: $title" }
+    WebCard = { @{uri=$latest.link} }
+    LinkPattern = { @{
+        $latest.Title=$latest.Link;
+        PSA='https://github.com/StartAutomating/PSA'
+    }}
+  }
+  Send-AtProto @send
+  return
+} else {
+  Write-Host 'Latest post is older then a day!'
 }
