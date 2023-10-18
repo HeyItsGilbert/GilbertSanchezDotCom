@@ -33,6 +33,10 @@ $HasDiff = $SourceDiff.Length -gt 0
 
 if ($isMergeToMain && $HasDiff) {
     $psaModule = Get-Module PSA
+
+    # Netlify takes a few minutes so we'll do the one thing we tell people to never do. Sleep
+    Start-Sleep -Seconds (60 * 3)
+
     $latest = Invoke-RestMethod "https://gilbertsanchez.com/index.xml" | Select-Object -First 1
     $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
     $send = @{
