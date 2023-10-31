@@ -20,4 +20,4 @@ jobs:
       - name: Generate MARP Outputs
         shell: pwsh
         run: |
-          . PresoPublish.ps1
+          . .\PresoPublish.ps1

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "webpack-cli --config ./webpack.config.js"
+  },
+  "marp": {
+    "inputDir": "./content/presentations",
+    "output": "./static//presentations",
+    "image": true,
+    "pdf": true,
+    "html": true,
+    "pptx": true,
+    "allowLocalFiles": true
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
