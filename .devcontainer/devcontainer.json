@@ -7,10 +7,12 @@
     "ghcr.io/shinepukur/devcontainer-features/vale:1": {
       // specify here any options you would like to set for the feature
       "version": "latest"
-    }
+    },
+    "ghcr.io/devcontainers/features/node:1": {}
   },
   "extensions": [
     "eliostruyf.vscode-front-matter",
-    "davidanson.vscode-markdownlint"
+    "davidanson.vscode-markdownlint",
+    "marp-team.marp-vscode"
   ]
 }
