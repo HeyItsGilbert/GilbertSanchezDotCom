@@ -29,9 +29,13 @@
     </div>
     {{ end }}
     <div class="prose">
+      Available as:
       {{ with $slide }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
+        <span class="relative inline-block align-text-bottom icon">
+          <img src="/img/slideshow.png">
+        </span>
         Slides
       </a>
       {{ end }}
@@ -39,6 +43,9 @@
       {{ with $pdf }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
+        <span class="relative inline-block align-text-bottom icon">
+          <img src="/img/pdf.png">
+        </span>
         PDF
       </a>
       {{ end }}
@@ -46,6 +53,9 @@
       {{ with $pptx }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
+        <span class="relative inline-block align-text-bottom icon">
+          <img src="/img/pptx.png">
+        </span>
         PPTX
       </a>
       {{ end }}
