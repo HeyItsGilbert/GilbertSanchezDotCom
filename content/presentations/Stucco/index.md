@@ -3,7 +3,7 @@ title: Stucco
 date: 2023-10-31T22:07:11.747Z
 summary: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
 description: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
-lastmod: 2023-11-01T00:05:34.571Z
+lastmod: 2023-11-01T00:23:31.230Z
 tags: []
 type: presentations
 preview: feature.png
@@ -36,8 +36,12 @@ Creating an open source module in minutes!
 
 # Jump Ahead
 
-You can see the slides: [Slides](https://heyitsgilbert.github.io/Presentations/StuccoSlides.html)
-Or look at the full thing: [Doc](https://heyitsgilbert.github.io/Presentations/Stucco.html)
+You can see the slides:
+
+- [Slides](Stucco.html)
+- [One Page](https://gilbertsanchez.com/presentations/stucco/)
+- [PDF](Stucco.pdf)
+- [PPTX](Stucco.pptx)
 
 ---
 
