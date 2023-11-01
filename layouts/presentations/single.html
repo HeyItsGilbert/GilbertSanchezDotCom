@@ -2,9 +2,9 @@
 {{- $images := .Resources.ByType "image" }}
 {{- $cover := $images.GetMatch (.Params.cover | default "*cover*") }}
 {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $cover }}
-{{- $pdf := .Resources.Match (.Params.pdf | default "*.pdf") | default none }}
-{{- $pptx := .Resources.GetMatch (.Params.pptx | default "*.pptx") | default none }}
-{{- $slide := .Resources.GetMatch (.Params.slide | default "*.html") | default none }}
+{{- $pdf := .Resources.GetMatch (.Params.pdf | default "*.pdf") }}
+{{- $pptx := .Resources.GetMatch (.Params.pptx | default "*.pptx") }}
+{{- $slide := .Resources.GetMatch (.Params.slide | default "*.html") }}
 <article>
   <header class="max-w-prose">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
