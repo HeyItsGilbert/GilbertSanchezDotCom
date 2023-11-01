@@ -1,7 +1,7 @@
 # This will be your default build command
 [build]
 publish = "public"
-command = "yarn run build && hugo --gc --minify"
+command = "hugo --gc --minify"
 
 [build.environment]
 HUGO_VERSION = "0.92.1"
@@ -10,4 +10,4 @@ HUGO_ENABLEGITINFO = "true"
 
 # This will be your preview build
 [context.dev]
-command = "yarn run build && hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"

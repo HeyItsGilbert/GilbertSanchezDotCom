@@ -253,10 +253,10 @@
           "description": "This is the Markdown string to be used as the summary for this article."
         },
         {
-          "title": "Show Reading Time",
-          "name": "showReadingTime",
-          "type": "boolean",
-          "default": true
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
         },
         {
           "title": "Last Modified",
@@ -272,29 +272,34 @@
         {
           "title": "type",
           "name": "type",
-          "type": "string"
+          "type": "taxonomy",
+          "default": "presentations"
         },
         {
-          "title": "externalUrl",
-          "name": "externalUrl",
-          "type": "string"
+          "name": "marp",
+          "title": "marp",
+          "type": "boolean",
+          "required": true,
+          "default": "true",
+          "hidden": true
         },
         {
-          "title": "_build",
-          "name": "_build",
-          "type": "fields",
-          "fields": [
-            {
-              "title": "render",
-              "name": "render",
-              "type": "string"
-            },
-            {
-              "title": "list",
-              "name": "list",
-              "type": "string"
-            }
-          ]
+          "name": "theme",
+          "description": "The MARP theme.",
+          "default": "uncover"
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
+          "name": "class",
+          "description": "The MARP class.",
+          "type": "list",
+          "default": "invert"
         }
       ]
     }

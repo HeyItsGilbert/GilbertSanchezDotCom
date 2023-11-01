@@ -4,7 +4,9 @@ $presos | ForEach-Object -ThrottleLimit 5 -Parallel {
   # Grab the preso file in the dir
   $markdown = Get-ChildItem $_ -Filter *.md
   $name = $_.BaseName
-  
+  $markdown
+  # Create the feature image
+  npx @marp-team/marp-cli@latest $markdown.FullName -o  (Join-Path $_ -ChildPath "feature.png")
   # Get the Preso HTML
   npx @marp-team/marp-cli@latest $markdown.FullName -o (Join-Path $_ -ChildPath "$($name).html") --allow-local-files
   # Get the Preso PDF
