@@ -26,14 +26,19 @@
   weight = 20
 
 [[main]]
+  name = "Presentations"
+  pageRef = "presentations"
+  weight = 30
+
+[[main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 30
+  weight = 90
 
 [[main]]
   name = "RSS"
   url = "https://gilbertsanchez.com/index.xml"
-  weight = 40
+  weight = 100
   
 
 
@@ -62,11 +67,16 @@
   weight = 20
 
 [[footer]]
+  name = "Presentations"
+  pageRef = "presentations"
+  weight = 30
+
+[[footer]]
   name = "Tags"
   pageRef = "tags"
-  weight = 30
+  weight = 90
 
 [[footer]]
   name = "RSS"
   url = "https://gilbertsanchez.com/index.xml"
-  weight = 40
+  weight = 100
