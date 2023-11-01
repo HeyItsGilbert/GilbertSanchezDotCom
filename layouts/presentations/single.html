@@ -16,24 +16,12 @@
     <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
     </div>
-    {{ with $feature }}
-    <div class="prose">
-      <img class="mb-6 -mt-4 rounded-md" {{ if eq .MediaType.SubType "svg" }} src="{{ .RelPermalink }}" {{ else }}
-        width="{{ .Width }}" height="{{ .Height }}" {{ if lt .Width 660 }} src="{{ .RelPermalink }}" {{ else }} srcset="
-              {{- (.Resize " 330x").RelPermalink }} 330w, {{- (.Resize "660x" ).RelPermalink }} 660w, {{-
-        (.Resize "1024x" ).RelPermalink }} 1024w, {{- (.Resize "1320x" ).RelPermalink }} 2x" {{ end }} {{ end }}
-        alt="{{ $.Params.featureAlt | default $.Params.coverAlt | default "" }}" />
-      {{ with $.Params.coverCaption }}
-      <figcaption class="mb-6 -mt-3 text-center">{{ . | markdownify }}</figcaption>
-      {{ end }}
-    </div>
-    {{ end }}
     <div class="prose">
       Available as:
       {{ with $slide }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with .Resources.GetMatch "pdf.png" }}
+        {{ with resources.GetMatch "pdf.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         Slides
@@ -43,7 +31,7 @@
       {{ with $pdf }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with .Resources.GetMatch "pdf.png" }}
+        {{ with resources.GetMatch "pdf.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         PDF
@@ -53,7 +41,7 @@
       {{ with $pptx }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with .Resources.GetMatch "pptx.png" }}
+        {{ with resources.GetMatch "pptx.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         PPTX
