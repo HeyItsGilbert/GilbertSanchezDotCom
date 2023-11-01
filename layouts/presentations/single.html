@@ -13,15 +13,15 @@
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       {{ .Title | emojify }}
     </h1>
-    <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    <div class="text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
     </div>
-    <div class="prose">
+    <div class="prose dark:prose-invert lg:flex-row">
       Available as:
       {{ with $slide }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with resources.GetMatch "pdf.png" }}
+        {{ with resources.Get "pdf.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         Slides
@@ -31,7 +31,7 @@
       {{ with $pdf }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with resources.GetMatch "pdf.png" }}
+        {{ with resources.Get "pdf.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         PDF
@@ -41,7 +41,7 @@
       {{ with $pptx }}
       <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with resources.GetMatch "pptx.png" }}
+        {{ with resources.Get "pptx.png" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
         PPTX
