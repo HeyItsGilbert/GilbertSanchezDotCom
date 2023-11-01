@@ -27,7 +27,7 @@ Start-Sleep -Seconds (60 * 3)
 $latest = Invoke-RestMethod "https://gilbertsanchez.com/index.xml" | Select-Object -First 1
 # Check if latest post was published today
 # Sometimes I forget to update the exact time but the day is usually accurate
-if([DateTime]$latest.pubDate -gt $(Get-Date)){
+if([DateTime]$latest.pubDate -gt $(Get-Date).AddDays(-1)){
   $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
   $send = @{
     Text = { "PSA: $title" }
