@@ -30,22 +30,25 @@
     {{ end }}
     <div class="prose">
       {{ with $slide }}
-      {{< button href="{{ .RelPermalink }}" target="_self">}}
+      <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+        href="{{ .RelPermalink }}" target="_blank" role="button">
         Slides
-        {{< /button>}}
-          {{ end }}
+      </a>
+      {{ end }}
 
-          {{ with $pdf }}
-          <button href="{{ .RelPermalink }}" target="_self">
-            PDF
-          </button>
-          {{ end }}
+      {{ with $pdf }}
+      <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+        href="{{ .RelPermalink }}" target="_blank" role="button">
+        PDF
+      </a>
+      {{ end }}
 
-          {{ with $pptx }}
-          <button href="{{ .RelPermalink }}" target="_self">
-            PPTX
-          </button>
-          {{ end }}
+      {{ with $pptx }}
+      <a class="inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+        href="{{ .RelPermalink }}" target="_blank" role="button">
+        PPTX
+      </a>
+      {{ end }}
     </div>
   </header>
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
