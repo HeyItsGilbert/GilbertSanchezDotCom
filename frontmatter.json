@@ -227,6 +227,81 @@
           ]
         }
       ]
+    },
+    {
+      "name": "presentations",
+      "pageBundle": true,
+      "previewPath": "presentations/",
+      "fileType": "md",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date Published",
+          "name": "date",
+          "type": "datetime",
+          "isPublishDate": true
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string",
+          "description": "This is the Markdown string to be used as the summary for this article."
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string",
+          "description": "The text description for the article. It is used in the HTML metadata"
+        },
+        {
+          "title": "Last Modified",
+          "name": "lastmod",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "taxonomy",
+          "default": "presentations"
+        },
+        {
+          "name": "marp",
+          "title": "marp",
+          "type": "boolean",
+          "required": true,
+          "default": "true",
+          "hidden": true
+        },
+        {
+          "name": "theme",
+          "description": "The MARP theme.",
+          "default": "uncover"
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
+          "name": "class",
+          "description": "The MARP class.",
+          "type": "list",
+          "default": "invert"
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",
@@ -258,6 +333,13 @@
       "path": "[[workspace]]/content",
       "contentTypes": [
         "toplevel"
+      ]
+    },
+    {
+      "title": "presentations",
+      "path": "[[workspace]]/content/presentations",
+      "contentTypes": [
+        "presentations"
       ]
     }
   ],

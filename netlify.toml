@@ -11,4 +11,3 @@ HUGO_ENABLEGITINFO = "true"
 # This will be your preview build
 [context.dev]
 command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
-
