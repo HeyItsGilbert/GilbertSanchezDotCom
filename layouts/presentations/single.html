@@ -17,7 +17,6 @@
       {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
     </div>
     <div class="prose mb-12 dark:prose-invert lg:flex-row">
-      Available as:
       {{ with $slide }}
       <a class="not-prose  inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
