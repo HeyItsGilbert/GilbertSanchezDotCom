@@ -21,7 +21,7 @@
       {{ with $slide }}
       <a class="not-prose  inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with resources.Get "icons/pdf.svg " }}
+        {{ with resources.Get "icons/pdf.svg" }}
         {{ with .Resize "20x" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
           class="relative inline-block align-text-bottom icon">
@@ -34,7 +34,7 @@
       {{ with $pdf }}
       <a class="not-prose inline-block !rounded-md bg-primary-600 px-4 py-1 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
         href="{{ .RelPermalink }}" target="_blank" role="button">
-        {{ with resources.Get "icons/pdf.svg " }}
+        {{ with resources.Get "icons/pdf.svg" }}
         {{ with .Resize "20x" }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
           class="relative inline-block align-text-bottom icon">
