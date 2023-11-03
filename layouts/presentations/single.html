@@ -6,7 +6,7 @@
 {{- $pptx := .Resources.GetMatch (.Params.pptx | default "*.pptx") }}
 {{- $slide := .Resources.GetMatch (.Params.slide | default "*.html") }}
 <article>
-  <header class="max-w-prose">
+  <header class="max-w-full">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
     {{ partial "breadcrumbs.html" . }}
     {{ end }}
@@ -62,11 +62,11 @@
       </div>
       </div>
       {{ end }}
-      <div class="min-w-0 min-h-0 max-w-prose grow">
+      <div class="min-w-0 min-h-0 max-w-full grow">
         {{ .Content | emojify }}
       </div>
   </section>
-  <footer class="pt-8 max-w-prose print:hidden">
+  <footer class="pt-8 max-w-full print:hidden">
     {{ partial "author.html" . }}
     {{ partial "sharing-links.html" . }}
     {{ partial "article-pagination.html" . }}
