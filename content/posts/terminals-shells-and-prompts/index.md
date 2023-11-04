@@ -19,6 +19,8 @@ keywords:
   - wezterm
   - prompt
 type: posts
+series:
+  - Terminals, Shells, and Prompts
 ---
 
 This post, the first in this series, is long overdue and is a collection of my
