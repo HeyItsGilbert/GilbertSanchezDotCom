@@ -1,16 +1,17 @@
 languageCode = "en"
 languageName = "English"
-displayName = "EN"
-isoCode = "en"
 weight = 1
-rtl = false
 
 title = "Hey! It's Gilbert!"
-#header.logo = "img/logo.png"
-description = "Señor Systems Engineer, Tinkerer, & Record Collector"
-# copyright = "Copy, _right?_ :thinking_face:"
-
 dateFormat = "Monday, January 2, 2006"
+# copyright = "Copy, _right?_ :thinking_face:"
+#header.logo = "img/logo.png"
+
+[params]
+  isoCode = "en"
+  displayName = "EN"
+  rtl = false
+  description = "Señor Systems Engineer, Tinkerer, & Record Collector"
 
 [author]
   name = "Gilbert Sanchez"

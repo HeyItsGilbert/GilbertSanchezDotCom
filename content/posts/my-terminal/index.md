@@ -14,6 +14,8 @@ keywords:
   - WezTerm
   - PowerShell
 type: posts
+series:
+  - Terminals, Shells, and Prompts
 ---
 
 This is the second post in this series. You can see the first post explaining

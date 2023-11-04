@@ -1,10 +1,16 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.taxonomy.contentTypes": [
+  "frontMatter.taxonomy.customTaxonomy": [
     {
-      "name": "toplevel",
-      "pageBundle": false,
-      "previewPath": null,
+      "id": "series",
+      "options": [
+        "Terminals, Shells, and Prompts"
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "Default",
       "fields": [
         {
           "title": "Title",
@@ -23,158 +29,6 @@
           "name": "description",
           "type": "string",
           "description": "The text description for the article. It is used in the HTML metadata"
-        },
-        {
-          "title": "Summary",
-          "name": "summary",
-          "type": "string",
-          "description": "This is the Markdown string to be used as the summary for this article."
-        },
-        {
-          "title": "Draft",
-          "name": "draft",
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "title": "Last Modified",
-          "name": "lastmod",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Slug",
-          "name": "slug",
-          "type": "slug",
-          "single": true
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Article preview",
-          "name": "preview",
-          "type": "image",
-          "isPreviewImage": true,
-          "default": "feature.png"
-        },
-        {
-          "title": "keywords",
-          "name": "keywords",
-          "type": "choice",
-          "multiple": true,
-          "choices": [
-            "powershell",
-            "chocolatey"
-          ]
-        },
-        {
-          "title": "Type",
-          "name": "type",
-          "type": "choice",
-          "choices": [
-            "default",
-            "posts"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "posts",
-      "pageBundle": true,
-      "previewPath": "posts/",
-      "fileType": "md",
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Date Published",
-          "name": "date",
-          "type": "datetime",
-          "isPublishDate": true
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string",
-          "description": "The text description for the article. It is used in the HTML metadata"
-        },
-        {
-          "title": "Summary",
-          "name": "summary",
-          "type": "string",
-          "description": "This is the Markdown string to be used as the summary for this article."
-        },
-        {
-          "title": "Draft",
-          "name": "draft",
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "title": "Last Modified",
-          "name": "lastmod",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Slug",
-          "name": "slug",
-          "type": "slug",
-          "single": true
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Article preview",
-          "name": "preview",
-          "type": "image",
-          "isPreviewImage": true,
-          "default": "feature.png"
-        },
-        {
-          "title": "keywords",
-          "name": "keywords",
-          "type": "list",
-          "default": "{{dynamicKeywords}}"
-        },
-        {
-          "title": "Type",
-          "name": "type",
-          "type": "choice",
-          "choices": [
-            "default",
-            "posts"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "projects",
-      "pageBundle": true,
-      "previewPath": "projects/",
-      "fileType": "md",
-      "fields": [
-        {
-          "title": "Title",
-          "name": "title",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Date Published",
-          "name": "date",
-          "type": "datetime",
-          "isPublishDate": true
         },
         {
           "title": "Summary",
@@ -189,10 +43,29 @@
           "default": true
         },
         {
+          "title": "Draft",
+          "name": "draft",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true,
+          "default": "feature.png"
+        },
+        {
           "title": "Last Modified",
           "name": "lastmod",
           "type": "datetime",
           "isModifiedDate": true
+        },
+        {
+          "title": "Slug",
+          "name": "slug",
+          "type": "slug",
+          "single": true
         },
         {
           "title": "Tags",
@@ -200,9 +73,73 @@
           "type": "tags"
         },
         {
-          "title": "type",
+          "title": "Keywords",
+          "description": "Used in the OG share fields.",
+          "name": "keywords",
+          "type": "list"
+        },
+        {
+          "title": "Series",
+          "name": "series",
+          "type": "taxonomy",
+          "taxonomyId": "series",
+          "single": true
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "toplevel",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "name": "Standard Metadata",
+          "type": "fieldCollection",
+          "fieldGroup": "Default"
+        }
+      ]
+    },
+    {
+      "name": "posts",
+      "pageBundle": true,
+      "previewPath": "posts/",
+      "fileType": "md",
+      "fields": [
+        {
+          "name": "Standard Metadata",
+          "type": "fieldCollection",
+          "fieldGroup": "Default"
+        },
+        {
+          "title": "Type",
           "name": "type",
-          "type": "string"
+          "type": "string",
+          "default": "posts",
+          "hidden": true,
+          "single": true
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "pageBundle": true,
+      "previewPath": "projects/",
+      "fileType": "md",
+      "fields": [
+        {
+          "name": "Standard Metadata",
+          "type": "fieldCollection",
+          "fieldGroup": "Default"
+        },
+        {
+          "title": "Type",
+          "name": "type",
+          "type": "string",
+          "default": "projects",
+          "hidden": true,
+          "single": true
         },
         {
           "title": "externalUrl",
@@ -235,45 +172,9 @@
       "fileType": "md",
       "fields": [
         {
-          "title": "Title",
-          "name": "title",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Date Published",
-          "name": "date",
-          "type": "datetime",
-          "isPublishDate": true
-        },
-        {
-          "title": "Summary",
-          "name": "summary",
-          "type": "string",
-          "description": "This is the Markdown string to be used as the summary for this article."
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string",
-          "description": "The text description for the article. It is used in the HTML metadata"
-        },
-        {
-          "title": "Last Modified",
-          "name": "lastmod",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "taxonomy",
-          "default": "presentations"
+          "name": "Standard Metadata",
+          "type": "fieldCollection",
+          "fieldGroup": "Default"
         },
         {
           "name": "marp",
@@ -435,13 +336,6 @@
       ]
     }
   },
-  "frontMatter.content.placeholders": [
-    {
-      "id": "dynamicKeywords",
-      "script": "./scripts/dynamicKeywords.py",
-      "command": "python3.8"
-    }
-  ],
   "frontMatter.content.autoUpdateDate": true,
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.preview.host": "http://localhost:1313/"
