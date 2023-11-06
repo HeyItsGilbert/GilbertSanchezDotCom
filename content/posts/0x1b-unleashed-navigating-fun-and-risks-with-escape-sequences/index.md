@@ -1,10 +1,10 @@
 ---
 title: "0x1B Unleashed: Navigating Fun & Risks with Escape Sequences"
-date: 2023-11-03T14:53:42.652Z
+date: 2023-11-05T00:00:07.246Z
 description: Color your console? Yes! Arbitrary code execution? Uh oh... yes.
 summary: Color your console? Yes! Arbitrary code execution? Uh oh... yes.
 draft: true
-lastmod: 2023-11-03T21:24:27.842Z
+lastmod: 2023-11-05T00:00:09.435Z
 slug: escape-code-unleashed
 tags: []
 preview: feature.png
