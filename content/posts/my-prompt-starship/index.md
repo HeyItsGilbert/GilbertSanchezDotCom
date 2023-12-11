@@ -1,15 +1,17 @@
 ---
 title: "My Prompt: Starship"
 date: 2023-11-05T00:13:27.417Z
-description: ""
-summary: ""
+description: A quick overview on how I use Starship to customize my prompt.
+summary: A quick overview on how I use Starship to customize my prompt.
 showReadingTime: true
 draft: false
 preview: feature.png
-lastmod: 2023-12-11T02:22:08.088Z
+lastmod: 2023-12-11T02:23:37.821Z
 slug: prompt-starship
 tags: []
-keywords: []
+keywords:
+  - starship
+  - powershell
 series:
   - Terminals, Shells, and Prompts
 type: posts
