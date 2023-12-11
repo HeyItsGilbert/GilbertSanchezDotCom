@@ -6,7 +6,7 @@ summary: ""
 showReadingTime: true
 draft: false
 preview: feature.png
-lastmod: 2023-12-11T02:20:15.906Z
+lastmod: 2023-12-11T02:22:08.088Z
 slug: prompt-starship
 tags: []
 keywords: []
