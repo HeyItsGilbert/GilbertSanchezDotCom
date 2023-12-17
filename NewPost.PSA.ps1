@@ -21,24 +21,14 @@ Get-BskyActorProfile -Actor $env:AT_PROTOCOL_HANDLE -Cache | Out-Host
 
 $psaModule = Get-Module PSA
 
-# Netlify takes a few minutes so we'll do the one thing we tell people to never do. Sleep
-Start-Sleep -Seconds (60 * 3)
-
-$latest = Invoke-RestMethod "https://gilbertsanchez.com/index.xml" | Select-Object -First 1
-# Check if latest post was published today
-# Sometimes I forget to update the exact time but the day is usually accurate
-if([DateTime]$latest.pubDate -gt $(Get-Date).AddDays(-1)){
-  $title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
-  $send = @{
-    Text = { "PSA: $title" }
-    WebCard = { @{uri=$latest.link} }
-    LinkPattern = { @{
-        $latest.Title=$latest.Link;
-        PSA='https://github.com/StartAutomating/PSA'
-    }}
-  }
-  Send-AtProto @send
-  return
-} else {
-  Write-Host 'Latest post is older then a day!'
+$title = @('';$latest.title; $latest.Description) -join [Environment]::NewLine
+$send = @{
+  Text = { "PSA: $title" }
+  WebCard = { @{uri=$latest.link} }
+  LinkPattern = { @{
+      $latest.Title=$latest.Link;
+      PSA='https://github.com/StartAutomating/PSA'
+  }}
 }
+Send-AtProto @send
+return
