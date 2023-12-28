@@ -82,7 +82,7 @@ make sure you are getting the right data.
 import requests
 
 def handler(pd: "pipedream"):
-  headers = {"Authorization": f'Token {pd.inputs["readwise"]["$auth"]["accesss_token"]}'}
+  headers = {"Authorization": f'Token {pd.inputs["readwise"]["$auth"]["access_token"]}'}
   vid = pd.steps["trigger"]["event"]["contentDetails"]["videoId"]
   video = "https://youtu.be/" + vid
   r = requests.post('https://readwise.io/api/v3/save/', headers=headers, json={"url": video}  )
