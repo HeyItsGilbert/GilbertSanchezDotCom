@@ -2,6 +2,3 @@
 	path = themes/congo
 	url = https://github.com/jpanther/congo.git
 	branch = stable
-[submodule "content/digitalgarden"]
-	path = content/digitalgarden
-	url = https://github.com/HeyItsGilbert/DigitalGarden.git
