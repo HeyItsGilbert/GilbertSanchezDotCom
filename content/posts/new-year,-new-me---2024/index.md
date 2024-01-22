@@ -2,7 +2,7 @@
 title: New Year, New Me - 2024
 date: 2024-01-22T14:24:40.446Z
 description: A big change this year. No longer 'Señor Systems Engineer at Meta'. Now I'm a Staff Software Engineer at Tesla.
-summary: A short post about my transition from Meta.
+summary: A big change this year. No longer 'Señor Systems Engineer at Meta'. Now I'm a Staff Software Engineer at Tesla.
 showReadingTime: true
 draft: false
 preview: feature.png
@@ -16,7 +16,7 @@ type: posts
 
 ___tl;dr finished 12.5 years at Meta and starting at Tesla!___
 
-For the last few weeks I've been fairly quiet as I enjoy the break with my family (and a lot of time revamping my home lab). I've been working on my DigitalGarden, updating the blog, and all my personal tech debt 😂.
+For the last few weeks I've been fairly quiet as I enjoy the break with my family (and a lot of time revamping my home lab). I've been working on my [DigitalGarden](https://garden.gilbertsanchez.com), updating the blog, and all my personal tech debt 😂.
 
 I wrapped up my time with Meta at the end of the year. It's truly bittersweet. I have loved my teams, colleagues, managers, and the many friendships created.
 
