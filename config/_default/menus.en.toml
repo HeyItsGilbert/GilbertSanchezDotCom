@@ -11,32 +11,32 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Posts"
+  name = "📰Posts"
   pageRef = "posts"
   weight = 10
 
 [[main]]
-  name = "🌱 Notes"
+  name = "🌱Notes"
   url = "https://garden.gilbertsanchez.com/"
   weight = 20
 
 [[main]]
-  name = "Projects"
+  name = "📓Projects"
   pageRef = "projects"
   weight = 30
 
 [[main]]
-  name = "Presentations"
+  name = "🧑‍💻Presentations"
   pageRef = "presentations"
   weight = 40
 
 [[main]]
-  name = "Tags"
+  name = "🏷️Tags"
   pageRef = "tags"
   weight = 90
 
 [[main]]
-  name = "RSS"
+  name = "🗞️RSS"
   url = "https://gilbertsanchez.com/index.xml"
   weight = 100
   
@@ -47,7 +47,7 @@
 # the copyright notice. Configure as per the main menu above.
 
 [[footer]]
-  name = "Posts"
+  name = "📰 Posts"
   pageRef = "posts"
   weight = 10
 
@@ -57,21 +57,21 @@
   weight = 20
 
 [[footer]]
-  name = "Projects"
+  name = "📓Projects"
   pageRef = "projects"
   weight = 30
 
 [[footer]]
-  name = "Presentations"
+  name = "🧑‍💻Presentations"
   pageRef = "presentations"
   weight = 40
 
 [[footer]]
-  name = "Tags"
+  name = "🏷️Tags"
   pageRef = "tags"
   weight = 90
 
 [[footer]]
-  name = "RSS"
+  name = "🗞️RSS"
   url = "https://gilbertsanchez.com/index.xml"
   weight = 100
