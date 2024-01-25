@@ -11,32 +11,32 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Posts"
+  name = "📰Posts"
   pageRef = "posts"
   weight = 10
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
-
 [[main]]
-  name = "Projects"
-  pageRef = "projects"
+  name = "🌱Notes"
+  url = "https://garden.gilbertsanchez.com/"
   weight = 20
 
 [[main]]
-  name = "Presentations"
-  pageRef = "presentations"
+  name = "📓Projects"
+  pageRef = "projects"
   weight = 30
 
 [[main]]
-  name = "Tags"
+  name = "🧑‍💻Presentations"
+  pageRef = "presentations"
+  weight = 40
+
+[[main]]
+  name = "🏷️Tags"
   pageRef = "tags"
   weight = 90
 
 [[main]]
-  name = "RSS"
+  name = "🗞️RSS"
   url = "https://gilbertsanchez.com/index.xml"
   weight = 100
   
@@ -46,37 +46,32 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
-
 [[footer]]
-  name = "Posts"
+  name = "📰 Posts"
   pageRef = "posts"
   weight = 10
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
-
 [[footer]]
-  name = "Projects"
-  pageRef = "projects"
+  name = "🌱 Notes"
+  url = "https://garden.gilbertsanchez.com/"
   weight = 20
 
 [[footer]]
-  name = "Presentations"
-  pageRef = "presentations"
+  name = "📓Projects"
+  pageRef = "projects"
   weight = 30
 
 [[footer]]
-  name = "Tags"
+  name = "🧑‍💻Presentations"
+  pageRef = "presentations"
+  weight = 40
+
+[[footer]]
+  name = "🏷️Tags"
   pageRef = "tags"
   weight = 90
 
 [[footer]]
-  name = "RSS"
+  name = "🗞️RSS"
   url = "https://gilbertsanchez.com/index.xml"
   weight = 100
