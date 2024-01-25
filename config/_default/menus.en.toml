@@ -15,20 +15,20 @@
   pageRef = "posts"
   weight = 10
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+[[notes]]
+  name = "Notes"
+  url = "https://garden.gilbertsanchez.com/"
+  weight "20
 
 [[main]]
   name = "Projects"
   pageRef = "projects"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Presentations"
   pageRef = "presentations"
-  weight = 30
+  weight = 40
 
 [[main]]
   name = "Tags"
@@ -56,20 +56,20 @@
   pageRef = "posts"
   weight = 10
 
-# [[main]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+[[footer]]
+  name = "Notes"
+  url = "https://garden.gilbertsanchez.com/"
+  weight "20
 
 [[footer]]
   name = "Projects"
   pageRef = "projects"
-  weight = 20
+  weight = 30
 
 [[footer]]
   name = "Presentations"
   pageRef = "presentations"
-  weight = 30
+  weight = 40
 
 [[footer]]
   name = "Tags"
