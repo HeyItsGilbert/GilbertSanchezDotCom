@@ -18,7 +18,7 @@
 [[notes]]
   name = "Notes"
   url = "https://garden.gilbertsanchez.com/"
-  weight "20
+  weight = "20
 
 [[main]]
   name = "Projects"
@@ -59,7 +59,7 @@
 [[footer]]
   name = "Notes"
   url = "https://garden.gilbertsanchez.com/"
-  weight "20
+  weight = "20
 
 [[footer]]
   name = "Projects"
