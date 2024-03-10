@@ -6,14 +6,14 @@ summary: Quickly learn about devcontainers and how they can unlock more contribu
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2024-03-10T05:17:25.584Z
+lastmod: 2024-03-10T15:41:11.871Z
 slug: power-devcontainers
 tags: []
 keywords:
   - powershell
   - programming
   - starship
-  - devex
+  - DevEx
 series: []
 type: posts
 ---
@@ -27,7 +27,7 @@ variety of backgrounds.
 
 A devcontainer is a way to specify a docker container to run your project in.
 These containers are spun up when you open a project and are ready to connect
-via VSCode or Github Codespace. They offer a way to include build tools and
+via VSCode or GitHub Codespaces. They offer a way to include build tools and
 extensions that you suggest or require for your project.
 
 This site (yes the one you're looking at now) includes a devcontainer. Why? Because
@@ -41,7 +41,7 @@ your paths or remember to keep your build tools up to date.
 Devcontainers begin (and usually end with) a single file:
 `.devcontainer\devcontainer.json`. In this file you specify what image to use,
 what features to include, ports to forward and so much more. There is a huge
-list of [templates](https://containers.dev/templates) that are out there but I
+list of [templates](https://containers.dev/templates) that are out there, but I
 usually use the universal image where I layer on tools via the features.
 
 Here's the devcontainer file I use in this sites repo.
@@ -107,13 +107,13 @@ a fork… yikes) I was able to open PR
 hurdles.
 
 See Starship actually has great contributor docs. Once I read them I realized I
-was missing the formatting tools. Also (kinda of crazy) was that I didn't even
+was missing the formatting tools. Also, kinda of crazy, was that I didn't even
 have rust installed. In come devcontainers. I created a quick one that included
-the rust tools and I was able to actually run the formatter as described by the
+the rust tools, and I was able to actually run the formatter as described by the
 docs and ensure that everything worked as expected.
 
 This story later repeated itself with Python, Ruby, and Go PR's. By replacing
-the effort required to configure my environment with a simple json file, I
+the effort required to configure my environment with a simple JSON file, I
 quickly was able to start contributing to repo's once thought too difficult.
 
 ## PowerShell Devcontainers
