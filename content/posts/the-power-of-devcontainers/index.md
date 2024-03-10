@@ -6,7 +6,7 @@ summary: Quickly learn about devcontainers and how they can unlock more contribu
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2024-03-10T04:36:36.060Z
+lastmod: 2024-03-10T05:17:25.584Z
 slug: power-devcontainers
 tags: []
 keywords:
@@ -18,12 +18,12 @@ series: []
 type: posts
 ---
 
-Like most of my posts this is long overdue, because those who know me know I'm
-a huge fan of Devcontainers. In this post I'll quickly introduce what they are,
-how I use them, and why I see them as a powerful way to encourage contributors
-from a variety of backgrounds.
+Those who know me know I'm a huge fan of Development Containers (a.k.a. dev
+containers or devcontainers). I'll quickly introduce what they are, how I use
+them, and why I see them as a powerful way to encourage contributors from a
+variety of backgrounds.
 
-## What is a devcontainer?
+## What's a devcontainer?
 
 A devcontainer is a way to specify a docker container to run your project in.
 These containers are spun up when you open a project and are ready to connect
@@ -45,52 +45,7 @@ list of [templates](https://containers.dev/templates) that are out there but I
 usually use the universal image where I layer on tools via the features.
 
 Here's the devcontainer file I use in this sites repo.
-```json
-{
-  ""
-summary: ""
-showReadingTime: true
-draft: true
-preview: feature.jpg
-lastmod: 2024-03-10T02:32:47.050Z
-slug: power-devcontainers
-tags: []
-keywords:
-  - powershell
-  - programming
-  - starship
-  - devex
-series: []
-type: posts
----
 
-Like most of my posts this is long overdue, because those who know me know I'm
-a huge fan of Devcontainers. In this post I'll quickly introduce what they are,
-how I use them, and why I see them as a powerful way to encourage contributors
-from a variety of backgrounds.
-
-## What is a devcontainer?
-
-A devcontainer is a way to specify a docker container to run your project in.
-These containers are spun up when you open a project and are ready to connect
-via VSCode or Github Codespace. They offer a way to include build tools and
-extensions that you suggest or require for your project.
-
-This site (yes the one you're looking at now) includes a devcontainer. Why? Because
-the container comes with Hugo (my content manager of choice), Vale (my prose
-linter of choice), and Node pre-installed. Could I install those things
-locally? Yes, but why? Why deal with the bloat on my system? No need to muddy
-your paths or remember to keep your build tools up to date.
-
-## How to get started with Devcontainers
-
-Devcontainers begin (and usually end with) a single file:
-`.devcontainer\devcontainer.json`. In this file you specify what image to use,
-what features to include, ports to forward and so much more. There is a huge
-list of [templates](https://containers.dev/templates) that are out there but I
-usually use the universal image where I layer on tools via the features.
-
-Here's the devcontainer file I use in this sites repo.
 ```json
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
@@ -147,7 +102,7 @@ No, not the beloved helper of yesteryear. This question came up when I decided I
 wanted to contribute to [Starship](https://starship.rs). I discovered that
 someone had a semi-completed PR to add a way to distinguish PowerShell from Pwsh
 via the shell indicator module. After screwing up my git branch (a branch off of
-a fork... yikes) I was able to open PR
+a fork… yikes) I was able to open PR
 [#5478](https://github.com/starship/starship/pull/5478) when I hit one of the first
 hurdles.
 
@@ -169,4 +124,5 @@ is you can include your build tools. You can also do things like leverage VSCode
 tasks to then make taking required actions easier.
 
 ---
-Photo by <a href="https://unsplash.com/@cmzw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mingwei Lim</a> on <a href="https://unsplash.com/photos/a-black-and-white-photo-of-a-spiral-design-K5T3UMuc114?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Photo by [Mingwei Lim](https://unsplash.com/@cmzw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-black-and-white-photo-of-a-spiral-design-K5T3UMuc114?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
