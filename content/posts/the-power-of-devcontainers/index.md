@@ -4,9 +4,9 @@ date: 2024-03-10T02:32:47.049Z
 description: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
 summary: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
 showReadingTime: true
-draft: true
+draft: false
 preview: feature.jpg
-lastmod: 2024-03-10T03:25:29.260Z
+lastmod: 2024-03-10T04:36:36.060Z
 slug: power-devcontainers
 tags: []
 keywords:
