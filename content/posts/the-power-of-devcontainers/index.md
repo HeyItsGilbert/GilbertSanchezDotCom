@@ -21,7 +21,7 @@ keywords:
 series:
   - 10X Via DevEx
 type: posts
-lastmod: 2024-03-11T00:46:09.751Z
+lastmod: 2024-03-11T00:59:47.788Z
 ---
 
 Those who know me know I'm a huge fan of Development Containers (a.k.a. dev
@@ -29,9 +29,9 @@ containers or devcontainers). I'll quickly introduce what they are, how I use
 them, and why I see them as a powerful way to encourage contributors from a
 variety of backgrounds.
 
-This will likely be one of a short series where I talk about some of me favorite
-Developer Experience (DevEx) tools. You can expect posts about GitHub Actions, and VSCode
-tasks in the future.
+This will likely be one in a short series where I talk about some of me favorite
+Developer Experience (DevEx) tools. You can expect posts about GitHub Actions,
+and VSCode tasks in the future.
 
 ## What's a devcontainer?
 
@@ -135,6 +135,13 @@ the starship repo kicked off a GitHub action to ensure that the code passed
 the lint as expected. Great! It also ran pinned and nightly builds across
 multiple OS's. This level of coverage can easily be hit with GitHub actions.
 Stay tuned because they will be my next post in this series.
+
+## So next time...
+
+Next time you come across a tool you're interested in but don't have the
+development environment for, consider creating a quick devcontainer and
+contributing. Your perspective may bring the project significant value. You may
+even consider submitting the devcontainer to that project!
 
 ---
 
