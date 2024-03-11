@@ -1,27 +1,37 @@
 ---
 title: The Power of Devcontainers
-date: 2024-03-10T02:32:47.049Z
+date: 2024-03-11T00:29:20.951Z
 description: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
 summary: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2024-03-10T15:41:11.871Z
 slug: power-devcontainers
-tags: []
+tags:
+  - Docker
+  - FOSS
+  - GitHub
+  - Linting
+  - TDD
 keywords:
   - powershell
   - programming
   - starship
   - DevEx
-series: []
+series:
+  - 10X Via DevEx
 type: posts
+lastmod: 2024-03-11T00:46:09.751Z
 ---
 
 Those who know me know I'm a huge fan of Development Containers (a.k.a. dev
 containers or devcontainers). I'll quickly introduce what they are, how I use
 them, and why I see them as a powerful way to encourage contributors from a
 variety of backgrounds.
+
+This will likely be one of a short series where I talk about some of me favorite
+Developer Experience (DevEx) tools. You can expect posts about GitHub Actions, and VSCode
+tasks in the future.
 
 ## What's a devcontainer?
 
@@ -84,12 +94,12 @@ language your working on.
 
 So how do devcontainers encourage polyglotism? They solve the major pain point
 of new projects: build environments. Do you know what tools you need to build a
-rust binary? Go? <insert JS framework of the week>? That's also assuming that
-the languages has a standard build tool. What about custom ones?
+rust binary? Go? `insert JS framework of the week`? That's also assuming that
+the languages has a standard build tool. What about custom tools?
 
 New contributors have several hurdles when contributing: learn the project,
 navigate the process for contribution, writing the code to meet the projects
-standards, test and build. If you're lucky these are all clearly laid out in
+standards, test, and build. If you're lucky these are all clearly laid out in
 the contribution docs but you're lucky if those exist.
 
 What often does exist may be a short section in the readme with the specific
@@ -99,29 +109,32 @@ the tools.
 ## "What the hell is clippy?"
 
 No, not the beloved helper of yesteryear. This question came up when I decided I
-wanted to contribute to [Starship](https://starship.rs). I discovered that
-someone had a semi-completed PR to add a way to distinguish PowerShell from Pwsh
-via the shell indicator module. After screwing up my git branch (a branch off of
-a fork… yikes) I was able to open PR
-[#5478](https://github.com/starship/starship/pull/5478) when I hit one of the first
-hurdles.
+wanted to contribute to [Starship](https://starship.rs), a rust project. I
+discovered that someone had a semi-completed PR to add a way to distinguish
+PowerShell from Pwsh via the shell indicator module. After screwing up my git
+branch (a branch off of a fork… yikes) I was able to open PR
+[#5478](https://github.com/starship/starship/pull/5478) when I hit one of the
+first hurdles.
 
 See Starship actually has great contributor docs. Once I read them I realized I
-was missing the formatting tools. Also, kinda of crazy, was that I didn't even
-have rust installed. In come devcontainers. I created a quick one that included
-the rust tools, and I was able to actually run the formatter as described by the
-docs and ensure that everything worked as expected.
+was missing the formatting tools. Also, kind of crazy, was that I didn't even
+have rust installed at the point I finished writing my first draft of the PR.
+**Devcontainers to the rescue!** I quickly created the devcontainer JSON that
+included all the necessary rust tools. Once that turned up, I was able to
+actually run the formatter as described by the docs and ensure that everything
+worked as expected.
 
 This story later repeated itself with Python, Ruby, and Go PR's. By replacing
 the effort required to configure my environment with a simple JSON file, I
 quickly was able to start contributing to repo's once thought too difficult.
 
-## PowerShell Devcontainers
+## Local Build vs Remote Build
 
-So this wouldn't be a post from Gilbert if I didn't talk about PowerShell at
-least in one paragraph. So how does PowerShell play into this? One obvious thing
-is you can include your build tools. You can also do things like leverage VSCode
-tasks to then make taking required actions easier.
+This is great because now I had a local build working. Upon a PR submission
+the starship repo kicked off a GitHub action to ensure that the code passed
+the lint as expected. Great! It also ran pinned and nightly builds across
+multiple OS's. This level of coverage can easily be hit with GitHub actions.
+Stay tuned because they will be my next post in this series.
 
 ---
 
