@@ -13,6 +13,7 @@
   "extensions": [
     "eliostruyf.vscode-front-matter",
     "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
     "marp-team.marp-vscode"
   ]
 }
