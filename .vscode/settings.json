@@ -6,7 +6,6 @@
     "tvz",
     "wezterm"
   ],
-  "frontMatter.dashboard.openOnStart": true,
   "cSpell.words": [
     "devcontainer",
     "devcontainers",
