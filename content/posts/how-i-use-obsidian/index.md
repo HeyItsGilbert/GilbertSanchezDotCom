@@ -1,12 +1,12 @@
 ---
 title: How I Use Obsidian
 date: 2024-08-24T02:02:17.353Z
-description: ""
-summary: ""
+description: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
+summary: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
 showReadingTime: true
 draft: false
 preview: feature.png
-lastmod: 2024-08-24T16:14:25.350Z
+lastmod: 2024-08-25T22:54:20.956Z
 slug: ""
 tags: []
 keywords: []
@@ -15,26 +15,34 @@ type: posts
 fmContentType: posts
 ---
 
-> This is a modified version of a post I wrote at work last year. I mentioned to
-> someone recently the ability to run PowerShell from Obisidian and I realized
-> this would be useful to have in the public.
+> This is a modified version of a post I wrote at work last year. I recently
+> mentioned to someone that you can run PowerShell from Obsidian, and I realized
+> this might be helpful to share publicly.
 
-If you're new to Obsidian, it can be VERY overwhelming. There are dials and
-knobs for everything. **Start slow** and only add things when you need them.
-You're also never going to get perfection and it's always an iterative process.
-Keep what works, ditch what doesn't.
+If you're new to Obsidian, it can be feel *very* overwhelming. There are dials
+and knobs for everything. **Start slow** and only add things when you need them.
+Realize it's an iterative process. This can help calm the fears of never
+hitting perfection. Keep what works, ditch what doesn't.
 
-> Warning: A lot of this was stuff I've picked up from folks in the community. I
-> never kept track for attribution so it's safe to assume it was written by
-> someone smarter than me. If you know, please let me know!
+{{< lead >}}
+Ship and Iterate
+{{< /lead >}}
+
+<!-- FM:Snippet:Start data:{"id":"Call Out","fields":[]} -->
+{{< alert >}}
+**Warning!** A lot of this was stuff I've picked up from folks in the community. I
+never kept track for attribution so it's safe to assume it was written by
+someone smarter than me. If you know, please let me know!
+{{< /alert >}}
+<!-- FM:Snippet:End -->
 
 ## ADHD and Obsidian
 
 As a neurodivergent person (or as the kids now say "spicy brain") I am always on
-the look out for ways I can improve my process. Having identified some of my
-weaknesses has allowed me to target specific areas of improvement. I'll briefly
-go over the problems I was having, and what aspects helped (so you can steal
-what is helpful for you).
+the look out for ways I can improve my process. Identifying my weaknesses has
+helped me focus on specific areas for improvement. I'll briefly go over the
+problems I was having, and what aspects helped (so you can steal what is helpful
+for you).
 
 ### Object Permanence
 
@@ -46,34 +54,34 @@ track of stuff I'm working on.
 
 ### Task Initiation
 
-When given a giant task it can feel daunting to know where to start. By using
-the [periodic note system](#periodic-notes), I'm able to start at a very high level and then break
-things down into smaller bits. By having smaller things to accomplish and it's
-easier to start the work.
+When I'm given a giant task, it can feel daunting to know where to start. By
+using the [periodic note system](#periodic-notes), I'm able to start at a very
+high level and then break things down into smaller bits. Breaking tasks into
+smaller parts makes it easier to get started.
 
 ### Forgetfulness
 
-I often can remember the "rough shape" of things but I may not recall the
-details. So I may not recall the name "Lamport Clock", but I do recall that it's
-related to Distributed Systems. By creating "Atomic" notes and tagging related
-things it allows me to be able to walk the node of related notes because I know
-they're likely linking to each other.
+I can often remember the general idea of something but not the details. So I may
+not recall the name "Lamport Clock", but I do recall that it's related to
+Distributed Systems. By creating "Atomic" notes and tagging related things it
+allows me to be able to walk the node of related notes because I know they're
+likely linking to each other.
 
 ## My Folder Structure
 
-I think this is the thing most folks get hung up on. Folders can help with
-organizing but linking is what makes Obsidian powerful. I started with only the
-first 3 and then added more as I saw the need.
+I think this is the thing most folks get hung up on. Folders help with
+organization, but linking is what makes Obsidian powerful. I started with only
+the first 3 and then added more as I saw the need.
 
 - `0000 Atomics`: "Evergreen" notes that should be about one thing. I'm pretty
   loose with this and I'm ok with that.
 - `1000 Daily Notes`: All my daily, weekly, and monthly notes live here.
 - `2000 Status Reports`: All my status reports live here. The file names
-  conflicted with Daily Notes so it got it's own folder.
+  conflicted with Daily Notes so it got its own folder.
 - `3000 Meeting Notes`: A folder for all my meeting notes.
 - `4000 Posts`:  WP posts.
 - `5000 People`: Notes about people.
-- `Files`: All embedded files (i.e. images and PDF's)
+- `Files`: All embedded files (e.g., images and PDFs)
 - `Templates`: All the templates and scripts.
 
 I've found that less folders is better and even the above can feel like a lot.
@@ -87,11 +95,11 @@ It's the one plugin I explain is a must with Obsidian.
 
 ### Periodic Notes
 
-This was mostly borrowed from Nicole van der Hoven (aka NVDH) (see her video
+I borrowed this idea mostly from Nicole van der Hoven (aka NVDH) (see her video
 [How to set goals in Obsidian // Templates, Periodic Notes](https://www.youtube.com/watch?v=T2Aeaq4sk7M)).
 The idea is that I have yearly goals, but unless that's broken down I'm not
 likely to take much action (see [task initiation](#task-initiation)). The daily
-note template is a beast and get's it's own section.
+note template is complex enough to deserve its own section.
 
 I create a yearly note with all my goals. I put together a rough outline for the
 year which helps me fill out my monthly notes. The monthly template shows the
@@ -110,11 +118,11 @@ makes this really easy and is on my short list of recommended plugins.
 ### Daily Note
 
 The "Daily Note" template is at the core of this. This does most of the leg work
-of figuring out days and creating relevant links. It uses the Dataview plugin as
-well as the Tasks plugin to gather data across my notes.
+of figuring out days and creating relevant links. The Daily Note template uses
+the Dataview plugin as well as the Tasks plugin to gather data across my notes.
 
-Because my schedule is different on Wed and Friday I used a simple switch (in
-the "DailyFolderSwitch" template) to load the relevant template. Each schedule
+Since my schedule differs on Wednesdays and Fridays, I use a simple switch (in
+the 'DailyFolderSwitch' template) to load the correct template. Each schedule
 template then runs a different PowerShell command to get my schedule (see the
 PowerShell script below).
 
@@ -124,10 +132,10 @@ PowerShell script below).
 - [Wed Schedule.md](https://gist.github.com/HeyItsGilbert/8d492ebc7ad9c4830c0ae1fcc8fc6ac8#file-wed-schedule-md)
 - [Friday Schedule.md](https://gist.github.com/HeyItsGilbert/8d492ebc7ad9c4830c0ae1fcc8fc6ac8#file-friday-schedule-md)
 
-This is definitely more complicated then it should be. When I eventually redo
-this, I'll probably try to move the logic into one place. I will probably just
-drop the folder switch and just figure out the schedule in a single PowerShell
-command.
+This setup is definitely more complicated than it should be. When I eventually
+redo this, I'll probably try to move the logic into one place. I will probably
+just drop the folder switch and just figure out the schedule in a single
+PowerShell command.
 
 ### Meeting Note
 
@@ -150,10 +158,10 @@ add the link to the URL metadata and change the status to `posted`.
 
 ### Status Report
 
-Is a template that I haven't been using much lately, but I probably should be.
-The goal of this was to create this every Friday. It has a dataview query that
-would find all the items I marked with `Did::`. So in my daily note I could add
-a line that said: `Did::Shutdown SCCM`. That would help me remember all the
+This is a template that I haven't been using much lately, but I probably should
+be. The goal of this was to create this every Friday. It has a dataview query
+that would find all the items I marked with `Did::`. So in my daily note I could
+add a line that said: `Did::Shutdown SCCM`. That would help me remember all the
 things I did so I could add them to a weekly status report. I'm also a sucker
 for a writing prompt which can help me make sure I'm shaping my communications
 appropriately.
@@ -162,8 +170,8 @@ appropriately.
 
 ## Using PowerShell
 
-I'm a PowerShell guy and I wanted to be able to write some scripts and toss the
-results into my note. See above to read how I used them to pull in data.
+As a PowerShell ***enthusiast***, I wanted to write some scripts and easily add
+the results to my notes. See above to read how I used them to pull in data.
 
 - [pwsh.js](https://gist.github.com/HeyItsGilbert/8d492ebc7ad9c4830c0ae1fcc8fc6ac8#file-pwsh-js)
 
@@ -172,8 +180,8 @@ PowerShell commands.
 
 - `Get-MeetingSummary` would query the graph for my meetings.
 - `Get-ObsidianSchedule` takes the data from `Get-MeetingSummary` and turns it
-  into the appropriate markdown output. It also creates a link to the video
-  call and a link to create a [meeting note](#meeting-note) note.
+  into the appropriate markdown output. The command also creates a link to the
+  video call and a link to create a [meeting note](#meeting-note) note.
 - `Get-MeetingInfo` let's you pass the meeting title to it and get info about
   the meeting such as whether it's a series and who is attending. This is used
   in the [meeting note](#meeting-note) template.
