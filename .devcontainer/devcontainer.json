@@ -1,19 +1,27 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.120.2",
       "extended": "true"
     },
     "ghcr.io/shinepukur/devcontainer-features/vale:1": {
       // specify here any options you would like to set for the feature
       "version": "latest"
     },
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/go:1": {}
   },
-  "extensions": [
-    "eliostruyf.vscode-front-matter",
-    "davidanson.vscode-markdownlint",
-    "yzhang.markdown-all-in-one",
-    "marp-team.marp-vscode"
-  ]
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "eliostruyf.vscode-front-matter",
+        "marp-team.marp-vscode",
+        "marvhen.reflow-markdown",
+        "ms-vscode.powershell",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
 }

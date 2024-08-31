@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "@marp-team/marp-cli": "^3.4.0"
+  },
+  "devDependencies": {
+    "hugo-installer": "^3.1.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.102.3"
+  },
+  "scripts": {
+    "build": "webpack",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended"
   }
 }
