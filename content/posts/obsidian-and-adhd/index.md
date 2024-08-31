@@ -1,5 +1,5 @@
 ---
-title: How I Tame My ADHD with Obsidian and PowerShell
+title: Taming My ADHD with Obsidian and PowerShell
 date: 2024-08-31T01:15:28.508Z
 description: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
 summary: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
@@ -14,7 +14,7 @@ keywords: []
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2024-08-31T01:28:49.102Z
+lastmod: 2024-08-31T01:31:37.291Z
 slug: obsidian-and-adhd
 featureAlt: Public Domain art showing planets.
 coverCaption: We 💞 [Public Domain Art](https://www.cosmos.so/e/627080146)
