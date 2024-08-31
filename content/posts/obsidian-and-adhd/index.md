@@ -14,8 +14,10 @@ keywords: []
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2024-08-31T01:17:10.427Z
+lastmod: 2024-08-31T01:28:49.102Z
 slug: obsidian-and-adhd
+featureAlt: Public Domain art showing planets.
+coverCaption: We 💞 [Public Domain Art](https://www.cosmos.so/e/627080146)
 ---
 
 > This is a modified version of a post I wrote at work last year. I recently
@@ -203,7 +205,3 @@ success.
 I hope that you found something useful in this note. If you have suggestions or
 want to share your take, please let me know in the comments! I'm always
 interested in new approaches!
-
----
-
-Cover is Public Domain art from <https://www.cosmos.so/e/627080146>
