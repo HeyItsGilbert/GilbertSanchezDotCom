@@ -1,12 +1,12 @@
 ---
 title: Sharing Your Custom PSScriptAnalyzer Rules
-date: 2024-09-07T22:57:34.000Z
+date: 2024-09-16T08:00:00.000Z
 description: Learn how using a simple "proxy" module, will allow you to use custom PSScriptAnalyzer rules in all your repositories
 summary: Learn how using a simple "proxy" module, will allow you to use custom PSScriptAnalyzer rules in all your repositories!
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2024-09-08T16:55:20.864Z
+lastmod: 2024-09-16T08:00:00.000Z
 slug: sharing-custom-psscriptanalyzer-rules
 tags:
   - DevEx
