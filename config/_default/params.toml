@@ -74,6 +74,10 @@ description = "Señor Systems Engineer, Tinkerer, & Record Collector"
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
 
+[umamiAnalytics]
+  site = "7d70d59a-aeac-47ae-b937-9666d32671fe"
+  region = "us"  # can be either "eu" or "us"
+
 [verification]
   # google = ""
   # bing = ""
