@@ -14,8 +14,6 @@ summaryLength = 0
 
 disqusShortname = "gilbertsanchez" 
 #googleAnalytics = "G-CWJLL32MYW"
-umamiAnalytics.site = "7d70d59a-aeac-47ae-b937-9666d32671fe"
-umamiAnalytics.region = "us"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
