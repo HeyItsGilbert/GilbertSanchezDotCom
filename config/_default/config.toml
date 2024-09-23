@@ -8,6 +8,8 @@ defaultContentLanguage = "en"
 #theme = "congo"
 timeZone = "UTC"
 
+timeout = "60s"
+
 enableRobotsTXT = true
 paginate = 10
 summaryLength = 0
