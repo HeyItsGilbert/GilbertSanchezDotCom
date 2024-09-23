@@ -6,8 +6,11 @@ description: Gilbert's blog covering everything from ANSI to zsh!
 summary: Gilbert's blog covering everything from ANSI to zsh!
 ---
 I've created this blog as a way to help share some of my discoveries. I'm a
-believer in Learning in Public and nothing I write is "The Way" but rather "A
-Way".
+believer in Learning in Public and these posts are more polished compared 
+to the notes in my [Digital Garden](https://garden.gilbertsanchez.com/).
+
+Nothing I write is "The Way" but rather "A Way". Have a different approach?
+Tell me all about it!
 
 I work as a Staff Software Development Engineer at Tesla, formerly known as
 the Señor Systems Engineer at Meta. I enjoy spreading the love of
