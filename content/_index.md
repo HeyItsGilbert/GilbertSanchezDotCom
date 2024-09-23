@@ -9,7 +9,8 @@ I've created this blog as a way to help share some of my discoveries. I'm a
 believer in Learning in Public and nothing I write is "The Way" but rather "A
 Way".
 
-I work as a (Señor) Systems Engineer at Meta, spreading the love of
+I work as a Staff Software Development Engineer at Tesla, formerly known as
+the Señor Systems Engineer at Meta. I enjoy spreading the love of
 PowerShell at scale. A fan of Role Playing Games (RPG), you can check out my
 RPG-oriented modules on the PowerShell Gallery.
 
