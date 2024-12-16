@@ -1,0 +1,202 @@
+---
+title: "Beyond Regex: Advanced PowerShell Code Analysis with ASTs"
+date: null
+description: ""
+summary: ""
+showReadingTime: true
+draft: true
+preview: feature.png
+lastmod: 2024-12-16T05:19:44.054Z
+slug: ""
+tags: []
+keywords: []
+series: []
+type: posts
+fmContentType: posts
+---
+
+In this post I'll be walking through an example of a (silly) request you might see at work and show you how you can leverage AST's to update your codebase.
+
+I highly recommend
+[reading the docs](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/create-custom-rule?view=ps-modules)
+as they do a very good job describing what is required for a PSScriptAnalyzer
+rule. My goal with this post is to help explain how I would approach and my
+suggests on how to inspect the components used at different stages.
+
+One day at work you're given a task to remove and update code across your
+repositories. That could look like a few different things.
+
+Some examples:
+
+- Replacing old functions with new ones
+- Identify reuse of properties that should be unique (ID's)
+- Looking for code that doesn't follow your orgs style
+
+In this post we'll start with a specific example, but keep in mind that this
+could apply to all sorts of things.
+
+## Problem
+
+You have to identify where people are using two parameters together that
+shouldn't go together. You could fix the code to warn or throw, but maybe this
+work is in preparation for a future change.
+
+Our example: Find all call sites of New-Pizza and find where people are
+including pineapple. Corporate has decided that they want to draw a line, but
+only because the price of pineapples has skyrocketed.
+
+So we want to look for code that might look like this:
+
+```powershell title=MainExample.ps1
+# Maybe the call is on the same line
+New-Pizza -Size 'Large' -Ingredients @('Ham','Pineapple')
+
+# Or maybe the value comes from a variable
+$ingredients = @('Ham','Pineapple')
+New-Pizza -Size 'Medium' -Ingredients $ingredients
+
+# Or maybe this
+$splat = @{
+  Size = 'Small'
+  Ingredients = $ingredients
+}
+New-Pizza @splat
+```
+
+Normally you might do a simple search to fix something like the first one. Find
+all lines with `New-Pizza` and contains `Pineapple`. A simple replace would
+probably not suffice but a regex could (e.g. something like
+`s/(New-Pizza.*)'Pineapple'(.*)/$1$2/g`). The problem is that could never work
+for the other two where the value is set on other lines or in variables.
+This is where AST's can help us.
+
+## Abstract Syntax Tree - AST
+
+An Abstract Syntax Tree (AST) is a hierarchical representation of the structure
+of source code. It breaks the code down into its syntactic components like
+functions, loops, and expressions. This allows us analyze and manipulate the
+code more intelligently because it can understand the context and relationships
+that plain text searches or regex can't capture.
+
+## Creating & Inspecting the AST
+
+There are several ways to look at the AST, but the easiest it to read a script
+block.
+
+Here is an example of creating a scriptblock and reading it's AST:
+
+```powershell
+$scriptBlock = {
+  New-Pizza
+}
+$scriptBlock.AST
+```
+
+Another way to do this is create a script block from a file. Here is an example file with to commands.
+
+```powershell file=PizzaGenerator.ps1
+New-Pizza -Size 'Large'
+Write-Host "Making za!"
+```
+
+Here we will read the file and then convert it to a scriptblock.
+
+```powershell
+$rawFile = Get-Content -Raw -Path 'PizzaGenerator.ps1'
+$scriptBlock = [ScriptBlock]::Create($rawFile)
+```
+
+The first line reads the files as string. And then the scriptblock type has a
+create method which accepts strings.
+
+## AST Types
+
+You can run the following to get a list of all the possible AST's to target.
+This grabs the AST type and looks for all the other types in the assembly. This
+it filters to anything that is a subclass of the AST type.
+
+```powershell
+[System.Management.Automation.Language.Ast].Assembly.GetTypes() | Where {$_.IsSubclassOf([System.Management.Automation.Language.Ast])}
+```
+
+## Step One: Find The Relevant Commands
+
+The ast type has a method called FindAll that allows to quick return a list of
+all the AST's that match our search. We want to find all the command calls for
+`New-Pizza`. We can then later check the parameters of each.
+
+The
+[FindAll method](https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.language.ast.findall?view=powershellsdk-7.4.0)
+takes a predicate (a function that returns a true or false) and a boolean that
+says whether it will search recursively.
+
+Our predicate will take in the $Ast properties and check if they're the type of
+AST we care about (`CommandAst`). Then it will use a method found on
+CommandAst's called `GetCommandName()` that returns a string of what the command
+name is (which would be `New-Pizza` in our example). Our predicate might look
+like this:
+
+```powershell
+{
+  param($Ast)
+  $Ast -is [System.Management.Automation.Language.CommandAst] -and
+  $Ast.GetCommandName() -eq 'New-Pizza'
+}
+```
+
+All together:
+
+```powershell
+$pizzas = $scriptBlock.Ast.FindAll(
+  {
+    param($Ast)
+    $Ast -is [System.Management.Automation.Language.CommandAst] -and
+    $Ast.GetCommandName() -eq 'New-Pizza'
+  },
+  $false
+)
+```
+
+## Step Two: Get the parameters
+
+Looking at the results in `$pizzas` you'll find that different call sites for
+the New Pizza command. I suggest looking at the different properties. Later we
+will make use of the extent property (which contains the value as a string, the
+line numbers, and much more.) For now we'll look at the CommandElements.
+
+CommandElements will contain a list of all the AST's the make up the command
+line. The first will be a `StringConstantExpressionAst`. How do I know that? Because that's what `New-Pizza` is! It's a `BareWord` meaning it's a string that isn't surrounded by quotes. This means that the rest of the items compose the list of parameters.
+
+`CommandParameterAst` is the type of all the parameters. In a very simple example we could simply say each item after a `CommandParameterAst` is it's value. So `-A Apple -B Bear` would be A is the `CommandParameterAst` and the value right after would be the value being passed. For now we'll solve that and revisit the more complex cases (e.g. variables, switches, and splats).
+
+So we should create a simple loop and walk down the values noting where we find `CommandParameterAst` and grabbing the values for the item right after.
+
+```powershell
+$commandElements = $CommandAst.CommandElements
+# Create a hash to hold the parameter name as the key, and the value 
+$parameterHash = @{}
+for($i=1; $i -lt $commandElements.Count; $i++){
+  # Switch on type
+  switch ($commandElements[$i].GetType().Name){
+    'CommandParameterAst' {
+      $parameterName = $commandElements[$i].ParameterName
+    }
+    default {
+      # Grab the string from the extent
+      $value = $commandElements[$i].SafeGetValue()
+      $parameterHash[$parameterName] = $value
+    }
+  }
+}
+```
+
+We would run that command in a loop where `$CommandAst` is one of the results in the `$Pizza` variable from our previous example. So now we have the command and it's parameters.
+
+---
+
+## Read More
+
+This is an extremely complex topic. Don't get discouraged if it doesn't stick immediately or you're having trouble understanding. I recommend reading a few other great posts.
+
+- [Searching the PowerShell Abstract Syntax Tree](https://vexx32.github.io/2018/12/20/Searching-PowerShell-Abstract-Syntax-Tree/)
+- [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts](https://mikefrobbins.com/2019/05/17/using-the-ast-to-find-module-dependencies-in-powershell-functions-and-scripts/)
