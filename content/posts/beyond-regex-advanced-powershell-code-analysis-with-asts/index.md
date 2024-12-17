@@ -6,7 +6,7 @@ summary: ""
 showReadingTime: true
 draft: true
 preview: feature.png
-lastmod: 2024-12-16T05:19:44.054Z
+lastmod: 2024-12-17T01:02:58.041Z
 slug: ""
 tags: []
 keywords: []
@@ -47,7 +47,7 @@ only because the price of pineapples has skyrocketed.
 
 So we want to look for code that might look like this:
 
-```powershell title=MainExample.ps1
+```powershell {title=MainExample.ps1}
 # Maybe the call is on the same line
 New-Pizza -Size 'Large' -Ingredients @('Ham','Pineapple')
 
@@ -92,9 +92,10 @@ $scriptBlock = {
 $scriptBlock.AST
 ```
 
-Another way to do this is create a script block from a file. Here is an example file with to commands.
+Another way to do this is create a script block from a file. Here is an example
+file with to commands.
 
-```powershell file=PizzaGenerator.ps1
+```powershell {file=PizzaGenerator.ps1}
 New-Pizza -Size 'Large'
 Write-Host "Making za!"
 ```
@@ -108,6 +109,13 @@ $scriptBlock = [ScriptBlock]::Create($rawFile)
 
 The first line reads the files as string. And then the scriptblock type has a
 create method which accepts strings.
+
+<!-- FM:Snippet:Start data:{"id":"Call Out","fields":[]} -->
+{{< alert "twitter" >}}
+For the rest of the examples you can follow along by reading the MainExample.ps1
+file from above into `$ScriptBlock`.
+{{< /alert >}}
+<!-- FM:Snippet:End -->
 
 ## AST Types
 
@@ -165,13 +173,25 @@ will make use of the extent property (which contains the value as a string, the
 line numbers, and much more.) For now we'll look at the CommandElements.
 
 CommandElements will contain a list of all the AST's the make up the command
-line. The first will be a `StringConstantExpressionAst`. How do I know that? Because that's what `New-Pizza` is! It's a `BareWord` meaning it's a string that isn't surrounded by quotes. This means that the rest of the items compose the list of parameters.
+line. The first will be a `StringConstantExpressionAst`. How do I know that?
+Because that's what `New-Pizza` is! It's a `BareWord` meaning it's a string that
+isn't surrounded by quotes. This means that the rest of the items compose the
+list of parameters.
 
-`CommandParameterAst` is the type of all the parameters. In a very simple example we could simply say each item after a `CommandParameterAst` is it's value. So `-A Apple -B Bear` would be A is the `CommandParameterAst` and the value right after would be the value being passed. For now we'll solve that and revisit the more complex cases (e.g. variables, switches, and splats).
+`CommandParameterAst` is the type of all the parameters. In a simple example we
+could simply say each item after a `CommandParameterAst` is it's value. So
+`-A Apple -B Bear` would be A is the `CommandParameterAst` and the value right
+after would be the value being passed. For now we'll solve that and revisit the
+more complex cases (e.g. variables, switches, and splats).
 
-So we should create a simple loop and walk down the values noting where we find `CommandParameterAst` and grabbing the values for the item right after.
+So we should create a simple loop and walk down the values noting where we find
+`CommandParameterAst` and grabbing the values for the item right after.
+
+For this example let's just grab the first one and set it as `$CommandAst`. Then
+we will inspect it to get the values.
 
 ```powershell
+$CommandAst = $pizzas[0]
 $commandElements = $CommandAst.CommandElements
 # Create a hash to hold the parameter name as the key, and the value 
 $parameterHash = @{}
@@ -190,13 +210,130 @@ for($i=1; $i -lt $commandElements.Count; $i++){
 }
 ```
 
-We would run that command in a loop where `$CommandAst` is one of the results in the `$Pizza` variable from our previous example. So now we have the command and it's parameters.
+So now we have the command and it's parameters.The next thing would be to find
+where the the value of the Ingredients property contains `Pineapple`.
+
+```powershell
+# You might want to skip any call sites where maybe the ingredients parameter isn't set.
+if(-not $parametersHash.ContainsKey('Ingredients')){ continue }
+# Now we want to check if the Ingredients parameter contains Pineapple
+if($parametersHash['Ingredients'].Contains('Pineapple')){
+  # If we're in this block then we know this call needs fixing!
+}
+```
+
+## Step Four: The Extent
+
+So we're looping through the code and we've found a block that might need to be
+fixed. How do we where that is? What does that line in the code look like? This
+is where the extent can help us.
+
+```powershell
+# Let's look at the CommandAST
+$CommandAst.Extent
+```
+
+The extent property contains information on the script position, start/end line
+and column numbers. It also contains the `Text` representation of the command.
+
+The extent is what PSScriptAnalyzer uses to figure out what to highlight. It's
+also how VSCode can highlight what text needs to be fixed.
+
+## Step Five: Write a Rule
+
+Taking what we learned up to this point we have enough to write a basic rule to
+identify any `New-Pizza` calls with a `Pineapple` ingredient.
+
+```powershell {title=Measure-PineappleOnPizza.ps1}
+<#
+.SYNOPSIS
+Checks for Pineapple used with New-Pizza
+.DESCRIPTION
+Contaso has decided that pineapple is no longer allowed. 
+.EXAMPLE
+Measure-PineappleOnPizza -ScriptBlockAst $ScriptBlockAst
+.INPUTS
+[System.Management.Automation.Language.ScriptBlockAst]
+.OUTPUTS
+[Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord[]]
+.NOTES
+None
+#>
+function Measure-PineappleOnPizza
+{
+  [CmdletBinding()]
+  [OutputType([Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord[]])]
+  Param
+  (
+    [Parameter(Mandatory = $true)]
+    [ValidateNotNullOrEmpty()]
+    [System.Management.Automation.Language.ScriptBlockAst]
+    $ScriptBlockAst
+  )
+
+Process
+  {
+    $results = @()
+    try
+    {
+      # Finds all New-Pizza
+      [ScriptBlock]$predicate = {
+          param($Ast)
+          $Ast -is [System.Management.Automation.Language.CommandAst] -and
+          $Ast.GetCommandName() -eq 'New-Pizza'
+      }
+      [System.Management.Automation.Language.Ast[]]$pizzas  = $ScriptBlockAst.FindAll($predicate, $true)
+      foreach($CommandAst in $pizzas){
+        $commandElements = $CommandAst.CommandElements
+        #region Gather Parameters
+        # Create a hash to hold the parameter name as the key, and the value 
+        $parameterHash = @{}
+        for($i=1; $i -lt $commandElements.Count; $i++){
+          # Switch on type
+          switch ($commandElements[$i].GetType().Name){
+            'CommandParameterAst' {
+              $parameterName = $commandElements[$i].ParameterName
+            }
+            default {
+              # Grab the string from the extent
+              $value = $commandElements[$i].SafeGetValue()
+              $parameterHash[$parameterName] = $value
+            }
+          }
+        }
+        #endregion
+
+        # Skip any call sites where maybe the ingredients parameter isn't set.
+        if(-not $parametersHash.ContainsKey('Ingredients')){ continue }
+        # Now we want to check if the Ingredients parameter contains Pineapple
+        if($parametersHash['Ingredients'].Contains('Pineapple')){
+          # If we're in this block then we know this call needs fixing!
+          $result = [Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord]@{
+              'Message' = "Didn't you get the memo? No more pineapple on pizza!"
+              'Extent' = $CommandAst.Extent
+              'RuleName' = $PSCmdlet.MyInvocation.InvocationName
+              'Severity' = 'Information'
+          }
+          $results += $result
+        }
+      }
+      return $results
+    }
+    catch
+    {
+        $PSCmdlet.ThrowTerminatingError($PSItem)
+    }
+  }
+}
+```
 
 ---
 
 ## Read More
 
-This is an extremely complex topic. Don't get discouraged if it doesn't stick immediately or you're having trouble understanding. I recommend reading a few other great posts.
+This is an extremely complex topic. Don't get discouraged if it doesn't click
+immediately or you're having trouble understanding. I recommend reading a few
+other great posts.
 
 - [Searching the PowerShell Abstract Syntax Tree](https://vexx32.github.io/2018/12/20/Searching-PowerShell-Abstract-Syntax-Tree/)
 - [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts](https://mikefrobbins.com/2019/05/17/using-the-ast-to-find-module-dependencies-in-powershell-functions-and-scripts/)
