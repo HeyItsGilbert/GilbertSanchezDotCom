@@ -6,7 +6,7 @@ summary: ""
 showReadingTime: true
 draft: true
 preview: feature.png
-lastmod: 2024-12-17T01:02:58.041Z
+lastmod: 2024-12-21T16:25:32.955Z
 slug: ""
 tags: []
 keywords: []
@@ -15,13 +15,13 @@ type: posts
 fmContentType: posts
 ---
 
-In this post I'll be walking through an example of a (silly) request you might see at work and show you how you can leverage AST's to update your codebase.
+In this post I'll be walking through an example of a (silly) request you might
+see at work and show you how you can leverage AST's to update your codebase.
 
-I highly recommend
-[reading the docs](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/create-custom-rule?view=ps-modules)
-as they do a very good job describing what is required for a PSScriptAnalyzer
-rule. My goal with this post is to help explain how I would approach and my
-suggests on how to inspect the components used at different stages.
+I highly recommend the official [Creating Custom Rules] Microsoft doc as they do
+an excellent good job describing what's required for a PSScriptAnalyzer rule. My
+goal with this post is to help explain how I would approach and my suggests on
+how to inspect the components used at different stages.
 
 One day at work you're given a task to remove and update code across your
 repositories. That could look like a few different things.
@@ -103,8 +103,9 @@ Write-Host "Making za!"
 Here we will read the file and then convert it to a scriptblock.
 
 ```powershell
-$rawFile = Get-Content -Raw -Path 'PizzaGenerator.ps1'
-$scriptBlock = [ScriptBlock]::Create($rawFile)
+$Tokens = $null
+$Errors = $null
+$scriptBlock = [System.Management.Automation.Language.Parser]::ParseInput('.\PizzaGenerator.ps1', [ref]$Tokens, [ref]$Errors)
 ```
 
 The first line reads the files as string. And then the scriptblock type has a
@@ -121,7 +122,7 @@ file from above into `$ScriptBlock`.
 
 You can run the following to get a list of all the possible AST's to target.
 This grabs the AST type and looks for all the other types in the assembly. This
-it filters to anything that is a subclass of the AST type.
+it filters to anything that's a subclass of the AST type.
 
 ```powershell
 [System.Management.Automation.Language.Ast].Assembly.GetTypes() | Where {$_.IsSubclassOf([System.Management.Automation.Language.Ast])}
@@ -133,10 +134,8 @@ The ast type has a method called FindAll that allows to quick return a list of
 all the AST's that match our search. We want to find all the command calls for
 `New-Pizza`. We can then later check the parameters of each.
 
-The
-[FindAll method](https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.language.ast.findall?view=powershellsdk-7.4.0)
-takes a predicate (a function that returns a true or false) and a boolean that
-says whether it will search recursively.
+The [FindAll method] takes a predicate (a function that returns a true or false)
+and a boolean that says whether it will search recursively.
 
 Our predicate will take in the $Ast properties and check if they're the type of
 AST we care about (`CommandAst`). Then it will use a method found on
@@ -211,7 +210,7 @@ for($i=1; $i -lt $commandElements.Count; $i++){
 ```
 
 So now we have the command and it's parameters.The next thing would be to find
-where the the value of the Ingredients property contains `Pineapple`.
+where the value of the Ingredients property contains `Pineapple`.
 
 ```powershell
 # You might want to skip any call sites where maybe the ingredients parameter isn't set.
@@ -335,5 +334,17 @@ This is an extremely complex topic. Don't get discouraged if it doesn't click
 immediately or you're having trouble understanding. I recommend reading a few
 other great posts.
 
-- [Searching the PowerShell Abstract Syntax Tree](https://vexx32.github.io/2018/12/20/Searching-PowerShell-Abstract-Syntax-Tree/)
-- [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts](https://mikefrobbins.com/2019/05/17/using-the-ast-to-find-module-dependencies-in-powershell-functions-and-scripts/)
+- [Runspaces Simplified (as much as possible)]
+- [Searching the PowerShell Abstract Syntax Tree]
+- [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts]
+- [Learn about the PowerShell Abstract Syntax Tree (AST) - Part 2]
+
+Thanks Jordan Borean for reminding me about the ParseFile method which I
+couldn't recall.
+
+[Runspaces Simplified (as much as possible)]: https://blog.netnerds.net/2016/12/runspaces-simplified/
+[Searching the PowerShell Abstract Syntax Tree]: https://vexx32.github.io/2018/12/20/Searching-PowerShell-Abstract-Syntax-Tree/
+[Using the AST to Find Module Dependencies in PowerShell Functions and Scripts]: https://mikefrobbins.com/2019/05/17/using-the-ast-to-find-module-dependencies-in-powershell-functions-and-scripts/
+[Learn about the PowerShell Abstract Syntax Tree (AST) - Part 2]: https://mikefrobbins.com/2018/10/24/learn-about-the-powershell-abstract-syntax-tree-ast-part-2/
+[FindAll method]: https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.language.ast.findall?view=powershellsdk-7.4.0
+[Creating Custom Rules]: https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/create-custom-rule?view=ps-modules
