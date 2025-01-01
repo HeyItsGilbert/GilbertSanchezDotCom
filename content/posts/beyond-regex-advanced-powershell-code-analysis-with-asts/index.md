@@ -6,7 +6,7 @@ summary: ""
 showReadingTime: true
 draft: true
 preview: feature.png
-lastmod: 2024-12-21T16:25:32.955Z
+lastmod: 2024-12-21T16:31:15.393Z
 slug: ""
 tags: []
 keywords: []
@@ -111,12 +111,10 @@ $scriptBlock = [System.Management.Automation.Language.Parser]::ParseInput('.\Piz
 The first line reads the files as string. And then the scriptblock type has a
 create method which accepts strings.
 
-<!-- FM:Snippet:Start data:{"id":"Call Out","fields":[]} -->
-{{< alert "twitter" >}}
+{{< alert >}}
 For the rest of the examples you can follow along by reading the MainExample.ps1
 file from above into `$ScriptBlock`.
 {{< /alert >}}
-<!-- FM:Snippet:End -->
 
 ## AST Types
 
