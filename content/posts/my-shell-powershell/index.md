@@ -12,8 +12,8 @@ preview: feature.png
 keywords:
   - powershell
 type: posts
-series:
-  - Terminals, Shells, and Prompts
+series: ["Terminals, Shells, and Prompts"]
+series_order: 3
 ---
 
 This is the third post in this series. You can see the first post explaining

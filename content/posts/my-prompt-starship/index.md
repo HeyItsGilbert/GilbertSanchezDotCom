@@ -12,8 +12,8 @@ tags: []
 keywords:
   - starship
   - powershell
-series:
-  - Terminals, Shells, and Prompts
+series: ["Terminals, Shells, and Prompts"]
+series_order: 4
 type: posts
 ---
 

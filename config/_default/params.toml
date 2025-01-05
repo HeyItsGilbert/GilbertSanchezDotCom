@@ -2,7 +2,7 @@ colorScheme = "congo"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 replyByEmail = false
 disableImageOptimization = false
 disableTextInHeader = false
@@ -101,7 +101,7 @@ cardViewScreenWidth = false
 [fathomAnalytics]
 
 [umamiAnalytics]
-  websiteid = "7d70d59a-aeac-47ae-b937-9666d32671fe"
+websiteid = "7d70d59a-aeac-47ae-b937-9666d32671fe"
 
 [selineAnalytics]
 

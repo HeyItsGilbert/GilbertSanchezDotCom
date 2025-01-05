@@ -1,4 +1,4 @@
-posts = 'posts'
-series = 'series'
-tag = 'tags'
+posts = "posts"
+series = "series"
+tag = "tags"
 note = "notes"
