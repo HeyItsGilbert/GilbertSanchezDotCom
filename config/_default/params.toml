@@ -1,140 +1,112 @@
-# -- Theme Options --
-# These options control how the theme functions and allow you to
-# customise the display of your website.
-#
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/configuration/#theme-parameters
-
-title = "Hey! It's Gilbert"
 colorScheme = "congo"
-defaultAppearance = "dark" # valid options: light or dark
+defaultAppearance = "dark"
 autoSwitchAppearance = true
-
 enableSearch = true
-enableCodeCopy = true
-
-mainSections = ["posts", "projects"]
-# robots = ""
-
-isoCode = "en"
-displayName = "EN"
-rtl = false
-description = "Señor Systems Engineer, Tinkerer, & Record Collector"
+enableCodeCopy = false
+replyByEmail = false
+disableImageOptimization = false
+disableTextInHeader = false
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+defaultBackgroundImage = "joey-kyber-Mg2iKRWpiCk-unsplash.jpg"
 
 [header]
-  layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  #logo = "img/logo.png"
-  showTitle = true
+layout = "basic"
 
 [footer]
-  showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = false
-  showScrollToTop = true
+showMenu = true
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, custom
-  showRecent = true
+layout = "background"
+showRecent = true
+showRecentItems = "6"
+showMoreLink = false
+showMoreLinkDest = "/posts/"
+cardView = true
+cardViewScreenWidth = false
+layoutBackgroundBlur = false
 
 [article]
-  showDate = true
-  showDateUpdated = true
-  showAuthor = true
-  showBreadcrumbs = false
-  showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
-  editAppendPath = true
-  showHeadingAnchors = true
-  showPagination = true
-  invertPagination = false
-  showReadingTime = true
-  showTableOfContents = true
-  showTaxonomies = true
-  showWordCount = false
-  showComments = true
-  sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email"]
+showDate = true
+showViews = false
+showLikes = false
+showDateOnlyInArticle = false
+showDateUpdated = false
+showAuthor = true
+showAuthorBottom = true
+showHero = true
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = true
+showTableOfContents = true
+showTaxonomies = false
+showAuthorsBadges = ""
+showWordCount = true
+showZenMode = false
+showRelatedContent = ""
+heroStyle = "background"
 
 [list]
-  showBreadcrumbs = false
-  showSummary = true
-  showTableOfContents = false
-  showTaxonomies = true
-  groupByYear = true
-  paginationWidth = 1
-  showDateUpdated = false
+showHero = false
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showSummary = false
+showViews = false
+showLikes = false
+showTableOfContents = false
+showCards = false
+orderByWeight = false
+groupByYear = true
+cardView = false
+cardViewScreenWidth = false
+constrainItemsWidth = false
 
 [sitemap]
-  excludedKinds = ["taxonomy", "term"]
+excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
-  showTermCount = true
+showTermCount = true
+showHero = false
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = false
+cardView = false
 
-#[fathomAnalytics]
-  # site = "ABC12345"
-  # domain = "llama.yoursite.com"
+[term]
+showHero = true
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+groupByYear = false
+cardView = false
+cardViewScreenWidth = false
+
+[firebase]
+
+[fathomAnalytics]
 
 [umamiAnalytics]
-  site = "7d70d59a-aeac-47ae-b937-9666d32671fe"
-  region = "us"  # can be either "eu" or "us"
+  websiteid = "7d70d59a-aeac-47ae-b937-9666d32671fe"
+
+[selineAnalytics]
+
+[buymeacoffee]
 
 [verification]
-  # google = ""
-  # bing = ""
-  # pinterest = ""
-  # yandex = ""
 
-[author]
-  name = "Gilbert Sanchez"
-  image = "img/profile.png"
-  headline = "Not just good. Good enough."
-  bio = "Not just good. Good enough."
-  links = [
-  #   { email = "mailto:hello@your_domain.com" },
-  { link = "https://links.gilbertsanchez.com/" },
-  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
-  #   { apple = "https://www.apple.com" },
-  #   { blogger = "https://username.blogspot.com/" },
-  #   { codepen = "https://codepen.io/username" },
-  #   { dev = "https://dev.to/username" },
-  #   { discord = "https://discord.gg/invitecode" },
-  #   { dribbble = "https://dribbble.com/username" },
-    { facebook = "https://facebook.com/HeyItsGilbert" },
-  #   { flickr = "https://www.flickr.com/photos/username/" },
-  #   { foursquare = "https://foursquare.com/username" },
-    { github = "https://github.com/HeyItsGilbert" },
-  #   { gitlab = "https://gitlab.com/username" },
-  #   { google = "https://www.google.com/" },
-  #   { hashnode = "https://username.hashnode.dev" },
-    { instagram = "https://instagram.com/gilbertsanchez" },
-  #   { keybase = "https://keybase.io/username" },
-  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
-  #   { lastfm = "https://lastfm.com/user/username" },
-    { linkedin = "https://linkedin.com/in/gilbertsanchez" },
-    { mastodon = "https://fosstodon.org/@HeyItsGilbert" },
-  #   { medium = "https://medium.com/username" },
-  #   { microsoft = "https://www.microsoft.com/" },
-  #   { orcid = "https://orcid.org/userid" },
-  #   { patreon = "https://www.patreon.com/username" },
-  #   { pinterest = "https://pinterest.com/username" },
-  #   { reddit = "https://reddit.com/user/username" },
-  #   { researchgate = "https://www.researchgate.net/profile/username" },
-  #   { slack = "https://workspace.url/team/userid" },
-  #   { snapchat = "https://snapchat.com/add/username" },
-  #   { soundcloud = "https://soundcloud.com/username" },
-  #   { stack-overflow = "https://stackoverflow.com/users/userid/username" },
-  #   { steam = "https://steamcommunity.com/profiles/userid" },
-  #   { telegram = "https://t.me/username" },
-  #   { tiktok = "https://tiktok.com/@username" },
-  #   { tumblr = "https://username.tumblr.com" },
-  #   { twitch = "https://twitch.tv/username" },
-    { twitter = "https://twitter.com/HeyItsGilbertS" },
-  #   { whatsapp = "https://wa.me/phone-number" },
-  #   { youtube = "https://youtube.com/username" },
-  ]
-
-
-title = "Hey! It's Gilbert!"
-dateFormat = "Monday, January 2, 2006"
-# copyright = "Copy, _right?_ :thinking_face:"
-#header.logo = "img/logo.png"
+[rssnext]

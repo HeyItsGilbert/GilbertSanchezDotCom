@@ -1,77 +1,77 @@
-# -- Main Menu --
-# The main menu is displayed in the header at the top of the page.
-# Acceptable parameters are name, pageRef, page, url, title, weight.
-# 
-# The simplest menu configuration is to provide:
-#   name = The name to be displayed for this menu link
-#   pageRef = The identifier of the page or section to link to
-#
-# By default the menu is ordered alphabetically. This can be
-# overridden by providing a weight value. The menu will then be
-# ordered by weight from lowest to highest.
+[[main]]
+none = "none"
 
 [[main]]
-  name = "📰Posts"
-  pageRef = "posts"
-  weight = 10
+name = ":newspaper:Posts"
+pageRef = "posts"
+identifier = "81PNQBduNI"
+weight = 1
 
 [[main]]
-  name = "🌱Notes"
-  url = "https://garden.gilbertsanchez.com/"
-  weight = 20
+name = ":seedling: Notes"
+url = "https://garden.gilbertsanchez.com/"
+identifier = "yCv4RCmvLj"
+weight = 2
 
 [[main]]
-  name = "📓Projects"
-  pageRef = "projects"
-  weight = 30
+name = ":notebook: Projects"
+pageRef = "projects"
+identifier = "Zqhlk2ZASq"
+weight = 3
 
 [[main]]
-  name = "🧑‍💻Presentations"
-  pageRef = "presentations"
-  weight = 40
+name = ":technologist: Presentations"
+pageRef = "presentations"
+identifier = "dajioPsoJd"
+weight = 4
 
 [[main]]
-  name = "🏷️Tags"
-  pageRef = "tags"
-  weight = 90
+name = ":label: Tags"
+pageRef = "tags"
+identifier = "vHqD2oFFMh"
+weight = 5
 
 [[main]]
-  name = "🗞️RSS"
-  url = "https://gilbertsanchez.com/index.xml"
-  weight = 100
-  
-
-
-# -- Footer Menu --
-# The footer menu is displayed at the bottom of the page, just before
-# the copyright notice. Configure as per the main menu above.
+name = ":newspaper_roll: RSS"
+pageRef = "index.xml"
+identifier = "zNh9Tjq8MD"
+weight = 6
 
 [[footer]]
-  name = "📰 Posts"
-  pageRef = "posts"
-  weight = 10
+none = "none"
 
 [[footer]]
-  name = "🌱 Notes"
-  url = "https://garden.gilbertsanchez.com/"
-  weight = 20
+name = ":newspaper:Posts"
+pageRef = "posts"
+identifier = "81PNQBduNI"
+weight = 1
 
 [[footer]]
-  name = "📓Projects"
-  pageRef = "projects"
-  weight = 30
+name = ":seedling: Notes"
+url = "https://garden.gilbertsanchez.com/"
+identifier = "yCv4RCmvLj"
+weight = 2
 
 [[footer]]
-  name = "🧑‍💻Presentations"
-  pageRef = "presentations"
-  weight = 40
+name = ":notebook: Projects"
+pageRef = "projects"
+identifier = "Zqhlk2ZASq"
+weight = 3
 
 [[footer]]
-  name = "🏷️Tags"
-  pageRef = "tags"
-  weight = 90
+name = ":technologist: Presentations"
+pageRef = "presentations"
+identifier = "dajioPsoJd"
+weight = 4
 
 [[footer]]
-  name = "🗞️RSS"
-  url = "https://gilbertsanchez.com/index.xml"
-  weight = 100
+name = ":label: Tags"
+pageRef = "tags"
+identifier = "vHqD2oFFMh"
+weight = 5
+
+[[footer]]
+name = ":newspaper_roll: RSS"
+pageRef = "index.xml"
+identifier = "zNh9Tjq8MD"
+weight = 6

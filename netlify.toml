@@ -1,13 +1,18 @@
-# This will be your default build command
+# netlify.toml
+
 [build]
-publish = "public"
-command = "hugo --gc --minify"
+  command = "hugo mod get -u && hugo --gc --minify -b $URL"
+  publish = "public"
 
 [build.environment]
-HUGO_VERSION = "0.120.2"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+  NODE_ENV = "production"
+  GO_VERSION = "1.16"
+  TZ = "UTC"  # Set to preferred timezone
 
-# This will be your preview build
-[context.dev]
-command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"
+[context.production.environment]
+  HUGO_VERSION = "0.104.1"
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.104.1"
+  command = "hugo --config config.toml,config-prod.toml --buildFuture --buildDrafts --gc --minify -b $DEPLOY_PRIME_URL"

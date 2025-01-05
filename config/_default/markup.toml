@@ -4,8 +4,6 @@
 [goldmark]
 [goldmark.renderer]
   unsafe = true
-[goldmark.extensions]
-  footnote = true
 
 [highlight]
   noClasses = false
