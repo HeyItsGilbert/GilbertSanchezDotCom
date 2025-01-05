@@ -17,5 +17,11 @@ summaryLength = 0
 disqusShortname = "gilbertsanchez" 
 #googleAnalytics = "G-CWJLL32MYW"
 
+[taxonomies]
+posts = "posts"
+series = "series"
+tag = "tags"
+note = "notes"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
