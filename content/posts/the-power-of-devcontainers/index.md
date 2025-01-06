@@ -20,6 +20,7 @@ keywords:
   - DevEx
 series:
   - 10X Via DevEx
+series_order: 1
 type: posts
 lastmod: 2024-03-31T16:43:14.292Z
 ---

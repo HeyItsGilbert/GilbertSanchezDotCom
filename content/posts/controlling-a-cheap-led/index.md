@@ -7,7 +7,7 @@ slug = "controlling-a-cheap-led"
 summary = "A left over LED and a few spare parts turns into a fun and potential useful project."
 tags = [ "Docker", "Arduino" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 1'
-lastmod = "2023-01-01T20:14:52.347Z"
+lastmod = "2025-01-01T17:58:29.263Z"
 preview = "feature.png"
 +++
 
@@ -67,15 +67,11 @@ connection is completed.
 
 Random Starter Pack I used:
 
-{{< amzn "B07BLV5LFY" "1e3b531d2300b4afb8063c6649ba2bcb" >}}
-
 ## Microcontroller (ESP8266)
 
 So I ordered a 5 pack of ESP8266 microcontrollers from Amazon for around $10.
 These are great because they're super cheap and they come with easy to use WiFi
 library.
-
-{{< amzn "B081PX9YFV" "866d6a4b7939ff1c9c5390d2f1ab2fcd">}}
 
 ## MQTT Broker
 

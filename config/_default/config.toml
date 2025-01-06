@@ -1,9 +1,5 @@
-# -- Site Configuration --
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/getting-started/
-
 baseURL = "https://gilbertsanchez.com/"
-title = "Hey! It's Gilbert"
+title = "Hey! It's Gilbert!"
 defaultContentLanguage = "en"
 #theme = "congo"
 timeZone = "UTC"
@@ -16,6 +12,10 @@ summaryLength = 0
 
 disqusShortname = "gilbertsanchez" 
 #googleAnalytics = "G-CWJLL32MYW"
+
+[taxonomies]
+  series = "series"
+  tag = "tags"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
