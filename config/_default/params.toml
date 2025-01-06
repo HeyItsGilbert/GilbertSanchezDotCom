@@ -60,7 +60,7 @@ heroStyle = "background"
 showComments = true
 
 [list]
-showHero = false
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
@@ -68,24 +68,25 @@ showSummary = true
 showViews = false
 showLikes = false
 showTableOfContents = false
-showCards = false
+showCards = true
 orderByWeight = false
 groupByYear = true
 cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
+heroStyle = "background"
 
 [sitemap]
 excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
 showTermCount = true
-showHero = false
+showHero = true
 showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = false
-cardView = false
+cardView = true
 
 [term]
 showHero = true
@@ -93,9 +94,10 @@ showBreadcrumbs = false
 showViews = false
 showLikes = false
 showTableOfContents = true
-groupByYear = false
-cardView = false
+groupByYear = true
+cardView = true
 cardViewScreenWidth = false
+heroStyle = "background"
 
 [firebase]
 
