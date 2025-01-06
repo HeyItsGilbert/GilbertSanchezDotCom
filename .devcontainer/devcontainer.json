@@ -2,7 +2,7 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
   "features": {
     "ghcr.io/devcontainers/features/hugo:1": {
-      "version": "0.120.2",
+      "version": "0.125.4",
       "extended": "true"
     },
     "ghcr.io/shinepukur/devcontainer-features/vale:1": {
