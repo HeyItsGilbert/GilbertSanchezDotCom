@@ -5,8 +5,8 @@ description: ""
 summary: ""
 showReadingTime: true
 draft: true
-preview: feature.png
-lastmod: 2024-12-21T16:31:15.393Z
+preview: feature.jpeg
+lastmod: 2025-01-19T01:19:40.289Z
 slug: ""
 tags: []
 keywords: []
