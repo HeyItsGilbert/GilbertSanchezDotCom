@@ -6,7 +6,7 @@ summary: ""
 showReadingTime: true
 draft: true
 preview: feature.jpeg
-lastmod: 2025-01-19T01:19:40.289Z
+lastmod: 2025-01-20T16:28:38.382Z
 slug: ""
 tags: []
 keywords: []
@@ -20,8 +20,8 @@ see at work and show you how you can leverage AST's to update your codebase.
 
 I highly recommend the official [Creating Custom Rules] Microsoft doc as they do
 an excellent good job describing what's required for a PSScriptAnalyzer rule. My
-goal with this post is to help explain how I would approach and my suggests on
-how to inspect the components used at different stages.
+goal with this post is to help explain how I would approach and inspect the
+various components.
 
 One day at work you're given a task to remove and update code across your
 repositories. That could look like a few different things.
@@ -29,11 +29,81 @@ repositories. That could look like a few different things.
 Some examples:
 
 - Replacing old functions with new ones
-- Identify reuse of properties that should be unique (ID's)
+- Identify the reuse of properties that should be unique (ID's)
 - Looking for code that doesn't follow your orgs style
 
 In this post we'll start with a specific example, but keep in mind that this
-could apply to all sorts of things.
+could apply to all sorts of things. Before we hop into the [problem](#problem)
+I'll briefly cover how to inspect an AST and a few tricks on creating
+scriptblocks.
+
+## Abstract Syntax Tree - AST
+
+An Abstract Syntax Tree (AST) is a hierarchical representation of the structure
+of source code. It breaks the code down into its syntactic components like
+functions, loops, and expressions. This allows us analyze and manipulate the
+code more intelligently because it can understand the context and relationships
+that plain text searches or regex can't capture.
+
+### Creating & Inspecting the AST
+
+There are several ways to look at the AST. I'll show you 3 ways to create a
+scriptblock that you can inspect.
+
+#### Inline Scriptblock
+
+The easiest way is to create a scriptblock which is code wrapped in `{` and `}`.
+Here is an example of creating a scriptblock and reading it's AST:
+
+```powershell
+$scriptBlock = {
+  New-Pizza
+}
+```
+
+#### Create Scriptblock via Create Method
+
+Sometimes you want to create a scriptblock by joining different files or
+creating one from a string.
+
+```powershell
+$scriptBlock = [scriptblock]::Create('New-Pizza')
+```
+
+#### Create Scriptblock via Parser
+
+Another way to do this is create a script block from a file.
+
+```powershell
+$Tokens = $null
+$Errors = $null
+$scriptBlock = [System.Management.Automation.Language.Parser]::ParseInput(
+  '.\PizzaGenerator.ps1',
+  [ref]$Tokens,
+  [ref]$Errors
+)
+```
+
+{{< alert icon="star">}}
+Thanks Jordan Borean for reminding me about the ParseFile method!
+{{< /alert >}}
+
+### `.AST` Property
+
+Each of those `$scriptblock` variables would now have a property called `AST`.
+This is excellect way of inspecting how your code was parsed.
+
+### AST Types
+
+You can run the following to get a list of all the possible AST's to target.
+This grabs the AST type and looks for all the other types in the assembly. This
+filters to anything that's a subclass of the AST type.
+
+```powershell
+[System.Management.Automation.Language.Ast].Assembly.GetTypes() | Where-Object {
+  $_.IsSubclassOf([System.Management.Automation.Language.Ast])
+}
+```
 
 ## Problem
 
@@ -41,9 +111,13 @@ You have to identify where people are using two parameters together that
 shouldn't go together. You could fix the code to warn or throw, but maybe this
 work is in preparation for a future change.
 
-Our example: Find all call sites of New-Pizza and find where people are
+Our example:
+
+{{< lead >}}
+Find all call sites of New-Pizza and find where people are
 including pineapple. Corporate has decided that they want to draw a line, but
 only because the price of pineapples has skyrocketed.
+{{< /lead >}}
 
 So we want to look for code that might look like this:
 
@@ -55,7 +129,7 @@ New-Pizza -Size 'Large' -Ingredients @('Ham','Pineapple')
 $ingredients = @('Ham','Pineapple')
 New-Pizza -Size 'Medium' -Ingredients $ingredients
 
-# Or maybe this
+# Or maybe from a splat
 $splat = @{
   Size = 'Small'
   Ingredients = $ingredients
@@ -63,68 +137,17 @@ $splat = @{
 New-Pizza @splat
 ```
 
+{{< alert >}}
+For the rest of the examples you can follow along by reading the
+[MainExample.ps1](#problem) file from above into `$ScriptBlock`.
+{{< /alert >}}
+
 Normally you might do a simple search to fix something like the first one. Find
 all lines with `New-Pizza` and contains `Pineapple`. A simple replace would
 probably not suffice but a regex could (e.g. something like
 `s/(New-Pizza.*)'Pineapple'(.*)/$1$2/g`). The problem is that could never work
 for the other two where the value is set on other lines or in variables.
 This is where AST's can help us.
-
-## Abstract Syntax Tree - AST
-
-An Abstract Syntax Tree (AST) is a hierarchical representation of the structure
-of source code. It breaks the code down into its syntactic components like
-functions, loops, and expressions. This allows us analyze and manipulate the
-code more intelligently because it can understand the context and relationships
-that plain text searches or regex can't capture.
-
-## Creating & Inspecting the AST
-
-There are several ways to look at the AST, but the easiest it to read a script
-block.
-
-Here is an example of creating a scriptblock and reading it's AST:
-
-```powershell
-$scriptBlock = {
-  New-Pizza
-}
-$scriptBlock.AST
-```
-
-Another way to do this is create a script block from a file. Here is an example
-file with to commands.
-
-```powershell {file=PizzaGenerator.ps1}
-New-Pizza -Size 'Large'
-Write-Host "Making za!"
-```
-
-Here we will read the file and then convert it to a scriptblock.
-
-```powershell
-$Tokens = $null
-$Errors = $null
-$scriptBlock = [System.Management.Automation.Language.Parser]::ParseInput('.\PizzaGenerator.ps1', [ref]$Tokens, [ref]$Errors)
-```
-
-The first line reads the files as string. And then the scriptblock type has a
-create method which accepts strings.
-
-{{< alert >}}
-For the rest of the examples you can follow along by reading the MainExample.ps1
-file from above into `$ScriptBlock`.
-{{< /alert >}}
-
-## AST Types
-
-You can run the following to get a list of all the possible AST's to target.
-This grabs the AST type and looks for all the other types in the assembly. This
-it filters to anything that's a subclass of the AST type.
-
-```powershell
-[System.Management.Automation.Language.Ast].Assembly.GetTypes() | Where {$_.IsSubclassOf([System.Management.Automation.Language.Ast])}
-```
 
 ## Step One: Find The Relevant Commands
 
@@ -337,12 +360,8 @@ other great posts.
 - [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts]
 - [Learn about the PowerShell Abstract Syntax Tree (AST) - Part 2]
 
-Thanks Jordan Borean for reminding me about the ParseFile method which I
-couldn't recall.
-
 [Runspaces Simplified (as much as possible)]: https://blog.netnerds.net/2016/12/runspaces-simplified/
 [Searching the PowerShell Abstract Syntax Tree]: https://vexx32.github.io/2018/12/20/Searching-PowerShell-Abstract-Syntax-Tree/
 [Using the AST to Find Module Dependencies in PowerShell Functions and Scripts]: https://mikefrobbins.com/2019/05/17/using-the-ast-to-find-module-dependencies-in-powershell-functions-and-scripts/
 [Learn about the PowerShell Abstract Syntax Tree (AST) - Part 2]: https://mikefrobbins.com/2018/10/24/learn-about-the-powershell-abstract-syntax-tree-ast-part-2/
-[FindAll method]: https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.language.ast.findall?view=powershellsdk-7.4.0
 [Creating Custom Rules]: https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/create-custom-rule?view=ps-modules
