@@ -77,7 +77,7 @@ Another way to do this is create a script block from a file.
 ```powershell
 $Tokens = $null
 $Errors = $null
-$scriptBlock = [System.Management.Automation.Language.Parser]::ParseInput(
+$scriptBlock = [System.Management.Automation.Language.Parser]::ParseFile(
   '.\PizzaGenerator.ps1',
   [ref]$Tokens,
   [ref]$Errors
