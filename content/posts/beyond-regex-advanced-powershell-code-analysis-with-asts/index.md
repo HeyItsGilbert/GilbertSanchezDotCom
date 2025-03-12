@@ -1,14 +1,16 @@
 ---
 title: "Beyond Regex: Advanced PowerShell Code Analysis with ASTs"
-date: null
-description: ""
-summary: ""
+date: 2025-03-12T22:43:00.0Z
+description: In this post I'll be walking through an example of a (silly) request you might see at work and show you how you can leverage AST's to update your codebase.
+summary: In this post I'll be walking through an example of a (silly) request you might see at work and show you how you can leverage AST's to update your codebase.
 showReadingTime: true
-draft: true
+draft: false
 preview: feature.jpeg
-lastmod: 2025-01-20T16:28:38.382Z
-slug: ""
-tags: []
+slug: regex-advanced-powershell-code-analysis-asts
+tags:
+  - Linting
+  - PowerShell
+  - VSCode
 keywords: []
 series: []
 type: posts
