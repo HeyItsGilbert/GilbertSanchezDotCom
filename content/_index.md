@@ -12,7 +12,7 @@ to the notes in my [Digital Garden](https://garden.gilbertsanchez.com/).
 Nothing I write is "The Way" but rather "A Way". Have a different approach?
 Tell me all about it!
 
-I work as a Staff Software Development Engineer at Tesla, formerly known as
+I work as a Staff Software Development Engineer, formerly known as
 the Señor Systems Engineer at Meta. I enjoy spreading the love of
 PowerShell at scale. A fan of Role Playing Games (RPG), you can check out my
 RPG-oriented modules on the PowerShell Gallery.
