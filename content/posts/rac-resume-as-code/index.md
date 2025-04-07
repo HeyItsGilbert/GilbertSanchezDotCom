@@ -6,7 +6,7 @@ summary: Create and manage your resume with JSON Resume. Learn schema basics, ho
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2025-04-07T20:56:52.035Z
+lastmod: 2025-04-07T21:21:05.186Z
 slug: rac-resume-as-code
 tags:
     - VSCode
@@ -21,17 +21,23 @@ type: posts
 fmContentType: posts
 ---
 
-A while ago I was applying for a new role and I had given my LinkedIn profile.
-The recruiter said that the team was interested in meeting, and she said the
-thing I was dreading... "Can you send me a copy of your resume?"
+A few months ago I was applying for a new role and I was able to give my
+LinkedIn profile (which was mostly up to date). The recruiter replied later and
+said that the team was interested in meeting and..
+
+> "Can you send me a copy of your resume?"
 
 <iframe src="https://giphy.com/embed/QajHhLKW3VRcs" width="480" height="317"
 style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a
 href="https://giphy.com/gifs/QajHhLKW3VRcs">via GIPHY</a></p>
 
-See the last time I worked on my resume it was on... Apple Pages
-:man_facepalming: Maybe you wrote yours in Word, and now you don't have access to it. Or it
-renders weird in the new version. Have you edited it lately? Messing with weird tables and odd formatting. The bullet points are different font sizes and it just looks sloppy.
+See the last time I worked on my resume it was on...  Apple
+Pages :man_facepalming:. Which was a problem since I hadn't owned a Mac in almost a decade.
+
+Maybe you wrote yours in Word, and now you don't have access to Word. Or maybe
+it renders strangely in the new version. Have you edited it lately? Having to
+deal with things like messing with weird tables and odd formatting. The bullet
+points are different font sizes and it just looks sloppy.
 
 So how do you avoid this ecosystem lock in? Use JSON!
 
@@ -43,7 +49,7 @@ By the end of this you'll learn about JSON Resume:
 4. Be able to quickly create your resume on Netlify.
 
 {{< alert >}}
-Just want to get it done?
+Want the tl;dr?
 
 1. Clone my [resume repository](https://github.com/HeyItsGilbert/resume)
 2. Update the `resume.json` with your info.
@@ -58,7 +64,8 @@ JSON Resume is a FOSS project that allows you to codify the data of your resume
 into JSON. It offers a simple schema to easy add/remove/update your resume over
 time.
 
-You can see an example of complete resume at on the [Schema](https://jsonresume.org/schema) page.
+You can see an example of complete resume at on the
+[Schema](https://jsonresume.org/schema) page.
 
 The one thing i would suggest is adding the schema to top of your JSON:
 
@@ -96,10 +103,12 @@ Rinse and repeat as you make changes.
 
 ## Serve It
 
-You have a few options to share this.
+Once you've built your resume html you now need to service it over the web. You
+have a few options to do that.
 
 1. Post your `resume.json` as a gist and it'll automatically show up.
-2. Use a static site hosting service where you can build your resume, just like you just did.
+2. OR Use a static site hosting service where you can build your resume, just like you just did.
+3. OR Do both!
 
 ### Gist
 
@@ -139,10 +148,20 @@ Here are my "Build Settings"
 
 So the only real "magic" is telling it to run the build step.
 
+### Both
+
+To do both you can just take your JSON from your repository and upload it to your gist every time it updates.
+
+For GitHub you can use a github workflow with an action like `exuanbo/actions-deploy-gist`. You can see an example of how I do it at [gist.yml](https://github.com/HeyItsGilbert/resume/blob/main/.github/workflows/gist.yml). Note that your gist id will be unique.
+
 ## Tips
 
 1. `resumed` outputs `resume.html`, but you can rename it to whatever you want.
 2. Make your "live" version long, and tweak your JSON to generate role specific
    resumes.
    - AI is excellent at transforming structured data like JSON!
-3. Find a theme that prints well.
+3. Find a theme that prints well so you can easily print to PDF.
+
+---
+
+This was a quick one I put together. Feel free to let me know if you have any questions/suggestions!
