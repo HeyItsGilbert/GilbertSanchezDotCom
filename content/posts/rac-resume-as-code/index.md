@@ -6,7 +6,7 @@ summary: Create and manage your resume with JSON Resume. Learn schema basics, ho
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2025-04-07T20:52:42.023Z
+lastmod: 2025-04-07T20:56:52.035Z
 slug: rac-resume-as-code
 tags:
     - VSCode
@@ -33,7 +33,7 @@ See the last time I worked on my resume it was on... Apple Pages
 :man_facepalming: Maybe you wrote yours in Word, and now you don't have access to it. Or it
 renders weird in the new version. Have you edited it lately? Messing with weird tables and odd formatting. The bullet points are different font sizes and it just looks sloppy.
 
-So how do you avoid this ecosystem lock in? Use Json!
+So how do you avoid this ecosystem lock in? Use JSON!
 
 By the end of this you'll learn about JSON Resume:
 
@@ -68,7 +68,7 @@ The one thing i would suggest is adding the schema to top of your JSON:
 }
 ```
 
-If your editor supports it, which VSCode does, you'll now get IntelliSense support for adding info.
+If your editor supports it, which VS Code does, you'll now get IntelliSense support for adding info.
 
 ![IntelliSense Example of Basics Options](image.png)
 
