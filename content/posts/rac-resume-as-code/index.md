@@ -1,15 +1,21 @@
 ---
 title: "RaC: Resume as Code"
-date: null
-description: ""
-summary: ""
+date: 2025-04-07T20:51:42.576Z
+description: Create and manage your resume with JSON Resume. Learn schema basics, hosting, themes, and deployment for easy, professional updates.
+summary: Create and manage your resume with JSON Resume. Learn schema basics, hosting, themes, and deployment for easy, professional updates.
 showReadingTime: true
-draft: true
+draft: false
 preview: feature.jpeg
-lastmod: 2025-04-06T16:22:24.592Z
-slug: ""
-tags: []
-keywords: []
+lastmod: 2025-04-07T20:52:42.023Z
+slug: rac-resume-as-code
+tags:
+    - VSCode
+    - FOSS
+keywords:
+    - FOSS
+    - JSONResume
+    - VSCode
+    - json
 series: []
 type: posts
 fmContentType: posts
@@ -48,8 +54,9 @@ Just want to get it done?
 
 > JSON Resume is a community driven open source initiative to create JSON-based standard for resumes. - <https://jsonresume.org/>
 
-JSON Resume allows your to codify the data of your resume into JSON. It offers a
-simple schema to easy add/remove/update your resume over time.
+JSON Resume is a FOSS project that allows you to codify the data of your resume
+into JSON. It offers a simple schema to easy add/remove/update your resume over
+time.
 
 You can see an example of complete resume at on the [Schema](https://jsonresume.org/schema) page.
 
@@ -108,7 +115,9 @@ The gist is the easiest way to share your resume.
 This is my preferred way because it allows me to easily build my static content and serve it under my personal resume.
 
 1. Make a GitHub repository to host your resume, and few other files.
-   1. You can make this easy by cloning my [resume repository](https://github.com/HeyItsGilbert/resume) and updating the `resume.json`
+   1. You can make this easy by cloning my
+      [resume repository](https://github.com/HeyItsGilbert/resume) and updating
+      the `resume.json`
 2. Create an account or sign in on Netlify.
 3. Grant access to your new resume repository.
 4. Then you have to configure your build.
@@ -129,3 +138,11 @@ Here are my "Build Settings"
 - Functions directory: netlify/functions
 
 So the only real "magic" is telling it to run the build step.
+
+## Tips
+
+1. `resumed` outputs `resume.html`, but you can rename it to whatever you want.
+2. Make your "live" version long, and tweak your JSON to generate role specific
+   resumes.
+   - AI is excellent at transforming structured data like JSON!
+3. Find a theme that prints well.
