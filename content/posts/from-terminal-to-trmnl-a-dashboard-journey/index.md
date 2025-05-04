@@ -1,38 +1,46 @@
 ---
 title: "From Terminal to TRMNL: A PowerShell Dashboard Journey"
 date: null
-description: ""
-summary: ""
+description: It’s surprisingly easy to build your own custom dashboard with TRMNL, webhooks, and a bit of PowerShell.
+summary: It’s surprisingly easy to build your own custom dashboard with TRMNL, webhooks, and a bit of PowerShell. I used it to send dynamic data (like quotes and images) to an old device—no polling needed, just a simple POST and some fun templating.
 showReadingTime: true
 draft: false
-preview: feature.png
-lastmod: 2025-04-27T03:27:53.781Z
-slug: ""
-tags: []
-keywords: []
+preview: feature.jpeg
+lastmod: 2025-05-04T19:05:37.150Z
+slug: terminal-to-trmnl-with-powershell
+tags:
+  - PowerShell
+  - TRMNL
+  - REST
+keywords:
+  - PowerShell
+  - TRMNL
+  - webhook
 series: []
 type: posts
 fmContentType: posts
 ---
+<!-- spell-checker:ignore TRMNL -->
 
-"I need another monitor" I whisper to myself again... But the "3 monitor curse"
-always came to mind. That's a longer story for another time. I thought about the
-problem and what I really needed was something to show me dashboards, remind me
-of upcoming events, etc. That's when I saw
+"I need another monitor" I whisper to myself again… But the "3 monitor curse"
+always came to mind. That's a longer story for another time.
+
+I thought about the problem and what I really needed was something to show me
+dashboards, remind me of upcoming events, etc. That's when I saw
 [Snazzy Labs video about TRMNL](https://www.youtube.com/watch?v=eIcZZX10pa4).
 It's funny because I've been trying to figure out how to turn my old kindle into
-an e-ink display. Just made sense for low fidelity stats and low power.
+an e-ink display. Just made sense for low-fidelity stats and low power.
 
 I think the TRMNL business model is really interesting and I love their open
 source support. You can build your own device and even use your own server.
 
 Creating your own plugin just takes a few clicks and they support polling for
-data or using a webhook. Polling is great if you have one end point that has all
+data or using a webhook. Polling is great if you have one endpoint that has all
 the data you're looking for. But what about when you have disparate data? Or
 maybe polling the data would be problematic. That's where leveraging the webhook
 can come into play.
 
-You know what's good at massaging data and hitting REST end points? PowerShell!
+You know what's good at massaging data and hitting REST endpoints? PowerShell!
 This felt like a no-brainer to me.
 
 ## Overview
@@ -40,6 +48,7 @@ This felt like a no-brainer to me.
 So before we dive into building our own plugin, let's quickly cover a few key
 concepts.
 
+<!-- markdownlint-disable-next-line no-inline-html -->
 <div style="background-color:white; padding: 20px">
 {{< mermaid >}}
 sequenceDiagram
@@ -61,7 +70,7 @@ polling, webhooks, or static data.
 
 The TRMNL site allows you to easily create your own plugins. They have a
 phenomenal [design system](https://usetrmnl.com/framework) that let's you write
-some very basic HTML and get back a nice dashboard.
+some basic HTML and get back a nice dashboard.
 
 Polling is ideal when:
 
@@ -69,7 +78,7 @@ Polling is ideal when:
 - Has easy to use authentication model.
 - Has all the data on a single endpoint.
 
-Webook is ideal when:
+Webhook is ideal when:
 
 - You need to compile/massage the data into the format you want.
 - You have multiple endpoints.
@@ -85,11 +94,11 @@ and start modifying it to get you your desired look.
 
 ## Webhooks & PowerShell
 
-When you create a webhook plugin you are given a URL to post your data to.
-Sending JSON data is a very common thing to do with PowerShell.
+When you create a webhook plugin you are given an address to post your data to.
+Sending JSON data is a common thing to do with PowerShell.
 
 ```powershell
-# Build your hashtable to store
+# Build your hash table to store
 $body = @{
   merge_variables = @{
     # All of these items will be available in your plugin
@@ -103,7 +112,6 @@ $invokeRestMethodSplat = @{
   ContentType = 'application/json'
 }
 Invoke-RestMethod @invokeRestMethodSplat
-
 ```
 
 You'll want to schedule it with your scheduler of choice (e.g., task scheduler,
@@ -112,7 +120,7 @@ you send it too often you'll get a 429 HTTP code.
 
 ## Putting it All Together
 
-I need a dashboard that shows me some text and maybe a photo. Of what? Bacon.
+I need a dashboard that shows me some text and maybe a photo. Of what? Bacon 🥓
 
 Let's start with making the plugin.
 
@@ -124,7 +132,7 @@ Let's start with making the plugin.
       - ![The strategy section](image-1.png)
    3. That's it!
 3. Save it and then you'll get a webhook url.
-4. You'll then want to copy the "Webhook URL".
+4. You'll then want to copy the "Webhook URL."
    - ![Webhook URL section](image-3.png)
 
 Next we'll write a script so that we can send info to the webhook.
@@ -140,7 +148,7 @@ $invokeRestMethodSplat = @{
 $quote = Invoke-RestMethod @invokeRestMethodSplat
 #endregion Do a bunch of work to get data
 
-# Build your hashtable to store
+# Build your hash table to store
 $body = @{
   merge_variables = @{
     Picture = "https://baconmockup.com/300/200"
@@ -166,13 +174,13 @@ I decided to use one of the examples with a nice large text section.
 ![Quickstart Example](image-5.png)
 
 If you scroll to the bottom, you can see what variables you have. You should see
-your data. For my code, I should have a nice bacon quote and URL for an image.
-![Your Variables section](image-6.png)
+your data. For my code, I should have a nice bacon quote and address of an
+image. ![Your Variables section](image-6.png)
 
 I update the text to use my reference by putting `{{ Quote }}`. I then do a
 quick lookup in the design system for showing
 [images](https://usetrmnl.com/framework/image). So I add
-`<img class="image-dither" src="{{ Picture }}">`. Save that...
+`<img class="image-dither" src="{{ Picture }}">`. Save that…
 
 And now!
 ![alt text](image-7.png)
@@ -180,11 +188,15 @@ And now!
 Make sure to add it to your playlist!
 
 ![alt text](photo.jpg)
-And now you can find your zen...
+And now you can find your zen…
 
 ## Tips
 
-1. Arrays are an excellent way to track lists, but hashtables work even better!
+The docs are pretty good and if you're stuck check them out.
+
+1. Arrays are an excellent way to track lists, but hash tables work even better!
    - [Handling Lists](https://help.usetrmnl.com/en/articles/10671186-liquid-101#h_36fa49cde9)
 2. Limit how often you send your data to avoid 429 HTTP codes.
 3. The "Liquid" templating language has a lot of useful functions and filters.
+   - Check out the
+    [Advanced doc](https://help.usetrmnl.com/en/articles/10693981-advanced-liquid)
