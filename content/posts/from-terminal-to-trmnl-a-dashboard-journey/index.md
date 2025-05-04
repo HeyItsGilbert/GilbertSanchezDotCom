@@ -6,7 +6,7 @@ summary: It’s surprisingly easy to build your own custom dashboard with TRMNL,
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2025-05-04T19:29:06.004Z
+lastmod: 2025-05-04T19:43:28.546Z
 slug: terminal-to-trmnl-with-powershell
 tags:
   - PowerShell
@@ -234,20 +234,32 @@ quick lookup in the design system for showing
 ```
 
 And now!
-![alt text](image-7.png)
+![Preview screenshot of the plugin](image-7.png)
 
 Make sure to add it to your playlist!
 
-![alt text](photo.jpg)
+![Photo of the plugin showing on a TRMNL device](photo.jpg)
 And now you can find your zen…
+
+## But Seriously
+
+This is obviously a silly example, but it shows you how easy it is to build a custom plugin and easily send data with PowerShell.
+
+What's a more realistic example? How about pending GitHub PR's from work
+repository? That's not type of you or your security team may want the TRMNL
+servers polling. But a local PowerShell script running as you plus the ability
+to send a limited subset of information, that's probably less of a concern.
+
+Or maybe you're taking across multiple sources and calculating some metrics. Or maybe many metrics. What about pending PR's and stats about a Jira queue(s)? Anything is possible!
 
 ## Tips
 
-The docs are pretty good and if you're stuck check them out.
+The docs are pretty good and if you're stuck make sure to check them out.
 
 1. Arrays are an excellent way to track lists, but hash tables work even better!
    - [Handling Lists](https://help.usetrmnl.com/en/articles/10671186-liquid-101#h_36fa49cde9)
-2. Limit how often you send your data to avoid 429 HTTP codes.
+   - Think of handling a single item as an object - something PowerShell is great at!
+2. Limit how often you send your data to avoid 429 HTTP codes. I shoot for every 15 or 30 minutes.
 3. The "Liquid" templating language has a lot of useful functions and filters.
    - Check out the
     [Advanced doc](https://help.usetrmnl.com/en/articles/10693981-advanced-liquid)
