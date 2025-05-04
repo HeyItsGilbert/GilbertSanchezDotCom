@@ -6,7 +6,7 @@ summary: It’s surprisingly easy to build your own custom dashboard with TRMNL,
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2025-05-04T19:43:28.546Z
+lastmod: 2025-05-04T19:47:47.406Z
 slug: terminal-to-trmnl-with-powershell
 tags:
   - PowerShell
@@ -246,11 +246,13 @@ And now you can find your zen…
 This is obviously a silly example, but it shows you how easy it is to build a custom plugin and easily send data with PowerShell.
 
 What's a more realistic example? How about pending GitHub PR's from work
-repository? That's not type of you or your security team may want the TRMNL
+repository? That's not type of data you or your security team may want the TRMNL
 servers polling. But a local PowerShell script running as you plus the ability
 to send a limited subset of information, that's probably less of a concern.
 
-Or maybe you're taking across multiple sources and calculating some metrics. Or maybe many metrics. What about pending PR's and stats about a Jira queue(s)? Anything is possible!
+Or maybe you're taking data from across multiple sources and calculating some
+metrics. Or maybe many metrics. What about pending PR's AND stats about a Jira
+queues? Anything is possible!
 
 ## Tips
 
