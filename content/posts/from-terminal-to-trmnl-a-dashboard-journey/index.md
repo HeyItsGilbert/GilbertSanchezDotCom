@@ -6,7 +6,7 @@ summary: It’s surprisingly easy to build your own custom dashboard with TRMNL,
 showReadingTime: true
 draft: false
 preview: feature.jpeg
-lastmod: 2025-05-04T19:05:37.150Z
+lastmod: 2025-05-04T19:29:06.004Z
 slug: terminal-to-trmnl-with-powershell
 tags:
   - PowerShell
@@ -42,6 +42,11 @@ can come into play.
 
 You know what's good at massaging data and hitting REST endpoints? PowerShell!
 This felt like a no-brainer to me.
+
+{{< alert "wand-magic-sparkles" >}}
+I was able to get a referral code from TRMNL. If you use `HeyItsGilbert` at the
+checkout, you'll get $10 off!
+{{< /alert >}}
 
 ## Overview
 
@@ -173,6 +178,29 @@ On the private plugin page you'll want to click on "Edit Markup".
 I decided to use one of the examples with a nice large text section.
 ![Quickstart Example](image-5.png)
 
+The html from that example looks like this:
+
+```html
+<div class="layout">
+  <div class="columns">
+    <div class="column">
+      <div class="markdown gap--large">
+        <span class="title">First Time Around</span>
+        <div class="content-element content clamp--20" data-height-threshold="320">
+          <p><i><b>First Time Around</b></i> is a one-disk DVD by Randy Bachman and Burton Cummings recorded in 2006 at CBC Studios in Toronto, Canada, by CBC. It was originally shown on CBC in April 2006, but was later released as a DVD with extended footage of the concert. The concert has 20 tracks of songs by Bachman-Turner Overdrive, Burton Cummings, The Guess Who and cover versions of artists such as Sting and Jimi Hendrix. It was originally shown on CBC in April 2006, but was later released as a DVD with extended footage of the concert. The concert has 20 tracks of songs by Bachman-Turner Overdrive, Burton Cummings, The Guess Who and cover versions of artists such as Sting and Jimi Hendrix Sting and Jimi Hendrix. It was originally shown on CBC in April 2006, but was later released as a DVD with extended footage of the concert. The concert has 20 tracks of songs by Bachman-Turner Overdrive, Burton Cummings, The Guess Who and cover versions of artists such as Sting and Jimi Hendrix Sting and Jimi Hendrix. It was originally shown on CBC in April 2006, but was later released as a DVD with extended footage of the concert. The concert has 20 tracks of songs by Bachman-Turner Overdrive, Burton Cummings, The Guess Who and cover versions of artists such as Sting and Jimi Hendrix.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg">
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance">Description</span>
+</div>
+```
+
 If you scroll to the bottom, you can see what variables you have. You should see
 your data. For my code, I should have a nice bacon quote and address of an
 image. ![Your Variables section](image-6.png)
@@ -181,6 +209,29 @@ I update the text to use my reference by putting `{{ Quote }}`. I then do a
 quick lookup in the design system for showing
 [images](https://usetrmnl.com/framework/image). So I add
 `<img class="image-dither" src="{{ Picture }}">`. Save that…
+
+```html
+<div class="layout">
+  <div class="columns">
+    <div class="column">
+      <div class="markdown gap--large">
+        <span class="title">Bacon Zen</span>
+        <img class="image-dither" src="{{ Picture }}">
+        <div class="content-element content clamp--20" data-height-threshold="320">
+          {{ Quote }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg">
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance">Breathe...</span>
+</div>
+
+```
 
 And now!
 ![alt text](image-7.png)
