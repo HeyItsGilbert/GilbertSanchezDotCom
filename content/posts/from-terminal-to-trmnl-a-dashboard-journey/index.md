@@ -140,7 +140,8 @@ Let's start with making the plugin.
 4. You'll then want to copy the "Webhook URL."
    - ![Webhook URL section](image-3.png)
 
-Next we'll write a script so that we can send info to the webhook.
+Next we'll write a script so that we can send info to the webhook. Remember to
+replace the `GUID_HERE` with your webhook URL GUID.
 
 ```powershell
 #region Do a bunch of work to get data
@@ -162,7 +163,7 @@ $body = @{
 }
 $invokeRestMethodSplat = @{
   Method      = 'POST'
-  Uri         = 'https://usetrmnl.com/api/custom_plugins/1a1f7911-3259-45c2-a16f-4101370c4e19'
+  Uri         = 'https://usetrmnl.com/api/custom_plugins/<GUID_HERE>'
   Body        = $body | ConvertTo-Json -Depth 5
   ContentType = 'application/json'
 }
