@@ -3,7 +3,7 @@ title: Stucco
 date: 2023-10-31T22:07:11.747Z
 summary: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
 description: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
-lastmod: 2023-11-01T00:23:31.230Z
+lastmod: 2025-05-09T23:08:04.833Z
 tags: []
 type: presentations
 preview: feature.png
@@ -24,6 +24,8 @@ Basic VM with the following configured
 -->
 <!-- markdownlint-disable MD026 -->
 
+{{< slideshow "/slides/Stucco.html" >}}
+
 # Stucco: Start to Publish
 
 Creating an open source module in minutes!
@@ -38,10 +40,10 @@ Creating an open source module in minutes!
 
 You can see the slides:
 
-- [Slides](Stucco.html)
+- [Slides](/slides/Stucco.html)
 - [One Page](https://gilbertsanchez.com/presentations/stucco/)
-- [PDF](Stucco.pdf)
-- [PPTX](Stucco.pptx)
+- [PDF](/slides/Stucco.pdf)
+- [PPTX](/slides/Stucco.pptx)
 
 ---
 
@@ -196,7 +198,6 @@ See [CI.yaml](https://github.com/HeyItsGilbert/RPGDice/blob/main/.github/workflo
 ---
 
 # Thank you!
-
 
 <br>
 <br>
