@@ -86,16 +86,6 @@
               scrolling="auto" allowfullscreen="allowfullscreen"></iframe>
           </div>
           {{ end }}
-          {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}
-          {{ $heroStyle := .Params.heroStyle }}
-          {{ if not $heroStyle }}{{ $heroStyle = .Site.Params.article.heroStyle }}{{ end }}
-          {{ $heroStyle := print "partials/hero/" $heroStyle ".html" }}
-          {{ if templates.Exists $heroStyle }}
-          {{ partial $heroStyle . }}
-          {{ else }}
-          {{ partial "partials/hero/basic.html" . }}
-          {{ end }}
-          {{ end }}
 
           {{ if .Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false) }}
           <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
