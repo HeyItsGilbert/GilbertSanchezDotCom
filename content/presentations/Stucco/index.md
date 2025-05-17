@@ -38,10 +38,10 @@ Creating an open source module in minutes!
 
 You can see the slides:
 
-- [Slides](Stucco.html)
-- [One Page](https://gilbertsanchez.com/presentations/stucco/)
-- [PDF](Stucco.pdf)
-- [PPTX](Stucco.pptx)
+- [Slides](./slides/Stucco.html)
+- [One Page](./presentations/stucco/)
+- [PDF](./slides/Stucco.pdf)
+- [PPTX](./slides/Stucco.pptx)
 
 ---
 
@@ -196,7 +196,6 @@ See [CI.yaml](https://github.com/HeyItsGilbert/RPGDice/blob/main/.github/workflo
 ---
 
 # Thank you!
-
 
 <br>
 <br>
