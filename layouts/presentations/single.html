@@ -80,10 +80,9 @@
         {{ partial "series/series.html" . }}
 
         <div class="article-content max-w-prose mb-20">
-          {{ $slideshow := (path.Join ("static\slides" .Page.File.Path) (.Get 0)) }}
-          {{ if (fileExists $slideshow | default false) }}
+          {{ if .Params.slideshow }}
             <div class="slideshow-container mb-6">
-              <iframe src="{{ $slideshow }}" width="100%" height="400" frameborder="0" scrolling="auto" allowfullscreen="allowfullscreen"></iframe>
+              <iframe src="{{ .Page.Site.BaseUrl }}{{ .Params.slideshow }}" width="100%" height="400" frameborder="0" scrolling="auto" allowfullscreen="allowfullscreen"></iframe>
             </div>
           {{ end }}
           {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}

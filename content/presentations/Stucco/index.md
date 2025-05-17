@@ -7,6 +7,7 @@ lastmod: 2023-11-01T00:23:31.230Z
 tags: []
 type: presentations
 preview: feature.png
+slideshow: /slides/Stucco.html
 marp: true
 theme: uncover
 class:
