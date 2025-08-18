@@ -10,7 +10,7 @@ Bootstrap, build, and test the repository with these exact commands:
 
 ```bash
 # 1. Install Node.js dependencies (includes Hugo binary installation)
-npm install
+yarn install
 # Takes ~30 seconds. NEVER CANCEL. Set timeout to 60+ seconds.
 
 # 2. Initialize Git submodules for themes
@@ -120,7 +120,7 @@ markdownlint content/posts/[post-name]/index.md
 ├── .devcontainer/          # VS Code dev container config
 ├── .github/workflows/      # GitHub Actions (merge scheduling)
 ├── .vscode/               # VS Code settings and tasks
-├── bin/hugo/              # Hugo binary (installed by npm)
+├── bin/hugo/              # Hugo binary (installed by yarn)
 ├── config/_default/       # Hugo configuration files
 ├── content/               # All site content
 │   ├── posts/            # Blog posts
@@ -187,7 +187,7 @@ markdownlint content/posts/[post-name]/index.md
 
 ### Common Build Failures
 1. **Missing theme**: Run `git submodule init && git submodule update`
-2. **Missing Hugo**: Run `npm install` to download Hugo binary
+2. **Missing Hugo**: Run `yarn install` to download Hugo binary
 3. **Network errors**: Comment out `{{< tweet >}}` shortcodes temporarily
 4. **Permission errors**: Ensure proper file permissions on `bin/hugo/hugo`
 
@@ -197,7 +197,7 @@ markdownlint content/posts/[post-name]/index.md
 - Presentation generation is the slowest operation (~15s per presentation)
 
 ### Dependencies
-- **Node.js 18+**: Required for npm and hugo-installer
+- **Node.js 18+**: Required for yarn and hugo-installer
 - **PowerShell 7+**: Required for presentation scripts  
 - **Git**: Required for theme submodule management
 - **Internet**: Required for some content (Twitter embeds, remote images)
@@ -206,7 +206,7 @@ markdownlint content/posts/[post-name]/index.md
 
 ```bash
 # Full development setup from scratch
-npm install && git submodule init && git submodule update
+yarn install && git submodule init && git submodule update
 
 # Build site  
 ./bin/hugo/hugo
