@@ -1,12 +1,11 @@
 ---
 title: "¿No Habla Inglés?: PowerShell Localization in Practice"
-date: null
+date: 2025-09-01
 description: "PowerShell localization made simple: step-by-step localization, community-driven translations, and best practices for developers."
 summary: PowerShell is global, but not everyone works in English. Let’s look at how localization works, how you can add it to your modules, and how to make it easy for your community to contribute translations
 showReadingTime: true
-draft: true
+draft: false
 preview: feature.png
-lastmod: 2025-08-31T01:10:11.780Z
 slug: no-habla-ingles-powershell-localization-practice
 tags:
     - GitHub
@@ -14,39 +13,49 @@ tags:
     - VSCode
     - FOSS
 keywords:
+    - FOSS
     - GitHub
+    - i18n
     - Localization
     - PowerShell
-    - FOSS
+    - l10n
 series: []
 type: posts
 fmContentType: posts
+lastmod: 2025-08-31T03:14:38.078Z
 ---
 
-[I know localization is important...](#localization-in-powershell)
+PowerShell is one of the languages that makes Localization very easy to
+implement. But what is Localization (l10n)? Is that different from
+Internationalization (i18n)?
+
+⏩ [I know localization is important⏩](#localization-in-powershell)
 
 If your primary language is English, and you haven't traveled it's
 easy to forget that there's an entire globe of people who don't speak
 English. Maybe you've visited a neighborhood where the primary language
 is different, and can remember how disorienting that can be.
 
-I'm a first generation Mexican American, aka Chicano, who grew up in a home
-where the primary language was Spanish. I only spoke Spanish until the age
-of 5, where in first grade I was placed (due to classroom limits) into an
-English speaking classroom. I definitely struggled that year, but thanks
-to my family my brother and I quickly transitioned. (Also thank you video
-games). But I'll never forget having to leave the safety of my friends
-and being placed into a room where communication capabilities where
+Internationalization (i18n) is the process of changing your software so that it
+isn't hard coded to one language. Localization (l10n) is the ongoing effort of
+adding more resource to support new languages.
 
-PowerShell is one of the languages that makes Localization very easy to
-implement. But what is Localization (l10n)? Is that different from
-Internationalization (i18n)?
+Why is this so important to me? I'm a first generation Mexican American, aka
+Chicano, who grew up in a home where the primary language was Spanish. I spoke
+only Spanish until the age of 5, where in first grade I was placed (due to
+classroom limits) into an English speaking classroom. I definitely struggled
+that year, but thanks to my family my brother and I quickly transitioned. (Also
+thank you video games). But I'll never forget having to leave the safety of my
+friends and being placed into a class where my communication capabilities were
+next to none. That experience taught me firsthand how language barriers can
+isolate people - which is why I'm passionate about making PowerShell accessible
+to everyone, regardless of their primary language.
 
 ## Localization in PowerShell
 
 PowerShell luckily provides us an easy way to create a variable that contains
-our text. We can simply create a PowerShell Data file (PSD1) and import it
-with `Import-LocalizedData`. Let's see it in action.
+our text. We can simply create a PowerShell Data file (PSD1) and import it with
+`Import-LocalizedData`. Let's see it in action.
 
 In our `.\en-US\Messages.psd1`:
 
@@ -81,7 +90,8 @@ Great! I mean we got the expected text... but RIP lil Sebastian.
 The `Messages.psd1` contains the key and values of our text. To support a new
 language you'll need to make the same file, but under a new folder. The folder
 would match the new supported language. To support US Spanish you could create
-`.\es-US\Messages.psd1`. The file would look like:
+`.\es-US\Messages.psd1`. Note that the keys stay the same, but the values
+change. The file would look like:
 
 ```powershell file=.\es-US\Messages.psd1
 ConvertFrom-StringData @'
@@ -91,15 +101,11 @@ LaughError = "¡JAJA! Error: {0}"
 '@
 ```
 
-{{< alert >}}
-Note that the keys stay the same, but the values change.
-{{< /alert >}}
-
 ## VSCode PowerShell Localization
 
-Localization is important to me especially with how easy PowerShell makes it to
-support. One challenge that I experienced was that it's often difficult to tell
-what a particular localized variable says.
+Speaking of making localization easier for users, I also want it to be easy for
+developers. One challenge that I experienced was that it can be difficult to
+tell what a particular localized variable says.
 
 As part of the PS Inclusive Organization that I started with Jake Hildreth, I
 decided to make an attempt at creating a VS Code extension. I was able to create
@@ -108,23 +114,25 @@ inline.
 
 ![example of PowerShell Localization extension](image.png)
 
-You can install the extension to make it easier to see what you're code would
+You can install the extension to make it easier to see what your code would
 output.
 
 ## Community Support
 
 So we've created 2 language files to support `en-US` (US English) and `es-US`
 (US Spanish), but what about all the other languages? This is where a community
-supporting program like [Crowdin] can be immensely helpful. While there are obvious
-paid features, for open source software you can actually create a free project.
+supporting program like [Crowdin] can be immensely helpful. While there are
+obvious paid features, for open source software you can actually create a free
+project.
 
 For end users who would like to contribute, they would submit their suggestions
-on the project portal. This could go through review and then sync to your codebase.
-You can see an example of that portal at [Psake translation project on Crowdin].
+on the project portal. This could go through review and then sync to your
+codebase. You can see an example of that portal at
+[Psake translation project on Crowdin].
 
-There are several approaches to syncing changes from Crowdin, but I'm a fan of the
-GitHub Integration. You can define the English source, and where the outputted files
-would be called and where to place them.
+There are several approaches to syncing changes from Crowdin, but I'm a fan of
+the GitHub Integration. You can define the English source, and where the
+outputted files would be called and where to place them.
 
 ### Localizations as PSD1 vs YML
 
@@ -192,21 +200,26 @@ graph TD
     class L,M,N,O crowdinProcess
 {{</ mermaid >}}
 
-1. **Source File**: `/l10n/en-US.yml` serves as the primary source for all localization strings
+1. **Source File**: `/l10n/en-US.yml` serves as the primary source for all
+   localization strings
    ```yaml
     en-US:
      error_invalid_task_name: "Task name should not be null or empty string."
      ...
    ```
 
-2. **Build Process**: A build script reads all YAML files in the `/l10n/` directory
-3. **Output Generation**: For each language file, creates corresponding PowerShell data files in `src/{culture}/Messages.psd1`
+2. **Build Process**: A build script reads all YAML files in the `/l10n/`
+   directory
+3. **Output Generation**: For each language file, creates corresponding
+   PowerShell data files in `src/{culture}/Messages.psd1`
 4. **Crowdin Integration**:
    - Git sync pushes the source file (`en-US.yml`) to Crowdin
    - Crowdin uses this as the source for translation
    - Translators work on other language versions
-   - Completed translations sync back to the repository as new/updated YAML files
-5. **Continuous Loop**: Updated translations trigger the build process again, creating fresh PowerShell message files
+   - Completed translations sync back to the repository as new/updated YAML
+     files
+5. **Continuous Loop**: Updated translations trigger the build process again,
+   creating fresh PowerShell message files
 
 This creates a complete localization pipeline where:
 
@@ -215,7 +228,8 @@ This creates a complete localization pipeline where:
 - Crowdin manages the translation workflow
 - The process repeats as translations are updated
 
-Our `crowdin.yml` file contains the following which automatically determines the filename.
+Our `crowdin.yml` file contains the following which automatically determines the
+filename.
 
 ```yml file:crowdin.yml
 "files": [
@@ -226,10 +240,28 @@ Our `crowdin.yml` file contains the following which automatically determines the
 ]
 ```
 
+## Conclusion
 
-## Further Reading
+Building inclusive software isn't just about good intentions - it's about
+creating tools that work for everyone. PowerShell's built-in localization
+features make it surprisingly straightforward to support multiple languages, and
+with community platforms like Crowdin, you can scale translations without
+burning out your maintainers.
 
-The PowerShell docs continue to be a great resource to learn about this.
+The next time you're building a PowerShell module that others might use,
+consider adding localization from the start. It's easier than you think, and for
+someone working in their second (or third) language, seeing familiar text in
+their native tongue can make the difference between struggling through
+documentation and actually getting work done.
+
+Your users shouldn't have to adapt to your language - your tools should adapt to
+theirs. PowerShell gives us the pieces; we just need to put them together.
+
+## References
+
+The PowerShell docs continue to be a great resource to learn about this. If you
+know of any other references that can help with localization, please share them
+in the comments!
 
 - [Import-LocalizedData] Learn Docs
 - [Import-PowerShellDataFile] Learn Docs
