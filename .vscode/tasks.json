@@ -52,6 +52,12 @@
 			"label": "Build all the marp artifacts",
 			"command": "${cwd}/PresoPublish.ps1",
 			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Start Hugo server",
+			"command": "yarn serve",
+			"problemMatcher": []
 		}
 	]
 }
