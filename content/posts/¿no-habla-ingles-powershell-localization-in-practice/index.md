@@ -22,7 +22,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-08-31T14:49:20.667Z
+lastmod: 2025-08-31T15:18:06.589Z
 ---
 
 PowerShell is one of the languages that makes Localization very easy to
@@ -390,6 +390,8 @@ in the comments!
 - [Import-PowerShellDataFile] Learn Docs
 - [about_Data_Files] Learn Docs
 - [Psake translation project on Crowdin]
+- [PSInclusive] is the org where we are putting out tools to help with
+  Accessibility and Inclusivity for the PowerShell community.
 
 [Import-PowerShellDataFile]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/import-powershelldatafile
 [about_Data_Files]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_data_files
@@ -397,3 +399,4 @@ in the comments!
 [PowerShell Localization]: https://marketplace.visualstudio.com/items?itemName=PSInclusive.powershelllocalization
 [Crowdin]: https://crowdin.com
 [Psake translation project on Crowdin]: https://crowdin.com/project/psake
+[PSInclusive]: https://github.com/PSInclusive
