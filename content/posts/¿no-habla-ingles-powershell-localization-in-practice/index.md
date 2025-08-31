@@ -22,7 +22,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-08-31T14:43:52.997Z
+lastmod: 2025-08-31T14:49:20.667Z
 ---
 
 PowerShell is one of the languages that makes Localization very easy to
@@ -85,7 +85,7 @@ Great! I mean we got the expected text... but RIP lil Sebastian.
 
 ![Lil Sebastian, a tiny horse, running surrounded by clouds.](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3FrY2hoZGwxZDJ3ZGUwZ2k4MDkxMWpsOGRuczdpeTc0cnEycXVrZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8pDBtEATQlPZ9gFqXi/giphy.gif)
 
-## Let's Support A New Language
+### Let's Support A New Language
 
 The `Messages.psd1` contains the key and values of our text. To support a new
 language you'll need to make the same file, but under a new folder. The folder
