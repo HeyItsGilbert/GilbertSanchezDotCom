@@ -22,7 +22,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-08-31T03:14:38.078Z
+lastmod: 2025-08-31T14:43:52.997Z
 ---
 
 PowerShell is one of the languages that makes Localization very easy to
@@ -148,14 +148,14 @@ the keys (which other formats do) making it an ideal format to use as a source.
 Thanks to the `powershell-yaml` module we can `ConvertFrom-Yaml` and use our
 PowerShell knowledge to generate our desired formats.
 
-### Psake: An Example
+## Psake: An Example
 
 For the Psake project I decided that it would be easier to generate the PSD1's
 as part of the build process and to start with yml files. Using the psd1 file
 would mean that Crowdin wouldn't be able to read it automatically and I wanted
 this to be as easy for contributors and maintainers as possible.
 
-Here is process in a graph:
+### Overall Process
 
 {{< mermaid >}}
 graph TD
@@ -202,6 +202,7 @@ graph TD
 
 1. **Source File**: `/l10n/en-US.yml` serves as the primary source for all
    localization strings
+
    ```yaml
     en-US:
      error_invalid_task_name: "Task name should not be null or empty string."
@@ -228,6 +229,8 @@ This creates a complete localization pipeline where:
 - Crowdin manages the translation workflow
 - The process repeats as translations are updated
 
+### Crowdin Configuration
+
 Our `crowdin.yml` file contains the following which automatically determines the
 filename.
 
@@ -239,6 +242,126 @@ filename.
   },
 ]
 ```
+
+### Generating PSD1's from YAML
+
+Here's the complete build script that handles the YAML-to-PSD1 conversion:
+
+```powershell
+$src = Join-Path $PSScriptRoot -ChildPath 'src'
+# First we gather all the language files
+$languages = Get-ChildItem -Path "$PSScriptRoot\l10n" -Filter '*.yml' -File
+
+foreach ($lang in $languages) {
+    # Using powershell-yaml module we can convert the yaml to a PSObject
+    $yaml = Get-Content -Path $lang.FullName -Raw | ConvertFrom-Yaml
+
+    # The first (and only key at the very top level is the locale name. e.g. en-US)
+    foreach ($locale in $yaml.Keys) {
+        Write-Verbose "Processing locale: $locale"
+        $localeDir = Join-Path -Path $src -ChildPath $locale
+        if (-not (Test-Path -Path $localeDir)) {
+            New-Item -Path $localeDir -ItemType Directory > $null
+        }
+
+        $psd1 = Join-Path -Path $localeDir -ChildPath "Messages.psd1"
+        $content = [System.Text.StringBuilder]::new()
+        
+        # Write a warning message to let folks know not to modify them by hand.
+        $warningMessage = "# This file is auto-generated from YAML localization files. Do not edit manually."
+        [void]$content.AppendLine($warningMessage)
+        [void]$content.AppendLine("ConvertFrom-StringData @'")
+        
+        # Under the root key we have each of the keys we want in the PSD1
+        foreach ($key in $yaml[$locale].Keys) {
+            Write-Verbose "Processing key: $key"
+            # We don't need to worry about escaping here, as the keys are simple strings
+            # and the values are already escaped by ConvertFrom-Yaml
+            $value = $yaml[$locale][$key]
+            [void]$content.AppendLine("    $key=$value")
+        }
+        [void]$content.AppendLine("'@")
+        Write-Verbose "Writing to $psd1"
+        Set-Content -Path $psd1 -Encoding UTF8 -Value $content.ToString()
+
+        # Due to some OS's (Ubuntu) not always having a defined locale we need to keep a copy of the data in the PSM1 file
+        # In the block we will use the AST to find the defined `data {}` block and replace it
+        if ($locale -eq 'en-US') {
+            $psm1 = Join-Path -Path $src -ChildPath 'psake.psm1'
+            # Also copy the en-US messages to the psm1 file
+            $Tokens = $null
+            $Errors = $null
+            $ast = [System.Management.Automation.Language.Parser]::ParseFile(
+                $psm1,
+                [ref]$Tokens,
+                [ref]$Errors
+            )
+
+            # find the data block and replace it
+            $dataBlock = $ast.Find({ param($ast) $ast -is [System.Management.Automation.Language.DataStatementAst] }, $false)
+            # dataBlock.Extent will give us the range of the data block
+            if ($dataBlock) {
+                Write-Verbose "Updating data block in psake.psm1 with en-US messages"
+                # Remove the first line which is the comment
+                [void]$content.Remove(0, $warningMessage.Length + 1)
+                $dataBlockContent = $content.ToString()
+                $dataBlockExtent = $dataBlock.Body.Extent
+                # WARNING: Be careful with the offsets, as they are 0-based and the content is UTF8 encoded
+                $newContent = $ast.Extent.Text.Substring(0, $dataBlockExtent.StartOffset + 1) + $dataBlockContent + $ast.Extent.Text.Substring($dataBlockExtent.EndOffset - 1)
+                # Remove extra new line at the end
+                $newContent = $newContent.TrimEnd("`r`n")
+                Set-Content -Path $psm1 -Value $newContent -Encoding UTF8
+            } else {
+                Write-Warning "No data block found in psake.psm1 to update with en-US messages."
+            }
+        }
+    }
+}
+```
+
+### PSM1 Fallback for Undefined Locales
+
+One challenge I discovered in production is that some operating systems
+(particularly Ubuntu) don't always have well-defined locale settings. When
+`Import-LocalizedData` can't determine the current culture, it fails to load any
+localization files at all.
+
+Our solution is to embed the default English messages directly in the PSM1
+module file using PowerShell's `data {}` block. This ensures that even when
+locale detection fails, users still get readable English text instead of raw
+message keys or errors.
+
+Our PSM1 looks like:
+
+```powershell
+#region Auto-generated from YAML localization files.
+data msgs {
+ConvertFrom-StringData @'
+    error_task_name_does_not_exist=Task {0} does not exist.
+    error_invalid_include_path=Unable to include {0}. File not found.
+    error_no_default_task='default' task required.
+    # ... etc.
+'@
+}
+#endregion Auto-generated from YAML localization files.
+
+$importLocalizedDataSplat = @{
+    BindingVariable = 'msgs'
+    BaseDirectory   = $PSScriptRoot
+    FileName        = 'Messages.psd1'
+    ErrorAction     = $script:IgnoreError
+}
+Import-LocalizedData @importLocalizedDataSplat
+```
+
+The build script handles this automatically by using PowerShell's Abstract
+Syntax Tree (AST) to find and update the `data {}` block in the main module
+file. While this adds complexity to the build process, it creates a much more
+reliable user experience across different operating systems and configurations.
+
+This fallback approach means your module works everywhere - from perfectly
+configured Windows development machines to minimal Linux containers with
+undefined locales.
 
 ## Conclusion
 
