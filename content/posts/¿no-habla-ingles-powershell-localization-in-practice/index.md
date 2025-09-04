@@ -22,8 +22,12 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-08-31T15:18:06.589Z
+lastmod: 2025-09-04T23:35:08.629Z
 ---
+{{< alert >}}
+Thanks to Thomas Nieto this has been updated with a new
+[Culture Fallback](#culture-fallback) section.
+{{< /alert >}}
 
 PowerShell is one of the languages that makes Localization very easy to
 implement. But what is Localization (l10n)? Is that different from
@@ -31,21 +35,21 @@ Internationalization (i18n)?
 
 ⏩ [I know localization is important⏩](#localization-in-powershell)
 
-If your primary language is English, and you haven't traveled it's
+If your primary language is English, and you haven't traveled, it's
 easy to forget that there's an entire globe of people who don't speak
 English. Maybe you've visited a neighborhood where the primary language
 is different, and can remember how disorienting that can be.
 
 Internationalization (i18n) is the process of changing your software so that it
 isn't hard coded to one language. Localization (l10n) is the ongoing effort of
-adding more resource to support new languages.
+adding more resources to support new languages.
 
 Why is this so important to me? I'm a first generation Mexican American, aka
 Chicano, who grew up in a home where the primary language was Spanish. I spoke
 only Spanish until the age of 5, where in first grade I was placed (due to
 classroom limits) into an English speaking classroom. I definitely struggled
-that year, but thanks to my family my brother and I quickly transitioned. (Also
-thank you video games). But I'll never forget having to leave the safety of my
+that year, but thanks to my family my brother and I quickly transitioned. (Also,
+thank you, video games). But I'll never forget having to leave the safety of my
 friends and being placed into a class where my communication capabilities were
 next to none. That experience taught me firsthand how language barriers can
 isolate people - which is why I'm passionate about making PowerShell accessible
@@ -81,7 +85,7 @@ If you run the `main.ps1` file it'll output:
 Bye, bye, bye, lil Sebastian.
 ```
 
-Great! I mean we got the expected text... but RIP lil Sebastian.
+Great! I mean, we got the expected text... but RIP lil Sebastian.
 
 ![Lil Sebastian, a tiny horse, running surrounded by clouds.](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3FrY2hoZGwxZDJ3ZGUwZ2k4MDkxMWpsOGRuczdpeTc0cnEycXVrZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/8pDBtEATQlPZ9gFqXi/giphy.gif)
 
@@ -101,15 +105,33 @@ LaughError = "¡JAJA! Error: {0}"
 '@
 ```
 
+### Culture Fallback
+
+After posting this, Thomas Nieto (of
+[anypackage.dev](https://www.anypackage.dev/) fame) reached out. We discussed
+(read: he schooled me) in some additional ways to handle the culture fallback.
+Previously I was adding the data into the psm1 in case the locale wasn't able to
+be determined. There are actually several alternatives when specific cultures
+aren't available.
+
+The way fallback works is country, then language, then default.
+
+For example if we looked for `Messages.psd1` on a device with the locale set to
+`es-US` it would look in the following order:
+
+1. `.\es-US\Messages.psd1`
+2. `.\es\Messages.psd1`
+3. `.\Messages.psd1`
+
 ## VSCode PowerShell Localization
 
-Speaking of making localization easier for users, I also want it to be easy for
-developers. One challenge that I experienced was that it can be difficult to
+Speaking of making localization easier for users, I also wanted it to be easy
+for developers. One challenge that I experienced was that it can be difficult to
 tell what a particular localized variable says.
 
-As part of the PS Inclusive Organization that I started with Jake Hildreth, I
-decided to make an attempt at creating a VS Code extension. I was able to create
-the [PowerShell Localization] extension which allows you to see values decorated
+Through the PS Inclusive Organization that Jake Hildreth and I started, I
+decided to create a VS Code extension. I was able to create the
+[PowerShell Localization] extension which allows you to see values decorated
 inline.
 
 ![example of PowerShell Localization extension](image.png)
@@ -126,8 +148,8 @@ obvious paid features, for open source software you can actually create a free
 project.
 
 For end users who would like to contribute, they would submit their suggestions
-on the project portal. This could go through review and then sync to your
-codebase. You can see an example of that portal at
+on the project portal. This goes through review before syncing to your codebase.
+You can see an example of that portal at
 [Psake translation project on Crowdin].
 
 There are several approaches to syncing changes from Crowdin, but I'm a fan of
@@ -145,13 +167,13 @@ to use.
 YAML is another file type supported in Crowdin. It can be read without modifying
 the keys (which other formats do) making it an ideal format to use as a source.
 
-Thanks to the `powershell-yaml` module we can `ConvertFrom-Yaml` and use our
+Thanks to the `powershell-yaml` module, we can `ConvertFrom-Yaml` and use our
 PowerShell knowledge to generate our desired formats.
 
 ## Psake: An Example
 
 For the Psake project I decided that it would be easier to generate the PSD1's
-as part of the build process and to start with yml files. Using the psd1 file
+as part of the build process and to start with YAML files. Using the psd1 file
 would mean that Crowdin wouldn't be able to read it automatically and I wanted
 this to be as easy for contributors and maintainers as possible.
 
@@ -159,19 +181,19 @@ this to be as easy for contributors and maintainers as possible.
 
 {{< mermaid >}}
 graph TD
-    A["/l10n/en-US.yml<br/>(Source File)"] --> B["Build Script<br/>(Process l10n folder)"]
+    A["\l10n\en-US.yml<br/>(Source File)"] --> B["Build Script<br/>(Process l10n folder)"]
     
     %% Other l10n files
-    C["/l10n/es-ES.yml"] --> B
-    D["/l10n/fr-FR.yml"] --> B
-    E["/l10n/de-DE.yml"] --> B
+    C["\l10n\es-ES.yml"] --> B
+    D["\l10n\fr-FR.yml"] --> B
+    E["\l10n\de-DE.yml"] --> B
     F["...other l10n files"] --> B
     
     %% Build script outputs
-    B --> G["src/en-US/Messages.psd1"]
-    B --> H["src/es-ES/Messages.psd1"] 
-    B --> I["src/fr-FR/Messages.psd1"]
-    B --> J["src/de-DE/Messages.psd1"]
+    B --> G["src\en-US\Messages.psd1"]
+    B --> H["src\es-ES\Messages.psd1"] 
+    B --> I["src\fr-FR\Messages.psd1"]
+    B --> J["src\de-DE\Messages.psd1"]
     B --> K["...other culture folders"]
     
     %% Git sync to Crowdin
@@ -200,7 +222,7 @@ graph TD
     class L,M,N,O crowdinProcess
 {{</ mermaid >}}
 
-1. **Source File**: `/l10n/en-US.yml` serves as the primary source for all
+1. **Source File**: `\l10n\en-US.yml` serves as the primary source for all
    localization strings
 
    ```yaml
@@ -209,10 +231,10 @@ graph TD
      ...
    ```
 
-2. **Build Process**: A build script reads all YAML files in the `/l10n/`
+2. **Build Process**: A build script reads all YAML files in the `\l10n\`
    directory
 3. **Output Generation**: For each language file, creates corresponding
-   PowerShell data files in `src/{culture}/Messages.psd1`
+   PowerShell data files in `src\{culture}\Messages.psd1`
 4. **Crowdin Integration**:
    - Git sync pushes the source file (`en-US.yml`) to Crowdin
    - Crowdin uses this as the source for translation
@@ -239,6 +261,10 @@ filename.
   {
     "source": "/l10n/en-US.yml",
     "translation": "/l10n/%locale%.yml"
+  },
+  {
+    "source": "/l10n/en-US.yml",
+    "translation": "/l10n/%two_letters_code%.yml"
   },
 ]
 ```
@@ -283,85 +309,9 @@ foreach ($lang in $languages) {
         [void]$content.AppendLine("'@")
         Write-Verbose "Writing to $psd1"
         Set-Content -Path $psd1 -Encoding UTF8 -Value $content.ToString()
-
-        # Due to some OS's (Ubuntu) not always having a defined locale we need to keep a copy of the data in the PSM1 file
-        # In the block we will use the AST to find the defined `data {}` block and replace it
-        if ($locale -eq 'en-US') {
-            $psm1 = Join-Path -Path $src -ChildPath 'psake.psm1'
-            # Also copy the en-US messages to the psm1 file
-            $Tokens = $null
-            $Errors = $null
-            $ast = [System.Management.Automation.Language.Parser]::ParseFile(
-                $psm1,
-                [ref]$Tokens,
-                [ref]$Errors
-            )
-
-            # find the data block and replace it
-            $dataBlock = $ast.Find({ param($ast) $ast -is [System.Management.Automation.Language.DataStatementAst] }, $false)
-            # dataBlock.Extent will give us the range of the data block
-            if ($dataBlock) {
-                Write-Verbose "Updating data block in psake.psm1 with en-US messages"
-                # Remove the first line which is the comment
-                [void]$content.Remove(0, $warningMessage.Length + 1)
-                $dataBlockContent = $content.ToString()
-                $dataBlockExtent = $dataBlock.Body.Extent
-                # WARNING: Be careful with the offsets, as they are 0-based and the content is UTF8 encoded
-                $newContent = $ast.Extent.Text.Substring(0, $dataBlockExtent.StartOffset + 1) + $dataBlockContent + $ast.Extent.Text.Substring($dataBlockExtent.EndOffset - 1)
-                # Remove extra new line at the end
-                $newContent = $newContent.TrimEnd("`r`n")
-                Set-Content -Path $psm1 -Value $newContent -Encoding UTF8
-            } else {
-                Write-Warning "No data block found in psake.psm1 to update with en-US messages."
-            }
-        }
     }
 }
 ```
-
-### PSM1 Fallback for Undefined Locales
-
-One challenge I discovered in production is that some operating systems
-(particularly Ubuntu) don't always have well-defined locale settings. When
-`Import-LocalizedData` can't determine the current culture, it fails to load any
-localization files at all.
-
-Our solution is to embed the default English messages directly in the PSM1
-module file using PowerShell's `data {}` block. This ensures that even when
-locale detection fails, users still get readable English text instead of raw
-message keys or errors.
-
-Our PSM1 looks like:
-
-```powershell
-#region Auto-generated from YAML localization files.
-data msgs {
-ConvertFrom-StringData @'
-    error_task_name_does_not_exist=Task {0} does not exist.
-    error_invalid_include_path=Unable to include {0}. File not found.
-    error_no_default_task='default' task required.
-    # ... etc.
-'@
-}
-#endregion Auto-generated from YAML localization files.
-
-$importLocalizedDataSplat = @{
-    BindingVariable = 'msgs'
-    BaseDirectory   = $PSScriptRoot
-    FileName        = 'Messages.psd1'
-    ErrorAction     = $script:IgnoreError
-}
-Import-LocalizedData @importLocalizedDataSplat
-```
-
-The build script handles this automatically by using PowerShell's Abstract
-Syntax Tree (AST) to find and update the `data {}` block in the main module
-file. While this adds complexity to the build process, it creates a much more
-reliable user experience across different operating systems and configurations.
-
-This fallback approach means your module works everywhere - from perfectly
-configured Windows development machines to minimal Linux containers with
-undefined locales.
 
 ## Conclusion
 
