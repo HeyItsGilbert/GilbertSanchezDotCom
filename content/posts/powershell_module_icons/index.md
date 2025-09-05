@@ -6,7 +6,7 @@ draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
 tags = [ "PowerShell", "Github" ]
-lastmod = "2023-01-01T20:14:30.016Z"
+lastmod = "2025-09-05T00:02:14.676Z"
 preview = "feature.png"
 +++
 
@@ -14,7 +14,7 @@ Recently I saw Adam Bacon talking about updating his modules and I noticed how
 he had icons for each of them. It really adds a level of polish and it's not
 much work.
 
-{{< tweet user="HeyItsGilbertS" id="1548335479799435267" >}}
+{{< x user="HeyItsGilbertS" id="1548335479799435267" >}}
 
 All of my modules are based on Stucco which uses a Psake build script. That
 paired with the use of a github action to publish when I push changes to main
