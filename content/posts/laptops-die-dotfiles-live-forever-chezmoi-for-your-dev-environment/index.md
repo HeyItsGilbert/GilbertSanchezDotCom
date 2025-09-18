@@ -5,8 +5,8 @@ description: ""
 summary: ""
 showReadingTime: true
 draft: true
-preview: feature.png
-lastmod: 2025-08-31T22:21:19.943Z
+preview: feature.jpg
+lastmod: 2025-09-07T22:19:34.579Z
 slug: ""
 tags: []
 keywords: []
@@ -14,6 +14,7 @@ series: []
 type: posts
 fmContentType: posts
 ---
+<!-- cspell:ignore chezmoi Primagen Ashkan Forouzani Jaykul Choco -->
 
 It's time to upgrade your laptop. Or maybe someone spilled coffee on it during a
 meeting. That someone could have been you but I'm not here to judge. Maybe it's
@@ -27,7 +28,18 @@ you needed? Did your apps get configured? Imagine the last time you used
 someone elses machine and how awkward it was to navigate. The question to
 ask is: how can I avoid and deal with this? You take control.
 
-## Muscle Memory
+## Personal Development Environment
+
+Your Personal Development Environment, aka PDE, was a phrase I first heard
+during a Primagen video. While he may have been referring to it from a *nix
+perspective, I immediately understood what he was talking about. It goes beyond
+your Integrated Development Environment (IDE), and it refers to all the bits
+that surround it. From how you manage your windows, to how you launch your apps,
+or get notifications.
+
+## The Optimization Journey
+
+### Muscle Memory
 
 What makes an expert? 10,000 hours is one rule of thumb made popular. But it's
 not 10k hours of just watching, it's 10k hours of doing and practicing. For many
@@ -40,15 +52,6 @@ A silly example is the CapsLock` key. Few use it (well at least I never did) but
 the key is in a prime location - don't get me started on keyboards. Did you know
 you can remap keys? One of the first key remaps I made was to turn the
 `CapsLock` key into a `Ctrl` key.
-
-## Personal Development Environment
-
-Your Personal Development Environment, aka PDE, was a phrase I first heard
-during a Primagen video. While he may have been referring to it from a *nix
-perspective, I immediately understood what he was talking about. It goes beyond
-your Integrated Development Environment (IDE), and it refers to all the bits
-that surround it. From how you manage your windows, to how you launch your apps,
-or get notifications.
 
 ### Optimizing 🧠 to 💻
 
@@ -71,7 +74,7 @@ tools into our flows. The problem is that we are now creating bespoke solutions
 and we need to insure them. So how do we keep our beautiful, hand crafted,
 cerebral cortex to computer tools safe? We back them up.
 
-### Dotfiles
+## Dotfiles
 
 So what are dotfiles? In the Linux world dotfiles are often how you configure
 applications for a user. The files typically start with `.` which in the *nix
@@ -119,10 +122,36 @@ scripts at different phases.
 
 ### Scripting
 
-This was the first thing that really made me stop and investigate. Those fonts I needed? Choco install. Modules I always use?
+This was the first thing that really made me stop and investigate. Those fonts I
+needed? Choco install. Modules I always use?
 
 ### External Sources
 
-I mentioned earlier that after my old script, I would still need to clone additional
-repositories. Well Chezmoi offers that ability to define those in a file and
-have them update as part of it's update.
+I mentioned earlier that after my old script, I would still need to clone
+additional repositories. Well Chezmoi offers that ability to define those in a
+file and have them update as part of it's update.
+
+## Getting Started
+
+So now I'm convinced you that you need to go and save and configure your
+dotfiles across your machines. But where do you start?
+
+1. [Install Chezmoi](https://www.chezmoi.io/install/) using your preferred
+   package manager. i.e. `choco install chezmoi`
+2. [Create a new repository] called `dotfiles` on GitHub.
+3. Initialize chezmoi by running `chezmoi init`
+4. Add your dotfiles with `chezmoi add`.
+5. When you're ready you'll change directory to the folder where the chezmoi
+   source files are with `chezmoi cd`.
+6. From there you can run git commands, such as configuring your remote github
+   repo to sync to.
+   - See the [chezmoi Quick start](https://www.chezmoi.io/quick-start/) guide
+
+---
+
+Photo by
+[Ashkan Forouzani](https://unsplash.com/@ashkfor121?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+on
+[Unsplash](https://unsplash.com/photos/black-flat-screen-computer-monitor-zJsJV5CBGNE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+
+[Create a new repository]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
