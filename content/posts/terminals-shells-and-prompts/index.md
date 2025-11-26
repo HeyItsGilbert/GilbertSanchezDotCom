@@ -1,10 +1,10 @@
 ---
-title: Terminals, Shells, and Prompts
+title: "Terminals, Shells, and Prompts: Complete Beginner's Guide"
 date: 2023-08-27T14:55:56.151Z
-description: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my settings, but this lays the foundation.
+description: Learn the differences between terminals, shells, and prompts. Understand WezTerm, PowerShell, Starship, and how they work together. Perfect for beginners setting up their dev environment.
 summary: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my particular settings, but this lays the foundation.
 draft: false
-lastmod: 2023-08-27T14:56:33.799Z
+lastmod: 2025-11-26T00:00:00.000Z
 slug: terminals-shells-and-prompts
 tags:
   - PowerShell
@@ -76,7 +76,7 @@ you the user.
 
 Some examples are:
 
-- PowerShell ({{< icon "microsoft" >}}{{< icon "apple" >}}{{< icon "linux" >}})
+- [PowerShell](https://github.com/PowerShell/PowerShell) ({{< icon "microsoft" >}}{{< icon "apple" >}}{{< icon "linux" >}}) - [See my PowerShell config]({{< ref "my-shell-powershell" >}})
 - Windows PowerShell ({{< icon "microsoft" >}})
 - Bash ({{< icon "apple" >}}{{< icon "linux" >}})
 - ZSH ({{< icon "apple" >}}{{< icon "linux" >}})
@@ -91,7 +91,7 @@ typically written for a specific shell, but some do support multiple.
 
 Some examples are:
 
-- [Starship](https://starship.rs/) (many shells - written in Rust)
+- [Starship](https://starship.rs/) (many shells - written in Rust) - [See my Starship config]({{< ref "my-prompt-starship" >}})
 - [Oh My Zsh](https://ohmyz.sh/) (zsh only)
 - [Oh My Posh](https://ohmyposh.dev/) (many shells - written in Go)
 
@@ -123,7 +123,10 @@ color. Some shells or prompts offer easy ways to color your prompt.
 ---
 
 Hopefully this was informative and has helped you understand how these different
-components interact. The next post in this series is [My Terminal: WezTerm]({{< ref "my-terminal" >}}).
+components interact. Continue reading the series:
+- [My Terminal: WezTerm]({{< ref "my-terminal" >}})
+- [My Shell: PowerShell]({{< ref "my-shell-powershell" >}})
+- [My Prompt: Starship]({{< ref "my-prompt-starship" >}})
 
 Cover Photo by
 [Philipp Katzenberger](https://unsplash.com/@fantasyflip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

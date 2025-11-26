@@ -1,27 +1,29 @@
 ---
-title: "My Prompt: Starship"
+title: "Starship Prompt Guide: Transient Prompts & PowerShell Setup"
 date: 2023-11-05T00:13:27.417Z
-description: A quick overview on how I use Starship to customize my prompt.
+description: Complete guide to Starship prompt configuration with transient prompts in PowerShell. Learn how to customize your shell prompt with profiles, dynamic updates, and escape codes.
 summary: A quick overview on how I use Starship to customize my prompt.
 showReadingTime: true
 draft: false
 preview: feature.png
-lastmod: 2023-12-11T02:23:37.821Z
+lastmod: 2025-11-26T00:00:00.000Z
 slug: prompt-starship
 tags: []
 keywords:
   - starship
   - powershell
+  - transient prompt
+  - starship prompt
 series: ["Terminals, Shells, and Prompts"]
 series_order: 4
 type: posts
 ---
 
 
-In this post I'll be go over my current prompt of choice: Starship. Starship is
+In this post I'll be go over my current prompt of choice: Starship. This is part of my [Terminals, Shells, and Prompts]({{< ref "terminals-shells-and-prompts" >}}) series. Starship is
 a cross platform prompt written in rust. It's extremely fast, easy to extend,
 and not to mention it's easy on the eyes. I use Starship on many OS's but in
-this post I'll focus on PowerShell because there are a few neat tricks.
+this post I'll focus on PowerShell because there are a few neat tricks. If you haven't already, check out [my WezTerm setup]({{< ref "my-terminal" >}}) to see how I configure my terminal.
 
 You can see the latest copy of my config files here: {{< icon "github" >}}
 [HeyItsGilbert/dotfiles](https://github.com/HeyItsGilbert/dotfiles)
@@ -145,7 +147,7 @@ for both, we can use `[char]27`.
 ---
 
 In the past few posts in the series I've briefly touched on some ANSI escape
-codes, and in my next post I'll be going into more depth. There is so much to
+codes (see [Escape Codes]({{< ref "terminals-shells-and-prompts#escape-codes" >}})), and in my next post I'll be going into more depth. There is so much to
 cover but I'll be hitting a few highlights and pointing to a ton of references.
 
 How's the technology from 1979 still shapping our daily life? Stay tuned and
