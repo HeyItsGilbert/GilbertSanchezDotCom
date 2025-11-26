@@ -7,6 +7,7 @@ slug = "automatically-update-workergroup-for-reboot-policies"
 summary = "A simple script to keep XenApp servers in reboot workergroups."
 tags = [ "Citrix", "PowerShell" ]
 title = "Automatically Update Workergroup for Reboot Policies"
+keywords = [ "citrix", "xenapp", "powershell", "workergroups", "automation" ]
 lastmod = "2023-01-01T17:46:30.812Z"
 +++
 

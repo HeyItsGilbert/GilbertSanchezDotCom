@@ -77,7 +77,7 @@ constrainItemsWidth = false
 heroStyle = "background"
 
 [sitemap]
-excludedKinds = [ "taxonomy", "term" ]
+excludedKinds = []
 
 [taxonomy]
 showTermCount = true
@@ -110,5 +110,9 @@ heroStyle = "background"
 [buymeacoffee]
 
 [verification]
+# Add your verification codes here after registering your site
+# google = ""  # Google Search Console verification code
+# bing = ""    # Bing Webmaster Tools verification code
+# yandex = ""  # Yandex Webmaster verification code
 
 [rssnext]

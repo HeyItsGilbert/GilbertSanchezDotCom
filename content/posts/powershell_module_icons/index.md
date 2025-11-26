@@ -6,6 +6,7 @@ draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
 tags = [ "PowerShell", "Github" ]
+keywords = [ "powershell", "module", "icon", "psd1", "github", "publishing" ]
 lastmod = "2025-09-05T00:02:14.676Z"
 preview = "feature.png"
 +++
