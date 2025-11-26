@@ -1,16 +1,20 @@
 ---
-title: "My Shell: PowerShell"
+title: "PowerShell Profile Setup Guide: Optimization & Starship Integration"
 date: 2023-10-08T16:15:02.506Z
-description: In this third post of the series I go over my PowerShell profile.
+description: Complete PowerShell profile configuration guide. Learn how to optimize your $Profile, integrate Starship prompt, add custom functions, and improve startup performance.
 summary: In this third post of the series I go over my PowerShell profile.
 draft: false
-lastmod: 2023-10-08T16:22:34.478Z
+lastmod: 2025-11-26T00:00:00.000Z
 slug: my-shell-powershell
 tags:
   - PowerShell
 preview: feature.png
 keywords:
   - powershell
+  - powershell profile
+  - starship
+  - shell configuration
+  - psreadline
 type: posts
 series: ["Terminals, Shells, and Prompts"]
 series_order: 3
@@ -189,7 +193,7 @@ The old prompt code isn't pretty to look it, but honestly I rarely see it.
 
 ### Starship
 
-So the last thing we do is load starship. What does starship do? It overwrites
+So the last thing we do is load [Starship]({{< ref "my-prompt-starship" >}}). What does starship do? It overwrites
 the prompt! So how do we handle this conflict?
 
 What the prompt above does is call the `Initialize-Profile` function once.
@@ -218,8 +222,8 @@ want to see me go over in more details, let me know in the comments! Feel free
 to leave feedback or questions. You can also find me on the PowerShell Discord,
 or the various social networks linked below.
 
-In my next post I'll be going over escape codes! There's a ton of great content
-out there.
+In my next post I'll be going over [escape codes]({{< ref "terminals-shells-and-prompts#escape-codes" >}})! There's a ton of great content
+out there. Also check out [my Starship prompt configuration]({{< ref "my-prompt-starship" >}}) to see how all these pieces work together.
 
 Shout out again to [@mdgrs](https://mdgrs.hashnode.dev/) for all the awesome
 shell tools like Shell Integration, and Dynamic Titles.

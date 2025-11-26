@@ -1,7 +1,7 @@
 ---
-title: Taming My ADHD with Obsidian and PowerShell
+title: "How to Use Obsidian for ADHD: Productivity System with PowerShell"
 date: 2024-08-31T01:15:28.508Z
-description: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
+description: Learn how to use Obsidian for ADHD management. Complete guide to periodic notes, templates, and PowerShell automation for task initiation, object permanence, and forgetfulness.
 summary: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
 showReadingTime: true
 draft: false
@@ -10,11 +10,17 @@ cover: feature.png
 tags:
   - PowerShell
   - PKM
-keywords: []
+keywords:
+  - obsidian
+  - adhd
+  - obsidian for adhd
+  - productivity
+  - note-taking
+  - periodic notes
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2024-08-31T01:31:37.291Z
+lastmod: 2025-11-26T00:00:00.000Z
 slug: obsidian-and-adhd
 featureAlt: Public Domain art showing planets.
 coverCaption: We 💞 [Public Domain Art](https://www.cosmos.so/e/627080146)
@@ -175,7 +181,7 @@ appropriately.
 
 ## Using PowerShell
 
-As a PowerShell ***enthusiast***, I wanted to write some scripts and easily add
+As a PowerShell ***enthusiast*** (see [my PowerShell setup]({{< ref "my-shell-powershell" >}})), I wanted to write some scripts and easily add
 the results to my notes. See above to read how I used them to pull in data.
 
 - [pwsh.js](https://gist.github.com/HeyItsGilbert/8d492ebc7ad9c4830c0ae1fcc8fc6ac8#file-pwsh-js)

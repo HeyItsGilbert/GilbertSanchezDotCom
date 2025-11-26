@@ -1,10 +1,10 @@
 ---
-title: "My Terminal: WezTerm"
+title: "WezTerm Config Guide: Complete Setup with Examples (2024)"
 date: 2023-08-27T14:57:43.274Z
-description: In this second post of the series I go over my WezTerm config. I also show how I load PowerShell on all OS's.
+description: Complete WezTerm config guide with practical examples. Learn how to configure WezTerm for Windows, Mac, and Linux with PowerShell integration, custom keybindings, and LUA configuration.
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
-lastmod: 2023-08-27T15:03:17.935Z
+lastmod: 2025-11-26T00:00:00.000Z
 slug: my-terminal-wezterm
 tags:
   - PowerShell
@@ -128,7 +128,7 @@ table.insert(launch_menu, {
 })
 ```
 
-In the next post I'll be going over my PowerShell profile.
+In the next post I'll be going over [my PowerShell profile]({{< ref "my-shell-powershell" >}}).
 
 ## Conflicting Keyboard Shortcuts
 
@@ -206,4 +206,4 @@ return config
 
 Hopefully you found something useful for your config. If there's something you
 want to see me go over in more details, let me know in the comments! In the next
-post I'll be going over my PowerShell Profile.
+post I'll be going over [my PowerShell Profile]({{< ref "my-shell-powershell" >}}). Once you have your shell configured, check out how to customize your prompt with [Starship]({{< ref "my-prompt-starship" >}}).

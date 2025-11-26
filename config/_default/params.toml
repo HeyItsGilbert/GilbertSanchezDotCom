@@ -55,7 +55,7 @@ showTaxonomies = true
 showAuthorsBadges = ""
 showWordCount = true
 showZenMode = false
-showRelatedContent = false
+showRelatedContent = true
 heroStyle = "background"
 showComments = true
 
