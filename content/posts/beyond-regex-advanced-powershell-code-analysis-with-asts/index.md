@@ -11,7 +11,13 @@ tags:
   - Linting
   - PowerShell
   - VSCode
-keywords: []
+keywords:
+  - powershell
+  - ast
+  - psscriptanalyzer
+  - code analysis
+  - abstract syntax tree
+  - linting
 series: []
 type: posts
 fmContentType: posts

@@ -7,6 +7,7 @@ slug = "cidr-calculator-for-alfred"
 summary = "A walkthrough on making a CIDR calculator for Alfred."
 tags = [ "OSX" ]
 title = "CIDR Calculator for Alfred"
+keywords = [ "cidr", "networking", "alfred", "macos", "subnet calculator" ]
 lastmod = "2023-01-01T20:48:06.876Z"
 preview = "feature.png"
 +++

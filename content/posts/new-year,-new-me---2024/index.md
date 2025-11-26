@@ -9,7 +9,12 @@ preview: feature.png
 lastmod: 2024-01-22T14:38:23.030Z
 slug: ""
 tags: []
-keywords: []
+keywords:
+  - career
+  - meta
+  - tesla
+  - software engineer
+  - devops
 series: []
 type: posts
 ---

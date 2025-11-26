@@ -7,6 +7,7 @@ aliases = [ "/locating-empty-citrix-worker-groups/" ]
 slug = "locating-empty-citrix-worker-groups"
 tags = [ "Citrix", "PowerShell" ]
 title = "Locating Empty Citrix Worker Groups"
+keywords = [ "citrix", "xenapp", "powershell", "workergroups", "administration" ]
 lastmod = "2023-01-01T17:46:49.513Z"
 +++
 
