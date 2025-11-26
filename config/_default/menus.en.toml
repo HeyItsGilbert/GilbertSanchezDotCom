@@ -33,7 +33,7 @@ weight = 5
 
 [[main]]
 name = ":newspaper_roll: RSS"
-pageRef = "https://gilbertsanchez.com/index.xml"
+url = "/index.xml"
 identifier = "zNh9Tjq8MD"
 weight = 6
 
@@ -72,6 +72,6 @@ weight = 5
 
 [[footer]]
 name = ":newspaper_roll: RSS"
-pageRef = "https://gilbertsanchez.com/index.xml"
+url = "/index.xml"
 identifier = "zNh9Tjq8MD"
 weight = 6
