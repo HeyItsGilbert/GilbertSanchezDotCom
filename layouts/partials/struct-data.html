@@ -1,23 +1,22 @@
 {{- if eq .Kind "page" }}
-{{ printf `<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "%s",
-        "datePublished": "%s",
-        "dateModified": "%s",
-        "author": [{
-            "@type": "Person",
-            "name": "%s",
-            "url": "%s"
-          }]
-      }
-</script>`
-( .Title | plainify )
-( .Date.Format "2006-01-02T15:04:05Z07:00" )
-( .Lastmod.Format "2006-01-02T15:04:05Z07:00" )
-( $.Site.Params.author.name )
-( .Site.BaseURL  )
-| safeHTML
-}}
+{{- $authorName := "" }}
+{{- with $.Site.Params.author }}
+  {{- with .name }}
+    {{- $authorName = . }}
+  {{- end }}
+{{- end }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ .Title | plainify | jsonify }},
+    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "author": [{
+        "@type": "Person",
+        "name": {{ $authorName | jsonify }},
+        "url": {{ .Site.BaseURL | jsonify }}
+    }]
+}
+</script>
 {{- end }}
