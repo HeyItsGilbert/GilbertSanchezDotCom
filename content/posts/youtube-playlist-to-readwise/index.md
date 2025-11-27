@@ -5,7 +5,7 @@ summary: Build a pipeline from your YouTube Playlist to Readwise!
 draft: false
 slug: youtube_playlist_to_readwise
 title: Syncing your YouTube Playlist to Readwise Reader
-lastmod: 2025-11-27T16:42:50.103Z
+lastmod: 2025-11-27T17:00:29.559Z
 keywords:
   - python
   - readwise
@@ -63,9 +63,9 @@ make sure you are getting the right data.
 
 1. Create a new workflow
 2. Search for YouTube (Data API) - Not the "Custom App" version.
-   {{< figure src="/images/2022/12/youtube_source.png" caption="Searching for YouTube data source" >}}
+   {{< figure src="/images/2022/12/youtube_source.webp" caption="Searching for YouTube data source" >}}
 3. Search for "New Videos in Playlist"
-   {{< figure src="/images/2022/12/playlist_trigger.png" caption="New Videos in Playlist option" >}}
+   {{< figure src="/images/2022/12/playlist_trigger.webp" caption="New Videos in Playlist option" >}}
 4. Login to your YouTube account (see Prerequisites above)
 5. Set your "Playlist ID" and the name of this source.
 6. Click the Plus sign to set up the next step

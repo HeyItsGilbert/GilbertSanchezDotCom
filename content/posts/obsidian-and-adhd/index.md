@@ -6,7 +6,7 @@ summary: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templat
 showReadingTime: true
 draft: false
 preview: feature.webp
-cover: feature.png
+cover: feature.webp
 tags:
   - PowerShell
   - PKM
@@ -20,7 +20,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-11-27T16:42:50.106Z
+lastmod: 2025-11-27T16:59:20.405Z
 slug: obsidian-and-adhd
 featureAlt: Public Domain art showing planets.
 coverCaption: We 💞 [Public Domain Art](https://www.cosmos.so/e/627080146)

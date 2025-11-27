@@ -8,8 +8,8 @@ summary = "A left over LED and a few spare parts turns into a fun and potential 
 tags = [ "Docker", "Arduino" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 1'
 keywords = [ "arduino", "led", "iot", "diy", "electronics", "docker" ]
-lastmod = "2025-01-01T17:58:29.263Z"
-preview = "feature.png"
+lastmod = "2025-11-27T16:59:48.076Z"
+preview = "feature.webp"
 +++
 
 

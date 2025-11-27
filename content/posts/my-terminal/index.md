@@ -4,7 +4,7 @@ date: 2023-08-27T14:57:43.274Z
 description: Complete WezTerm config guide with practical examples. Learn how to configure WezTerm for Windows, Mac, and Linux with PowerShell integration, custom keybindings, and LUA configuration.
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
-lastmod: 2025-11-27T16:42:50.112Z
+lastmod: 2025-11-27T17:00:10.117Z
 slug: my-terminal-wezterm
 tags:
   - PowerShell
@@ -179,7 +179,7 @@ config.mouse_bindings = mouse_bindings
 You can see the `color_scheme` here. I've slowly started to shift from Solarized
 to more purple based themes (see this website!).
 
-![A screenshot of my WezTerm](feature.png)
+![A screenshot of my WezTerm](feature.webp)
 
 ## Work Overrides
 

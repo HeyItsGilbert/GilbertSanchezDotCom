@@ -53,7 +53,7 @@
           "name": "preview",
           "type": "image",
           "isPreviewImage": true,
-          "default": "feature.png"
+          "default": "feature.webp"
         },
         {
           "title": "Last Modified",
@@ -194,7 +194,7 @@
           "name": "preview",
           "type": "image",
           "isPreviewImage": true,
-          "default": "feature.png"
+          "default": "feature.webp"
         },
         {
           "name": "class",

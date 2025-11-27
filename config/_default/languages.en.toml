@@ -9,11 +9,11 @@ displayName = "EN"
 isoCode = "en"
 rtl = false
 dateFormat = "2 January 2006"
-logo = "profile.png"
+logo = "profile.webp"
 
 [params.author]
 name = "Gilbert Sanchez"
-image = "profile.png"
+image = "profile.webp"
 headline = "Not just good. Good enough."
 bio = "Not just good. Good enough."
 links = [

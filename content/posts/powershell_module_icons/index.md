@@ -6,9 +6,16 @@ draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
 tags = [ "PowerShell", "Github" ]
-keywords = [ "powershell", "module", "icon", "psd1", "github", "publishing" ]
-lastmod = "2025-09-05T00:02:14.676Z"
-preview = "feature.png"
+keywords = [
+  "powershell",
+  "module",
+  "icon",
+  "psd1",
+  "github",
+  "publishing"
+]
+lastmod = "2025-11-27T17:00:03.432Z"
+preview = "feature.webp"
 +++
 
 Recently I saw Adam Bacon talking about updating his modules and I noticed how
@@ -36,7 +43,7 @@ RPGDice for example was easy and finding a free D20 icon that I liked just took
 some quick searching. Google image search has a filter where you can choose
 which "Usage Rights" you want. This can help steer you towards safer choices.
 
-{{< figure src="/images/2022/12/ImageCCSearch.png" caption="Searching for Creative Commons image on Google" >}}
+{{< figure src="/images/2022/12/ImageCCSearch.webp" caption="Searching for Creative Commons image on Google" >}}
 
 ## Images on GitHub
 
@@ -48,7 +55,7 @@ like a folder called `static`. Some people like `assets` or even `images`. At
 the end of the day it won't matter too much.
 
 You'll want to upload the image. From there we want to get a link to the actual image. You can click on the image and then click the download link.
-{{< figure src="/images/2022/12/GithubURI.png" caption="Where the Download button is on Github" >}}
+{{< figure src="/images/2022/12/GithubURI.webp" caption="Where the Download button is on Github" >}}
 
 That should give you a URL like
 "https://raw.githubusercontent.com/HeyItsGilbert/MazeRats/main/static/tinymaze.png".
