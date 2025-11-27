@@ -4,12 +4,13 @@ date: 2023-08-27T14:55:00.000Z
 description: Master terminal environments with this series covering WezTerm, PowerShell, and Starship. From fundamentals to advanced customization.
 summary: A comprehensive series exploring how terminals, shells, and prompts work together, with practical guides for WezTerm configuration, PowerShell profiles, and Starship prompt customization.
 draft: false
-lastmod: 2025-11-27T21:02:16.398Z
+lastmod: 2025-11-27T21:28:05.052Z
 preview: feature.webp
 showDateUpdated: false
-type: toplevel
+groupByYear: false
 cascade:
     showReadingTime: true
+type: toplevel
 ---
 
 Welcome to the **Terminals, Shells, and Prompts** series! This multi-part guide takes you from fundamental concepts to advanced customization of your terminal environment.
