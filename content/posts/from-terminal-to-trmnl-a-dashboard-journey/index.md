@@ -5,8 +5,8 @@ description: It’s surprisingly easy to build your own custom dashboard with TR
 summary: It’s surprisingly easy to build your own custom dashboard with TRMNL, webhooks, and a bit of PowerShell. I used it to send dynamic data (like quotes and images) to an old device—no polling needed, just a simple POST and some fun templating.
 showReadingTime: true
 draft: false
-preview: feature.jpeg
-lastmod: 2025-05-04T19:47:47.406Z
+preview: feature.webp
+lastmod: 2025-11-27T16:42:55.382Z
 slug: terminal-to-trmnl-with-powershell
 tags:
   - PowerShell
@@ -132,13 +132,13 @@ Let's start with making the plugin.
 1. Create a new [Private Plugin](https://usetrmnl.com/plugin_settings?keyname=private_plugin)
 2. Configure your new plugin.
    1. Name your plugin.
-      - ![Screenshot of the Name section](image.png)
+      - ![Screenshot of the Name section](image.webp)
    2. Set your "Strategy" to "Polling"
-      - ![The strategy section](image-1.png)
+      - ![The strategy section](image-1.webp)
    3. That's it!
 3. Save it and then you'll get a webhook url.
 4. You'll then want to copy the "Webhook URL."
-   - ![Webhook URL section](image-3.png)
+   - ![Webhook URL section](image-3.webp)
 
 Next we'll write a script so that we can send info to the webhook. Remember to
 replace the `GUID_HERE` with your webhook URL GUID.
@@ -174,10 +174,10 @@ Feel free to run it once so that there is data available when you're building
 the markup view.
 
 On the private plugin page you'll want to click on "Edit Markup".
-![Edit buttons](image-4.png)
+![Edit buttons](image-4.webp)
 
 I decided to use one of the examples with a nice large text section.
-![Quickstart Example](image-5.png)
+![Quickstart Example](image-5.webp)
 
 The html from that example looks like this:
 
@@ -204,7 +204,7 @@ The html from that example looks like this:
 
 If you scroll to the bottom, you can see what variables you have. You should see
 your data. For my code, I should have a nice bacon quote and address of an
-image. ![Your Variables section](image-6.png)
+image. ![Your Variables section](image-6.webp)
 
 I update the text to use my reference by putting `{{ Quote }}`. I then do a
 quick lookup in the design system for showing
@@ -235,11 +235,11 @@ quick lookup in the design system for showing
 ```
 
 And now!
-![Preview screenshot of the plugin](image-7.png)
+![Preview screenshot of the plugin](image-7.webp)
 
 Make sure to add it to your playlist!
 
-![Photo of the plugin showing on a TRMNL device](photo.jpg)
+![Photo of the plugin showing on a TRMNL device](photo.webp)
 And now you can find your zen…
 
 ## But Seriously

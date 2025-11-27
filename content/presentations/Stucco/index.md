@@ -3,10 +3,10 @@ title: Stucco
 date: 2023-10-31T22:07:11.747Z
 summary: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
 description: In this presentation I go over how to start using Stucco. If you follow along in your own termial, you'll be ready to publish to the gallery!
-lastmod: 2023-11-01T00:23:31.230Z
+lastmod: 2025-11-27T16:42:50.125Z
 tags: []
 type: presentations
-preview: feature.png
+preview: feature.webp
 slideshow: /slides/Stucco.html
 marp: true
 theme: uncover

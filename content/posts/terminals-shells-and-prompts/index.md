@@ -4,13 +4,13 @@ date: 2023-08-27T14:55:56.151Z
 description: Learn the differences between terminals, shells, and prompts. Understand WezTerm, PowerShell, Starship, and how they work together. Perfect for beginners setting up their dev environment.
 summary: Part one of brief walk through on how terminals, shells, and prompts interact. In later posts I will go over my particular settings, but this lays the foundation.
 draft: false
-lastmod: 2025-11-26T00:00:00.000Z
+lastmod: 2025-11-27T16:42:59.573Z
 slug: terminals-shells-and-prompts
 tags:
   - PowerShell
   - WezTerm
   - iTerm
-preview: feature.jpg
+preview: feature.webp
 keywords:
   - powershell
   - shell
@@ -19,7 +19,8 @@ keywords:
   - wezterm
   - prompt
 type: posts
-series: ["Terminals, Shells, and Prompts"]
+series:
+  - Terminals, Shells, and Prompts
 series_order: 1
 ---
 

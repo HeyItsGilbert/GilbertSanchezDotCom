@@ -5,8 +5,8 @@ description: Create and manage your resume with JSON Resume. Learn schema basics
 summary: Create and manage your resume with JSON Resume. Learn schema basics, hosting, themes, and deployment for easy, professional updates.
 showReadingTime: true
 draft: false
-preview: feature.jpeg
-lastmod: 2025-04-07T21:21:05.186Z
+preview: feature.webp
+lastmod: 2025-11-27T16:39:38.465Z
 slug: rac-resume-as-code
 tags:
     - VSCode
@@ -77,7 +77,7 @@ The one thing i would suggest is adding the schema to top of your JSON:
 
 If your editor supports it, which VS Code does, you'll now get IntelliSense support for adding info.
 
-![IntelliSense Example of Basics Options](image.png)
+![IntelliSense Example of Basics Options](image.webp)
 
 ## Install It
 

@@ -1,17 +1,15 @@
 ---
 title: "Efficient Disasters: Remove-Item In the Pipeline"
 date: 2023-01-31T03:29:44.653Z
-description: I walk through my most painful mistake of 2022. Using Remove-Item in a
-  Pipeline can be efficient, but it can also be a disaster.
-summary: I walk through my most painful mistake of 2022. Using Remove-Item in a
-  Pipeline can be efficient, but it can also be a disaster.
+description: I walk through my most painful mistake of 2022. Using Remove-Item in a Pipeline can be efficient, but it can also be a disaster.
+summary: I walk through my most painful mistake of 2022. Using Remove-Item in a Pipeline can be efficient, but it can also be a disaster.
 draft: false
-lastmod: 2023-01-31T04:40:18.642Z
+lastmod: 2025-11-27T16:42:59.583Z
 slug: efficient-disasters-remove-item-pipeline
 tags:
   - PowerShell
   - Chocolatey
-preview: feature.jpg
+preview: feature.webp
 type: posts
 keywords:
   - powershell

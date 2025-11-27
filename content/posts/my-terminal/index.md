@@ -4,17 +4,18 @@ date: 2023-08-27T14:57:43.274Z
 description: Complete WezTerm config guide with practical examples. Learn how to configure WezTerm for Windows, Mac, and Linux with PowerShell integration, custom keybindings, and LUA configuration.
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
-lastmod: 2025-11-26T00:00:00.000Z
+lastmod: 2025-11-27T16:42:50.112Z
 slug: my-terminal-wezterm
 tags:
   - PowerShell
   - WezTerm
-preview: feature.png
+preview: feature.webp
 keywords:
   - WezTerm
   - PowerShell
 type: posts
-series: ["Terminals, Shells, and Prompts"]
+series:
+  - Terminals, Shells, and Prompts
 series_order: 2
 ---
 

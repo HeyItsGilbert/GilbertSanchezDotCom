@@ -5,7 +5,7 @@ summary: Build a pipeline from your YouTube Playlist to Readwise!
 draft: false
 slug: youtube_playlist_to_readwise
 title: Syncing your YouTube Playlist to Readwise Reader
-lastmod: 2023-10-15T23:36:42.109Z
+lastmod: 2025-11-27T16:42:50.103Z
 keywords:
   - python
   - readwise
@@ -13,7 +13,7 @@ tags:
   - Python
   - Readwise
   - Obsidian
-preview: feature.png
+preview: feature.webp
 ---
 
 ## The Situation

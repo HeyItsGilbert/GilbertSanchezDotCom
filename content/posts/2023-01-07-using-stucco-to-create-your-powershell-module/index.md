@@ -1,12 +1,10 @@
 ---
 title: Using Stucco to Create Your PowerShell Module
 date: 2023-01-07T18:20:55.807Z
-description: Learn why Stucco is such a powerfull module template. Includes a walk through
-  from creating a module to publishing to the PowerShell Gallery!
-summary: Learn why Stucco is such a powerfull module template. Includes a walk through
-  from creating a module to publishing to the PowerShell Gallery!
+description: Learn why Stucco is such a powerfull module template. Includes a walk through from creating a module to publishing to the PowerShell Gallery!
+summary: Learn why Stucco is such a powerfull module template. Includes a walk through from creating a module to publishing to the PowerShell Gallery!
 draft: false
-lastmod: 2023-01-09T01:53:32.426Z
+lastmod: 2025-11-27T16:42:59.586Z
 slug: stucco-create-powershell-module
 tags:
   - PowerShell
@@ -14,7 +12,7 @@ tags:
   - TDD
   - VSCode
   - GitHub
-preview: feature.jpg
+preview: feature.webp
 type: posts
 keywords:
   - powershell
