@@ -27,7 +27,7 @@
     "headline": "{{ .Title | plainify | safeJS }}",
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-    "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url }}"{{ end }}],
+    "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url | safeJS }}"{{ end }}],
     "author": [{
         "@type": "Person",
         "name": "{{ $authorName | safeJS }}",
