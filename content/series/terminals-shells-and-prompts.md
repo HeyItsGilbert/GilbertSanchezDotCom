@@ -9,8 +9,7 @@ preview: feature.webp
 showDateUpdated: false
 groupByYear: false
 cascade:
-    showReadingTime: true
-type: toplevel
+  showReadingTime: true
 ---
 
 Welcome to the **Terminals, Shells, and Prompts** series! This multi-part guide takes you from fundamental concepts to advanced customization of your terminal environment.
