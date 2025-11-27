@@ -10,8 +10,8 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": {{ .Title | plainify | jsonify }},
-    "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-    "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+    "datePublished": {{ dateFormat .Site.Params.dateform8601 .Date.Local }},
+    "dateModified": {{ dateFormat .Site.Params.dateform8601 .Lastmod.Local }},
     "author": [{
         "@type": "Person",
         "name": {{ $authorName | jsonify }},
