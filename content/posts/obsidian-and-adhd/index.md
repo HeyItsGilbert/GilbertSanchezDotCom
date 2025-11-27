@@ -5,8 +5,8 @@ description: Learn how to use Obsidian for ADHD management. Complete guide to pe
 summary: Alleviating my ADHD headaches with Obsidian. Periodic Notes and Templater extensions save the day by reminding me of the next step towards my larger goals.
 showReadingTime: true
 draft: false
-preview: feature.png
-cover: feature.png
+preview: feature.webp
+cover: feature.webp
 tags:
   - PowerShell
   - PKM
@@ -20,7 +20,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-11-26T00:00:00.000Z
+lastmod: 2025-11-27T16:59:20.405Z
 slug: obsidian-and-adhd
 featureAlt: Public Domain art showing planets.
 coverCaption: We 💞 [Public Domain Art](https://www.cosmos.so/e/627080146)

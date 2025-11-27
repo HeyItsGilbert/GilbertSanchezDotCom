@@ -1,12 +1,10 @@
 ---
 title: Using Stucco to Create Your PowerShell Module
 date: 2023-01-07T18:20:55.807Z
-description: Learn why Stucco is such a powerfull module template. Includes a walk through
-  from creating a module to publishing to the PowerShell Gallery!
-summary: Learn why Stucco is such a powerfull module template. Includes a walk through
-  from creating a module to publishing to the PowerShell Gallery!
+description: Learn why Stucco is such a powerfull module template. Includes a walk through from creating a module to publishing to the PowerShell Gallery!
+summary: Learn why Stucco is such a powerfull module template. Includes a walk through from creating a module to publishing to the PowerShell Gallery!
 draft: false
-lastmod: 2023-01-09T01:53:32.426Z
+lastmod: 2025-11-27T16:58:57.091Z
 slug: stucco-create-powershell-module
 tags:
   - PowerShell
@@ -14,7 +12,7 @@ tags:
   - TDD
   - VSCode
   - GitHub
-preview: feature.jpg
+preview: feature.webp
 type: posts
 keywords:
   - powershell
@@ -106,7 +104,7 @@ practices.
 You'll want to create a new repository for your module. So click on New.
 
 {{< figure
-    src="/images/2023/01/NewRepo.png"
+    src="/images/2023/01/NewRepo.webp"
     alt="The new repository button on GitHub"
     caption="Click on 'New' to create a new repository"
     >}}
@@ -200,7 +198,7 @@ and give you a Hello World cmdlet. That should be good enough for testing.
 Let's run the Test task. You can find it under _Terminal_ -> _Run Task_ -> ___Test___.
 
 {{< figure
-    src="/images/2023/01/VSCodeTest.png"
+    src="/images/2023/01/VSCodeTest.webp"
     alt="Select the Test task to run your test."
     caption="You have all these tasks. Lets run the Test task for now."
     >}}
@@ -328,7 +326,7 @@ Gallery.
 3. Copy them to your password vault.
 
 {{< figure
-    src="/images/2023/01/APIKey.png"
+    src="/images/2023/01/APIKey.webp"
     alt="API Keys under the Profile icon."
     caption="Click on 'API Keys'"
     >}}
@@ -340,7 +338,7 @@ With your key handy you'll want to add it to GitHub.
 3. Name it `PS_GALLERY_KEY` and paste
 
 {{< figure
-    src="/images/2023/01/GitHubSecret.png"
+    src="/images/2023/01/GitHubSecret.webp"
     alt="GitHub Actions secrets pane."
     caption="Create a 'New repository secret'"
     >}}

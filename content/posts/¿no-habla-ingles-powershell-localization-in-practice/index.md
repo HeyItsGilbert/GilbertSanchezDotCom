@@ -5,24 +5,24 @@ description: "PowerShell localization made simple: step-by-step localization, co
 summary: PowerShell is global, but not everyone works in English. Let’s look at how localization works, how you can add it to your modules, and how to make it easy for your community to contribute translations
 showReadingTime: true
 draft: false
-preview: feature.png
+preview: feature.webp
 slug: no-habla-ingles-powershell-localization-practice
 tags:
-    - GitHub
-    - PowerShell
-    - VSCode
-    - FOSS
+  - GitHub
+  - PowerShell
+  - VSCode
+  - FOSS
 keywords:
-    - FOSS
-    - GitHub
-    - i18n
-    - Localization
-    - PowerShell
-    - l10n
+  - FOSS
+  - GitHub
+  - i18n
+  - Localization
+  - PowerShell
+  - l10n
 series: []
 type: posts
 fmContentType: posts
-lastmod: 2025-09-04T23:35:08.629Z
+lastmod: 2025-11-27T16:42:10.110Z
 ---
 {{< alert >}}
 Thanks to Thomas Nieto this has been updated with a new
@@ -134,7 +134,7 @@ decided to create a VS Code extension. I was able to create the
 [PowerShell Localization] extension which allows you to see values decorated
 inline.
 
-![example of PowerShell Localization extension](image.png)
+![example of PowerShell Localization extension](image.webp)
 
 You can install the extension to make it easier to see what your code would
 output.

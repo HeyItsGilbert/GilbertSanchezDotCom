@@ -7,9 +7,16 @@ slug = "controlling-a-cheap-neon-led-pt-2"
 summary = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
 tags = [ "PowerShell", "MQTT", "IOT", "HomeAssistant" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 2'
-keywords = [ "powershell", "mqtt", "iot", "home assistant", "led", "smart home" ]
-lastmod = "2023-01-01T20:14:48.274Z"
-preview = "feature.png"
+keywords = [
+  "powershell",
+  "mqtt",
+  "iot",
+  "home assistant",
+  "led",
+  "smart home"
+]
+lastmod = "2025-11-27T16:59:26.498Z"
+preview = "feature.webp"
 +++
 
 
@@ -66,7 +73,7 @@ Once you do that you can check the logbook and see if it appears.
 
 Should result in:
 
-{{< figure src="/images/2021/01/image.png" >}}
+{{< figure src="/images/2021/01/image.webp" >}}
 
 HomeAssistant default MQTT discovery happens under `homeassistant` path prefix
 and approved component name which should have made this process easier. See:

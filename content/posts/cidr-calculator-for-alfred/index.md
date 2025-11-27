@@ -8,8 +8,8 @@ summary = "A walkthrough on making a CIDR calculator for Alfred."
 tags = [ "OSX" ]
 title = "CIDR Calculator for Alfred"
 keywords = [ "cidr", "networking", "alfred", "macos", "subnet calculator" ]
-lastmod = "2023-01-01T20:48:06.876Z"
-preview = "feature.png"
+lastmod = "2025-11-27T16:59:34.405Z"
+preview = "feature.webp"
 +++
 
 
@@ -23,7 +23,7 @@ should be a fairly straight forward process. After some seaches for a CLI tool I
 came accross whatmask. I then became sorting out how to feed this to Alfred and
 get useful results.
 
-{{< figure src="/images/2018/03/VqMR3ah.png" caption="Screenshot showing the calculator in action!" >}}
+{{< figure src="/images/2018/03/VqMR3ah.webp" caption="Screenshot showing the calculator in action!" >}}
 
 ## Requirements
 

@@ -4,10 +4,10 @@ date: 2023-01-03T17:25:31.513Z
 description: ""
 summary: ""
 draft: true
-lastmod: 2023-01-08T00:42:55.307Z
+lastmod: 2025-11-27T16:42:50.118Z
 slug: building-chocolatey-extension-stucco
 tags: ""
-preview: feature.png
+preview: feature.webp
 keywords: <failed to process>
 type: posts
 ---

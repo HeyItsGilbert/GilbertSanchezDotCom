@@ -5,8 +5,8 @@ description: A big change this year. No longer 'Señor Systems Engineer at Meta'
 summary: A big change this year. No longer 'Señor Systems Engineer at Meta'. Now I'm a Staff Software Engineer at Tesla.
 showReadingTime: true
 draft: false
-preview: feature.png
-lastmod: 2024-01-22T14:38:23.030Z
+preview: feature.webp
+lastmod: 2025-11-27T16:42:50.110Z
 slug: ""
 tags: []
 keywords:

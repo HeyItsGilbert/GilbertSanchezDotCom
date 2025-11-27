@@ -4,13 +4,13 @@ date: 2023-10-16T00:15:08.921Z
 description: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
 summary: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
 draft: false
-lastmod: 2023-10-16T00:21:57.977Z
+lastmod: 2025-11-27T16:42:59.576Z
 slug: powershell-chef-cookbook
 tags:
   - Chef
   - PowerShell
   - Enterprise
-preview: feature.jpg
+preview: feature.webp
 keywords:
   - Chef
   - PowerShell

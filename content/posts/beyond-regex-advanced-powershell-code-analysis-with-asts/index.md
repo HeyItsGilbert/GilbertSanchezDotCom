@@ -5,7 +5,7 @@ description: In this post I'll be walking through an example of a (silly) reques
 summary: In this post I'll be walking through an example of a (silly) request you might see at work and show you how you can leverage AST's to update your codebase.
 showReadingTime: true
 draft: false
-preview: feature.jpeg
+preview: feature.webp
 slug: regex-advanced-powershell-code-analysis-asts
 tags:
   - Linting
@@ -21,6 +21,7 @@ keywords:
 series: []
 type: posts
 fmContentType: posts
+lastmod: 2025-11-27T16:42:55.390Z
 ---
 
 In this post I'll be walking through an example of a (silly) request you might

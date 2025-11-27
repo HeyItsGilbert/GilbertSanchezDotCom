@@ -47,7 +47,7 @@ Invoke-Expression (&starship init powershell)
 
 Under the hood, starship is overwriting the prompt function. If you read the
 [My Shell: PowerShell]({{<ref "my-shell-powershell">}}), you may recall how I
-load starship in combination with intializing my profile.
+load starship in combination with initializing my profile.
 
 ```powershell
 if (Get-Command 'starship' -ErrorAction SilentlyContinue) {
@@ -61,7 +61,7 @@ if (Get-Command 'starship' -ErrorAction SilentlyContinue) {
 }
 ```
 
-This checks if starship is available and intializes it. But what's that
+This checks if starship is available and initializes it. But what's that
 pre-command? It runs before the starship prompt renders. This is how I can make
 sure all my stuff is initialized.
 
@@ -69,7 +69,7 @@ sure all my stuff is initialized.
 
 Configuration is all done in a single `starship.toml` file.
 
-![My Current Prompt](image.png)
+![My Current Prompt](image.webp)
 
 ### Prompt Layout
 
@@ -91,7 +91,7 @@ add_newline = true
 
 Transient prompt allows you to change your prompt after you execute your
 command. This can be useful if you'd prefer a simpler prompt in your scrollback
-and only keep the relevent info on your current prompt. The example given on the
+and only keep the relevant info on your current prompt. The example given on the
 site replaces the prompt with just the character.
 
 Read more: [TransientPrompt in PowerShell](https://starship.rs/advanced-config/#transientprompt-in-powershell)
@@ -150,7 +150,7 @@ In the past few posts in the series I've briefly touched on some ANSI escape
 codes (see [Escape Codes]({{< ref "terminals-shells-and-prompts#escape-codes" >}})), and in my next post I'll be going into more depth. There is so much to
 cover but I'll be hitting a few highlights and pointing to a ton of references.
 
-How's the technology from 1979 still shapping our daily life? Stay tuned and
+How's the technology from 1979 still shaping our daily life? Stay tuned and
 find out!
 
 ## References

@@ -4,8 +4,8 @@ date: 2023-01-16T19:52:58.617Z
 description: A list of some of my projects.
 summary: A list of some of my projects.
 draft: false
-lastmod: 2023-10-15T22:24:10.716Z
-preview: feature.jpg
+lastmod: 2025-11-27T16:42:59.565Z
+preview: feature.webp
 showDateUpdated: false
 groupByYear: false
 cascade:

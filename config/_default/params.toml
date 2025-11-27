@@ -8,7 +8,7 @@ disableImageOptimization = false
 disableTextInHeader = false
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
-defaultBackgroundImage = "joey-kyber-Mg2iKRWpiCk-unsplash.jpg"
+defaultBackgroundImage = "joey-kyber-Mg2iKRWpiCk-unsplash.webp"
 
 [header]
 layout = "basic"

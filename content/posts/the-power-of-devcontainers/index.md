@@ -5,7 +5,7 @@ description: Quickly learn about devcontainers and how they can unlock more cont
 summary: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
 showReadingTime: true
 draft: false
-preview: feature.jpg
+preview: feature.webp
 slug: power-devcontainers
 tags:
   - Docker
@@ -22,7 +22,7 @@ series:
   - 10X Via DevEx
 series_order: 1
 type: posts
-lastmod: 2024-03-31T16:43:14.292Z
+lastmod: 2025-11-27T16:42:59.570Z
 ---
 
 Those who know me know I'm a huge fan of Development Containers (a.k.a. dev

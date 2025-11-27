@@ -4,11 +4,11 @@ date: 2023-10-08T16:15:02.506Z
 description: Complete PowerShell profile configuration guide. Learn how to optimize your $Profile, integrate Starship prompt, add custom functions, and improve startup performance.
 summary: In this third post of the series I go over my PowerShell profile.
 draft: false
-lastmod: 2025-11-26T00:00:00.000Z
+lastmod: 2025-11-27T16:42:50.115Z
 slug: my-shell-powershell
 tags:
   - PowerShell
-preview: feature.png
+preview: feature.webp
 keywords:
   - powershell
   - powershell profile
@@ -16,7 +16,8 @@ keywords:
   - shell configuration
   - psreadline
 type: posts
-series: ["Terminals, Shells, and Prompts"]
+series:
+  - Terminals, Shells, and Prompts
 series_order: 3
 ---
 

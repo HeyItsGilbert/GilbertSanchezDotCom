@@ -1,16 +1,14 @@
 ---
 title: Maintenance Mode - Chocolatey Fest 2018
 date: 2023-01-03T19:49:10.352Z
-description: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace
-  at scale using Chef.
-summary: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace
-  at scale using Chef.
-lastmod: 2023-01-03T19:50:23.474Z
+description: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace at scale using Chef.
+summary: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace at scale using Chef.
+lastmod: 2025-11-27T16:42:50.120Z
 slug: maintenance-mode-chocolatey-fest-2018
 tags:
   - Chef
   - Chocolatey
-preview: feature.png
+preview: feature.webp
 type: posts
 keywords:
   - chef
