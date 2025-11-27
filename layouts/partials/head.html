@@ -225,7 +225,5 @@
     crossorigin="anonymous"></script>
   {{ end }}
 
-
-  {{/* Schema JSON-LD */}}
-  {{ block "ldjson" . }}{{ end }}
+  {{- partial "struct-data.html" . -}}
 </head>
