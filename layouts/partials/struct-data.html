@@ -13,9 +13,9 @@
           }]
       }
 </script>`
-( .Title | markdownify )
-( dateFormat .Site.Params.dateform8601 .Date.Local )
-( dateFormat .Site.Params.dateform8601 .Lastmod.Local  )
+( .Title | plainify )
+( .Date.Format "2006-01-02T15:04:05Z07:00" )
+( .Lastmod.Format "2006-01-02T15:04:05Z07:00" )
 ( $.Site.Params.author.name )
 ( .Site.BaseURL  )
 | safeHTML
