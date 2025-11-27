@@ -14,19 +14,12 @@
 {{- $imageUrls = $imageUrls | append (.Permalink) }}
 {{- end }}
 {{- end }}
-{{- /* Add remaining images that weren't already matched */ -}}
+{{- /* Add remaining images */ -}}
 {{- range $images }}
-{{- $url := .Permalink }}
-{{- $found := false }}
-{{- range $imageUrls }}
-{{- if eq . $url }}
-{{- $found = true }}
+{{- $imageUrls = $imageUrls | append (.Permalink) }}
 {{- end }}
-{{- end }}
-{{- if not $found }}
-{{- $imageUrls = $imageUrls | append $url }}
-{{- end }}
-{{- end }}
+{{- /* Remove duplicates while preserving order */ -}}
+{{- $imageUrls = $imageUrls | uniq }}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -34,11 +27,11 @@
     "headline": "{{ .Title | plainify | safeJS }}",
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-    "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url | safeJS }}"{{ end }}],
+    "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url }}"{{ end }}],
     "author": [{
         "@type": "Person",
         "name": "{{ $authorName | safeJS }}",
-        "url": "{{ .Site.BaseURL | safeJS }}"
+        "url": "{{ .Site.BaseURL }}"
     }]
 }
 </script>
