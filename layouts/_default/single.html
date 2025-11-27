@@ -147,27 +147,3 @@
     <div class="{{ cond $isAuthorBottom "mb-10" "mb-5" }}"></div>
   {{ end }}
 {{ end }}
-
-{{ define "ldjson" }}
-{{ printf `<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": "%s",
-        "datePublished": "%s",
-        "dateModified": "%s",
-        "author": [{
-            "@type": "Person",
-            "name": "%s",
-            "url": "%s"
-          }]
-      }
-</script>`
-( .Title | markdownify )
-( dateFormat .Site.Params.dateform8601 .Date.Local )
-( dateFormat .Site.Params.dateform8601 .Lastmod.Local  )
-( $.Site.Params.author.name )
-( .Site.BaseURL  )
-| safeHTML
-}}
-{{ end }}
