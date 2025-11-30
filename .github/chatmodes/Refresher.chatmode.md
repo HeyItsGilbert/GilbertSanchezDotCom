@@ -49,7 +49,7 @@ CHECK AND FIX:
    - For any remote images (including Twitter/X hosted images):
    - For page bundles (posts with index.md), download images to the post's directory
    - For standalone pages, use static/images
-   - Update markdown to use relative paths: ![alt](image.png) for page bundles
+   - Update markdown to use relative paths: ![alt](image.webp) for page bundles
      * Update the markdown to reference the local path
      * Use descriptive filenames based on the post content
 
