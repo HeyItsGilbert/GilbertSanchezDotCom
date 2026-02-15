@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-02-15T16:20:51.840446",
+  "site_url": "https://gilbertsanchez.com/",
+  "period": {
+    "start": "2025-11-01",
+    "end": "2025-11-30"
+  },
+  "metrics": {
+    "query_stats": [],
+    "page_stats": [],
+    "traffic_stats": [
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "/Date(1764403200000-0800)/",
+        "Impressions": 65,
+        "ParsedDate": "2025-11-29"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1764489600000-0800)/",
+        "Impressions": 78,
+        "ParsedDate": "2025-11-30"
+      }
+    ]
+  },
+  "note": "Bing positions are 10x actual (divide by 10)"
+}

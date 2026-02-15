@@ -1,0 +1,14 @@
+# Credentials (NEVER commit these)
+.env
+gsc-credentials.json
+*.json.bak
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

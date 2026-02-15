@@ -1,0 +1,48 @@
+name: Monthly SEO Metrics
+
+on:
+  # Run on the 3rd of each month at 9am UTC
+  # (Allows 2-3 days for GSC data to finalize)
+  schedule:
+    - cron: '0 9 3 * *'
+  
+  # Allow manual runs
+  workflow_dispatch:
+
+jobs:
+  fetch-metrics:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install -r ./seo-metrics/requirements.txt
+      
+      - name: Create credentials file
+        run: echo '${{ secrets.GSC_CREDENTIALS_JSON }}' > gsc-credentials.json
+      
+      - name: Fetch SEO metrics
+        env:
+          GSC_CREDENTIALS_PATH: ./gsc-credentials.json
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          BING_API_KEY: ${{ secrets.BING_API_KEY }}
+          BING_SITE_URL: ${{ secrets.BING_SITE_URL }}
+          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
+          UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
+          OUTPUT_DIR: ./seo-metrics
+        run: python fetch_seo_metrics.py
+      
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seo-metrics/
+          git commit -m "📊 Monthly SEO metrics $(date +'%Y-%m')" || echo "No changes to commit"
+          git push

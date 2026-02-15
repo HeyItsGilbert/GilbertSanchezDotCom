@@ -1,0 +1,690 @@
+{
+  "fetched_at": "2026-02-15T16:21:06.261980",
+  "website_id": "7d70d59a-aeac-47ae-b937-9666d32671fe",
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-01-31"
+  },
+  "metrics": {
+    "stats": {
+      "pageviews": 1549,
+      "visitors": 1243,
+      "visits": 1362,
+      "bounces": 1256,
+      "totaltime": 36065,
+      "comparison": {
+        "pageviews": 1277,
+        "visitors": 1044,
+        "visits": 1132,
+        "bounces": 1033,
+        "totaltime": 33179
+      }
+    },
+    "top_pages": [
+      {
+        "x": "/posts/my-terminal-wezterm/",
+        "y": 516
+      },
+      {
+        "x": "/",
+        "y": 192
+      },
+      {
+        "x": "/posts/prompt-starship/",
+        "y": 108
+      },
+      {
+        "x": "/posts/obsidian-and-adhd/",
+        "y": 100
+      },
+      {
+        "x": "/posts/terminals-shells-and-prompts/",
+        "y": 79
+      },
+      {
+        "x": "/posts/my-terminal-wezterm/#the-top",
+        "y": 50
+      },
+      {
+        "x": "/posts/my-shell-powershell/",
+        "y": 31
+      },
+      {
+        "x": "/posts/terminal-to-trmnl-with-powershell/",
+        "y": 24
+      },
+      {
+        "x": "/posts/",
+        "y": 20
+      },
+      {
+        "x": "/posts/efficient-disasters-remove-item-pipeline/",
+        "y": 16
+      },
+      {
+        "x": "/projects/",
+        "y": 15
+      },
+      {
+        "x": "/posts/youtube_playlist_to_readwise/",
+        "y": 13
+      },
+      {
+        "x": "/posts/power-devcontainers/",
+        "y": 12
+      },
+      {
+        "x": "/posts/sharing-custom-psscriptanalyzer-rules/",
+        "y": 11
+      },
+      {
+        "x": "/posts/powershell_module_icons/",
+        "y": 9
+      },
+      {
+        "x": "/posts/no-habla-ingles-powershell-localization-practice/",
+        "y": 7
+      },
+      {
+        "x": "/tags/osx/",
+        "y": 7
+      },
+      {
+        "x": "/posts/stucco-create-powershell-module/",
+        "y": 6
+      },
+      {
+        "x": "/posts/regex-advanced-powershell-code-analysis-asts/",
+        "y": 6
+      },
+      {
+        "x": "/tags/powershell/",
+        "y": 5
+      },
+      {
+        "x": "/presentations/",
+        "y": 5
+      },
+      {
+        "x": "/posts/obsidian-and-adhd/#periodic-notes",
+        "y": 5
+      },
+      {
+        "x": "/tags/python/",
+        "y": 5
+      },
+      {
+        "x": "/tags/",
+        "y": 5
+      },
+      {
+        "x": "/tags/docker/",
+        "y": 4
+      },
+      {
+        "x": "/tags/obsidian/",
+        "y": 4
+      },
+      {
+        "x": "/tags/chocolatey/",
+        "y": 4
+      },
+      {
+        "x": "/series/terminals-shells-and-prompts/",
+        "y": 3
+      },
+      {
+        "x": "/tags/pkm/",
+        "y": 3
+      },
+      {
+        "x": "/tags/trmnl/",
+        "y": 3
+      },
+      {
+        "x": "/posts/new-year-new-me---2024/",
+        "y": 3
+      },
+      {
+        "x": "/posts/rac-resume-as-code/",
+        "y": 3
+      },
+      {
+        "x": "/tags/chef/",
+        "y": 3
+      },
+      {
+        "x": "/posts/controlling-a-cheap-led/",
+        "y": 3
+      },
+      {
+        "x": "/posts/force-reinstalling-choco-packages/",
+        "y": 3
+      },
+      {
+        "x": "/posts/stucco-create-powershell-module/#create",
+        "y": 3
+      },
+      {
+        "x": "/tags/homeassistant/",
+        "y": 3
+      },
+      {
+        "x": "/posts/synchronizing-ad-group-members-to-unix-attributes/",
+        "y": 3
+      },
+      {
+        "x": "/tags/enterprise/",
+        "y": 3
+      },
+      {
+        "x": "/tags/active-directory/",
+        "y": 3
+      },
+      {
+        "x": "/tags/devex/",
+        "y": 3
+      },
+      {
+        "x": "/posts/locating-empty-citrix-worker-groups/",
+        "y": 2
+      },
+      {
+        "x": "/tags/foss/",
+        "y": 2
+      },
+      {
+        "x": "/posts/maintenance-mode-chocolatey-fest-2018/",
+        "y": 2
+      },
+      {
+        "x": "/tags/rest/",
+        "y": 2
+      },
+      {
+        "x": "/posts/my-terminal-wezterm/#lua-logic-os-checking",
+        "y": 2
+      },
+      {
+        "x": "/tags/iot/",
+        "y": 2
+      },
+      {
+        "x": "/posts/powershell-chef-cookbook/",
+        "y": 2
+      },
+      {
+        "x": "/presentations/stucco/",
+        "y": 2
+      },
+      {
+        "x": "/tags/presentation/",
+        "y": 2
+      }
+    ],
+    "referrers": [
+      {
+        "x": "google.com",
+        "y": 393
+      },
+      {
+        "x": "bing.com",
+        "y": 156
+      },
+      {
+        "x": "duckduckgo.com",
+        "y": 115
+      },
+      {
+        "x": "kagi.com",
+        "y": 12
+      },
+      {
+        "x": "cn.bing.com",
+        "y": 8
+      },
+      {
+        "x": "jakehildreth.github.io",
+        "y": 7
+      },
+      {
+        "x": "ecosia.org",
+        "y": 5
+      },
+      {
+        "x": "qwant.com",
+        "y": 4
+      },
+      {
+        "x": "indieblog.page",
+        "y": 3
+      },
+      {
+        "x": "links.gilbertsanchez.com",
+        "y": 3
+      },
+      {
+        "x": "yandex.ru",
+        "y": 3
+      },
+      {
+        "x": "m.facebook.com",
+        "y": 2
+      },
+      {
+        "x": "garden.gilbertsanchez.com",
+        "y": 2
+      },
+      {
+        "x": "google.com.au",
+        "y": 1
+      },
+      {
+        "x": "startpage.com",
+        "y": 1
+      },
+      {
+        "x": "resulthunter.com",
+        "y": 1
+      },
+      {
+        "x": "chatgpt.com",
+        "y": 1
+      },
+      {
+        "x": "seekly.zone",
+        "y": 1
+      },
+      {
+        "x": "google.com.hk",
+        "y": 1
+      },
+      {
+        "x": "powershell.org",
+        "y": 1
+      }
+    ],
+    "browsers": [
+      {
+        "x": "chrome",
+        "y": 794
+      },
+      {
+        "x": "edge-chromium",
+        "y": 175
+      },
+      {
+        "x": "firefox",
+        "y": 148
+      },
+      {
+        "x": "safari",
+        "y": 47
+      },
+      {
+        "x": "ios",
+        "y": 34
+      },
+      {
+        "x": "crios",
+        "y": 16
+      },
+      {
+        "x": "yandexbrowser",
+        "y": 11
+      },
+      {
+        "x": "opera",
+        "y": 9
+      },
+      {
+        "x": "fxios",
+        "y": 5
+      },
+      {
+        "x": "ios-webview",
+        "y": 3
+      },
+      {
+        "x": "samsung",
+        "y": 1
+      }
+    ],
+    "countries": [
+      {
+        "x": "US",
+        "y": 358
+      },
+      {
+        "x": "SG",
+        "y": 245
+      },
+      {
+        "x": "DE",
+        "y": 66
+      },
+      {
+        "x": "GB",
+        "y": 54
+      },
+      {
+        "x": "CN",
+        "y": 42
+      },
+      {
+        "x": "AU",
+        "y": 34
+      },
+      {
+        "x": "NL",
+        "y": 30
+      },
+      {
+        "x": "JP",
+        "y": 27
+      },
+      {
+        "x": "CA",
+        "y": 23
+      },
+      {
+        "x": "FR",
+        "y": 23
+      },
+      {
+        "x": "SE",
+        "y": 21
+      },
+      {
+        "x": "IN",
+        "y": 21
+      },
+      {
+        "x": "ES",
+        "y": 20
+      },
+      {
+        "x": "IT",
+        "y": 17
+      },
+      {
+        "x": "NO",
+        "y": 17
+      },
+      {
+        "x": "DK",
+        "y": 17
+      },
+      {
+        "x": "CH",
+        "y": 17
+      },
+      {
+        "x": "HK",
+        "y": 14
+      },
+      {
+        "x": "BR",
+        "y": 14
+      },
+      {
+        "x": "FI",
+        "y": 11
+      }
+    ],
+    "daily_pageviews": {
+      "pageviews": [
+        {
+          "x": "2026-01-01T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2026-01-02T00:00:00Z",
+          "y": 34
+        },
+        {
+          "x": "2026-01-03T00:00:00Z",
+          "y": 37
+        },
+        {
+          "x": "2026-01-04T00:00:00Z",
+          "y": 46
+        },
+        {
+          "x": "2026-01-05T00:00:00Z",
+          "y": 63
+        },
+        {
+          "x": "2026-01-06T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-07T00:00:00Z",
+          "y": 46
+        },
+        {
+          "x": "2026-01-08T00:00:00Z",
+          "y": 61
+        },
+        {
+          "x": "2026-01-09T00:00:00Z",
+          "y": 44
+        },
+        {
+          "x": "2026-01-10T00:00:00Z",
+          "y": 37
+        },
+        {
+          "x": "2026-01-11T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2026-01-12T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-13T00:00:00Z",
+          "y": 51
+        },
+        {
+          "x": "2026-01-14T00:00:00Z",
+          "y": 58
+        },
+        {
+          "x": "2026-01-15T00:00:00Z",
+          "y": 71
+        },
+        {
+          "x": "2026-01-16T00:00:00Z",
+          "y": 47
+        },
+        {
+          "x": "2026-01-17T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-18T00:00:00Z",
+          "y": 64
+        },
+        {
+          "x": "2026-01-19T00:00:00Z",
+          "y": 62
+        },
+        {
+          "x": "2026-01-20T00:00:00Z",
+          "y": 38
+        },
+        {
+          "x": "2026-01-21T00:00:00Z",
+          "y": 48
+        },
+        {
+          "x": "2026-01-22T00:00:00Z",
+          "y": 56
+        },
+        {
+          "x": "2026-01-23T00:00:00Z",
+          "y": 61
+        },
+        {
+          "x": "2026-01-24T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2026-01-25T00:00:00Z",
+          "y": 36
+        },
+        {
+          "x": "2026-01-26T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-27T00:00:00Z",
+          "y": 40
+        },
+        {
+          "x": "2026-01-28T00:00:00Z",
+          "y": 54
+        },
+        {
+          "x": "2026-01-29T00:00:00Z",
+          "y": 84
+        },
+        {
+          "x": "2026-01-30T00:00:00Z",
+          "y": 34
+        },
+        {
+          "x": "2026-01-31T00:00:00Z",
+          "y": 39
+        }
+      ],
+      "sessions": [
+        {
+          "x": "2026-01-01T00:00:00Z",
+          "y": 26
+        },
+        {
+          "x": "2026-01-02T00:00:00Z",
+          "y": 29
+        },
+        {
+          "x": "2026-01-03T00:00:00Z",
+          "y": 29
+        },
+        {
+          "x": "2026-01-04T00:00:00Z",
+          "y": 42
+        },
+        {
+          "x": "2026-01-05T00:00:00Z",
+          "y": 55
+        },
+        {
+          "x": "2026-01-06T00:00:00Z",
+          "y": 56
+        },
+        {
+          "x": "2026-01-07T00:00:00Z",
+          "y": 38
+        },
+        {
+          "x": "2026-01-08T00:00:00Z",
+          "y": 40
+        },
+        {
+          "x": "2026-01-09T00:00:00Z",
+          "y": 39
+        },
+        {
+          "x": "2026-01-10T00:00:00Z",
+          "y": 31
+        },
+        {
+          "x": "2026-01-11T00:00:00Z",
+          "y": 29
+        },
+        {
+          "x": "2026-01-12T00:00:00Z",
+          "y": 50
+        },
+        {
+          "x": "2026-01-13T00:00:00Z",
+          "y": 46
+        },
+        {
+          "x": "2026-01-14T00:00:00Z",
+          "y": 47
+        },
+        {
+          "x": "2026-01-15T00:00:00Z",
+          "y": 55
+        },
+        {
+          "x": "2026-01-16T00:00:00Z",
+          "y": 38
+        },
+        {
+          "x": "2026-01-17T00:00:00Z",
+          "y": 57
+        },
+        {
+          "x": "2026-01-18T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-19T00:00:00Z",
+          "y": 48
+        },
+        {
+          "x": "2026-01-20T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2026-01-21T00:00:00Z",
+          "y": 45
+        },
+        {
+          "x": "2026-01-22T00:00:00Z",
+          "y": 42
+        },
+        {
+          "x": "2026-01-23T00:00:00Z",
+          "y": 45
+        },
+        {
+          "x": "2026-01-24T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2026-01-25T00:00:00Z",
+          "y": 31
+        },
+        {
+          "x": "2026-01-26T00:00:00Z",
+          "y": 53
+        },
+        {
+          "x": "2026-01-27T00:00:00Z",
+          "y": 33
+        },
+        {
+          "x": "2026-01-28T00:00:00Z",
+          "y": 45
+        },
+        {
+          "x": "2026-01-29T00:00:00Z",
+          "y": 60
+        },
+        {
+          "x": "2026-01-30T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2026-01-31T00:00:00Z",
+          "y": 33
+        }
+      ]
+    }
+  }
+}
