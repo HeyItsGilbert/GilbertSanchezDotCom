@@ -17,6 +17,7 @@ type: posts
 series:
   - Terminals, Shells, and Prompts
 series_order: 2
+seriesOpened: true
 ---
 
 This is the second post in this series. You can see the first post explaining
@@ -97,6 +98,8 @@ Minor, Build, and Revision number. Windows 11 is Major version 11 right? Nope.
 It's actually Build numbers higher then 22000. With that, I can make a local
 bool variable called `is_windows_11`. I was planning on using this for some
 themeing, but opted against it. Could be useful later...
+
+This kind of OS-aware logic is what sold me on WezTerm — the config is actual code, not just a static settings file. But the terminal is only half the picture.
 
 ## 🎶 Here Comes Your Shell 🎶: PowerShell
 
@@ -194,6 +197,8 @@ end
 ```
 
 See more at [Making Your Own LUA Modules](https://wezfurlong.org/wezterm/config/files.html#making-your-own-lua-modules)
+
+This "work override" pattern is something I reuse across my whole setup — terminal, shell, and prompt. Keeping work configs separate has saved me more than a few headaches.
 
 ## Finally
 

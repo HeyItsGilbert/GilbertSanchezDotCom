@@ -87,6 +87,8 @@ format = """
 add_newline = true
 ```
 
+That prompt looks great... until you scroll up and your whole terminal is wall-to-wall powerline glyphs. What if your prompt could clean up after itself?
+
 ## Transient Prompt
 
 Transient prompt allows you to change your prompt after you execute your
@@ -114,6 +116,8 @@ short = """
 [\uE0B0](fg:12 bg:none) $character
 """
 ```
+
+This profiles trick pairs nicely with a well-structured [PowerShell profile]({{< ref "my-shell-powershell" >}}) — you can dynamically pick which Starship profile to render based on your session context.
 
 ## Pro-Tip: EngineEvent `PowerShell.OnIdle`
 
