@@ -21,7 +21,7 @@ type: posts
 
 ___tl;dr finished 12.5 years at Meta and starting at Tesla!___
 
-For the last few weeks I've been fairly quiet as I enjoy the break with my family (and a lot of time revamping my home lab). I've been working on my [DigitalGarden](https://garden.gilbertsanchez.com), updating the blog, and all my personal tech debt 😂.
+For the last few weeks I've been fairly quiet as I enjoy the break with my family (and a lot of time revamping my home lab). I've been working on my [DigitalGarden](https://garden.gilbertsanchez.com), updating the blog, and all my personal tech debt 😂. If you're here for the technical stuff, I've been pouring a lot into my [Terminals, Shells, and Prompts]({{< ref "terminals-shells-and-prompts" >}}) series — a deep dive into my whole dev environment setup.
 
 I wrapped up my time with Meta at the end of the year. It's truly bittersweet. I have loved my teams, colleagues, managers, and the many friendships created.
 
@@ -46,6 +46,8 @@ I'll be leaving Meta at the end of December and I'll be missing you all immensel
 Someone posted a role in the PowerShell Discord that I first wasn't sure was serious. It was initially pitched as, "95% PowerShell" and ya'll know how much I love PS. Turned out that it was very real and that I was already very familiar with a lot of their stack. It seemed like a once in a lifetime role and I couldn't say no.
 
 At the end of January I'll be joining Tesla as a Staff Software Development Engineer on the DevOps teams.
+
+If you want to see that PowerShell love in action, check out my [PowerShell profile setup]({{< ref "my-shell-powershell" >}}) — it's probably my most opinionated post on this site.
 
 ### Thanks
 

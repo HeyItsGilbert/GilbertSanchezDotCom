@@ -39,6 +39,8 @@ mistakes. It's also annoying when a keyboard combo works on one OS/Shell/etc.
 and not another. While making the terminal consistent between OS's doesn't solve
 all the costs of context switching, it does make the experience more enjoyable.
 
+The good news? Once you understand how these pieces fit together, you can build a setup that follows you everywhere. Let me show you how.
+
 ## My goals
 
 These are my overall goals with my particular setup.
@@ -69,6 +71,8 @@ Some examples are:
 - [Terminal](https://support.apple.com/guide/terminal/welcome/mac) ({{< icon "apple" >}})
 - [iTerm2](https://iterm2.com/) ({{< icon "apple" >}})
 - So many more...
+
+I've tried a few of these over the years, but WezTerm has been my favorite. I break down my [full WezTerm config]({{< ref "my-terminal" >}}) later in this series if you want to see why.
 
 ### Shells
 
