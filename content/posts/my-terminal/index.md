@@ -1,7 +1,7 @@
 ---
-title: "WezTerm Config Guide: Complete Setup with Examples (2024)"
+title: "WezTerm Config Guide: Complete Lua Setup with Examples"
 date: 2023-08-27T14:57:43.274Z
-description: Complete WezTerm config guide with practical examples. Learn how to configure WezTerm for Windows, Mac, and Linux with PowerShell integration, custom keybindings, and LUA configuration.
+description: "Complete WezTerm Lua config guide with practical examples. Learn wezterm.lua configuration for Windows, Mac, and Linux — default shell setup, keybindings, launch menu, and config file location."
 summary: In this second post of the series I go over my WezTerm config an explain each of my settings and some lessons learned.
 draft: false
 lastmod: 2025-11-27T17:00:10.117Z

@@ -7,8 +7,9 @@ showReadingTime: true
 draft: false
 preview: feature.webp
 lastmod: 2025-11-27T16:42:50.110Z
-slug: ""
-tags: []
+slug: "new-year-new-me-2024"
+tags:
+  - Career
 keywords:
   - career
   - meta

@@ -1,10 +1,50 @@
-{{- if eq .Kind "page" }}
 {{- $authorName := "" }}
 {{- with $.Site.Params.author }}
 {{- with .name }}
 {{- $authorName = . }}
 {{- end }}
 {{- end }}
+
+{{- /* WebSite schema on homepage */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title | plainify | safeJS }}",
+    "url": "{{ .Site.BaseURL }}"
+}
+</script>
+{{- end }}
+
+{{- /* BreadcrumbList schema for non-homepage pages */ -}}
+{{- if not .IsHome }}
+{{- $breadcrumbs := slice (dict "name" "Home" "url" (.Site.BaseURL | safeJS)) }}
+{{- if .Parent }}
+{{- if and (.Parent.Parent) (not .Parent.IsHome) }}
+{{- $breadcrumbs = $breadcrumbs | append (dict "name" (.Parent.Parent.Title | plainify) "url" (.Parent.Parent.Permalink | safeJS)) }}
+{{- end }}
+{{- if not .Parent.IsHome }}
+{{- $breadcrumbs = $breadcrumbs | append (dict "name" (.Parent.Title | plainify) "url" (.Parent.Permalink | safeJS)) }}
+{{- end }}
+{{- end }}
+{{- $breadcrumbs = $breadcrumbs | append (dict "name" (.Title | plainify) "url" (.Permalink | safeJS)) }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{{ range $i, $crumb := $breadcrumbs }}{{ if $i }}, {{ end }}{
+        "@type": "ListItem",
+        "position": {{ add $i 1 }},
+        "name": "{{ $crumb.name | safeJS }}",
+        "item": "{{ $crumb.url }}"
+    }{{ end }}]
+}
+</script>
+{{- end }}
+
+{{- /* BlogPosting schema for individual posts */ -}}
+{{- if eq .Kind "page" }}
 {{- /* Build a robust image array, preferring background/feature/cover/thumbnail images first */ -}}
 {{- $imageUrls := slice }}
 {{- $images := .Resources.ByType "image" }}
@@ -25,8 +65,14 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "{{ .Title | plainify | safeJS }}",
+    "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 | safeJS }}{{ end }}{{ end }}",
+    "wordCount": {{ .WordCount }},
+    {{- with .Params.series }}
+    "articleSection": "{{ index . 0 | safeJS }}",
+    {{- end }}
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "url": "{{ .Permalink }}",
     "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url | safeJS }}"{{ end }}],
     "author": [{
         "@type": "Person",

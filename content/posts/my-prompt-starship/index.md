@@ -1,19 +1,24 @@
 ---
-title: "Starship Prompt Guide: Transient Prompts & PowerShell Setup"
+title: "Starship Transient Prompt: What It Is & How to Set It Up in PowerShell"
 date: 2023-11-05T00:13:27.417Z
-description: Complete guide to Starship prompt configuration with transient prompts in PowerShell. Learn how to customize your shell prompt with profiles, dynamic updates, and escape codes.
+description: "What is a transient prompt? Learn how to configure Starship's transient prompt in PowerShell with profiles, prompt updates, and cross-shell setup for bash and zsh."
 summary: A quick overview on how I use Starship to customize my prompt.
 showReadingTime: true
 draft: false
 preview: feature.png
 lastmod: 2025-11-26T00:00:00.000Z
 slug: prompt-starship
-tags: []
+tags:
+  - PowerShell
+  - Starship
 keywords:
   - starship
   - powershell
   - transient prompt
   - starship prompt
+  - starship transient prompt
+  - what is transient prompt
+  - cross-shell prompt
 series: ["Terminals, Shells, and Prompts"]
 series_order: 4
 type: posts
