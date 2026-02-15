@@ -1,7 +1,7 @@
 +++
 date = 2022-06-17T16:23:39.000Z
-description = "Small update about my first podcast interview"
-summary = "Small update about my first podcast interview"
+description = "Gilbert's first podcast appearance on the PowerShell Podcast. Listen to insights on PowerShell community, development practices, and speaker experiences with hosts Andrew and Jordan."
+summary = "Gilbert's first podcast appearance on the PowerShell Podcast. Listen to insights on PowerShell community, development practices, and speaker experiences with hosts Andrew and Jordan."
 draft = false
 aliases = [ "/first-podcast/" ]
 slug = "first-podcast"

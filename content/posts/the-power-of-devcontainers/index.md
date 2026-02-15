@@ -1,8 +1,8 @@
 ---
 title: The Power of Devcontainers
 date: 2024-03-11T00:29:20.951Z
-description: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
-summary: Quickly learn about devcontainers and how they can unlock more contributors to your projects.
+description: Discover how development containers simplify project setup and empower contributors. Learn devcontainer.json configuration, cross-language support, and how devcontainers solve environment barriers.
+summary: Discover how development containers simplify project setup and empower contributors. Learn devcontainer.json configuration, cross-language support, and how devcontainers solve environment barriers.
 showReadingTime: true
 draft: false
 preview: feature.webp

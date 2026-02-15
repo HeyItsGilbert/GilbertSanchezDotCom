@@ -2,7 +2,7 @@
 title: Home
 date: 2022-10-25T10:00:00.000Z
 lastmod: 2023-11-01T21:40:48.544Z
-description: Gilbert's blog covering everything from ANSI to zsh!
+description: Explore Gilbert's tech blog covering PowerShell, DevOps, and terminal configuration. Learn from practical guides on shell prompts, development containers, and enterprise automation.
 summary: Gilbert's blog covering everything from ANSI to zsh!
 ---
 I've created this blog as a way to help share some of my discoveries. I'm a

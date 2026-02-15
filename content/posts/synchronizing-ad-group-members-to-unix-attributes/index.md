@@ -1,7 +1,7 @@
 +++
 date = 2015-09-30T17:30:58.000Z
-description = "Easily synchronize unix group members (in AD) with the current AD group members."
-summary = "Easily synchronize unix group members (in AD) with the current AD group members."
+description = "Synchronize Unix group members with Active Directory groups using PowerShell. Complete code example to manage Unix attributes, automate user provisioning, and maintain audit compliance."
+summary = "Synchronize Unix group members with Active Directory groups using PowerShell. Complete code example to manage Unix attributes, automate user provisioning, and maintain audit compliance."
 draft = false
 aliases = [ "/synchronizing-ad-group-members-to-unix-attributes/" ]
 slug = "synchronizing-ad-group-members-to-unix-attributes"
