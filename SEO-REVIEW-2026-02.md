@@ -263,15 +263,180 @@ The related content is invisible to the majority of visitors. Bounce rate cannot
 improve until engagement hooks are placed **within the content body** where visitors
 actually see them.
 
-### Still Needed: Search Console Data
+### Google Search Console Data (Last 3 Months: Nov 14 – Feb 13)
 
-Google Search Console and Bing Webmaster Tools data would complete the picture:
+#### Monthly Trend
 
-- **Search CTR** — did optimized titles improve click-through? (baseline: 1.86%)
-- **Impressions** — are posts appearing for target queries?
-- **Position** — ranking changes for "wezterm config", "starship transient prompt", etc.
-- **Indexed pages** — how many of 71 sitemap URLs are actually indexed?
-- **Crawl errors** — any issues Google/Bing found?
+| Month | Clicks | Impressions | Avg Daily Imp. | CTR | Avg Position |
+|-------|--------|-------------|----------------|-----|--------------|
+| Nov (17 days) | 112 | 6,744 | 397 | 1.66% | ~8.4 |
+| Dec | 333 | 21,929 | 708 | 1.52% | ~7.1 |
+| Jan | 423 | 38,185 | 1,231 | 1.11% | ~7.5 |
+| Feb (13 days) | 158 | 17,326 | 1,333 | 0.91% | ~7.2 |
+| **Total** | **1,026** | **84,184** | — | **1.22%** | ~7.5 |
+
+**Impressions tripled** from ~400/day in November to ~1,300/day in January-February.
+This is a massive visibility gain. However, **CTR dropped from 1.66% to 0.91%** over
+the same period — clicks are not keeping pace with impressions. The site is appearing
+for more queries but failing to convert those impressions into clicks.
+
+#### CTR Target: Baseline vs Current
+
+| Query | Baseline CTR | Current CTR | Current Position | Verdict |
+|-------|-------------|-------------|-----------------|---------|
+| "wezterm config" | 1.86% | **2.71%** | 6.3 | **+45% — improved but short of 3.5% target** |
+| "obsidian for adhd" | — | **10.0%** | 5.03 | **Excellent — title optimization success** |
+| "obsidian adhd" | — | **5.28%** | 5.96 | **Good** |
+| "starship transient prompt" | — | **3.16%** | 3.68 | **Decent position, ok CTR** |
+| "obsidian adhd template" | — | **13.64%** | 4.17 | **Outstanding — long-tail win** |
+
+The "wezterm config" CTR improved 45% (1.86% → 2.71%) but the overall site CTR
+dropped because impressions grew faster than clicks. The **Obsidian title optimization
+was the biggest success** with 10-14% CTR on its queries.
+
+#### Performance by Page
+
+| Page | Clicks | Impressions | CTR | Position |
+|------|--------|-------------|-----|----------|
+| WezTerm config | 625 | 43,983 | 1.42% | 6.73 |
+| Obsidian/ADHD | 129 | 4,060 | **3.18%** | 6.63 |
+| Starship prompt | 119 | 16,980 | **0.70%** | 7.46 |
+| TRMNL dashboard | 32 | 4,864 | 0.66% | 7.67 |
+| Terminals overview | 24 | 2,497 | 0.96% | 7.64 |
+| PS Module Icons | 21 | 982 | 2.14% | 10.96 |
+| Homepage | 13 | 1,061 | 1.23% | 7.74 |
+| Remove-Item pipeline | 10 | 1,702 | 0.59% | 8.92 |
+| YouTube → Readwise | 8 | 2,848 | 0.28% | 9.17 |
+| AST/PSScriptAnalyzer | 7 | 1,268 | 0.55% | 9.45 |
+| LED control | 6 | 56 | 10.71% | 11.8 |
+| PSScriptAnalyzer rules | 5 | 656 | 0.76% | 9.96 |
+| DevContainers | 4 | 1,166 | 0.34% | 11.21 |
+
+**Critical finding: The Starship post is your biggest missed opportunity.** It has
+16,980 impressions (2nd highest) but only 0.70% CTR. At the Obsidian post's CTR
+(3.18%), it would get **540 clicks instead of 119** — a 4.5x increase. The title and
+description are not compelling enough relative to the search intent.
+
+**Emerging content: TRMNL** has 4,864 impressions and is a growing topic. The
+YouTube-to-Readwise post has 2,848 impressions but only 0.28% CTR — also ripe for
+title/description optimization.
+
+#### Zero-Click Queries at Good Positions (Wasted Visibility)
+
+These queries show your pages in top results but get zero clicks — the snippet
+isn't matching user intent:
+
+| Query | Impressions | Position | Likely Issue |
+|-------|-------------|----------|-------------|
+| "wezterm configuration language" | 433 | 4.76 | Title doesn't mention **Lua** |
+| "starship prompt" (broad) | 365 | 12.23 | Position too low for competitive head term |
+| "what is transient prompt" | 210 | **3.87** | Snippet doesn't answer the question directly |
+| "wezterm config file location" | 193 | 5.87 | Title doesn't mention file paths/location |
+| "wezterm reload config" | 181 | 8.98 | Not covered in the post's snippet |
+| "wezterm default shell" | 165 | 7.19 | Title doesn't address shell configuration |
+| "bleopt prompt_ps1_transient" | 150 | 5.99 | Very specific — needs dedicated section |
+| "wezterm configuration lua" | 144 | 5.05 | Title doesn't say "Lua" anywhere |
+| "wezterm shell integration" | 135 | 4.91 | Not covered in title/description |
+| "readwise youtube integration" | 119 | 5.97 | YouTube post title doesn't match intent |
+
+**Combined wasted visibility:** ~2,100 impressions at good positions (avg pos 5-6)
+with zero clicks. Fixing snippet mismatches on these could yield 40-60+ new clicks
+per quarter.
+
+#### Device Breakdown
+
+| Device | Clicks | Impressions | CTR | Position |
+|--------|--------|-------------|-----|----------|
+| Desktop | 867 | 77,483 | 1.12% | 7.6 |
+| Mobile | 138 | 6,603 | **2.09%** | 6.75 |
+| Tablet | 10 | 449 | **2.23%** | 6.64 |
+
+**92% desktop traffic** — expected for a developer/config blog. Mobile has nearly
+2x the CTR of desktop, suggesting the optimized titles perform better in mobile
+snippets (shorter visible text means the keyword-front-loaded titles stand out more).
+
+#### Geographic Distribution
+
+| Country | Clicks | Impressions | CTR | Notes |
+|---------|--------|-------------|-----|-------|
+| United States | 291 | 37,447 | 0.78% | 28% of clicks, dominant |
+| United Kingdom | 66 | 6,279 | 1.05% | |
+| Germany | 65 | 3,141 | 2.07% | Strong CTR |
+| Australia | 30 | 1,579 | 1.90% | |
+| Netherlands | 29 | 1,226 | 2.37% | |
+| France | 28 | 1,674 | 1.67% | |
+| India | 26 | 2,317 | 1.12% | High impressions |
+| Russia | 26 | 930 | 2.80% | High CTR |
+
+US has 37,447 impressions but only 0.78% CTR — significantly below the global
+average. European countries consistently outperform the US on CTR. This may indicate
+US searchers have more competing results for WezTerm/terminal content.
+
+#### Query Cluster Analysis
+
+**WezTerm cluster** (all wezterm-related queries combined):
+- ~55,000 impressions, ~780 clicks — dominates the site
+- High-CTR long-tail: "wezterm config examples" (13%), "best wezterm config" (7.7%),
+  "wezterm guide" (15.15%)
+- Zero-click problem areas: config location, reload, default shell, Lua language
+
+**Starship cluster:**
+- ~2,000 impressions, ~30 clicks from specific queries
+- "starship transient prompt" at 3.16% CTR, position 3.68 — good
+- Broad "starship prompt" at 0% CTR, position 12.23 — not competitive
+
+**Obsidian cluster:**
+- ~750 impressions, ~50 clicks
+- Best CTR of any cluster (5-14%)
+- Small but highly efficient — title optimization was a clear win
+
+**TRMNL cluster** (emerging):
+- ~500 impressions across "trmnl terminus", "terminus trmnl", "trmnl webhook", etc.
+- 32 clicks total on the page — growing topic worth investing in
+
+**Readwise/YouTube cluster:**
+- ~400 impressions, 8 clicks (2% CTR)
+- "readwise youtube integration" at 119 impressions, 0 clicks — title mismatch
+
+### Bing Webmaster Tools Data
+
+Bing shows a similar pattern to Google but with some interesting differences:
+
+#### Top Bing Queries
+
+| Query | Impressions | Clicks | CTR | Position |
+|-------|-------------|--------|-----|----------|
+| wezterm | 1,821 | 5 | 0.27% | 4.74 |
+| starship prompt | 517 | 4 | 0.77% | 4.21 |
+| wezterm config | 366 | 5 | 1.37% | 4.37 |
+| windows terminal shell integration | 301 | 8 | 2.66% | 44.85 |
+| wezterm windows | 240 | 3 | 1.25% | 5.38 |
+| starship powershell | 74 | 5 | **6.76%** | 4.42 |
+| wezterm windows config | 28 | 4 | **14.29%** | 4.82 |
+| wezterm configuration | 17 | 5 | **29.41%** | 2.94 |
+| wezterm wsl2 | 12 | 3 | **25%** | 3.83 |
+| obsidian adhd | 6 | 2 | **33.33%** | 1.67 |
+
+**Key Bing observations:**
+
+1. **Bing positions are significantly better** than Google — "wezterm config" at
+   position 4.37 (vs 6.3 on Google), "obsidian adhd" at position **1.67** (vs 5.96).
+   Your site ranks higher on Bing across the board.
+
+2. **The broad "wezterm" query** has 1,821 impressions but only 0.27% CTR on Bing.
+   Users searching just "wezterm" want the official site, not config guides.
+
+3. **Long-tail queries convert very well on Bing** — "wezterm configuration" at
+   29.41% CTR, "wezterm windows config" at 14.29%. Bing users with specific
+   config queries click through at much higher rates.
+
+4. **"starship powershell" at 6.76% CTR** on Bing is a standout — this specific
+   combination converts well. Consider adding "PowerShell" more prominently in
+   the Starship post's description.
+
+5. **Total Bing clicks** across all queries: ~160 (aligns with Umami's 156 from
+   bing.com + cn.bing.com). Since DuckDuckGo uses Bing's index, your Bing
+   optimization also drives the 15% DuckDuckGo traffic.
 
 ---
 
@@ -315,13 +480,27 @@ User-agent: SemrushBot
 Crawl-delay: 5
 ```
 
-### Priority 2: Fix Content Issues (Quick Wins)
+### Priority 2: Fix the Starship Post CTR (Biggest Opportunity)
 
-1. **Add tags to Starship post:** `tags: [PowerShell, Starship, Shell]`
-2. **Fix "New Year" post:** Add `slug: "new-year-new-me-2024"` and relevant tags
-3. **Update WezTerm title year:** Change "(2024)" to "(2025)" or remove the year
-4. **Set up Google Search Console:** Uncomment and fill in the google verification
-   field in `config/_default/params.toml`
+The Starship post has **16,980 Google impressions but only 0.70% CTR** — the worst
+CTR of any top page. At the Obsidian post's CTR (3.18%), it would get 540 clicks
+instead of 119. Fixes:
+
+1. **Rewrite the meta title** to answer common queries directly. Current title
+   "Starship Prompt Guide: Transient Prompts & PowerShell Setup" doesn't match
+   the top zero-click queries: "what is transient prompt" (210 imp, 0 clicks,
+   pos 3.87). Consider: "Starship Transient Prompt: What It Is & How to Set It Up"
+2. **Rewrite the meta description** to include "Lua", "cross-shell", "zsh", "bash"
+   since many starship queries mention these
+3. **Add tags to Starship post:** `tags: [PowerShell, Starship, Shell]`
+
+### Priority 3: Fix Other Content Issues (Quick Wins)
+
+1. **Fix "New Year" post:** Add `slug: "new-year-new-me-2024"` and relevant tags
+2. **Update WezTerm title year:** Change "(2024)" to "(2026)" or remove the year
+3. **Add "Lua" to WezTerm description** — "wezterm configuration language" (433 imp,
+   0 clicks) and "wezterm configuration lua" (144 imp, 0 clicks) get zero clicks
+   because the snippet doesn't mention Lua
 
 ### Priority 3: Structured Data Enhancements
 
@@ -401,21 +580,30 @@ Posts that likely underperform based on content analysis:
 | Monthly visitors 1,200+ | +29% | **+34% (1,250)** | **A** |
 | Bounce rate 75% | -16pp | **+2pp (91%)** | **F** |
 | Pages/session 1.8 | +38% | **-10% (1.17)** | **F** |
-| Search CTR 3.5% | +88% | **Needs GSC data** | **?** |
+| Search CTR 3.5% | +88% | **2.71% on "wezterm config" (+45%)** | **C** |
 | Visit duration | — | **+65% (40s)** | **A** |
 | Traffic concentration | <91% | **~64%** | **B** |
+| Google impressions | — | **3.3x growth (400→1,300/day)** | **A** |
 
-**Overall: The SEO title/description optimization drove more traffic (success). The
-engagement optimization via related content did not reduce bounces (failure). The
-next phase should focus on in-content engagement hooks rather than bottom-of-page
-related posts.**
+**Overall:** Title/description optimization drove significantly more traffic and
+visibility (impressions tripled, visitors up 34%). CTR improved on the primary
+query (+45%) but declined site-wide as the site now appears for many more queries
+it doesn't convert. Engagement optimization via related content did not reduce
+bounces. The Starship post is the single biggest missed opportunity (16,980
+impressions, 0.70% CTR).
+
+**The next phase should focus on:**
+1. Fixing the Starship post CTR crisis (biggest ROI opportunity)
+2. Moving engagement hooks into content body (bounce rate)
+3. Capturing zero-click queries at good positions (wasted visibility)
 
 ## 10. Next Steps
 
-1. **Provide Google Search Console + Bing Webmaster data** to complete CTR analysis
-2. **I can fix the identified issues** (robots.txt, missing tags, slug, year in title)
-3. **Prioritize bounce rate reduction** with in-content CTAs on the WezTerm post
-4. **Set up Google Search Console** to unlock the remaining 57% of search data
+1. **Fix the Starship post title/description** to improve its 0.70% CTR
+2. **Add "Lua" to WezTerm description** for 577 zero-click impressions
+3. **Add inline engagement hooks** in the WezTerm post body to reduce bounce rate
+4. **Fix content issues** (missing tags, slug, year in title)
+5. **Resolve robots.txt discrepancy** between repo and live site
 
 ---
 
