@@ -1,8 +1,8 @@
 ---
 title: Presentations
 date: 2023-10-31T22:10:17.705Z
-description: A list of some of my presentations.
-summary: A list of some of my presentations.
+description: Explore Gilbert's technical presentations on PowerShell, DevOps, and enterprise automation. Access slides, videos, and resources from talks on shell configuration and development practices.
+summary: Explore Gilbert's technical presentations on PowerShell, DevOps, and enterprise automation. Access slides, videos, and resources from talks on shell configuration and development practices.
 draft: false
 lastmod: 2025-11-27T16:42:59.568Z
 preview: feature.webp

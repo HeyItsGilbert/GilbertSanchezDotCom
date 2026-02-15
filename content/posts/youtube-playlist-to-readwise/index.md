@@ -1,7 +1,7 @@
 ---
 date: 2022-12-31T02:00:00.000Z
-description: Build a pipeline from your YouTube Playlist to Readwise!
-summary: Build a pipeline from your YouTube Playlist to Readwise!
+description: Create an automated pipeline from YouTube playlists to Readwise using Pipedream. Learn to sync videos, enable highlighting, and integrate with your note-taking workflow seamlessly.
+summary: Create an automated pipeline from YouTube playlists to Readwise using Pipedream. Learn to sync videos, enable highlighting, and integrate with your note-taking workflow seamlessly.
 draft: false
 slug: youtube_playlist_to_readwise
 title: Syncing your YouTube Playlist to Readwise Reader

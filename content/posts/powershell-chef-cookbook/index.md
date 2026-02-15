@@ -1,8 +1,8 @@
 ---
 title: PowerShell Chef Cookbook
 date: 2023-10-16T00:15:08.921Z
-description: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
-summary: A very brief intro into how you can use Meta's Chef cookbook to manage PowerShell.
+description: Manage PowerShell at enterprise scale with Meta's Chef cookbook. Learn system profile management, module deployment, telemetry control, and enterprise configuration automation.
+summary: Manage PowerShell at enterprise scale with Meta's Chef cookbook. Learn system profile management, module deployment, telemetry control, and enterprise configuration automation.
 draft: false
 lastmod: 2025-11-27T16:42:59.576Z
 slug: powershell-chef-cookbook

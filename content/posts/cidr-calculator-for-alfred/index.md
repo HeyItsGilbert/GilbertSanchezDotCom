@@ -1,10 +1,10 @@
 +++
 date = 2014-02-04T06:09:16.000Z
-description = "A walkthrough on making a CIDR calculator for Alfred."
+description = "Create a CIDR calculator for Alfred app. Complete guide to building a quick subnet calculator workflow using whatmask CLI, Alfred Powerpack, and PHP for instant network calculations."
 draft = false
 aliases = [ "/cidr-calculator-for-alfred/" ]
 slug = "cidr-calculator-for-alfred"
-summary = "A walkthrough on making a CIDR calculator for Alfred."
+summary = "Create a CIDR calculator for Alfred app. Complete guide to building a quick subnet calculator workflow using whatmask CLI, Alfred Powerpack, and PHP for instant network calculations."
 tags = [ "OSX" ]
 title = "CIDR Calculator for Alfred"
 keywords = [ "cidr", "networking", "alfred", "macos", "subnet calculator" ]
