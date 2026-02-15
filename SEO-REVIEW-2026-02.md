@@ -2,17 +2,22 @@
 
 ## Executive Summary
 
-This report audits the SEO optimizations implemented across gilbertsanchez.com. The
-technical implementation is largely solid, with meta titles, descriptions, keywords,
-structured data, and related content all in place. However, several issues were
-discovered that are likely undermining performance — including a robots.txt that blocks
-*all* AI crawlers (including Anthropic's ClaudeBot, contrary to your stated intent), posts
-missing tags that break taxonomy discovery, and an empty slug creating a malformed URL.
+**Traffic target met, engagement targets missed.** Monthly visitors grew 34% (931 →
+1,250), exceeding the 1,200+ target. However, bounce rate worsened from 89% to 91%
+(target was 75%), and pages/session dropped from 1.3 to 1.17 (target was 1.8). The one
+bright spot in engagement: visit duration surged 65% to 40 seconds, indicating visitors
+who do stay are reading more deeply.
 
-**Analytics gap:** The Umami dashboard at cloud.umami.is renders as a client-side
-JavaScript app and cannot be scraped for metrics. You will need to manually compare
-your current Umami numbers against the baseline below. Google Search Console and Bing
-Webmaster Tools data should be exported directly for a full comparison.
+The technical SEO implementation is solid — meta titles, descriptions, keywords,
+structured data, and related content are all in place. However, several issues were
+discovered that are likely undermining performance: a robots.txt discrepancy between
+the repo and the live site, the Starship post missing tags (breaking taxonomy
+discovery), and Google Search Console still not verified.
+
+**The core strategic problem:** Related content placed at the bottom of posts doesn't
+reduce bounce rate when 45% of traffic goes to one page (WezTerm) where visitors grab
+a config snippet and leave within 40 seconds. The engagement hooks need to move
+*into* the content body, not sit below it.
 
 ---
 
@@ -198,39 +203,75 @@ getting Google to crawl and index tag aggregation pages.
 
 ---
 
-## 6. Baseline vs Current — Metrics You Need to Check
+## 6. Baseline vs Current — Umami Analytics (Last 30 Days)
 
-Since I cannot scrape the Umami dashboard (client-side JS rendering), you should
-manually check these comparisons:
+*Data from Umami dashboard, Jan 15 – Feb 14, 2026.*
 
-| Metric | Baseline | Target | Where to Check |
-|--------|----------|--------|----------------|
-| Monthly visitors | 931 | 1,200+ | Umami dashboard → Overview |
-| Bounce rate | 89% | 75% | Umami dashboard → Overview |
-| Pages/session | 1.3 | 1.8 | Umami dashboard → Overview |
-| Search CTR (top query) | 1.86% | 3.5% | Google Search Console → Performance |
-| Bing CTR | — | — | Bing Webmaster Tools → Search Performance |
-| Top 5 traffic concentration | 91% | lower | Umami → Pages report |
+### Core Metrics
 
-### Key Questions to Answer With Your Data:
+| Metric | Baseline | Current | Target | Change | Result |
+|--------|----------|---------|--------|--------|--------|
+| Monthly visitors | 931 | **1,250** | 1,200+ | +34% | **TARGET MET** |
+| Monthly visits | — | **1,370** | — | +12% | — |
+| Page views | — | **1,600** | — | +16% | — |
+| Bounce rate | 89% | **91%** | 75% | +2pp | **MISSED — WORSE** |
+| Pages/session | 1.3 | **~1.17** | 1.8 | -10% | **MISSED — WORSE** |
+| Visit duration | ~24s est. | **40s** | — | +65% | **STRONG GAIN** |
 
-1. **Did related content reduce bounce rate?** Compare 89% baseline to current.
-   If it dropped to ~80-85%, the related content is working but may need better
-   placement or more compelling titles.
+### Traffic by Page
 
-2. **Did optimized titles improve CTR?** Check Search Console for:
-   - "wezterm config" — what's the current CTR vs 1.86% baseline?
-   - "starship transient prompt" — did impressions and CTR increase?
-   - "obsidian adhd" — is this query appearing at all?
+| Page | Visitors | Share |
+|------|----------|-------|
+| `/posts/my-terminal-wezterm/` (WezTerm) | 510 | 45% |
+| `/` (homepage) | 192 | 17% |
+| `/posts/prompt-starship/` (Starship) | 118 | 10% |
+| `/posts/obsidian-and-adhd/` (Obsidian) | 100 | 9% |
+| `/posts/terminals-shells-and-prompts/` | 76 | 7% |
+| `/posts/my-terminal-wezterm/#the-top` | 48 | 4% |
 
-3. **Did pages/session increase?** If it went from 1.3 to 1.5+, the internal linking
-   and related content are driving engagement. If still ~1.3, consider more prominent
-   in-content CTAs.
+**Traffic concentration:** Top 4 posts = ~64% of visitors (down from 91% baseline).
+WezTerm alone = 45%. This single page's bounce behavior dominates the site average.
 
-4. **Bing performance (31% of traffic):** Check Bing Webmaster Tools for:
-   - Indexed page count (should be close to 71 sitemap URLs)
-   - Top queries and CTR
-   - Any crawl errors
+### Traffic Sources (Referrers)
+
+| Source | Visitors | Share |
+|--------|----------|-------|
+| google.com | 399 | 57% |
+| bing.com | 144 | 21% |
+| duckduckgo.com | 107 | 15% |
+| cn.bing.com | 12 | 2% |
+| jakehildreth.github.io | 10 | 1% |
+| kagi.com | 7 | 1% |
+
+**Key observations:**
+- **Bing total** (bing.com + cn.bing.com) = 156 (23%), down from 31% baseline share
+- **DuckDuckGo at 15%** — a significant, previously untracked channel
+- **Kagi appearing** — privacy-focused search engines are a small but growing source
+- Google remains dominant at 57%
+
+### Analysis: Why Bounce Rate Got Worse
+
+The related content feature is architecturally correct but **positionally ineffective**
+for the dominant traffic pattern:
+
+1. **45% of traffic lands on WezTerm** — a config reference post
+2. Visitors grab the config snippet they need in ~40 seconds
+3. They leave before scrolling to the related content section at the bottom
+4. The 918-word post is a ~4 minute read; 40s average means most leave at ~10% scroll
+
+The related content is invisible to the majority of visitors. Bounce rate cannot
+improve until engagement hooks are placed **within the content body** where visitors
+actually see them.
+
+### Still Needed: Search Console Data
+
+Google Search Console and Bing Webmaster Tools data would complete the picture:
+
+- **Search CTR** — did optimized titles improve click-through? (baseline: 1.86%)
+- **Impressions** — are posts appearing for target queries?
+- **Position** — ranking changes for "wezterm config", "starship transient prompt", etc.
+- **Indexed pages** — how many of 71 sitemap URLs are actually indexed?
+- **Crawl errors** — any issues Google/Bing found?
 
 ---
 
@@ -288,23 +329,37 @@ Crawl-delay: 5
 2. Add `HowTo` schema to tutorial posts (WezTerm, Starship, PowerShell Profile)
 3. Add `SearchAction` to the `WebSite` schema for sitelinks searchbox potential
 
-### Priority 4: Content Strategy (Based on Analytics)
+### Priority 4: Fix Bounce Rate (The Core Problem)
 
-Once you have the current metrics:
+Bounce rate is 91% and pages/session is 1.17. The bottom-of-page related content
+is not working because 45% of traffic never scrolls that far. Concrete fixes:
 
-- **If bounce rate > 80%:** Add more prominent "Read Next" CTAs within post content
-  (not just at the bottom). Consider an inline related post card after the first
-  major section of each post.
+1. **Add inline "Related" callouts inside the WezTerm post body.** After the first
+   config section, insert a callout like: "Setting up WezTerm? You'll also want to
+   configure your [PowerShell profile](link) and [Starship prompt](link)."
 
-- **If CTR < 2.5%:** Test richer meta descriptions with specific numbers/promises:
-  "Learn 5 WezTerm keybindings that save 30 minutes/week" style hooks.
+2. **Add a sticky sidebar or floating "In this series" widget** on series posts.
+   The series navigation exists but is easy to miss.
 
-- **If pages/session < 1.5:** The series navigation is good but only helps the
-  terminal series. Consider creating more series (e.g., "PowerShell Deep Dives"
-  grouping the AST, PSScriptAnalyzer, Chef, and localization posts).
+3. **Add a Table of Contents progress indicator.** The TOC is enabled but if visitors
+   see how much content remains, they may scroll further (past the fold to related
+   content).
 
-- **If Bing indexing < 50 pages:** Manually submit sitemap in Bing Webmaster Tools
-  and check for any crawl errors.
+4. **Consider a "Quick Links" box at the top of the WezTerm post** linking to
+   specific config sections AND related posts. This catches snippet-seekers before
+   they bounce.
+
+### Priority 5: Diversify Traffic Sources
+
+DuckDuckGo drives 15% of traffic — optimize for it:
+
+- DuckDuckGo uses Bing's index, so Bing Webmaster Tools optimization helps both
+- Submit sitemap to Bing if not already done
+- DuckDuckGo favors sites with good privacy practices (no aggressive tracking) —
+  your Umami-only analytics is a strength here
+
+Consider Kagi optimization as well — it's small (1%) but growing and its users are
+high-intent technical professionals (your exact audience).
 
 ### Priority 5: Long-Tail Content Opportunities
 
@@ -339,12 +394,28 @@ Posts that likely underperform based on content analysis:
 
 ---
 
-## 9. Next Steps
+## 9. Scorecard Summary
 
-1. **You provide current metrics** from Umami, Google Search Console, and Bing
-   Webmaster Tools so we can do the actual baseline comparison
-2. **I fix the identified issues** (robots.txt, missing tags, slug, year in title)
-3. **We prioritize further optimizations** based on which metrics moved and which didn't
+| Goal | Target | Actual | Grade |
+|------|--------|--------|-------|
+| Monthly visitors 1,200+ | +29% | **+34% (1,250)** | **A** |
+| Bounce rate 75% | -16pp | **+2pp (91%)** | **F** |
+| Pages/session 1.8 | +38% | **-10% (1.17)** | **F** |
+| Search CTR 3.5% | +88% | **Needs GSC data** | **?** |
+| Visit duration | — | **+65% (40s)** | **A** |
+| Traffic concentration | <91% | **~64%** | **B** |
+
+**Overall: The SEO title/description optimization drove more traffic (success). The
+engagement optimization via related content did not reduce bounces (failure). The
+next phase should focus on in-content engagement hooks rather than bottom-of-page
+related posts.**
+
+## 10. Next Steps
+
+1. **Provide Google Search Console + Bing Webmaster data** to complete CTR analysis
+2. **I can fix the identified issues** (robots.txt, missing tags, slug, year in title)
+3. **Prioritize bounce rate reduction** with in-content CTAs on the WezTerm post
+4. **Set up Google Search Console** to unlock the remaining 57% of search data
 
 ---
 
