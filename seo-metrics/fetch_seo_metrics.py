@@ -313,28 +313,29 @@ def fetch_for_month(year: int, month: int):
     
     get_last_month_timestamps = custom_timestamps
     
-    # Create output directory
-    month_dir = Path(OUTPUT_DIR) / f"{year}-{month:02d}"
-    month_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Fetch from each source
-    results = {
-        "google-search-console.json": fetch_gsc_metrics(),
-        "bing-webmaster.json": fetch_bing_metrics(),
-        "umami-analytics.json": fetch_umami_metrics()
-    }
-    
-    # Save results
-    for filename, data in results.items():
-        if data:
-            output_path = month_dir / filename
-            with open(output_path, "w") as f:
-                json.dump(data, f, indent=2, default=str)
-            print(f"✅ Saved {output_path}")
-    
-    # Restore original functions
-    get_last_month_range = original_range
-    get_last_month_timestamps = original_timestamps
+    try:
+        # Create output directory
+        month_dir = Path(OUTPUT_DIR) / f"{year}-{month:02d}"
+        month_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Fetch from each source
+        results = {
+            "google-search-console.json": fetch_gsc_metrics(),
+            "bing-webmaster.json": fetch_bing_metrics(),
+            "umami-analytics.json": fetch_umami_metrics()
+        }
+        
+        # Save results
+        for filename, data in results.items():
+            if data:
+                output_path = month_dir / filename
+                with open(output_path, "w") as f:
+                    json.dump(data, f, indent=2, default=str)
+                print(f"✅ Saved {output_path}")
+    finally:
+        # Restore original functions
+        get_last_month_range = original_range
+        get_last_month_timestamps = original_timestamps
 
 
 if __name__ == "__main__":
@@ -346,9 +347,15 @@ if __name__ == "__main__":
         
         print(f"🔄 Backfilling {months_back} months...\n")
         
+        # Use calendar-accurate month arithmetic instead of assuming 30-day months
+        base = datetime.now().replace(day=1)
+        base_index = base.year * 12 + (base.month - 1)
+        
         for i in range(months_back, 0, -1):
-            target = datetime.now().replace(day=1) - timedelta(days=i * 30)
-            fetch_for_month(target.year, target.month)
+            target_index = base_index - i
+            target_year = target_index // 12
+            target_month = (target_index % 12) + 1
+            fetch_for_month(target_year, target_month)
         
         print("\n✨ Backfill complete!\n")
     else:

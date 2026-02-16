@@ -1,8 +1,14 @@
 name: Monthly SEO Metrics
 
 on:
-  # Run on the 3rd of each month at 9am UTC
-  # (Allows 2-3 days for GSC data to finalize)
+  # Run on the 3rd of each month at 09:00 UTC.
+  # - The 3rd is chosen to ensure the full prior calendar month is available in
+  #   Google Search Console, which typically lags by ~2–3 days.
+  # - 09:00 UTC is an off-peak time and occurs well after local midnight for
+  #   the primary traffic time zones (Americas and Europe), so the prior month
+  #   has fully completed everywhere the site has significant traffic.
+  # - If traffic patterns shift heavily toward APAC, this time can be revisited,
+  #   but the key requirement is simply “run on the 3rd after GSC data finalizes”.
   schedule:
     - cron: '0 9 3 * *'
   
