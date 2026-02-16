@@ -13,6 +13,8 @@ permissions:
   contents: read
   #issues: write
 
+engine: copilot
+
 # Outputs - what APIs and tools can the AI use?
 safe-outputs:
   create-issue:
