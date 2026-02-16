@@ -8,6 +8,8 @@ on:
       - "main"
   workflow_dispatch:  # Manual trigger for testing
 
+engine: copilot
+
 # Permissions - what can this workflow access?
 permissions:
   contents: read
