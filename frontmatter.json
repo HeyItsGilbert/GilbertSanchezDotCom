@@ -339,5 +339,6 @@
   "frontMatter.content.autoUpdateDate": true,
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.preview.host": "http://localhost:1313/",
-  "frontMatter.framework.startCommand": "yarn serve"
+  "frontMatter.framework.startCommand": "yarn serve",
+  "frontMatter.website.host": "https://gilbertsanchez.com"
 }
