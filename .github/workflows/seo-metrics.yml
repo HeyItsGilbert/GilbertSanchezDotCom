@@ -36,7 +36,7 @@ jobs:
       
       - name: Fetch SEO metrics
         env:
-          GSC_CREDENTIALS_PATH: ./gsc-credentials.json
+          GSC_CREDENTIALS_PATH: ${{ github.workspace }}/gsc-credentials.json
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
           BING_API_KEY: ${{ secrets.BING_API_KEY }}
           BING_SITE_URL: ${{ secrets.BING_SITE_URL }}
