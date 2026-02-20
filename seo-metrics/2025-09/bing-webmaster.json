@@ -1,0 +1,14 @@
+{
+  "fetched_at": "2026-02-15T16:20:41.153404",
+  "site_url": "https://gilbertsanchez.com/",
+  "period": {
+    "start": "2025-09-01",
+    "end": "2025-09-30"
+  },
+  "metrics": {
+    "query_stats": [],
+    "page_stats": [],
+    "traffic_stats": []
+  },
+  "note": "Bing positions are 10x actual (divide by 10)"
+}

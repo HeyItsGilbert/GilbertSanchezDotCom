@@ -1,0 +1,4314 @@
+{
+  "fetched_at": "2026-02-15T16:20:57.632099",
+  "site_url": "https://gilbertsanchez.com/",
+  "period": {
+    "start": "2025-12-01",
+    "end": "2025-12-31"
+  },
+  "metrics": {
+    "query_stats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm install ubuntu",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "adhd obsidian",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "trmnl terminal",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "preconfiguration for wezterm",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config in win11",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "psscriptanalyzersetting.psd1 not taking affect in vscode",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm beginner guide",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm markdown",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "choco reinstall package",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm guide",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 124,
+        "Query": "wezterm",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 30,
+        "Query": "wezterm windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 28,
+        "Query": "starship prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 16,
+        "Query": "starship terminal",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 12,
+        "Query": "wezterm config",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 9,
+        "Query": "starship windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 21,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 7,
+        "Query": "windows terminal shell integration",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 6,
+        "Query": "gilbert sanchez",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 4,
+        "Query": "starship with powershell",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "starship config",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm open wsl",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell profiles for custom prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "prompt command starship_precmd",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "ubuntu install wezterm",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "starship shell",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "starship terminal config",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm default cwd wsl",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm lua meta",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm lua disable ctrl shift p",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "starship.rs custom line dotted connector right prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "weztern",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 32,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm run programs",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm requisitos",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "scritpblock ast",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "spaceship powershell github",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm + oh my pos",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm home directory",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "set wezterm as default terminal",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 30,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "csanchezirles",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship cmd",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship config examples",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "psscriptanalyzer for custom rules",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "set wezterm as default terminal enumertor",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm for windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey create list to reinstall",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "devcontainer binfmt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "jetbrains using wezterm on windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "configurar starship prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 65,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm win11",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt simple",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm set ~ as leader key",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "scriptanalzyer not working in vscode",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm width setting",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.php?include=",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm custom github",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "cmder cross shell",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config on wiindows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to include command output in prompt starshup",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "where does resurrect.wezterm store its files?",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to get output from shell command into starship prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to open wez term lua",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm windows 11",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm set window on the right",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm prefer egl",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship show azure username",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship windows powershell",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configuration windows",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship help completion",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to run wezterm on konsole",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to get wezterm in termux",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to open wez term lia",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship promt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "obsidian install powershell command",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm how to open launch menu",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "spaceship shell",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm docs reference luaa",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "weztem",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "sample starship prompts",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt show user and hostname",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "ubuntu wezterm",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm default restoe key",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configs",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "terminal starship",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "documenta\u00e7\u00e3o wezterm",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "how to add icons using powershell#",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "gbt vs starship commd prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm print bindings",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm custom",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm display images on wsl",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.rs new line two lines",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm unmaximize",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "add current system or host to starship prompt",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 2,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship devcontiner",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 2,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wzeterm config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 2,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "configure wezterm on windows without wsl",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 40,
+        "Query": "starship prompt",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 27,
+        "Query": "wezterm windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 6,
+        "Query": "starship powershell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm config example",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 3,
+        "Query": "wsl wezterm",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starshup powershell add",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm python path",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starter wezterm config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm bashrc",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm see config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "qualities of a good devcontainer",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezrterm setup",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm propogate bash profile environment",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "obsidian for adhd",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship examples",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm launch through icon missing environment variable",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "configure wezterm windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 122,
+        "Query": "wezterm",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 23,
+        "Query": "wezterm config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 5,
+        "Query": "starship windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 5,
+        "Query": "gilbert sanchez",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 5,
+        "Query": "wezterm windows config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 4,
+        "Query": "starship terminal",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm config github",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm disable sound",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starship shell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm config windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm powershell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "windows terminal starship",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm wsl2",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell module starship",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm default powershell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "use starship right_format in windows terminal",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starship termi",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "give wezterm icon lniux",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell loading icon",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "wezerm nato sens",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "customize starship powershell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "startship rust",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "macos wezterm setting",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starship prompt custom",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "starship.toml windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configs",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "obsidian adhd",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configuration",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm tutorial",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "t0t01411 site:nextdoor.com/pages/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config reference",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "is obsidian good for adhd",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.toml examples time",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 29,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "trmnl terminus extension",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship f\u00fcr powershell 7 einrichten",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "configure starship prompt",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship shell windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm mouse movement prints chars",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship terminal windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell loading icon / . \\",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm gui ssh truecolor",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "how to reinstall choco package",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "how to make wezterm your default terminal in windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "jujutsu prompt starfish",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "donde se ubica en windows el archivo .wezterm.lua",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "gci remove file",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "lapgrid devcontainer feature",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm open wsl2",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship shell autocomplete",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "obsidian powershell md",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "icon question powershell",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "open wsl2 in wezterm",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 15,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship wezterm",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey reinstall open lens",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "nord for wezterm",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "what are some of the recommended configuration options in wezterm?",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.toml examples",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.toml productive",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "starship rs",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm blink windows",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "weztermina",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "choco install forcefully if already installed",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "fira code on wezterm config",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "startship pwsh",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm save buffer",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "configurar wezterm arche",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell loading icon / . \\ |",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "adhd diary obsidian template",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 4,
+        "Query": "g trmnl who uses",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "ad unix atributes group member",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm config nerd font windows 11",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "how to start wsl in wezterm",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "step by step guid for wezterm",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "choco obtain packages.config",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt what's the point",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 52,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship.toml",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship powershell completion",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config windows github",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "step by step guide for downloading wezterm",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm for windows config",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm good windows configuration powershell nu cmd",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell gci pipe gci pipe remove",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship powershell guide",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship terminal exeplos",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 67,
+        "Query": "wezterm",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 56,
+        "Query": "starship prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 49,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 27,
+        "Query": "windows terminal shell integration",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 22,
+        "Query": "wezterm config",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 16,
+        "Query": "wezterm windows",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 11,
+        "Query": "starship terminal",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 6,
+        "Query": "wezterm  wsl",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 5,
+        "Query": "starship powershell",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 4,
+        "Query": "gilbert sanchez",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 4,
+        "Query": "wezterm configuration",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 4,
+        "Query": "devcontainer features",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "starship windows",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "starship config",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "starship shell",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "starship command prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "customise wezterm",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "starship prompts",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm super on windows",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "starship shell ai",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "starship prompt and different shells on the same machine",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell code obsdian",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm conditions in configuration",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm wsl new tab default working directory",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm use option as meta key",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "starship prmpt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "configure westerm terminal",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "starship promt history",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "psscriptanalyzersettings",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell completions with starship",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship cmd",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm ubuntu",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "windows wezterm config",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell starship",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "prompt shell",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "gci remove file",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey reinstall package",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "psscriptanalyzersettings.psd1",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "vilmi_21 site:nextdoor.com/pages/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell 3d symbol script github",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm.lua in windows",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "how to launch wezterm into wsl",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "how to set wezterm into defaut cmd in fedora",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm debian",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship shell prompt k8s",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm launch menu powershell",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell remove item if is going used",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm error converting lua value returned by script /home/ milton.alvarez/.wezterm.lua to config struct: error converting lua nil to config::config::config (cannot convert `null` to `config`)",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "customising starship prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship shell prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "a lean starship prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "hugo devcontainer",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "using gcm with devcontainers",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt issues in remoted mounted directories",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configuration options",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm command not found",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "pinning devcontainer features",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship how to remove via",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "psscriptanalyzer vscode",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "kordiet shell propent",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm center content",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship set: unknown option \u201c-f\u201d",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "roccet prompt",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt increase jobs",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "spaceship prompt rust",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "windows starship toml",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "readwise youtube",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "weztern terminal",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm-gui.exe\"",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm sensible defaults",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt kubernetes",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "terminal prompts rs",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolate force reinstall",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "what is a good base devcontainer to build features on top of",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config.keys",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm config windwos",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "stucco  github",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 41,
+        "Clicks": 3,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 66,
+        "Query": "windows terminal shell integration",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 36,
+        "Query": "starship prompt",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 32,
+        "Query": "wezterm config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "configur wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm config keys",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm lua",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "starship config examples",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm default shell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "prompt starship le hostname ne s'affiche plus",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "networkchuck wezterm lua",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm windows config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm terminal config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm.lua config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "ideas for terminal (trmnl)dashboards at home",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm dotfiles",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "problems with wezterm leader on windows",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 12,
+        "Query": "wezterm windows",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 10,
+        "Query": "gilbert sanchez",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 5,
+        "Query": "wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 4,
+        "Query": "wezterm configs",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 4,
+        "Query": "wezterm ubuntu",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm config github",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "wizterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "starship powershell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "wezterm powershell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "starship windows",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "alacritty startship prompt",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "powershell show ico",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm is not allowed to read ~/.config mac",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "startship prompt",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "starship orimpt",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm not loading config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm keyboard shortcut",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "icon einem script hinzuf\u00fcgen powershell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm for linux",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "starship min_time_to_notify",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "wezterm use powershell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship shell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "weztern",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship promt",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt truncate directory",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "reinstall all chocolately packages",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey config install",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt truncate",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm ssh config file",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "how to access the wezterm api",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "powershell remove-item -recurse -force is slow. is there a way to do it faster?",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm is not allowed to read ~/.config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "windows wezterm dont start",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship config examples simple",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": ".wezterm.lua",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "github wezterm-config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezerm doc",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "termnl",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "using starship on powershell 7",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "windows change default terminal wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm configuration error cannot convert 'null' to 'config'",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "the best starship customization for powershell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wes term",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm reload config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "github wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompt cosmic terminal",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "zenwritten wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wes term git",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "force reinstall chocolatey",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm poweshell",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezs",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "how to add another orrod. to.starship",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "how to restart wezterm",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "icon powershellscript",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "chocolatey restore from packages.config",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "starship prompts",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm terminal",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wz config memeorg profile",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "wezterm programing",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "windows terminal starship",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "forcer reinstallation de chocolatey",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "obsidian view powershell scripts",
+        "ParsedDate": "2025-12-26"
+      }
+    ],
+    "page_stats": [
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 6,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 384,
+        "Query": "https://gilbertsanchez.com/posts/my-terminal-wezterm/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 10,
+        "Query": "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/sharing-custom-psscriptanalyzer-rules/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 3,
+        "Query": "https://gilbertsanchez.com/posts/obsidian-and-adhd/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 1,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 2,
+        "Query": "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 161,
+        "Query": "https://gilbertsanchez.com/posts/prompt-starship/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 10,
+        "Query": "https://gilbertsanchez.com/posts/powershell_module_icons/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 20,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 8,
+        "Query": "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 6,
+        "Query": "https://gilbertsanchez.com/posts/regex-advanced-powershell-code-analysis-asts/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/my-shell-powershell/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 3,
+        "Query": "https://gilbertsanchez.com/posts/power-devcontainers/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/rac-resume-as-code/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/youtube_playlist_to_readwise/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "https://resume.gilbertsanchez.com/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 1,
+        "Query": "https://garden.gilbertsanchez.com/",
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 16,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 472,
+        "Query": "https://gilbertsanchez.com/posts/my-terminal-wezterm/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 3,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 181,
+        "Query": "https://gilbertsanchez.com/posts/prompt-starship/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 3,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 19,
+        "Query": "https://gilbertsanchez.com/posts/power-devcontainers/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 8,
+        "Query": "https://gilbertsanchez.com/posts/obsidian-and-adhd/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 1,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/my-shell-powershell/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 20,
+        "Query": "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 39,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 8,
+        "Query": "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 7,
+        "Query": "https://gilbertsanchez.com/posts/powershell_module_icons/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 7,
+        "Query": "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 17,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 2,
+        "Query": "https://gilbertsanchez.com/posts/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 2,
+        "Clicks": 0,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/no-habla-ingles-powershell-localization-practice/",
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 7,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 341,
+        "Query": "https://gilbertsanchez.com/posts/my-terminal-wezterm/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 5,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 197,
+        "Query": "https://gilbertsanchez.com/posts/prompt-starship/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 8,
+        "Query": "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 8,
+        "Query": "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 7,
+        "Query": "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 1,
+        "Clicks": 1,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 3,
+        "Query": "https://gilbertsanchez.com/posts/synchronizing-ad-group-members-to-unix-attributes/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 41,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 38,
+        "Query": "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 15,
+        "Query": "https://gilbertsanchez.com/posts/power-devcontainers/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/sharing-custom-psscriptanalyzer-rules/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 13,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/obsidian-and-adhd/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 2,
+        "Query": "https://gilbertsanchez.com/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/powershell_module_icons/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 7,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/youtube_playlist_to_readwise/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 3,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "https://resume.gilbertsanchez.com/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 9,
+        "Clicks": 0,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/stucco-create-powershell-module/",
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 11,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 252,
+        "Query": "https://gilbertsanchez.com/posts/my-terminal-wezterm/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 3,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 105,
+        "Query": "https://gilbertsanchez.com/posts/prompt-starship/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 40,
+        "Clicks": 3,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 68,
+        "Query": "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 5,
+        "Clicks": 1,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 4,
+        "Query": "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 20,
+        "Query": "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 8,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 6,
+        "Query": "https://gilbertsanchez.com/posts/powershell_module_icons/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 5,
+        "Query": "https://gilbertsanchez.com/posts/sharing-custom-psscriptanalyzer-rules/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 3,
+        "Query": "https://gilbertsanchez.com/posts/my-shell-powershell/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 10,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 2,
+        "Query": "https://gilbertsanchez.com/posts/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 4,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/obsidian-and-adhd/",
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "QueryStats:#Microsoft.Bing.Webmaster.Api",
+        "AvgClickPosition": -1,
+        "AvgImpressionPosition": 6,
+        "Clicks": 0,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 1,
+        "Query": "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/",
+        "ParsedDate": "2025-12-26"
+      }
+    ],
+    "traffic_stats": [
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1764576000000-0800)/",
+        "Impressions": 107,
+        "ParsedDate": "2025-12-01"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "/Date(1764662400000-0800)/",
+        "Impressions": 152,
+        "ParsedDate": "2025-12-02"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1764748800000-0800)/",
+        "Impressions": 157,
+        "ParsedDate": "2025-12-03"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1764835200000-0800)/",
+        "Impressions": 111,
+        "ParsedDate": "2025-12-04"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 9,
+        "Date": "/Date(1764921600000-0800)/",
+        "Impressions": 157,
+        "ParsedDate": "2025-12-05"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "/Date(1765008000000-0800)/",
+        "Impressions": 35,
+        "ParsedDate": "2025-12-06"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1765094400000-0800)/",
+        "Impressions": 82,
+        "ParsedDate": "2025-12-07"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 5,
+        "Date": "/Date(1765180800000-0800)/",
+        "Impressions": 164,
+        "ParsedDate": "2025-12-08"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1765267200000-0800)/",
+        "Impressions": 106,
+        "ParsedDate": "2025-12-09"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1765353600000-0800)/",
+        "Impressions": 118,
+        "ParsedDate": "2025-12-10"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1765440000000-0800)/",
+        "Impressions": 143,
+        "ParsedDate": "2025-12-11"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "/Date(1765526400000-0800)/",
+        "Impressions": 99,
+        "ParsedDate": "2025-12-12"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 0,
+        "Date": "/Date(1765612800000-0800)/",
+        "Impressions": 44,
+        "ParsedDate": "2025-12-13"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1765699200000-0800)/",
+        "Impressions": 87,
+        "ParsedDate": "2025-12-14"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1765785600000-0800)/",
+        "Impressions": 112,
+        "ParsedDate": "2025-12-15"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1765872000000-0800)/",
+        "Impressions": 132,
+        "ParsedDate": "2025-12-16"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "/Date(1765958400000-0800)/",
+        "Impressions": 115,
+        "ParsedDate": "2025-12-17"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1766044800000-0800)/",
+        "Impressions": 95,
+        "ParsedDate": "2025-12-18"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1766131200000-0800)/",
+        "Impressions": 76,
+        "ParsedDate": "2025-12-19"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1766217600000-0800)/",
+        "Impressions": 91,
+        "ParsedDate": "2025-12-20"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1766304000000-0800)/",
+        "Impressions": 71,
+        "ParsedDate": "2025-12-21"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 6,
+        "Date": "/Date(1766390400000-0800)/",
+        "Impressions": 81,
+        "ParsedDate": "2025-12-22"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1766476800000-0800)/",
+        "Impressions": 93,
+        "ParsedDate": "2025-12-23"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1766563200000-0800)/",
+        "Impressions": 63,
+        "ParsedDate": "2025-12-24"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1766649600000-0800)/",
+        "Impressions": 44,
+        "ParsedDate": "2025-12-25"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1766736000000-0800)/",
+        "Impressions": 56,
+        "ParsedDate": "2025-12-26"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 3,
+        "Date": "/Date(1766822400000-0800)/",
+        "Impressions": 92,
+        "ParsedDate": "2025-12-27"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 2,
+        "Date": "/Date(1766908800000-0800)/",
+        "Impressions": 69,
+        "ParsedDate": "2025-12-28"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 4,
+        "Date": "/Date(1766995200000-0800)/",
+        "Impressions": 93,
+        "ParsedDate": "2025-12-29"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 6,
+        "Date": "/Date(1767081600000-0800)/",
+        "Impressions": 115,
+        "ParsedDate": "2025-12-30"
+      },
+      {
+        "__type": "RankAndTrafficStats:#Microsoft.Bing.Webmaster.Api",
+        "Clicks": 1,
+        "Date": "/Date(1767168000000-0800)/",
+        "Impressions": 109,
+        "ParsedDate": "2025-12-31"
+      }
+    ]
+  },
+  "note": "Bing positions are 10x actual (divide by 10)"
+}

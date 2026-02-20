@@ -1,11 +1,3 @@
-.hugo_build.lock
-.DS_Store
-resources/_gen
-yarn-error.log
-node_modules
-public/
-bin/
-
 # Credentials (NEVER commit these)
 .env
 gsc-credentials.json
@@ -20,4 +12,3 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
-.unlighthouse/

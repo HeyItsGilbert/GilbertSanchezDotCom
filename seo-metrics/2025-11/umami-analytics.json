@@ -1,0 +1,678 @@
+{
+  "fetched_at": "2026-02-15T16:20:55.216581",
+  "website_id": "7d70d59a-aeac-47ae-b937-9666d32671fe",
+  "period": {
+    "start": "2025-11-01",
+    "end": "2025-11-30"
+  },
+  "metrics": {
+    "stats": {
+      "pageviews": 1317,
+      "visitors": 933,
+      "visits": 1001,
+      "bounces": 895,
+      "totaltime": 48394,
+      "comparison": {
+        "pageviews": 866,
+        "visitors": 601,
+        "visits": 650,
+        "bounces": 562,
+        "totaltime": 29658
+      }
+    },
+    "top_pages": [
+      {
+        "x": "/posts/my-terminal-wezterm/",
+        "y": 241
+      },
+      {
+        "x": "/",
+        "y": 202
+      },
+      {
+        "x": "/posts/terminals-shells-and-prompts/",
+        "y": 117
+      },
+      {
+        "x": "/posts/prompt-starship/",
+        "y": 100
+      },
+      {
+        "x": "/posts/obsidian-and-adhd/",
+        "y": 82
+      },
+      {
+        "x": "/posts/my-terminal-wezterm/#the-top",
+        "y": 21
+      },
+      {
+        "x": "/posts/terminal-to-trmnl-with-powershell/",
+        "y": 19
+      },
+      {
+        "x": "/posts/my-shell-powershell/",
+        "y": 18
+      },
+      {
+        "x": "/posts/",
+        "y": 16
+      },
+      {
+        "x": "/projects/",
+        "y": 14
+      },
+      {
+        "x": "/posts/youtube_playlist_to_readwise/",
+        "y": 12
+      },
+      {
+        "x": "/posts/sharing-custom-psscriptanalyzer-rules/",
+        "y": 12
+      },
+      {
+        "x": "/posts/no-habla-ingles-powershell-localization-practice/",
+        "y": 11
+      },
+      {
+        "x": "/posts/powershell_module_icons/",
+        "y": 11
+      },
+      {
+        "x": "/posts/rac-resume-as-code/",
+        "y": 10
+      },
+      {
+        "x": "/posts/regex-advanced-powershell-code-analysis-asts/",
+        "y": 9
+      },
+      {
+        "x": "/posts/stucco-create-powershell-module/",
+        "y": 9
+      },
+      {
+        "x": "/presentations/",
+        "y": 9
+      },
+      {
+        "x": "/posts/obsidian-and-adhd/#daily-note",
+        "y": 8
+      },
+      {
+        "x": "/posts/power-devcontainers/",
+        "y": 7
+      },
+      {
+        "x": "/posts/powershell-chef-cookbook/",
+        "y": 7
+      },
+      {
+        "x": "/posts/efficient-disasters-remove-item-pipeline/",
+        "y": 6
+      },
+      {
+        "x": "/posts/obsidian-and-adhd/#periodic-notes",
+        "y": 6
+      },
+      {
+        "x": "/tag/powershell/",
+        "y": 6
+      },
+      {
+        "x": "/tags/",
+        "y": 6
+      },
+      {
+        "x": "/series/terminals-shells-and-prompts/",
+        "y": 5
+      },
+      {
+        "x": "/posts/force-reinstalling-choco-packages/",
+        "y": 5
+      },
+      {
+        "x": "/posts/synchronizing-ad-group-members-to-unix-attributes/",
+        "y": 5
+      },
+      {
+        "x": "/tags/powershell/",
+        "y": 5
+      },
+      {
+        "x": "/author/gilbert/",
+        "y": 5
+      },
+      {
+        "x": "/tags/vscode/",
+        "y": 4
+      },
+      {
+        "x": "/posts/first-podcast/",
+        "y": 4
+      },
+      {
+        "x": "/posts/locating-empty-citrix-worker-groups/",
+        "y": 3
+      },
+      {
+        "x": "/tags/github/",
+        "y": 3
+      },
+      {
+        "x": "/posts/automatically-update-workergroup-for-reboot-policies/",
+        "y": 3
+      },
+      {
+        "x": "/presentations/stucco/#quick-intro",
+        "y": 3
+      },
+      {
+        "x": "/posts/my-terminal-wezterm/#my-goals",
+        "y": 3
+      },
+      {
+        "x": "/authors/",
+        "y": 3
+      },
+      {
+        "x": "/notes",
+        "y": 3
+      },
+      {
+        "x": "/posts/terminals-shells-and-prompts/#escape-codes",
+        "y": 3
+      },
+      {
+        "x": "/series/",
+        "y": 3
+      },
+      {
+        "x": "/tags/iot/",
+        "y": 2
+      },
+      {
+        "x": "/posts/controlling-a-cheap-neon-led-pt-2/",
+        "y": 2
+      },
+      {
+        "x": "/tags/obsidian/",
+        "y": 2
+      },
+      {
+        "x": "/presentations/stucco/",
+        "y": 2
+      },
+      {
+        "x": "/authors",
+        "y": 2
+      },
+      {
+        "x": "/posts/cidr-calculator-for-alfred/",
+        "y": 2
+      },
+      {
+        "x": "/posts/controlling-a-cheap-led/",
+        "y": 2
+      },
+      {
+        "x": "/posts/stucco-create-powershell-module/#commit",
+        "y": 2
+      },
+      {
+        "x": "/tag/citrix/",
+        "y": 2
+      }
+    ],
+    "referrers": [
+      {
+        "x": "google.com",
+        "y": 214
+      },
+      {
+        "x": "bing.com",
+        "y": 160
+      },
+      {
+        "x": "duckduckgo.com",
+        "y": 121
+      },
+      {
+        "x": "cn.bing.com",
+        "y": 6
+      },
+      {
+        "x": "ecosia.org",
+        "y": 4
+      },
+      {
+        "x": "github.com",
+        "y": 4
+      },
+      {
+        "x": "kagi.com",
+        "y": 3
+      },
+      {
+        "x": "qwant.com",
+        "y": 3
+      },
+      {
+        "x": "informatik.hs-bremerhaven.de",
+        "y": 2
+      },
+      {
+        "x": "perplexity.ai",
+        "y": 2
+      },
+      {
+        "x": "chatgpt.com",
+        "y": 2
+      },
+      {
+        "x": "indieblog.page",
+        "y": 2
+      },
+      {
+        "x": "jakehildreth.github.io",
+        "y": 2
+      },
+      {
+        "x": "garden.gilbertsanchez.com",
+        "y": 2
+      },
+      {
+        "x": "reddit.com",
+        "y": 1
+      },
+      {
+        "x": "google.co.uk",
+        "y": 1
+      },
+      {
+        "x": "docs.google.com",
+        "y": 1
+      },
+      {
+        "x": "localhost",
+        "y": 1
+      },
+      {
+        "x": "google.com.hk",
+        "y": 1
+      },
+      {
+        "x": "powershell.org",
+        "y": 1
+      }
+    ],
+    "browsers": [
+      {
+        "x": "chrome",
+        "y": 614
+      },
+      {
+        "x": "edge-chromium",
+        "y": 123
+      },
+      {
+        "x": "firefox",
+        "y": 107
+      },
+      {
+        "x": "safari",
+        "y": 33
+      },
+      {
+        "x": "yandexbrowser",
+        "y": 21
+      },
+      {
+        "x": "ios",
+        "y": 20
+      },
+      {
+        "x": "crios",
+        "y": 7
+      },
+      {
+        "x": "ios-webview",
+        "y": 3
+      },
+      {
+        "x": "opera",
+        "y": 3
+      },
+      {
+        "x": "samsung",
+        "y": 2
+      }
+    ],
+    "countries": [
+      {
+        "x": "US",
+        "y": 266
+      },
+      {
+        "x": "SG",
+        "y": 187
+      },
+      {
+        "x": "GB",
+        "y": 49
+      },
+      {
+        "x": "DE",
+        "y": 36
+      },
+      {
+        "x": "CN",
+        "y": 33
+      },
+      {
+        "x": "NL",
+        "y": 28
+      },
+      {
+        "x": "FR",
+        "y": 23
+      },
+      {
+        "x": "CA",
+        "y": 22
+      },
+      {
+        "x": "ES",
+        "y": 18
+      },
+      {
+        "x": "AU",
+        "y": 18
+      },
+      {
+        "x": "SE",
+        "y": 16
+      },
+      {
+        "x": "JP",
+        "y": 14
+      },
+      {
+        "x": "ID",
+        "y": 12
+      },
+      {
+        "x": "IN",
+        "y": 12
+      },
+      {
+        "x": "BR",
+        "y": 11
+      },
+      {
+        "x": "FI",
+        "y": 10
+      },
+      {
+        "x": "AT",
+        "y": 10
+      },
+      {
+        "x": "IT",
+        "y": 10
+      },
+      {
+        "x": "TH",
+        "y": 9
+      },
+      {
+        "x": "PL",
+        "y": 9
+      }
+    ],
+    "daily_pageviews": {
+      "pageviews": [
+        {
+          "x": "2025-11-01T00:00:00Z",
+          "y": 31
+        },
+        {
+          "x": "2025-11-02T00:00:00Z",
+          "y": 25
+        },
+        {
+          "x": "2025-11-03T00:00:00Z",
+          "y": 34
+        },
+        {
+          "x": "2025-11-04T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2025-11-05T00:00:00Z",
+          "y": 57
+        },
+        {
+          "x": "2025-11-06T00:00:00Z",
+          "y": 41
+        },
+        {
+          "x": "2025-11-07T00:00:00Z",
+          "y": 27
+        },
+        {
+          "x": "2025-11-08T00:00:00Z",
+          "y": 30
+        },
+        {
+          "x": "2025-11-09T00:00:00Z",
+          "y": 47
+        },
+        {
+          "x": "2025-11-10T00:00:00Z",
+          "y": 24
+        },
+        {
+          "x": "2025-11-11T00:00:00Z",
+          "y": 57
+        },
+        {
+          "x": "2025-11-12T00:00:00Z",
+          "y": 56
+        },
+        {
+          "x": "2025-11-13T00:00:00Z",
+          "y": 39
+        },
+        {
+          "x": "2025-11-14T00:00:00Z",
+          "y": 46
+        },
+        {
+          "x": "2025-11-15T00:00:00Z",
+          "y": 33
+        },
+        {
+          "x": "2025-11-16T00:00:00Z",
+          "y": 25
+        },
+        {
+          "x": "2025-11-17T00:00:00Z",
+          "y": 49
+        },
+        {
+          "x": "2025-11-18T00:00:00Z",
+          "y": 42
+        },
+        {
+          "x": "2025-11-19T00:00:00Z",
+          "y": 48
+        },
+        {
+          "x": "2025-11-20T00:00:00Z",
+          "y": 36
+        },
+        {
+          "x": "2025-11-21T00:00:00Z",
+          "y": 43
+        },
+        {
+          "x": "2025-11-22T00:00:00Z",
+          "y": 36
+        },
+        {
+          "x": "2025-11-23T00:00:00Z",
+          "y": 34
+        },
+        {
+          "x": "2025-11-24T00:00:00Z",
+          "y": 29
+        },
+        {
+          "x": "2025-11-25T00:00:00Z",
+          "y": 39
+        },
+        {
+          "x": "2025-11-26T00:00:00Z",
+          "y": 61
+        },
+        {
+          "x": "2025-11-27T00:00:00Z",
+          "y": 183
+        },
+        {
+          "x": "2025-11-28T00:00:00Z",
+          "y": 46
+        },
+        {
+          "x": "2025-11-29T00:00:00Z",
+          "y": 24
+        },
+        {
+          "x": "2025-11-30T00:00:00Z",
+          "y": 40
+        }
+      ],
+      "sessions": [
+        {
+          "x": "2025-11-01T00:00:00Z",
+          "y": 21
+        },
+        {
+          "x": "2025-11-02T00:00:00Z",
+          "y": 23
+        },
+        {
+          "x": "2025-11-03T00:00:00Z",
+          "y": 31
+        },
+        {
+          "x": "2025-11-04T00:00:00Z",
+          "y": 16
+        },
+        {
+          "x": "2025-11-05T00:00:00Z",
+          "y": 43
+        },
+        {
+          "x": "2025-11-06T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2025-11-07T00:00:00Z",
+          "y": 21
+        },
+        {
+          "x": "2025-11-08T00:00:00Z",
+          "y": 24
+        },
+        {
+          "x": "2025-11-09T00:00:00Z",
+          "y": 38
+        },
+        {
+          "x": "2025-11-10T00:00:00Z",
+          "y": 20
+        },
+        {
+          "x": "2025-11-11T00:00:00Z",
+          "y": 40
+        },
+        {
+          "x": "2025-11-12T00:00:00Z",
+          "y": 45
+        },
+        {
+          "x": "2025-11-13T00:00:00Z",
+          "y": 36
+        },
+        {
+          "x": "2025-11-14T00:00:00Z",
+          "y": 38
+        },
+        {
+          "x": "2025-11-15T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2025-11-16T00:00:00Z",
+          "y": 24
+        },
+        {
+          "x": "2025-11-17T00:00:00Z",
+          "y": 35
+        },
+        {
+          "x": "2025-11-18T00:00:00Z",
+          "y": 33
+        },
+        {
+          "x": "2025-11-19T00:00:00Z",
+          "y": 30
+        },
+        {
+          "x": "2025-11-20T00:00:00Z",
+          "y": 36
+        },
+        {
+          "x": "2025-11-21T00:00:00Z",
+          "y": 37
+        },
+        {
+          "x": "2025-11-22T00:00:00Z",
+          "y": 31
+        },
+        {
+          "x": "2025-11-23T00:00:00Z",
+          "y": 30
+        },
+        {
+          "x": "2025-11-24T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2025-11-25T00:00:00Z",
+          "y": 28
+        },
+        {
+          "x": "2025-11-26T00:00:00Z",
+          "y": 45
+        },
+        {
+          "x": "2025-11-27T00:00:00Z",
+          "y": 56
+        },
+        {
+          "x": "2025-11-28T00:00:00Z",
+          "y": 41
+        },
+        {
+          "x": "2025-11-29T00:00:00Z",
+          "y": 22
+        },
+        {
+          "x": "2025-11-30T00:00:00Z",
+          "y": 29
+        }
+      ]
+    }
+  }
+}
