@@ -45,10 +45,9 @@ jobs:
           OUTPUT_DIR: ./seo-metrics
         run: python fetch_seo_metrics.py
       
-      - name: Commit and push results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seo-metrics/
-          git commit -m "📊 Monthly SEO metrics $(date +'%Y-%m')" || echo "No changes to commit"
-          git push
+      - name: Upload SEO metrics artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-metrics-logs
+          path: seo-metrics/
+          retention-days: 90
