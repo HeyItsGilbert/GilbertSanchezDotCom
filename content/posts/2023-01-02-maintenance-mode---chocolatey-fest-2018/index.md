@@ -1,8 +1,8 @@
 ---
 title: Maintenance Mode - Chocolatey Fest 2018
 date: 2023-01-03T19:49:10.352Z
-description: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace at scale using Chef.
-summary: A link to my talk back at Chocolatey Fest 2018. I discuss how we do maintenace at scale using Chef.
+description: Watch Gilbert's Chocolatey Fest 2018 talk on maintenance mode at scale. Learn how Facebook's IT team uses Chef to schedule service interruptions without impacting business operations.
+summary: Watch Gilbert's Chocolatey Fest 2018 talk on maintenance mode at scale. Learn how Facebook's IT team uses Chef to schedule service interruptions without impacting business operations.
 lastmod: 2025-11-27T16:42:50.120Z
 slug: maintenance-mode-chocolatey-fest-2018
 tags:

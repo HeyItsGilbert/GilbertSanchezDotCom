@@ -1,7 +1,7 @@
 +++
 date = "2023-01-15T18:12:18.706Z"
-description = "A quick walk through and script on force reinstalling Chocolatey apps."
-summary = "A quick walk through and script on force reinstalling Chocolatey apps."
+description = "Learn how to force reinstall Chocolatey packages using PowerShell and packages.config. Complete walkthrough with XML generation script for handling partially removed packages."
+summary = "Learn how to force reinstall Chocolatey packages using PowerShell and packages.config. Complete walkthrough with XML generation script for handling partially removed packages."
 draft = false
 slug = "force-reinstalling-choco-packages"
 title = "Force Reinstalling Many Choco Packages"

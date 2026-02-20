@@ -1,7 +1,7 @@
 +++
 date = 2022-12-26T14:24:39.000Z
-description = "Learn how to add icons to your PowerShell module."
-summary = "Learn how to add icons to your PowerShell module."
+description = "Add professional icons to your PowerShell modules. Complete guide to finding Creative Commons images, uploading to GitHub, and configuring module metadata with IconUri."
+summary = "Add professional icons to your PowerShell modules. Complete guide to finding Creative Commons images, uploading to GitHub, and configuring module metadata with IconUri."
 draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"

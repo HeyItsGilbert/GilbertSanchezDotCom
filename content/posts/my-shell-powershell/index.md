@@ -52,6 +52,8 @@ recently tagged at work with:
 
 > cc Gilbert who is a known powershell lover
 
+That love for PowerShell actually played a big part in my [next career move]({{< ref "new-year,-new-me---2024" >}}) — but that's a story for another post.
+
 I'll be going over my profile which at first glance may seem complex, but I'll
 slowly talk through each portion. If you feel like copying it, feel free to take
 what works for you. See something you think I could improve? Tell me! I love to
@@ -128,6 +130,8 @@ function Watch-Command {
   }
 }
 ```
+
+These little shortcuts might seem trivial, but they add up fast. The real magic, though, is in how the profile loads — and how I avoid slowing down sessions that don't need any of this.
 
 ### `Intialize-Profile` & `prompt` Functions
 
