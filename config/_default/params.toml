@@ -23,12 +23,12 @@ showScrollToTop = true
 [homepage]
 layout = "background"
 showRecent = true
-showRecentItems = "6"
-showMoreLink = false
+showRecentItems = "12"
+showMoreLink = true
 showMoreLinkDest = "/posts/"
 cardView = true
-cardViewScreenWidth = false
-layoutBackgroundBlur = false
+cardViewScreenWidth = true
+layoutBackgroundBlur = true
 
 [article]
 showDate = true
