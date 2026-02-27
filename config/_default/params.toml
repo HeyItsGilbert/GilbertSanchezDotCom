@@ -21,7 +21,7 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "page"
+layout = "card"
 showRecent = true
 showRecentItems = "12"
 showMoreLink = true
