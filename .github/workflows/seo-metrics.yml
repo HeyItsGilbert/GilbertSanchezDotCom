@@ -43,7 +43,7 @@ jobs:
           UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
           UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
           OUTPUT_DIR: ./seo-metrics
-        run: python fetch_seo_metrics.py
+        run: python ./seo-metrics/fetch_seo_metrics.py
       
       - name: Upload SEO metrics artifact
         uses: actions/upload-artifact@v4
