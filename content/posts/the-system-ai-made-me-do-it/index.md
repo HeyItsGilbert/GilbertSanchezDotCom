@@ -6,13 +6,12 @@ summary: I volunteered to moderate a subreddit and immediately built tooling ins
 showReadingTime: true
 draft: false
 preview: feature.png
-lastmod: 2026-03-16T00:37:49.902Z
+lastmod: 2026-03-16T02:11:43.779Z
 slug: the-system-ai-made-me-do-it
 tags:
-    - AI
-    - Reddit
-    - Devvit
-    - Gemini
+    - APIs
+    - FOSS
+    - LLMs
     - Automation
     - YouTube
 keywords:
@@ -49,23 +48,23 @@ with what you've got or you die.
 ## The "PipeDream"
 
 When the Hello Crawlers team asked for mod volunteers, I immediately offered to
-help. I'm a long time patron and a genuine fan, so it felt like a natural fit.
+help. I'm a long-time patron and a genuine fan, so it felt like a natural fit.
 But almost immediately I spotted something I wanted to fix: posting YouTube
 videos to the subreddit was manual, inconsistent, and kind of tedious.
 
 I had a vision. A beautiful, elaborate workflow. Claude-powered summaries,
 automatic posts, the whole thing. I built it in Pipedream, but I realized
-that maybe I should see what this new Devvit thing is. Also, I don't want
-it to just live somewhere that only I can mess with. So I pivoted, and I took
-my high level workflow, YouTube > Claude > Reddit Post, and shifted to Devvit.
+I should see what this new Devvit thing was — and I didn't want the tool
+living somewhere only I could touch. So I pivoted, taking my high-level
+workflow — YouTube → Claude → Reddit post — into Devvit instead.
 
 Then I actually looked at what
 [Devvit](https://developers.reddit.com/docs/devvit) allowed.
 
-Devvit - Reddit's platform for building apps and mod tools - has restrictions on
-which web endpoints you can call. They did have some pre-approved endpoints but
+Devvit (Reddit's platform for building apps and mod tools) has restrictions on
+which web endpoints you can call. There were pre-approved endpoints, but
 my original workflow hit a wall almost immediately. Claude wasn't on the allowed
-list and I didn't feel like waiting for an approval.
+list and I didn't feel like waiting for approval.
 
 ## B-B-B-Boss Battle!
 
@@ -78,10 +77,9 @@ Here's the thing about constraints: you can fight them or you can get curious
 about them. I like to get curious.
 
 Digging through the allowed endpoints, I found Gemini was available by default.
-I hadn't planned on using Gemini. But I also had a hard requirement that this
-tool needed to be free - the guys were already delegating work to me, the
-last thing I wanted was to hand them a monthly bill along with a new tool to
-learn.
+I hadn't planned on using Gemini. But I also needed this tool to be free — the
+Hello Crawlers team was already delegating work to me, and the last thing I
+wanted was to hand them a monthly bill along with a new tool to learn.
 
 Gemini's free tier is generous. Genuinely, surprisingly generous.
 
@@ -92,15 +90,14 @@ Constraint solved. And honestly? The end result was better than my original plan
 ![Devvit App in Action](feature.png)
 
 Just posting YouTube links is boring and doesn't engage the community. The
-[YouTube + Gemini Post Devvit App]
-lets moderators set a
-YouTube playlist to watch, supply an API key and generate dynamic
-content - using a prompt they control themselves.
+[YouTube + Gemini Post Devvit App] lets moderators set a YouTube playlist to
+watch, supply an API key, and generate dynamic content with a prompt they
+control.
 
-That last part matters. I didn't want to hardcode the AI behavior. Users of the app
+That last part matters. I didn't want to hardcode the AI behavior. Moderators
 will know their audience better than I do. Giving them a prompt they can
 tweak means they're not dependent on me to change how the output feels. Even if
-I'm _"accelerated"_ from the project , they can keep adjusting it without touching any
+I'm _"accelerated"_ from the project, they can keep adjusting it without touching any
 code.
 
 I think of it as a no-code control panel for the AI layer.
@@ -109,30 +106,30 @@ This was great! But I realized that I needed a way to test the prompts without
 re-creating the same post over and over.
 
 So I also created a [companion web app] for testing output before
-anything goes live on the subreddit. It let's you try different models
-and verifies that your API key has the right access. If it doesn't have the
-right access, you get linked to the exact place to add it.
+anything goes live on the subreddit. It lets you try different models
+and verifies that your API key has the right access. If your key doesn't have
+the right access, you get linked to the exact place to add it.
 
 {{< lead >}}
-Did I mention that both API's are free?
+Did I mention that both APIs are free?
 {{< /lead >}}
 
 ![Companion SPA showing preview output](image-1.png)
 
 The app actually started as an AI Studio experiment. I prototyped the whole thing
-there first, but when it came time to publish they were having technical
-issues... So I just threw it on Netlify. Took about ten minutes.
+there first, but when it came time to publish, AI Studio was having technical
+issues. So I just threw it on Netlify. Took about ten minutes.
 
 ## Devvit Was Easier Than I Expected
 
 If you've deployed something to Netlify or Vercel, you already understand the
 mental model. Devvit clicked for me pretty fast once I stopped overthinking it
-and realized they're essentially single page apps hosted by Reddit.
+and realized they're essentially single-page apps hosted by Reddit.
 
 The [Devvit Discord] helped a lot. The community is genuinely welcoming and the
-people there know their stuff. A special shoutout to `u/Beach-Brews` who not
+people there know their stuff. Shoutout to `u/Beach-Brews` who not
 only helped me work through a problem but actually filed a bug on my behalf when
-we discovered that the Devvit link type supported a body field - something that
+we discovered that the Devvit link type supported a body field — something that
 wasn't obvious from the docs.
 
 That kind of help makes open source feel worth it.
@@ -156,12 +153,12 @@ And if you haven't spent time in [AI Studio](https://aistudio.google.com/) yet,
 this project was my first real excuse to dig in. It's a great sandbox. Go break
 something.
 
-Finally - if you're not already listening to Hello Crawlers, fix that!
+Finally — if you're not already listening to Hello Crawlers, fix that!
 https://www.hellocrawlers.com/
 
 ---
 
-Special thanks to Grant from the Podcast who was my ~~guinea pig~~ test Mordecai!
+Special thanks to Grant from the Podcast, who was my ~~guinea pig~~ test Mordecai!
 
 [Devvit Discord]: https://developers.reddit.com/discord
 [Reddit app directory]: https://developers.reddit.com/apps/youtube-gemini
