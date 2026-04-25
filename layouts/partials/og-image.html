@@ -1,8 +1,8 @@
 {{- /*
-  og-image.html — Generates a 1200×630 Open Graph social card per page.
+  og-image.html — Generates a 1200x630 Open Graph social card per page.
 
   Two layouts:
-    Feature-image posts → TOP–BOTTOM split
+    Feature-image posts → TOP-BOTTOM split
                           Top 260px: feature image (1200×260 cropped center)
                           Bottom 370px: dark panel with branding + title
     Everything else    → Full dark background with profile avatar right
@@ -38,23 +38,12 @@
     {{- /* ── FULL-BLEED: feature image fills card, darkened for legibility ── */ -}}
     {{- $feat := $feature.Fill "1200x630 Center" -}}
     {{- $feat = $feat.Filter (images.Brightness -50) -}}
+    {{- $feat = $feat.Filter (images.Contrast 15) -}}
+    {{- $feat = $feat.Filter (images.GaussianBlur 2) -}}
     {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
 
-    {{- /* Domain — centered at top */ -}}
-    {{- $domainStr := "gilbertsanchez.com" -}}
-    {{- $domainHalf := div (mul (len $domainStr) 10) 2 -}}
-    {{- $domainX := sub 600 $domainHalf -}}
-    {{- if lt $domainX 60 -}}{{- $domainX = 60 -}}{{- end -}}
-    {{- $img = $img.Filter (images.Text $domainStr (dict
-      "color" "#bbbbbb"
-      "size"  18
-      "x" $domainX
-      "y" 55
-      "font" $regularFont
-    )) -}}
-
-    {{- /* Tags joined with " | " — centered */ -}}
-    {{- $titleY := 190 -}}
+    {{- /* Tags joined with " | " — centered, blue */ -}}
+    {{- $titleY := 200 -}}
     {{- if .Params.tags -}}
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
@@ -63,57 +52,73 @@
       {{- $tagX := sub 600 $tagHalf -}}
       {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
-        "color" "#888888"
-        "size"  15
+        "color" "#5587b0"
+        "size"  16
         "x" $tagX
-        "y" 115
+        "y" 110
         "font" $boldFont
       )) -}}
       {{- $titleY = 175 -}}
     {{- end -}}
 
-    {{- /* Title — large, white, approximate centering */ -}}
+    {{- /* Title — split at ':' into two centered lines */ -}}
     {{- $title := printf "%s" .Title -}}
-    {{- $titleHalf := div (mul (len $title) 28) 2 -}}
-    {{- $titleX := sub 600 $titleHalf -}}
-    {{- if lt $titleX 60 -}}{{- $titleX = 60 -}}{{- end -}}
-    {{- $img = $img.Filter (images.Text $title (dict
+    {{- $titleLine1 := $title -}}
+    {{- $titleLine2 := "" -}}
+    {{- if strings.Contains $title ":" -}}
+      {{- $ci := strings.Index $title ":" -}}
+      {{- $titleLine1 = substr $title 0 (add $ci 1) -}}
+      {{- $titleLine2 = strings.TrimLeft " " (substr $title (add $ci 1)) -}}
+    {{- end -}}
+
+    {{- $l1Half := div (mul (len $titleLine1) 28) 2 -}}
+    {{- $l1X := sub 600 $l1Half -}}
+    {{- if lt $l1X 60 -}}{{- $l1X = 60 -}}{{- end -}}
+    {{- $img = $img.Filter (images.Text $titleLine1 (dict
       "color" "#ffffff"
       "size"  56
-      "linespacing" 8
-      "x" $titleX
+      "x" $l1X
       "y" $titleY
       "font" $boldFont
     )) -}}
 
-    {{- /* Description — centered, truncated to one visual line */ -}}
+    {{- $afterTitleY := add $titleY 68 -}}
+    {{- if $titleLine2 -}}
+      {{- $l2Half := div (mul (len $titleLine2) 28) 2 -}}
+      {{- $l2X := sub 600 $l2Half -}}
+      {{- if lt $l2X 60 -}}{{- $l2X = 60 -}}{{- end -}}
+      {{- $img = $img.Filter (images.Text $titleLine2 (dict
+        "color" "#ffffff"
+        "size"  56
+        "x" $l2X
+        "y" (add $titleY 68)
+        "font" $boldFont
+      )) -}}
+      {{- $afterTitleY = add $titleY 136 -}}
+    {{- end -}}
+
+    {{- /* Description — centered, below title */ -}}
     {{- $desc := .Description | default (.Summary | plainify) -}}
     {{- $desc = printf "%s" ($desc | truncate 80 "…") -}}
     {{- if $desc -}}
+      {{- $descY := add $afterTitleY 40 -}}
       {{- $descHalf := div (mul (len $desc) 11) 2 -}}
       {{- $descX := sub 600 $descHalf -}}
       {{- if lt $descX 60 -}}{{- $descX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $desc (dict
         "color" "#cccccc"
         "size"  20
-        "linespacing" 6
         "x" $descX
-        "y" 320
+        "y" $descY
         "font" $regularFont
       )) -}}
     {{- end -}}
 
-    {{- /* CTA button — blue pill overlay + white text centered inside */ -}}
-    {{- if $ctaBtn -}}
-      {{- $img = $img.Filter (images.Overlay $ctaBtn 460 440) -}}
+    {{- /* Profile — bottom-right */ -}}
+    {{- if $profile -}}
+      {{- $avatar := $profile.Fill "160x160 Center" -}}
+      {{- $img = $img.Filter (images.Overlay $avatar 1010 440) -}}
     {{- end -}}
-    {{- $img = $img.Filter (images.Text "READ MORE →" (dict
-      "color" "#ffffff"
-      "size"  22
-      "x" 529
-      "y" 459
-      "font" $boldFont
-    )) -}}
 
   {{- else -}}
 
@@ -134,60 +139,81 @@
       "font" $boldFont
     )) -}}
 
-    {{- /* Content block — vertically centered in the card body (y≈220–420) */ -}}
+    {{- /* Content block — vertically centered in the card body (y≈220-420) */ -}}
 
-    {{- /* Tags joined with " | " — posts only, determines title Y */ -}}
+    {{- /* Tags joined with " | " — posts only, centered, blue */ -}}
     {{- $titleY := 230 -}}
     {{- if and .IsPage .Params.tags -}}
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
       {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 70 "") -}}
+      {{- $tagHalf := div (mul (len $tagStr) 8) 2 -}}
+      {{- $tagX := sub 600 $tagHalf -}}
+      {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
-        "color" "#888888"
+        "color" "#5587b0"
         "size"  18
-        "x" 60
+        "x" $tagX
         "y" 210
         "font" $boldFont
       )) -}}
       {{- $titleY = 242 -}}
     {{- end -}}
 
-    {{- /* Title or tagline — centered in the card body */ -}}
+    {{- /* Title or tagline — split at ':' into two centered lines */ -}}
     {{- $title := printf "%s" .Title -}}
     {{- if .IsHome -}}{{- $title = "Not just good. Good enough." -}}{{- end -}}
-    {{- $img = $img.Filter (images.Text $title (dict
+    {{- $titleLine1 := $title -}}
+    {{- $titleLine2 := "" -}}
+    {{- if strings.Contains $title ":" -}}
+      {{- $ci := strings.Index $title ":" -}}
+      {{- $titleLine1 = substr $title 0 (add $ci 1) -}}
+      {{- $titleLine2 = strings.TrimLeft " " (substr $title (add $ci 1)) -}}
+    {{- end -}}
+
+    {{- $l1Half := div (mul (len $titleLine1) 26) 2 -}}
+    {{- $l1X := sub 600 $l1Half -}}
+    {{- if lt $l1X 60 -}}{{- $l1X = 60 -}}{{- end -}}
+    {{- $img = $img.Filter (images.Text $titleLine1 (dict
       "color" "#ffffff"
       "size"  54
-      "linespacing" 10
-      "x" 60
+      "x" $l1X
       "y" $titleY
       "font" $boldFont
     )) -}}
 
-    {{- /* Description — no-feature posts only */ -}}
+    {{- $afterTitleY := add $titleY 66 -}}
+    {{- if $titleLine2 -}}
+      {{- $l2Half := div (mul (len $titleLine2) 26) 2 -}}
+      {{- $l2X := sub 600 $l2Half -}}
+      {{- if lt $l2X 60 -}}{{- $l2X = 60 -}}{{- end -}}
+      {{- $img = $img.Filter (images.Text $titleLine2 (dict
+        "color" "#ffffff"
+        "size"  54
+        "x" $l2X
+        "y" (add $titleY 66)
+        "font" $boldFont
+      )) -}}
+      {{- $afterTitleY = add $titleY 132 -}}
+    {{- end -}}
+
+    {{- /* Description — no-feature posts only, centered below title */ -}}
     {{- if .IsPage -}}
       {{- $desc := .Description | default (.Summary | plainify) -}}
-      {{- $desc = printf "%s" ($desc | truncate 120 "…") -}}
+      {{- $desc = printf "%s" ($desc | truncate 100 "…") -}}
       {{- if $desc -}}
+        {{- $descHalf := div (mul (len $desc) 11) 2 -}}
+        {{- $descX := sub 600 $descHalf -}}
+        {{- if lt $descX 60 -}}{{- $descX = 60 -}}{{- end -}}
         {{- $img = $img.Filter (images.Text $desc (dict
           "color" "#999999"
           "size"  20
-          "linespacing" 6
-          "x" 60
-          "y" 420
+          "x" $descX
+          "y" (add $afterTitleY 40)
           "font" $regularFont
         )) -}}
       {{- end -}}
     {{- end -}}
-
-    {{- /* Domain — bottom-left */ -}}
-    {{- $img = $img.Filter (images.Text "gilbertsanchez.com" (dict
-      "color" "#555555"
-      "size"  22
-      "x" 60
-      "y" 570
-      "font" $regularFont
-    )) -}}
 
   {{- end -}}
 
