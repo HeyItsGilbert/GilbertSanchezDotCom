@@ -1,0 +1,183 @@
+{{- /*
+  og-image.html — Generates a 1200×630 Open Graph social card per page.
+
+  Two layouts:
+    Feature-image posts → TOP–BOTTOM split
+                          Top 260px: feature image (1200×260 cropped center)
+                          Bottom 370px: dark panel with branding + title
+    Everything else    → Full dark background with profile avatar right
+
+  Fonts: assets/fonts/Inter-{Bold,Regular}.ttf; falls back to KaTeX fonts.
+*/ -}}
+
+{{- $background := resources.Get "images/og-bg.png" -}}
+{{- $profile    := resources.Get "img/profile.webp" -}}
+
+{{- $boldFont := resources.Get "fonts/Inter-Bold.ttf" -}}
+{{- if not $boldFont -}}
+  {{- $boldFont = resources.Get "lib/katex/fonts/KaTeX_Main-Bold.ttf" -}}
+{{- end -}}
+{{- $regularFont := resources.Get "fonts/Inter-Regular.ttf" -}}
+{{- if not $regularFont -}}
+  {{- $regularFont = resources.Get "lib/katex/fonts/KaTeX_Main-Regular.ttf" -}}
+{{- end -}}
+
+<meta name="twitter:title" content="{{ .Title | emojify }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+{{- if and $background $boldFont (strings.HasSuffix .RelPermalink "/") -}}
+
+  {{- $img := $background.Resize "1200x630 Center" -}}
+
+  {{- /* $feature: resource (truthy) or false. Single `and` avoids nested-block scoping issues. */ -}}
+  {{- $feature := and .IsPage (.Resources.GetMatch "feature*") -}}
+
+  {{- if $feature -}}
+
+    {{- /* ── TOP–BOTTOM SPLIT: feature image top, dark panel bottom ── */ -}}
+
+    {{- /* Top strip: feature image cropped to full width × 260px */ -}}
+    {{- $feat := $feature.Fill "1200x260 Center" -}}
+    {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
+
+    {{- /* Profile — bottom-right of the dark panel */ -}}
+    {{- if $profile -}}
+      {{- $avatar := $profile.Fill "110x110 Center" -}}
+      {{- $img = $img.Filter (images.Overlay $avatar 1040 470) -}}
+    {{- end -}}
+
+    {{- /* Site name */ -}}
+    {{- $img = $img.Filter (images.Text $.Site.Title (dict
+      "color" "#00c8ff"
+      "size"  22
+      "x" 60
+      "y" 282
+      "font" $boldFont
+    )) -}}
+
+    {{- /* Tags joined with " | " — determines title Y */ -}}
+    {{- $titleY := 320 -}}
+    {{- if .Params.tags -}}
+      {{- $tagParts := slice -}}
+      {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
+      {{- $tagStr := delimit $tagParts " | " | truncate 70 "" -}}
+      {{- $img = $img.Filter (images.Text $tagStr (dict
+        "color" "#888888"
+        "size"  16
+        "x" 60
+        "y" 316
+        "font" $boldFont
+      )) -}}
+      {{- $titleY = 348 -}}
+    {{- end -}}
+
+    {{- /* Post title — large bold, always on the solid dark panel */ -}}
+    {{- $title := printf "%s" .Title -}}
+    {{- $img = $img.Filter (images.Text $title (dict
+      "color" "#ffffff"
+      "size"  54
+      "linespacing" 8
+      "x" 60
+      "y" $titleY
+      "font" $boldFont
+    )) -}}
+
+    {{- /* Domain */ -}}
+    {{- $img = $img.Filter (images.Text "gilbertsanchez.com" (dict
+      "color" "#555555"
+      "size"  20
+      "x" 60
+      "y" 570
+      "font" $regularFont
+    )) -}}
+
+  {{- else -}}
+
+    {{- /* ── FULL DARK layout: home, list, taxonomy, posts without feature image ── */ -}}
+
+    {{- /* Profile — bottom-right */ -}}
+    {{- if $profile -}}
+      {{- $avatar := $profile.Fill "160x160 Center" -}}
+      {{- $img = $img.Filter (images.Overlay $avatar 990 400) -}}
+    {{- end -}}
+
+    {{- /* Site name — top-left brand anchor */ -}}
+    {{- $img = $img.Filter (images.Text $.Site.Title (dict
+      "color" "#00c8ff"
+      "size"  24
+      "x" 60
+      "y" 48
+      "font" $boldFont
+    )) -}}
+
+    {{- /* Content block — vertically centered in the card body (y≈220–420) */ -}}
+
+    {{- /* Tags joined with " | " — posts only, determines title Y */ -}}
+    {{- $titleY := 230 -}}
+    {{- if and .IsPage .Params.tags -}}
+      {{- $tagParts := slice -}}
+      {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
+      {{- $tagStr := delimit $tagParts " | " | truncate 70 "" -}}
+      {{- $img = $img.Filter (images.Text $tagStr (dict
+        "color" "#888888"
+        "size"  18
+        "x" 60
+        "y" 210
+        "font" $boldFont
+      )) -}}
+      {{- $titleY = 242 -}}
+    {{- end -}}
+
+    {{- /* Title or tagline — centered in the card body */ -}}
+    {{- $title := printf "%s" .Title -}}
+    {{- if .IsHome -}}{{- $title = "Not just good. Good enough." -}}{{- end -}}
+    {{- $img = $img.Filter (images.Text $title (dict
+      "color" "#ffffff"
+      "size"  54
+      "linespacing" 10
+      "x" 60
+      "y" $titleY
+      "font" $boldFont
+    )) -}}
+
+    {{- /* Description — no-feature posts only */ -}}
+    {{- if .IsPage -}}
+      {{- $desc := .Description | default (.Summary | plainify) -}}
+      {{- $desc = printf "%s" ($desc | truncate 120 "…") -}}
+      {{- if $desc -}}
+        {{- $img = $img.Filter (images.Text $desc (dict
+          "color" "#999999"
+          "size"  20
+          "linespacing" 6
+          "x" 60
+          "y" 420
+          "font" $regularFont
+        )) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Domain — bottom-left */ -}}
+    {{- $img = $img.Filter (images.Text "gilbertsanchez.com" (dict
+      "color" "#555555"
+      "size"  22
+      "x" 60
+      "y" 570
+      "font" $regularFont
+    )) -}}
+
+  {{- end -}}
+
+  {{- $img = resources.Copy (path.Join .RelPermalink "og.png") $img -}}
+
+  <meta property="og:image"        content="{{ $img.Permalink }}">
+  <meta property="og:image:width"  content="{{ $img.Width }}">
+  <meta property="og:image:height" content="{{ $img.Height }}">
+  <meta property="og:image:type"   content="image/png">
+  <meta property="og:image:alt"    content="{{ $.Site.Title }}">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:image"       content="{{ $img.Permalink }}">
+  <meta name="twitter:image:alt"   content="{{ $.Site.Title }}">
+
+{{- else -}}
+  <meta name="twitter:card" content="summary">
+{{- end -}}
