@@ -60,7 +60,7 @@
     {{- if .Params.tags -}}
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
-      {{- $tagStr := delimit $tagParts " | " | truncate 70 "" -}}
+      {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 70 "") -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
         "color" "#888888"
         "size"  16
@@ -117,7 +117,7 @@
     {{- if and .IsPage .Params.tags -}}
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
-      {{- $tagStr := delimit $tagParts " | " | truncate 70 "" -}}
+      {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 70 "") -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
         "color" "#888888"
         "size"  18
