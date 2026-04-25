@@ -142,27 +142,7 @@
 
   {{/* Social */}}
   {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/twitter_cards.html" . }}
-
-  {{- /* Main page always uses this; fallback elsewhere if no feature image */ -}}
-  {{- /* See https://gohugo.io/templates/embedded/#open-graph */ -}}
-  {{- $images := .Resources.ByType "image" -}}
-  {{- $socialImage := $images.GetMatch "*feature*" -}}
-
-  {{- if not $socialImage -}}
-    {{- with .Site.Params.defaultSocialImage -}}
-      {{- if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") -}}
-        {{- $socialImage = resources.GetRemote . -}}
-      {{- else -}}
-        {{- $socialImage = resources.Get . -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-
-  {{- with $socialImage -}}
-    <meta name="twitter:image" content="{{ .RelPermalink | absURL }}">
-    <meta property="og:image" content="{{ .RelPermalink | absURL }}">
-  {{- end -}}
+  {{- partial "og-image.html" . -}}
 
   {{/* Schema */}}
   {{ partial "schema.html" . }}
@@ -185,7 +165,7 @@
   {{ partial "vendor.html" . }}
 
   {{/* Analytics */}}
-  {{ partial "analytics/main.html" .Site }}
+  {{ partial "analytics/main.html" . }}
 
   {{/* Extend head - eg. for custom analytics scripts, etc. */}}
   {{ if templates.Exists "partials/extend-head.html" }}
