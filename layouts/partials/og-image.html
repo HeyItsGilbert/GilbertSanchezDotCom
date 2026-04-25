@@ -102,7 +102,7 @@
     {{- $desc = printf "%s" ($desc | truncate 120 "…") -}}
     {{- if $desc -}}
       {{- $descY := add $afterTitleY 40 -}}
-      {{- $descHalf := div (mul (len $desc) 11) 2 -}}
+      {{- $descHalf := div (mul (len $desc) 15) 2 -}}
       {{- $descX := sub 600 $descHalf -}}
       {{- if lt $descX 60 -}}{{- $descX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $desc (dict
