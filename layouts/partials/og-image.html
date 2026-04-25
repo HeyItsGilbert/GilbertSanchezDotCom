@@ -34,61 +34,84 @@
 
   {{- if $feature -}}
 
-    {{- /* ── TOP–BOTTOM SPLIT: feature image top, dark panel bottom ── */ -}}
-
-    {{- /* Top strip: feature image cropped to full width × 260px */ -}}
-    {{- $feat := $feature.Fill "1200x260 Center" -}}
+    {{- /* ── FULL-BLEED: feature image fills card, darkened for legibility ── */ -}}
+    {{- $feat := $feature.Fill "1200x630 Center" -}}
+    {{- $feat = $feat.Filter (images.Brightness -50) -}}
     {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
 
-    {{- /* Profile — bottom-right of the dark panel */ -}}
-    {{- if $profile -}}
-      {{- $avatar := $profile.Fill "110x110 Center" -}}
-      {{- $img = $img.Filter (images.Overlay $avatar 1040 470) -}}
-    {{- end -}}
-
-    {{- /* Site name */ -}}
-    {{- $img = $img.Filter (images.Text $.Site.Title (dict
-      "color" "#00c8ff"
-      "size"  22
-      "x" 60
-      "y" 282
-      "font" $boldFont
+    {{- /* Domain — centered at top */ -}}
+    {{- $domainStr := "gilbertsanchez.com" -}}
+    {{- $domainHalf := div (mul (len $domainStr) 10) 2 -}}
+    {{- $domainX := sub 600 $domainHalf -}}
+    {{- if lt $domainX 60 -}}{{- $domainX = 60 -}}{{- end -}}
+    {{- $img = $img.Filter (images.Text $domainStr (dict
+      "color" "#bbbbbb"
+      "size"  18
+      "x" $domainX
+      "y" 55
+      "font" $regularFont
     )) -}}
 
-    {{- /* Tags joined with " | " — determines title Y */ -}}
-    {{- $titleY := 320 -}}
+    {{- /* Tags joined with " | " — centered */ -}}
+    {{- $titleY := 190 -}}
     {{- if .Params.tags -}}
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
-      {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 70 "") -}}
+      {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 60 "") -}}
+      {{- $tagHalf := div (mul (len $tagStr) 8) 2 -}}
+      {{- $tagX := sub 600 $tagHalf -}}
+      {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
         "color" "#888888"
-        "size"  16
-        "x" 60
-        "y" 316
+        "size"  15
+        "x" $tagX
+        "y" 115
         "font" $boldFont
       )) -}}
-      {{- $titleY = 348 -}}
+      {{- $titleY = 175 -}}
     {{- end -}}
 
-    {{- /* Post title — large bold, always on the solid dark panel */ -}}
+    {{- /* Title — large, white, approximate centering */ -}}
     {{- $title := printf "%s" .Title -}}
+    {{- $titleHalf := div (mul (len $title) 28) 2 -}}
+    {{- $titleX := sub 600 $titleHalf -}}
+    {{- if lt $titleX 60 -}}{{- $titleX = 60 -}}{{- end -}}
     {{- $img = $img.Filter (images.Text $title (dict
       "color" "#ffffff"
-      "size"  54
+      "size"  56
       "linespacing" 8
-      "x" 60
+      "x" $titleX
       "y" $titleY
       "font" $boldFont
     )) -}}
 
-    {{- /* Domain */ -}}
-    {{- $img = $img.Filter (images.Text "gilbertsanchez.com" (dict
-      "color" "#555555"
-      "size"  20
-      "x" 60
-      "y" 570
-      "font" $regularFont
+    {{- /* Description — centered, truncated to one visual line */ -}}
+    {{- $desc := .Description | default (.Summary | plainify) -}}
+    {{- $desc = printf "%s" ($desc | truncate 80 "…") -}}
+    {{- if $desc -}}
+      {{- $descHalf := div (mul (len $desc) 11) 2 -}}
+      {{- $descX := sub 600 $descHalf -}}
+      {{- if lt $descX 60 -}}{{- $descX = 60 -}}{{- end -}}
+      {{- $img = $img.Filter (images.Text $desc (dict
+        "color" "#cccccc"
+        "size"  20
+        "linespacing" 6
+        "x" $descX
+        "y" 360
+        "font" $regularFont
+      )) -}}
+    {{- end -}}
+
+    {{- /* CTA */ -}}
+    {{- $cta := "READ MORE →" -}}
+    {{- $ctaHalf := div (mul (len $cta) 13) 2 -}}
+    {{- $ctaX := sub 600 $ctaHalf -}}
+    {{- $img = $img.Filter (images.Text $cta (dict
+      "color" "#4B6EF5"
+      "size"  22
+      "x" $ctaX
+      "y" 500
+      "font" $boldFont
     )) -}}
 
   {{- else -}}
