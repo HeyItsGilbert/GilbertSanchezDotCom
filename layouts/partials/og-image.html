@@ -66,9 +66,9 @@
     {{- $titleLine1 := $title -}}
     {{- $titleLine2 := "" -}}
     {{- if strings.Contains $title ":" -}}
-      {{- $ci := strings.Index $title ":" -}}
-      {{- $titleLine1 = substr $title 0 (add $ci 1) -}}
-      {{- $titleLine2 = strings.TrimLeft " " (substr $title (add $ci 1)) -}}
+      {{- $parts := split $title ":" -}}
+      {{- $titleLine1 = printf "%s:" (index $parts 0) -}}
+      {{- $titleLine2 = strings.TrimLeft " " (printf "%s" (delimit (after 1 $parts) ":")) -}}
     {{- end -}}
 
     {{- $l1Half := div (mul (len $titleLine1) 28) 2 -}}
@@ -166,9 +166,9 @@
     {{- $titleLine1 := $title -}}
     {{- $titleLine2 := "" -}}
     {{- if strings.Contains $title ":" -}}
-      {{- $ci := strings.Index $title ":" -}}
-      {{- $titleLine1 = substr $title 0 (add $ci 1) -}}
-      {{- $titleLine2 = strings.TrimLeft " " (substr $title (add $ci 1)) -}}
+      {{- $parts := split $title ":" -}}
+      {{- $titleLine1 = printf "%s:" (index $parts 0) -}}
+      {{- $titleLine2 = strings.TrimLeft " " (printf "%s" (delimit (after 1 $parts) ":")) -}}
     {{- end -}}
 
     {{- $l1Half := div (mul (len $titleLine1) 26) 2 -}}
