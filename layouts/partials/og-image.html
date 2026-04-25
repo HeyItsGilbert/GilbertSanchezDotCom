@@ -35,12 +35,11 @@
 
   {{- if $feature -}}
 
-    {{- /* ── FULL-BLEED: feature image fills card, darkened for legibility ── */ -}}
+    {{- /* ── FULL-BLEED: feature image with semi-transparent dark blue overlay ── */ -}}
     {{- $feat := $feature.Fill "1200x630 Center" -}}
-    {{- $feat = $feat.Filter (images.Brightness -50) -}}
-    {{- $feat = $feat.Filter (images.Contrast 15) -}}
-    {{- $feat = $feat.Filter (images.GaussianBlur 3) -}}
-    {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
+    {{- $feat = $feat.Filter (images.GaussianBlur 1) -}}
+    {{- $darkOverlay := $img.Filter (images.Opacity 0.75) -}}
+    {{- $img = $feat.Filter (images.Overlay $darkOverlay 0 0) -}}
 
     {{- /* Tags joined with " | " — centered */ -}}
     {{- $titleY := 200 -}}
