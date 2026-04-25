@@ -42,7 +42,7 @@
     {{- $feat = $feat.Filter (images.GaussianBlur 2) -}}
     {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
 
-    {{- /* Tags joined with " | " — centered, blue */ -}}
+    {{- /* Tags joined with " | " — centered */ -}}
     {{- $titleY := 200 -}}
     {{- if .Params.tags -}}
       {{- $tagParts := slice -}}
@@ -52,7 +52,7 @@
       {{- $tagX := sub 600 $tagHalf -}}
       {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
-        "color" "#5587b0"
+        "color" "#FFFFFF"
         "size"  16
         "x" $tagX
         "y" 110
@@ -107,27 +107,27 @@
       {{- if lt $descX 60 -}}{{- $descX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $desc (dict
         "color" "#cccccc"
-        "size"  20
+        "size"  30
         "x" $descX
         "y" $descY
         "font" $regularFont
       )) -}}
     {{- end -}}
 
-    {{- /* Profile — bottom-right */ -}}
+    {{- /* Profile — bottom-center */ -}}
     {{- if $profile -}}
       {{- $avatar := $profile.Fill "160x160 Center" -}}
-      {{- $img = $img.Filter (images.Overlay $avatar 1010 440) -}}
+      {{- $img = $img.Filter (images.Overlay $avatar 520 440) -}}
     {{- end -}}
 
   {{- else -}}
 
     {{- /* ── FULL DARK layout: home, list, taxonomy, posts without feature image ── */ -}}
 
-    {{- /* Profile — bottom-right */ -}}
+    {{- /* Profile — bottom-center */ -}}
     {{- if $profile -}}
       {{- $avatar := $profile.Fill "160x160 Center" -}}
-      {{- $img = $img.Filter (images.Overlay $avatar 990 400) -}}
+      {{- $img = $img.Filter (images.Overlay $avatar 520 440) -}}
     {{- end -}}
 
     {{- /* Site name — top-left brand anchor */ -}}
