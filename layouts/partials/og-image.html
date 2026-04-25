@@ -12,6 +12,7 @@
 
 {{- $background := resources.Get "images/og-bg.png" -}}
 {{- $profile    := resources.Get "img/profile.webp" -}}
+{{- $ctaBtn     := resources.Get "images/og-cta-btn.png" -}}
 
 {{- $boldFont := resources.Get "fonts/Inter-Bold.ttf" -}}
 {{- if not $boldFont -}}
@@ -97,20 +98,20 @@
         "size"  20
         "linespacing" 6
         "x" $descX
-        "y" 360
+        "y" 320
         "font" $regularFont
       )) -}}
     {{- end -}}
 
-    {{- /* CTA */ -}}
-    {{- $cta := "READ MORE →" -}}
-    {{- $ctaHalf := div (mul (len $cta) 13) 2 -}}
-    {{- $ctaX := sub 600 $ctaHalf -}}
-    {{- $img = $img.Filter (images.Text $cta (dict
-      "color" "#4B6EF5"
+    {{- /* CTA button — blue pill overlay + white text centered inside */ -}}
+    {{- if $ctaBtn -}}
+      {{- $img = $img.Filter (images.Overlay $ctaBtn 460 440) -}}
+    {{- end -}}
+    {{- $img = $img.Filter (images.Text "READ MORE →" (dict
+      "color" "#ffffff"
       "size"  22
-      "x" $ctaX
-      "y" 500
+      "x" 529
+      "y" 459
       "font" $boldFont
     )) -}}
 
