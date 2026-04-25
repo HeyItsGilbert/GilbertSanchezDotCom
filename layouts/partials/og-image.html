@@ -66,7 +66,7 @@
     {{- $titleLine2 := "" -}}
     {{- if strings.Contains $title ":" -}}
       {{- $parts := split $title ":" -}}
-      {{- $titleLine1 = printf "%s:" (index $parts 0) -}}
+      {{- $titleLine1 = printf "%s" (index $parts 0) -}}
       {{- $titleLine2 = strings.TrimLeft " " (printf "%s" (delimit (after 1 $parts) ":")) -}}
     {{- end -}}
 
@@ -83,17 +83,17 @@
 
     {{- $afterTitleY := add $titleY 68 -}}
     {{- if $titleLine2 -}}
-      {{- $l2Half := div (mul (len $titleLine2) 28) 2 -}}
+      {{- $l2Half := div (mul (len $titleLine2) 23) 2 -}}
       {{- $l2X := sub 600 $l2Half -}}
       {{- if lt $l2X 60 -}}{{- $l2X = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $titleLine2 (dict
         "color" "#ffffff"
-        "size"  56
+        "size"  46
         "x" $l2X
         "y" (add $titleY 68)
         "font" $boldFont
       )) -}}
-      {{- $afterTitleY = add $titleY 136 -}}
+      {{- $afterTitleY = add $titleY 122 -}}
     {{- end -}}
 
     {{- /* Description — centered, below title */ -}}
@@ -183,17 +183,17 @@
 
     {{- $afterTitleY := add $titleY 66 -}}
     {{- if $titleLine2 -}}
-      {{- $l2Half := div (mul (len $titleLine2) 26) 2 -}}
+      {{- $l2Half := div (mul (len $titleLine2) 23) 2 -}}
       {{- $l2X := sub 600 $l2Half -}}
       {{- if lt $l2X 60 -}}{{- $l2X = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $titleLine2 (dict
         "color" "#ffffff"
-        "size"  54
+        "size"  46
         "x" $l2X
         "y" (add $titleY 66)
         "font" $boldFont
       )) -}}
-      {{- $afterTitleY = add $titleY 132 -}}
+      {{- $afterTitleY = add $titleY 120 -}}
     {{- end -}}
 
     {{- /* Description — no-feature posts only, centered below title */ -}}
