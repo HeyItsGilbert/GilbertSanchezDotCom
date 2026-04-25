@@ -39,7 +39,7 @@
     {{- $feat := $feature.Fill "1200x630 Center" -}}
     {{- $feat = $feat.Filter (images.Brightness -50) -}}
     {{- $feat = $feat.Filter (images.Contrast 15) -}}
-    {{- $feat = $feat.Filter (images.GaussianBlur 2) -}}
+    {{- $feat = $feat.Filter (images.GaussianBlur 3) -}}
     {{- $img = $img.Filter (images.Overlay $feat 0 0) -}}
 
     {{- /* Tags joined with " | " — centered */ -}}
@@ -48,12 +48,12 @@
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
       {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 60 "") -}}
-      {{- $tagHalf := div (mul (len $tagStr) 8) 2 -}}
+      {{- $tagHalf := div (mul (len $tagStr) 10) 2 -}}
       {{- $tagX := sub 600 $tagHalf -}}
       {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
         "color" "#FFFFFF"
-        "size"  16
+        "size"  20
         "x" $tagX
         "y" 110
         "font" $boldFont
@@ -99,7 +99,7 @@
 
     {{- /* Description — centered, below title */ -}}
     {{- $desc := .Description | default (.Summary | plainify) -}}
-    {{- $desc = printf "%s" ($desc | truncate 80 "…") -}}
+    {{- $desc = printf "%s" ($desc | truncate 120 "…") -}}
     {{- if $desc -}}
       {{- $descY := add $afterTitleY 40 -}}
       {{- $descHalf := div (mul (len $desc) 11) 2 -}}
@@ -147,7 +147,7 @@
       {{- $tagParts := slice -}}
       {{- range .Params.tags -}}{{- $upper := . | strings.ToUpper -}}{{- $tagParts = $tagParts | append $upper -}}{{- end -}}
       {{- $tagStr := printf "%s" (delimit $tagParts " | " | truncate 70 "") -}}
-      {{- $tagHalf := div (mul (len $tagStr) 8) 2 -}}
+      {{- $tagHalf := div (mul (len $tagStr) 9) 2 -}}
       {{- $tagX := sub 600 $tagHalf -}}
       {{- if lt $tagX 60 -}}{{- $tagX = 60 -}}{{- end -}}
       {{- $img = $img.Filter (images.Text $tagStr (dict
