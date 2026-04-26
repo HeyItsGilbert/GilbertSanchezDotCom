@@ -6,11 +6,12 @@ summary: Three talks, two major releases, one domain bought live on stage - here
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2026-04-26T22:52:25.483Z
+lastmod: 2026-04-26T22:59:14.141Z
 slug: powershell-summit-2026
 tags:
     - FOSS
     - PowerShell
+    - Presentation
 keywords:
     - PowerShell Summit 2026
     - PowerShell Summit recap
@@ -93,6 +94,9 @@ context switch or mental model shift.
 This is where I got to finally announce that Psake v5 was just released. This
 came in handy the following day when token cost was a key point in the State of
 the Shell.
+
+{{< github repo="psake/psake" showThumbnail=true >}}
+
 
 ### Markdown Madness (90 Minutes of Controlled Chaos)
 
@@ -197,6 +201,9 @@ developed to keep instructions synced. It was great to see his work get so much
 praise -- it's exactly what I point people to when they have questions. That
 guardrail point kept proving itself, right down to how fast we shipped psake.
 
+{{< github repo="tablackburn/ai-agent-instruction-modules" showThumbnail=true >}}
+
+
 AI was the constant topic and that's no surprise in 2026. The surprise, I
 thought, was that all the AI conversation was around MCP servers. I feel like AI
 trends come and go fast:
@@ -235,6 +242,8 @@ fixed the build system 😬). This has been a long time coming. James added the
 ability to use JSON instead of XML. I've floated the idea of YAML
 and maybe someone will come by and ship that.
 
+{{< github repo="PowerShellOrg/Plaster" showThumbnail=true >}}
+
 In my Chocolatey package automation with psake talk, I announced that [psake v5.0]
 was officially released as of that morning. When Michael Greene and Steve
 Bucher brought up token cost during the State of the Shell, that became my
@@ -251,6 +260,8 @@ sustainably, so it felt right. We invited everyone to swing by at lunch to learn
 how to get involved. Since then, I've put together a governance model, an issue
 template, and set up the communication channels. Keep an eye out for a future
 post about how I set that up.
+
+{{< github repo="PowerShellOrg/PSDepend" showThumbnail=true >}}
 
 ## The Part That Stays With Me
 
