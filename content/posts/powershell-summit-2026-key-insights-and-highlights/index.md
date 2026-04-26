@@ -1,17 +1,27 @@
 ---
 title: "PowerShell Summit 2026: Key Insights and Highlights"
 date: 2026-04-26T21:47:58.943Z
-description: Discover key insights and highlights from the PowerShell Summit 2026, focusing on neurodiversity, sustainability, and the latest in AI.
-summary: Three talks, two major releases, one domain bought live on stage — here's what happened at PowerShell Summit 2026 and what stayed with me.
+description: Three talks, two releases, one live domain purchase, and a lot of feelings about neurodiversity. My recap of PowerShell Summit 2026.
+summary: Three talks, two major releases, one domain bought live on stage - here's what happened at PowerShell Summit 2026 and what stayed with me.
 showReadingTime: true
 draft: false
-preview: feature.webp
-lastmod: 2026-04-26T22:32:51.418Z
+preview: feature.jpg
+lastmod: 2026-04-26T22:52:25.483Z
 slug: powershell-summit-2026
 tags:
     - FOSS
     - PowerShell
-keywords: []
+keywords:
+    - PowerShell Summit 2026
+    - PowerShell Summit recap
+    - psake v5
+    - Plaster v2
+    - neurodiversity in tech
+    - ADHD developer
+    - FOSS sustainability
+    - MCP servers PowerShell
+    - Hugo static site
+    - Chocolatey automation
 series: []
 type: posts
 fmContentType: posts
@@ -39,6 +49,8 @@ the dominant topic. Lots of good conversation with folks at all points in their
 careers, openly sharing concerns and curiosity in equal measure.
 
 ## The Talks
+
+{{< carousel images="{GilbertPresenting.jpg,GilbertPresenting2.jpg}" >}}
 
 ### From Burnout to Built-to-Last
 
@@ -137,7 +149,7 @@ conversations you have in the hallways, at lunch, or after hours. You get to
 meet folks from throughout the community, meet some of your heroes in person,
 and talk shop. Lots of "aha!" moments and laughs.
 
-{{< carousel images="{rn_image_picker_lib_temp_ad586504-4703-4bce-8a34-3981dcb6792d.jpg,20260416_103306.jpg,20260416_103347.jpg,20260416_140223(0)~2.jpg,20260417_013622.jpg,FB_IMG_1777125691261.jpg,IMG_2955.jpg,IMG_4894.jpg,IMG_4905.jpg,IMG_7525.jpg,IMG_7555.jpg,IMG_7560.jpg,IMG_9828.jpg,PXL_20260417_024929765.jpg}" >}}
+{{< carousel images="{BarMondayNight.jpg,BarMondayNight2.jpg,GilbertChristian2.jpg,GilbertDJ.jpg,GilbertKevin.jpg,JeffreyGilbert.jpg,LastBreakfast.jpg,LateNightBar.jpg,TeamDinner.jpg,ThursdayNightDJTrent.jpg}" >}}
 
 I had the pleasure of discussing AI with Jeffrey Snover. You may know him as a
 prominent lobster roll food blogger[^1], but he also created PowerShell. Jeffrey
