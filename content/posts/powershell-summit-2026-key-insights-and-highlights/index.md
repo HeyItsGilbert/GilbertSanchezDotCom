@@ -6,7 +6,7 @@ summary: Three talks, two major releases, one domain bought live on stage - here
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2026-04-26T23:02:04.927Z
+lastmod: 2026-04-26T23:10:53.834Z
 slug: powershell-summit-2026
 tags:
     - FOSS
@@ -120,7 +120,12 @@ signing up would be boring to watch). I pointed Netlify to build the new
 template repo and in a few minutes we had https://nicejekyll.netlify.app/.
 Proof of concept locked in. So we moved on to the main event: buying a domain.
 
-> I BOUGHT A DOMAIN IN FRONT OF EVERYONE!
+{{< typeit 
+  tag=h3
+  lifeLike=true
+>}}
+I BOUGHT A DOMAIN IN FRONT OF EVERYONE!
+{{< /typeit >}}
 
 "It's just so dumb it might just work" could have been the punchline of this
 talk. Did I practice the flow of buying a domain? Nope. Did I check if my credit
