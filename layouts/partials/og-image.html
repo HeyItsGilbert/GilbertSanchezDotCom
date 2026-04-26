@@ -196,10 +196,10 @@
       {{- $afterTitleY = add $titleY 120 -}}
     {{- end -}}
 
-    {{- /* Description — no-feature posts only, centered below title */ -}}
+    {{- /* Description — no-feature posts only, centered below title. Always shooting for 160 chars */ -}}
     {{- if .IsPage -}}
       {{- $desc := .Description | default (.Summary | plainify) -}}
-      {{- $desc = printf "%s" ($desc | truncate 100 "…") -}}
+      {{- $desc = printf "%s" ($desc | truncate 163 "…") -}}
       {{- if $desc -}}
         {{- $descHalf := div (mul (len $desc) 11) 2 -}}
         {{- $descX := sub 600 $descHalf -}}
