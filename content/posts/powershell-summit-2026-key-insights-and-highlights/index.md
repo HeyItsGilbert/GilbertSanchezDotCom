@@ -6,7 +6,7 @@ summary: Three talks, two major releases, one domain bought live on stage - here
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2026-04-26T22:59:14.141Z
+lastmod: 2026-04-26T23:02:04.927Z
 slug: powershell-summit-2026
 tags:
     - FOSS
@@ -51,7 +51,7 @@ careers, openly sharing concerns and curiosity in equal measure.
 
 ## The Talks
 
-{{< carousel images="{GilbertPresenting.jpg,GilbertPresenting2.jpg}" >}}
+{{< carousel images="{GilbertPresenting.jpg,GilbertPresenting3.jpg,GilbertPresenting2.jpg}" >}}
 
 ### From Burnout to Built-to-Last
 
