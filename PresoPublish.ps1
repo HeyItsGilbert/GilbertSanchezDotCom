@@ -214,9 +214,20 @@ Get-ChildItem -Directory $ContentDir | ForEach-Object {
 
     if ($tempCss -and (Test-Path $tempCss)) { Remove-Item $tempCss -Force }
 
-    # Warn about bundle assets that may slow Hugo builds — user optimizes manually.
-    # Hugo image processing on large files (especially animated GIFs) can exhaust
-    # memory/time on Netlify. Optimize or remove flagged files before committing.
+    # Move GIFs out of the page bundle into static/slides/ so Hugo never processes
+    # them as image resources (animated GIF frames exhaust build memory/time on Netlify).
+    # GIFs land in static/slides/ via Copy-DeckAssets already; this just removes the
+    # copy from the bundle. Ensure dest exists in case it wasn't markdown-referenced.
+    Get-ChildItem $dir.FullName -File | Where-Object {
+        $_.Name -notin @('index.md', 'feature.png') -and $_.Extension -eq '.gif'
+    } | ForEach-Object {
+        $dest = Join-Path $SlidesDir $_.Name
+        if (-not (Test-Path $dest)) { Copy-Item $_.FullName $dest -Force }
+        Remove-Item $_.FullName -Force
+        Write-Host "  [-> static] $($_.Name)" -ForegroundColor DarkGray
+    }
+
+    # Warn about remaining large bundle assets that may slow Hugo image processing.
     $MaxBundleKB = 500
     Get-ChildItem $dir.FullName -File | Where-Object {
         $_.Name -notin @('index.md', 'feature.png') -and

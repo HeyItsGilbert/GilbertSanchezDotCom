@@ -127,9 +127,14 @@ The `slideshow:` value drives the output filename. `PresoPublish.ps1` derives th
 
 Hugo processes every file in a page bundle as an image resource. Large animated GIFs and high-res PNGs will time out the Netlify build (a 13 MB GIF caused a confirmed timeout).
 
-After building, `PresoPublish.ps1` warns about any bundle file over 500 KB (excluding `index.md` and `feature.png`). Nothing is auto-deleted — you optimize or remove flagged files manually before committing.
+Hugo processes every file in a page bundle as an image resource. Large animated GIFs and high-res PNGs will time out the Netlify build (a 13 MB GIF caused a confirmed timeout).
 
-The threshold is `$MaxBundleKB = 500` in the main loop. Common culprits: animated GIFs (optimize with `gifsicle -O3`) and high-res PNGs (convert to WebP or downscale).
+`PresoPublish.ps1` handles this automatically in two ways:
+
+- **GIFs are always moved to `static/slides/`** after the marp build — Hugo never touches `static/`, so no timeout. They remain available to the HTML slideshow at `/slides/<name>.gif`.
+- **Files over 500 KB emit a `Write-Warning`** — optimize or downscale flagged PNGs/WebPs manually before committing.
+
+The threshold is `$MaxBundleKB = 500` in the main loop. Common culprits: high-res PNGs (convert to WebP or downscale with `cwebp`/`squoosh`).
 
 A healthy bundle looks like:
 ```
@@ -139,7 +144,7 @@ content/presentations/<Name>/
 └── *.png / *.svg      ← slide images (logos, screenshots, diagrams) — keep under 500 KB each
 ```
 
-All images also land in `static/slides/` for the HTML slideshow regardless of bundle state.
+GIFs live in `static/slides/` only; all other images land there too (alongside the HTML slideshow).
 
 #### PresoPublish.ps1
 
