@@ -141,8 +141,7 @@
   {{ end }}
 
   {{/* Social */}}
-  {{ template "_internal/opengraph.html" . }}
-  {{- partial "og-image.html" . -}}
+  {{- partial "opengraph.html" . -}}
 
   {{/* Schema */}}
   {{ partial "schema.html" . }}

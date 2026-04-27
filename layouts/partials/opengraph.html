@@ -1,18 +1,88 @@
 {{- /*
-  og-image.html — Generates a 1200x630 Open Graph social card per page.
+  opengraph.html — All Open Graph, article, Twitter/X, and social card meta tags.
 
-  Two layouts:
-    Feature-image posts → TOP-BOTTOM split
-                          Top 260px: feature image (1200×260 cropped center)
-                          Bottom 370px: dark panel with branding + title
-    Everything else    → Full dark background with profile avatar right
-
+  Standard OG tags mirror Hugo's internal _partials/opengraph.html (v0.147).
+  og:image is a generated 1200×630 social card (two layouts):
+    Feature-image posts → feature image blurred + dark overlay, centered text
+    Everything else     → full dark background with profile avatar
   Fonts: assets/fonts/Inter-{Bold,Regular}.ttf; falls back to KaTeX fonts.
 */ -}}
 
+{{/* ── Standard Open Graph ── */}}
+
+<meta property="og:url" content="{{ .Permalink }}">
+
+{{- with or site.Title site.Params.title | plainify }}
+  <meta property="og:site_name" content="{{ . }}">
+{{- end }}
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+  <meta property="og:title" content="{{ . }}">
+{{- end }}
+
+{{- with or .Description .Summary site.Params.description | plainify | htmlUnescape }}
+  <meta property="og:description" content="{{ trim . "\n\r\t " }}">
+{{- end }}
+
+{{- with or .Params.locale site.Language.LanguageCode }}
+  <meta property="og:locale" content="{{ replace . `-` `_` }}">
+{{- end }}
+
+{{- if .IsPage }}
+  <meta property="og:type" content="article">
+  {{- with .Section }}
+    <meta property="article:section" content="{{ . }}">
+  {{- end }}
+  {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
+  {{- with .PublishDate }}
+    <meta property="article:published_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
+  {{- end }}
+  {{- with .Lastmod }}
+    <meta property="article:modified_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
+  {{- end }}
+  {{- range .GetTerms "tags" | first 6 }}
+    <meta property="article:tag" content="{{ .Page.Title | plainify }}">
+  {{- end }}
+{{- else }}
+  <meta property="og:type" content="website">
+{{- end }}
+
+{{- with .Params.audio }}
+  {{- range . | first 6 }}
+    <meta property="og:audio" content="{{ . | absURL }}">
+  {{- end }}
+{{- end }}
+
+{{- with .Params.videos }}
+  {{- range . | first 6 }}
+    <meta property="og:video" content="{{ . | absURL }}">
+  {{- end }}
+{{- end }}
+
+{{- range .GetTerms "series" }}
+  {{- range .Pages | first 7 }}
+    {{- if ne $ . }}
+      <meta property="og:see_also" content="{{ .Permalink }}">
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- with .facebook_app_id }}
+      <meta property="fb:app_id" content="{{ . }}">
+    {{- else }}
+      {{- with .facebook_admin }}
+        <meta property="fb:admins" content="{{ . }}">
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{/* ── Twitter / X card + og:image social card ── */}}
+
 {{- $background := resources.Get "images/og-bg.png" -}}
 {{- $profile    := resources.Get "img/profile.webp" -}}
-{{- $ctaBtn     := resources.Get "images/og-cta-btn.png" -}}
 
 {{- $boldFont := resources.Get "fonts/Inter-Bold.ttf" -}}
 {{- if not $boldFont -}}
@@ -30,7 +100,6 @@
 
   {{- $img := $background.Resize "1200x630 Center" -}}
 
-  {{- /* $feature: resource (truthy) or false. Single `and` avoids nested-block scoping issues. */ -}}
   {{- $feature := and .IsPage (.Resources.GetMatch "feature*") -}}
 
   {{- if $feature -}}
@@ -41,7 +110,6 @@
     {{- $darkOverlay := $img.Filter (images.Opacity 0.75) -}}
     {{- $img = $feat.Filter (images.Overlay $darkOverlay 0 0) -}}
 
-    {{- /* Tags joined with " | " — centered */ -}}
     {{- $titleY := 200 -}}
     {{- if .Params.tags -}}
       {{- $tagParts := slice -}}
@@ -60,7 +128,6 @@
       {{- $titleY = 175 -}}
     {{- end -}}
 
-    {{- /* Title — split at ':' into two centered lines */ -}}
     {{- $title := printf "%s" .Title -}}
     {{- $titleLine1 := $title -}}
     {{- $titleLine2 := "" -}}
@@ -96,7 +163,6 @@
       {{- $afterTitleY = add $titleY 122 -}}
     {{- end -}}
 
-    {{- /* Description — centered, below title */ -}}
     {{- $desc := .Description | default (.Summary | plainify) -}}
     {{- $desc = printf "%s" ($desc | truncate 120 "…") -}}
     {{- if $desc -}}
@@ -113,7 +179,6 @@
       )) -}}
     {{- end -}}
 
-    {{- /* Profile — bottom-center */ -}}
     {{- if $profile -}}
       {{- $avatar := $profile.Fill "160x160 Center" -}}
       {{- $img = $img.Filter (images.Overlay $avatar 520 440) -}}
@@ -123,13 +188,11 @@
 
     {{- /* ── FULL DARK layout: home, list, taxonomy, posts without feature image ── */ -}}
 
-    {{- /* Profile — bottom-center */ -}}
     {{- if $profile -}}
       {{- $avatar := $profile.Fill "160x160 Center" -}}
       {{- $img = $img.Filter (images.Overlay $avatar 520 440) -}}
     {{- end -}}
 
-    {{- /* Site name — top-left brand anchor */ -}}
     {{- $img = $img.Filter (images.Text $.Site.Title (dict
       "color" "#00c8ff"
       "size"  24
@@ -138,9 +201,6 @@
       "font" $boldFont
     )) -}}
 
-    {{- /* Content block — vertically centered in the card body (y≈220-420) */ -}}
-
-    {{- /* Tags joined with " | " — posts only, centered, blue */ -}}
     {{- $titleY := 230 -}}
     {{- if and .IsPage .Params.tags -}}
       {{- $tagParts := slice -}}
@@ -159,7 +219,6 @@
       {{- $titleY = 242 -}}
     {{- end -}}
 
-    {{- /* Title or tagline — split at ':' into two centered lines */ -}}
     {{- $title := printf "%s" .Title -}}
     {{- if .IsHome -}}{{- $title = "Not just good. Good enough." -}}{{- end -}}
     {{- $titleLine1 := $title -}}
@@ -196,7 +255,6 @@
       {{- $afterTitleY = add $titleY 120 -}}
     {{- end -}}
 
-    {{- /* Description — no-feature posts only, centered below title. Always shooting for 160 chars */ -}}
     {{- if .IsPage -}}
       {{- $desc := .Description | default (.Summary | plainify) -}}
       {{- $desc = printf "%s" ($desc | truncate 163 "…") -}}
