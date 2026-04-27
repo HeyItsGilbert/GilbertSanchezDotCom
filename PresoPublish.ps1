@@ -214,17 +214,14 @@ Get-ChildItem -Directory $ContentDir | ForEach-Object {
 
     if ($tempCss -and (Test-Path $tempCss)) { Remove-Item $tempCss -Force }
 
-    # Remove assets from the page bundle that would cause Hugo to time out:
-    #   - GIFs: Hugo cannot handle large animated GIFs (animation frames exhaust memory/time)
-    #   - Files over 500 KB: Hugo image processing is slow on large source files
-    # Images that survive this pass are kept so they render on the Hugo presentation page.
-    # All images are already in static/slides/ for the HTML slideshow regardless.
+    # Warn about bundle assets that may slow Hugo builds — user optimizes manually.
+    # Hugo image processing on large files (especially animated GIFs) can exhaust
+    # memory/time on Netlify. Optimize or remove flagged files before committing.
     $MaxBundleKB = 500
     Get-ChildItem $dir.FullName -File | Where-Object {
         $_.Name -notin @('index.md', 'feature.png') -and
-        ($_.Extension -eq '.gif' -or ($_.Length / 1KB) -gt $MaxBundleKB)
+        ($_.Length / 1KB) -gt $MaxBundleKB
     } | ForEach-Object {
-        Write-Host "  [trim] $($_.Name) ($([math]::Round($_.Length/1KB))KB)" -ForegroundColor DarkGray
-        Remove-Item $_.FullName -Force
+        Write-Warning "$($_.Name) is $([math]::Round($_.Length/1KB))KB — optimize before committing (threshold: ${MaxBundleKB}KB). Hugo may time out processing large bundle assets."
     }
 }
