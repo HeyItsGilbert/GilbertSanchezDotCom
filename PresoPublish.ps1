@@ -14,6 +14,12 @@ $ThemeSearchPaths = @(
     (Join-Path $RepoRoot '../summit2026')
 )
 
+# Source asset search order: directories that may contain a matching <PresentationName>/
+# subdirectory with the original slide images.
+$AssetSourcePaths = @(
+    (Join-Path $RepoRoot '../summit2026')
+)
+
 # Require global marp (faster than npx re-download each run)
 if (-not (Get-Command marp -ErrorAction SilentlyContinue)) {
     throw "marp CLI not found. Install with: npm i -g @marp-team/marp-cli"
@@ -92,6 +98,29 @@ function Copy-ThemeAssets {
     }
 }
 
+# Pull slide images into the content dir from an external source directory so
+# marp can find them via relative paths. Searches $AssetSourcePaths for a
+# subdirectory whose name matches the presentation dir (e.g. summit2026/Burnout/).
+# Skips files that are already present — re-run is safe.
+function Copy-SourceAssets {
+    param([string] $DirName, [string] $DestDir)
+    $imageExts = @('.png', '.jpg', '.jpeg', '.svg', '.gif', '.webp')
+    foreach ($base in $AssetSourcePaths) {
+        $src = Join-Path $base $DirName
+        if (Test-Path $src) {
+            Get-ChildItem $src -File | Where-Object { $_.Extension -in $imageExts } |
+                ForEach-Object {
+                    $dest = Join-Path $DestDir $_.Name
+                    if (-not (Test-Path $dest)) {
+                        Copy-Item $_.FullName $dest -Force
+                        Write-Host "  [source] $($_.Name)" -ForegroundColor DarkGray
+                    }
+                }
+            return
+        }
+    }
+}
+
 # Build a temporary CSS where every local url() reference is rewritten to an
 # absolute file:// path. Marp injects the theme as an inline <style> block in
 # the temp HTML it feeds to Chromium for PDF/PPTX export. Chromium resolves
@@ -162,6 +191,7 @@ Get-ChildItem -Directory $ContentDir | ForEach-Object {
 
     Write-Host "Building: $baseName" -ForegroundColor Cyan
 
+    Copy-SourceAssets -DirName $dir.BaseName -DestDir $dir.FullName
     Copy-DeckAssets  -MarkdownPath $markdown.FullName -OutputDir $SlidesDir
     if ($css) { Copy-ThemeAssets -CssPath $css -OutputDir $SlidesDir }
 
@@ -183,4 +213,18 @@ Get-ChildItem -Directory $ContentDir | ForEach-Object {
         --image png -o (Join-Path $dir.FullName 'feature.png')
 
     if ($tempCss -and (Test-Path $tempCss)) { Remove-Item $tempCss -Force }
+
+    # Remove assets from the page bundle that would cause Hugo to time out:
+    #   - GIFs: Hugo cannot handle large animated GIFs (animation frames exhaust memory/time)
+    #   - Files over 500 KB: Hugo image processing is slow on large source files
+    # Images that survive this pass are kept so they render on the Hugo presentation page.
+    # All images are already in static/slides/ for the HTML slideshow regardless.
+    $MaxBundleKB = 500
+    Get-ChildItem $dir.FullName -File | Where-Object {
+        $_.Name -notin @('index.md', 'feature.png') -and
+        ($_.Extension -eq '.gif' -or ($_.Length / 1KB) -gt $MaxBundleKB)
+    } | ForEach-Object {
+        Write-Host "  [trim] $($_.Name) ($([math]::Round($_.Length/1KB))KB)" -ForegroundColor DarkGray
+        Remove-Item $_.FullName -Force
+    }
 }
