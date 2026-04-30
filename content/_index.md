@@ -10,17 +10,7 @@ Engineer. Team lead. Open source maintainer. I build systems that automate
 the hard stuff, lead with honesty, and communicate the same way I code:
 clearly, efficiently, and without unnecessary noise.
 
-I've created this blog as a way to help share some of my discoveries. I'm a
-believer in Learning in Public and these posts are more polished compared 
-to the notes in my [Digital Garden](https://garden.gilbertsanchez.com/).
-
-Nothing I write is "The Way" but rather "A Way". Have a different approach?
-Tell me all about it!
-
-I work as a Staff Software Development Engineer, formerly known as
-the Señor Systems Engineer at Meta. I enjoy spreading the love of
-PowerShell at scale. A fan of Role Playing Games (TTRPG), you can check out my
-RPG-oriented modules on the PowerShell Gallery.
+These posts are the polished stuff -- ideas I've worked through enough to be useful to someone else. The rough thinking, half-baked ideas, and works-in-progress live in my [Digital Garden](https://garden.gilbertsanchez.com/). Am I wrong? Tell me about it! Feedback is a gift.
 
 {{< alert "lightbulb" >}}
 Perfectionism is procrastination masquerading as quality-control. - Chris Williamson
