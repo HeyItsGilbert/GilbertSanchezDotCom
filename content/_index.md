@@ -11,5 +11,3 @@ the hard stuff, lead with honesty, and communicate the same way I code:
 clearly, efficiently, and without unnecessary noise.
 
 These posts are the polished stuff -- ideas I've worked through enough to be useful to someone else. The rough thinking, half-baked ideas, and works-in-progress live in my [Digital Garden](https://garden.gilbertsanchez.com/).
-
-Am I wrong? Tell me about it! Feedback is a gift.
