@@ -38,11 +38,15 @@ for every decision, every context switch, every review pass. You have a finite
 cognitive budget every day, and you're spending it whether the work feels hard
 or not.
 
+{{< youtubeLite id="t0qq9R__XiQ" label="Your Brain Wasn't Built to Hold This Much Information" >}}
+
 A [*Harvard Business Review* study](https://www.youtube.com/shorts/l_T__d6ACGs)
 confirmed what a lot of people already felt but couldn't name: AI-assisted work
 produces a specific kind of exhaustion. Not from deep focus, but from
 throughput. You moved fast, you produced a lot, and somehow you're more depleted
 than before. What's new? Context switching.
+
+{{< youtubeLite id="l_T__d6ACGs" label="AI causes Brain Fry" >}}
 
 ## All about context
 
@@ -75,6 +79,8 @@ corroborates that. It happened with email and smartphones. AI is just faster,
 and the extraction is harder to see. It's also slightly insidious because it
 "feels easy," and you could see how some would argue that it shouldn't change
 compensation.
+
+{{< youtubeLite id="aFsAOu2bgFk" label="From IDEs to AI Agents" >}}
 
 So is the vampire the LLM, or is it the business that keeps pushing you to your
 physical limits? Either way, the vampire won't kill you… It keeps you just alive
@@ -113,10 +119,17 @@ and built an "agent-deck"-like feature. It adds a silent visual indicator at the
 top of my screen that shows agent status without interrupting me. No pop-ups, no
 sounds, no unwanted context switching. Just queued, on my terms.
 
-{{< gallery >}}
-  <img src="zebar-agent-deck-queued.png" alt="The ZeBar agent-deck indicator showing queued agent status" class="grid-w50" />
-  <img src="zebar-agent-deck-active.png" alt="The ZeBar agent-deck indicator in a different agent state" class="grid-w50" />
-{{< /gallery >}}
+{{< figure
+    src="zebar-agent-deck-queued.png"
+    alt="The ZeBar agent-deck indicator showing queued agent status"
+    caption="Agents queued in the top bar -- a silent indicator, no pop-up demanding attention."
+    >}}
+
+{{< figure
+    src="zebar-agent-deck-active.png"
+    alt="The ZeBar agent-deck indicator in a different agent state"
+    caption="The same bar when an agent is waiting on me. I look when I'm ready."
+    >}}
 
 The reason: notifications designed to interrupt get addressed immediately, even
 when that's not what the moment calls for. That's an ADHD panic response
