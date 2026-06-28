@@ -7,6 +7,9 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.147.1"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+# Blowfish ships a demo Firebase API key in themes/blowfish/exampleSite.
+# It never reaches the published site, so exclude it from secrets scanning.
+SECRETS_SCAN_OMIT_PATHS = "themes/blowfish/exampleSite/**"
 
 # This will be your preview build
 [context.deploy-preview]
