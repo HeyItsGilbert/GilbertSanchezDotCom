@@ -116,8 +116,8 @@ sounds, no unwanted context switching. Just queued, on my terms.
 {{< github repo="heyItsGilbert/quiet-velvet" showThumbnail=true >}}
 
 {{< gallery >}}
-  <img src="Screenshot 2026-06-28 112650.png" alt="The ZeBar agent-deck indicator showing queued agent status" class="grid-w50" />
-  <img src="Screenshot 2026-06-28 112657.png" alt="The ZeBar agent-deck indicator in a different agent state" class="grid-w50" />
+  <img src="zebar-agent-deck-queued.png" alt="The ZeBar agent-deck indicator showing queued agent status" class="grid-w50" />
+  <img src="zebar-agent-deck-active.png" alt="The ZeBar agent-deck indicator in a different agent state" class="grid-w50" />
 {{< /gallery >}}
 
 The reason: notifications designed to interrupt get addressed immediately, even
