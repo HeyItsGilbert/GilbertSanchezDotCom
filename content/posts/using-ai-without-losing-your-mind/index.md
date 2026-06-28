@@ -38,7 +38,7 @@ for every decision, every context switch, every review pass. You have a finite
 cognitive budget every day, and you're spending it whether the work feels hard
 or not.
 
-{{< youtubeLite id="t0qq9R__XiQ" label="Your Brain Wasn't Built to Hold This Much Information" >}}
+{{< youtubeLite id="t0qq9R__XiQ" label="Your Brain Wasn't Built to Hold This Much Information" params="start=90" >}}
 
 A [*Harvard Business Review* study](https://www.youtube.com/shorts/l_T__d6ACGs)
 confirmed what a lot of people already felt but couldn't name: AI-assisted work
