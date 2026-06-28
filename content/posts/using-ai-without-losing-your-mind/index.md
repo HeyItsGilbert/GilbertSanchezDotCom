@@ -2,11 +2,11 @@
 title: Using AI Without Losing Your Mind
 date: 2026-06-28T11:00:00-07:00
 description: "AI lets you ship faster, but the throughput has a hidden cost: cognitive exhaustion. Here's how I run agents without burning out."
-summary: "Everyone talks about what AI can do. Nobody talks about what it costs you. A practical look at context switching, the vampiric effect, and how I keep agents on my terms."
+summary: Everyone talks about what AI can do. Nobody talks about what it costs you. A practical look at context switching, the vampiric effect, and how I keep agents on my terms.
 showReadingTime: true
 draft: false
 preview: feature.webp
-lastmod: 2026-06-28T17:57:17.810Z
+lastmod: 2026-06-28T18:28:00.041Z
 slug: using-ai-without-losing-your-mind
 tags:
   - AI
@@ -33,14 +33,16 @@ are tired. What the hell is going on?
 ## The biological case for slowing down
 
 Richard Cytowic makes this plain in [*Your Brain Wasn't Built to Hold This Much
-Information*](https://www.youtube.com/watch?v=t0qq9R__XiQ): your brain burns ATP for every decision, every context switch,
-every review pass. You have a finite cognitive budget every day, and you're
-spending it whether the work feels hard or not.
+Information*](https://www.youtube.com/watch?v=t0qq9R__XiQ): your brain burns ATP
+for every decision, every context switch, every review pass. You have a finite
+cognitive budget every day, and you're spending it whether the work feels hard
+or not.
 
-A [*Harvard Business Review* study](https://www.youtube.com/shorts/l_T__d6ACGs) confirmed what a lot of people already felt but
-couldn't name: AI-assisted work produces a specific kind of exhaustion. Not from
-deep focus, but from throughput. You moved fast, you produced a lot, and somehow
-you're more depleted than before. What's new? Context switching.
+A [*Harvard Business Review* study](https://www.youtube.com/shorts/l_T__d6ACGs)
+confirmed what a lot of people already felt but couldn't name: AI-assisted work
+produces a specific kind of exhaustion. Not from deep focus, but from
+throughput. You moved fast, you produced a lot, and somehow you're more depleted
+than before. What's new? Context switching.
 
 ## All about context
 
@@ -62,15 +64,17 @@ these pop-ups aren't that.
 
 ## The systemic trap: The vampiric effect
 
-Steve Yegge named this in [*From IDEs to AI Agents*](https://www.youtube.com/watch?v=aFsAOu2bgFk) as the Vampiric Effect: the
-cognitive overload you start to experience as you try to keep these agents
-running. There's another concerning aspect -- companies absorb every productivity
-gain you produce, and that isn't always reflected back on you. The baseline just
-moves up. You're not 3x more productive and compensated accordingly -- you're just
-expected to produce 3x now. The HBR study corroborates that. It happened with
-email and smartphones. AI is just faster, and the extraction is harder to see.
-It's also slightly insidious because it "feels easy," and you could see how some
-would argue that it shouldn't change compensation.
+Steve Yegge named this in [*From IDEs to AI
+Agents*](https://www.youtube.com/watch?v=aFsAOu2bgFk) as the Vampiric Effect:
+the cognitive overload you start to experience as you try to keep these agents
+running. There's another concerning aspect -- companies absorb every
+productivity gain you produce, and that isn't always reflected back on you. The
+baseline just moves up. You're not 3x more productive and compensated
+accordingly -- you're just expected to produce 3x now. The HBR study
+corroborates that. It happened with email and smartphones. AI is just faster,
+and the extraction is harder to see. It's also slightly insidious because it
+"feels easy," and you could see how some would argue that it shouldn't change
+compensation.
 
 So is the vampire the LLM, or is it the business that keeps pushing you to your
 physical limits? Either way, the vampire won't kill you… It keeps you just alive
@@ -94,8 +98,9 @@ The people who get wrecked by this are the ones who think AI agents are like
 background processes. They're not. They require steering, review, judgment calls,
 and escalation handling. That's real cognitive work.
 
-> If you don't design around it, the agents run you instead of the other way
-> around.
+{{< lead >}}
+If you don't design around it, the agents run you instead of the other way around.
+{{< /lead >}}
 
 ## What I actually do
 
@@ -107,6 +112,8 @@ my current [ZeBar](https://github.com/heyItsGilbert/quiet-velvet) theme of choic
 and built an "agent-deck"-like feature. It adds a silent visual indicator at the
 top of my screen that shows agent status without interrupting me. No pop-ups, no
 sounds, no unwanted context switching. Just queued, on my terms.
+
+![alt text](<Screenshot 2026-06-28 112650.png>) ![alt text](<Screenshot 2026-06-28 112657.png>)
 
 The reason: notifications designed to interrupt get addressed immediately, even
 when that's not what the moment calls for. That's an ADHD panic response
