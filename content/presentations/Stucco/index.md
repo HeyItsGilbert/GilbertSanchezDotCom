@@ -6,7 +6,7 @@ description: In this presentation I go over how to start using Stucco. If you fo
 lastmod: 2025-11-27T17:00:33.947Z
 tags: []
 type: presentations
-preview: feature.webp
+preview: feature.png
 slideshow: /slides/Stucco.html
 marp: true
 theme: uncover

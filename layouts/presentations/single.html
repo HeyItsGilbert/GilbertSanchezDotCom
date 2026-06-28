@@ -64,17 +64,14 @@
 
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
 
-    {{ if or (and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-    .TableOfContents "<ul")) (.Site.Params.article.showRelatedPosts | default false) }} <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
-      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky {{ if hasPrefix .Site.Params.header.layout " fixed" -}}
-        lg:top-[140px]{{ else }}lg:top-10{{ end }}">
-
-        {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-        .TableOfContents "<ul") }} {{ partial "toc.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
-          default false }} sd {{ end }} </div>
+    {{ if and (.Params.showTableOfContents | default false) (in .TableOfContents "<ul") }}
+      <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+        <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky {{ if hasPrefix .Site.Params.header.layout " fixed" -}}
+          lg:top-[140px]{{ else }}lg:top-10{{ end }}">
+          {{ partial "toc.html" . }}
+        </div>
       </div>
-      {{ end }}
+    {{ end }}
 
       <div class="min-w-0 min-h-0 max-w-fit">
 
@@ -88,11 +85,6 @@
           </div>
           {{ end }}
 
-          {{ if .Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false) }}
-          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
-            {{ partial "toc.html" . }}
-          </div>
-          {{ end }}
           {{ .Content }}
           {{ $defaultReplyByEmail := .Site.Params.replyByEmail }}
           {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
