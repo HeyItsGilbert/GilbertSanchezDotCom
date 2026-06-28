@@ -245,14 +245,265 @@
     }
   ],
   "frontMatter.content.snippets": {
-    "Call Out": {
-      "description": "Create a call out box",
+    "Alert": {
+      "description": "Stylized message box to draw attention to important information.",
       "body": [
-        "{{< alert \"twitter\" >}}",
-        "Don't forget to [follow me](https://twitter.com/jpanther) on Twitter.",
+        "{{< alert icon=\"[[icon]]\" >}}",
+        "Your message here.",
         "{{< /alert >}}"
       ],
+      "fields": [
+        { "name": "icon", "title": "Icon", "type": "string", "default": "triangle-exclamation" }
+      ]
+    },
+    "Article": {
+      "description": "Embed a single article inline by its relative permalink.",
+      "body": "{{< article link=\"[[link]]\" showSummary=true >}}",
+      "fields": [
+        { "name": "link", "title": "Article link", "type": "string", "default": "/posts/" }
+      ]
+    },
+    "Badge": {
+      "description": "Styled badge for displaying small bits of metadata.",
+      "body": [
+        "{{< badge >}}",
+        "New article!",
+        "{{< /badge >}}"
+      ],
       "fields": []
+    },
+    "Button": {
+      "description": "Styled button linking to an internal page or external URL.",
+      "body": [
+        "{{< button href=\"[[href]]\" target=\"_blank\" >}}",
+        "[[label]]",
+        "{{< /button >}}"
+      ],
+      "fields": [
+        { "name": "href", "title": "Link URL", "type": "string", "default": "https://" },
+        { "name": "label", "title": "Button text", "type": "string", "default": "Click here" }
+      ]
+    },
+    "Carousel": {
+      "description": "Interactive image carousel from a glob of images.",
+      "body": "{{< carousel images=\"[[images]]\" aspectRatio=\"16-9\" interval=\"2500\" >}}",
+      "fields": [
+        { "name": "images", "title": "Images glob", "type": "string", "default": "gallery/*" }
+      ]
+    },
+    "Chart": {
+      "description": "Render a chart with Chart.js.",
+      "body": [
+        "{{< chart >}}",
+        "type: 'bar',",
+        "data: {",
+        "  labels: ['A', 'B', 'C'],",
+        "  datasets: [{ label: 'Votes', data: [12, 19, 3] }]",
+        "}",
+        "{{< /chart >}}"
+      ],
+      "fields": []
+    },
+    "Codeberg Card": {
+      "description": "Card linking a Codeberg repository with live stats.",
+      "body": "{{< codeberg repo=\"[[repo]]\" >}}",
+      "fields": [
+        { "name": "repo", "title": "Repository (owner/repo)", "type": "string", "default": "owner/repo" }
+      ]
+    },
+    "Code Importer": {
+      "description": "Import and display code from an external URL.",
+      "body": "{{< codeimporter url=\"[[url]]\" type=\"[[type]]\" >}}",
+      "fields": [
+        { "name": "url", "title": "Raw code URL", "type": "string", "default": "https://" },
+        { "name": "type", "title": "Language", "type": "string", "default": "go" }
+      ]
+    },
+    "Forgejo Card": {
+      "description": "Card linking a Forgejo repository with live stats.",
+      "body": "{{< forgejo server=\"[[server]]\" repo=\"[[repo]]\" >}}",
+      "fields": [
+        { "name": "server", "title": "Server URL", "type": "string", "default": "https://" },
+        { "name": "repo", "title": "Repository (owner/repo)", "type": "string", "default": "owner/repo" }
+      ]
+    },
+    "Gallery": {
+      "description": "Responsive image grid using img tags with grid-w classes.",
+      "body": [
+        "{{< gallery >}}",
+        "  <img src=\"gallery/01.jpg\" class=\"grid-w33\" />",
+        "  <img src=\"gallery/02.jpg\" class=\"grid-w33\" />",
+        "  <img src=\"gallery/03.jpg\" class=\"grid-w33\" />",
+        "{{< /gallery >}}"
+      ],
+      "fields": []
+    },
+    "Gist": {
+      "description": "Embed a GitHub Gist.",
+      "body": "{{< gist \"[[user]]\" \"[[id]]\" >}}",
+      "fields": [
+        { "name": "user", "title": "GitHub username", "type": "string", "default": "octocat" },
+        { "name": "id", "title": "Gist ID", "type": "string", "default": "" }
+      ]
+    },
+    "Gitea Card": {
+      "description": "Card linking a Gitea repository with live stats.",
+      "body": "{{< gitea server=\"[[server]]\" repo=\"[[repo]]\" >}}",
+      "fields": [
+        { "name": "server", "title": "Server URL", "type": "string", "default": "https://" },
+        { "name": "repo", "title": "Repository (owner/repo)", "type": "string", "default": "owner/repo" }
+      ]
+    },
+    "GitHub Card": {
+      "description": "Card linking a GitHub repository with live stats.",
+      "body": "{{< github repo=\"[[repo]]\" showThumbnail=true >}}",
+      "fields": [
+        { "name": "repo", "title": "Repository (owner/repo)", "type": "string", "default": "owner/repo" }
+      ]
+    },
+    "GitLab Card": {
+      "description": "Card linking a GitLab project by numeric project ID.",
+      "body": "{{< gitlab projectID=\"[[projectID]]\" >}}",
+      "fields": [
+        { "name": "projectID", "title": "Project ID", "type": "string", "default": "" }
+      ]
+    },
+    "Hugging Face Card": {
+      "description": "Card linking a Hugging Face model or dataset.",
+      "body": "{{< huggingface model=\"[[model]]\" >}}",
+      "fields": [
+        { "name": "model", "title": "Model (owner/model)", "type": "string", "default": "owner/model" }
+      ]
+    },
+    "Instagram": {
+      "description": "Embed an Instagram post by its short code (custom shortcode).",
+      "body": "{{< instagram \"[[postID]]\" >}}",
+      "fields": [
+        { "name": "postID", "title": "Post short code", "type": "string", "default": "" }
+      ]
+    },
+    "KaTeX": {
+      "description": "Render math expressions with KaTeX.",
+      "body": [
+        "{{< katex >}}",
+        "\\(f(a,b,c) = (a^2+b^2+c^2)^3\\)",
+        "{{< /katex >}}"
+      ],
+      "fields": []
+    },
+    "Keyword List": {
+      "description": "Highlight a set of keywords or skills.",
+      "body": [
+        "{{< keywordList >}}",
+        "{{< keyword icon=\"github\" >}}GitHub{{< /keyword >}}",
+        "{{< /keywordList >}}"
+      ],
+      "fields": []
+    },
+    "Lead": {
+      "description": "Emphasize an article's introductory paragraph.",
+      "body": [
+        "{{< lead >}}",
+        "Your introductory sentence.",
+        "{{< /lead >}}"
+      ],
+      "fields": []
+    },
+    "List": {
+      "description": "List recent articles, optionally filtered, with a card view.",
+      "body": "{{< list title=\"[[title]]\" cardView=true limit=6 >}}",
+      "fields": [
+        { "name": "title", "title": "List title", "type": "string", "default": "Recent" }
+      ]
+    },
+    "LTR": {
+      "description": "Wrap left-to-right content (use inside RTL contexts).",
+      "body": [
+        "{{% ltr %}}",
+        "Left-to-right content.",
+        "{{% /ltr %}}"
+      ],
+      "fields": []
+    },
+    "Markdown Importer": {
+      "description": "Import and render a Markdown file from an external URL.",
+      "body": "{{< mdimporter url=\"[[url]]\" >}}",
+      "fields": [
+        { "name": "url", "title": "Raw Markdown URL", "type": "string", "default": "https://" }
+      ]
+    },
+    "Mermaid": {
+      "description": "Draw diagrams with Mermaid syntax.",
+      "body": [
+        "{{< mermaid >}}",
+        "graph LR;",
+        "A[Start] --> B[End];",
+        "{{< /mermaid >}}"
+      ],
+      "fields": []
+    },
+    "RTL": {
+      "description": "Wrap right-to-left content.",
+      "body": [
+        "{{% rtl %}}",
+        "محتوى من اليمين إلى اليسار",
+        "{{% /rtl %}}"
+      ],
+      "fields": []
+    },
+    "Screenshot": {
+      "description": "Display a page-resource image at half its intrinsic size with a caption.",
+      "body": "{{< screenshot src=\"[[src]]\" alt=\"[[alt]]\" caption=\"[[caption]]\" >}}",
+      "fields": [
+        { "name": "src", "title": "Image filename", "type": "string", "default": "" },
+        { "name": "alt", "title": "Alt text", "type": "string", "default": "" },
+        { "name": "caption", "title": "Caption", "type": "string", "default": "" }
+      ]
+    },
+    "Slideshow": {
+      "description": "Embed an HTML slideshow in an iframe (custom shortcode).",
+      "body": "{{< slideshow \"[[url]]\" >}}",
+      "fields": [
+        { "name": "url", "title": "Slideshow URL", "type": "string", "default": "/slides/name.html" }
+      ]
+    },
+    "Swatches": {
+      "description": "Show a palette of up to three color swatches.",
+      "body": "{{< swatches \"[[color1]]\" \"[[color2]]\" \"[[color3]]\" >}}",
+      "fields": [
+        { "name": "color1", "title": "Color 1", "type": "string", "default": "#64748b" },
+        { "name": "color2", "title": "Color 2", "type": "string", "default": "#3b82f6" },
+        { "name": "color3", "title": "Color 3", "type": "string", "default": "#06b6d4" }
+      ]
+    },
+    "Timeline": {
+      "description": "Visual timeline of milestones using timelineItem entries.",
+      "body": [
+        "{{< timeline >}}",
+        "{{< timelineItem icon=\"github\" header=\"Header\" badge=\"2026\" subheader=\"Subtitle\" >}}",
+        "Content here.",
+        "{{< /timelineItem >}}",
+        "{{< /timeline >}}"
+      ],
+      "fields": []
+    },
+    "TypeIt": {
+      "description": "Typewriter text effect with TypeIt.",
+      "body": [
+        "{{< typeit tag=\"h3\" speed=50 breakLines=false loop=true >}}",
+        "First line",
+        "Second line",
+        "{{< /typeit >}}"
+      ],
+      "fields": []
+    },
+    "YouTube Lite": {
+      "description": "Lightweight YouTube embed.",
+      "body": "{{< youtubeLite id=\"[[id]]\" label=\"[[label]]\" >}}",
+      "fields": [
+        { "name": "id", "title": "Video ID", "type": "string", "default": "" },
+        { "name": "label", "title": "Label", "type": "string", "default": "" }
+      ]
     },
     "Figure": {
       "description": "",
