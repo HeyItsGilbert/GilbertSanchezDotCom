@@ -80,7 +80,7 @@ and the extraction is harder to see. It's also slightly insidious because it
 "feels easy," and you could see how some would argue that it shouldn't change
 compensation.
 
-{{< youtubeLite id="aFsAOu2bgFk" label="From IDEs to AI Agents" >}}
+{{< youtubeLite id="aFsAOu2bgFk" label="From IDEs to AI Agents" params="start=70" >}}
 
 So is the vampire the LLM, or is it the business that keeps pushing you to your
 physical limits? Either way, the vampire won't kill you… It keeps you just alive
