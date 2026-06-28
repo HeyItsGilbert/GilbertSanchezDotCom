@@ -113,7 +113,12 @@ and built an "agent-deck"-like feature. It adds a silent visual indicator at the
 top of my screen that shows agent status without interrupting me. No pop-ups, no
 sounds, no unwanted context switching. Just queued, on my terms.
 
-![alt text](<Screenshot 2026-06-28 112650.png>) ![alt text](<Screenshot 2026-06-28 112657.png>)
+{{< github repo="heyItsGilbert/quiet-velvet" showThumbnail=true >}}
+
+{{< gallery >}}
+  <img src="Screenshot 2026-06-28 112650.png" alt="The ZeBar agent-deck indicator showing queued agent status" class="grid-w50" />
+  <img src="Screenshot 2026-06-28 112657.png" alt="The ZeBar agent-deck indicator in a different agent state" class="grid-w50" />
+{{< /gallery >}}
 
 The reason: notifications designed to interrupt get addressed immediately, even
 when that's not what the moment calls for. That's an ADHD panic response
