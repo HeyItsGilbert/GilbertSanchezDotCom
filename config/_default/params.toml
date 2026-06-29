@@ -9,6 +9,7 @@ disableTextInHeader = false
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
 defaultBackgroundImage = "joey-kyber-Mg2iKRWpiCk-unsplash.webp"
+mainSections = ["posts"]
 
 [header]
 layout = "basic"

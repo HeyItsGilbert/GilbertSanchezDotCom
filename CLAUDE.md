@@ -38,7 +38,7 @@ Site URL: https://gilbertsanchez.com/
 │       └── params.toml  # Production-only settings (Umami analytics)
 ├── content/
 │   ├── posts/           # Blog posts (~29 entries), each in its own directory
-│   ├── projects/        # Project pages (7 entries)
+│   ├── projects/        # Project pages (27 entries, external-link cards)
 │   ├── presentations/   # Presentations (index.md + feature.png only — no source images)
 │   └── series/          # Series taxonomy landing page
 ├── layouts/
@@ -91,6 +91,18 @@ hugo new posts/my-new-post/index.md
 **Content front matter** typically includes: `title`, `date`, `draft`, `tags`, `series`, `description`, `summary`, and a hero/feature image reference.
 
 **Image format:** Use WebP for all images. Place post-specific images alongside `index.md` in the post directory. Shared images go in `assets/images/YYYY/MM/`.
+
+### Projects
+
+Project entries live in `content/projects/<RepoName>/index.md` and render as
+**external-link cards** — `_build.render: "false"` plus `externalUrl` point the card
+straight at the repo on GitHub (no standalone page). Each entry carries a
+`feature.webp` (1200×675, dark flat-vector emblem, color-coded by category).
+
+To bulk-add or refresh entries from a GitHub account, run the `/add-github-projects`
+slash command (`.claude/commands/add-github-projects.md`): it fetches non-fork repos,
+dedupes against existing entries by `externalUrl`, writes the frontmatter, and
+generates the feature images.
 
 ### Presentations
 
