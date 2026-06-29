@@ -143,9 +143,6 @@
   {{/* Social */}}
   {{- partial "opengraph.html" . -}}
 
-  {{/* Schema */}}
-  {{ partial "schema.html" . }}
-
   {{/* Me */}}
   {{ with .Site.Params.Author.name }}
     <meta name="author" content="{{ . }}">

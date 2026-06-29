@@ -11,8 +11,16 @@
 {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "{{ .Site.BaseURL }}",
     "name": "{{ .Site.Title | plainify | safeJS }}",
-    "url": "{{ .Site.BaseURL }}"
+    {{- with .Site.LanguageCode }}
+    "inLanguage": "{{ . }}",
+    {{- end }}
+    "url": "{{ .Site.BaseURL }}",
+    "publisher": {
+        "@type": "Person",
+        "name": "{{ $authorName | safeJS }}"
+    }
 }
 </script>
 {{- end }}
@@ -64,6 +72,9 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    {{- with .Site.LanguageCode }}
+    "inLanguage": "{{ . }}",
+    {{- end }}
     "headline": "{{ .Title | plainify | safeJS }}",
     "description": "{{ with .Description }}{{ . | plainify | safeJS }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 | safeJS }}{{ end }}{{ end }}",
     "wordCount": {{ .WordCount }},
@@ -73,6 +84,10 @@
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
     "url": "{{ .Permalink }}",
+    "mainEntityOfPage": "{{ .Permalink }}",
+    {{- with .Params.tags }}
+    "keywords": "{{ delimit . ", " | safeJS }}",
+    {{- end }}
     "image": [{{ range $i, $url := $imageUrls }}{{ if $i }}, {{ end }}"{{ $url | safeJS }}"{{ end }}],
     "author": [{
         "@type": "Person",
