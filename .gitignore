@@ -1,10 +1,9 @@
 .hugo_build.lock
-.DS_Store
 resources/_gen
-yarn-error.log
 node_modules
 public/
 bin/
+.unlighthouse/
 
 # Credentials (NEVER commit these)
 .env
@@ -20,4 +19,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
-.unlighthouse/
+
+# Front Matter CMS local caches (user-keyed, regenerated; taxonomyDb is kept)
+.frontmatter/database/mediaDb.json
+.frontmatter/database/pinnedItemsDb.json
