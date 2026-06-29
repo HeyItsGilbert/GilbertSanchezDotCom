@@ -82,3 +82,20 @@
 }
 </script>
 {{- end }}
+
+{{- /* ItemList of external open-source projects on the projects section page */ -}}
+{{- if and (eq .Kind "section") (eq .Section "projects") }}
+{{- $author := dict "@type" "Person" "name" $authorName "url" .Site.BaseURL }}
+{{- $elements := slice }}
+{{- $projects := where .RegularPages "Params.externalUrl" "!=" "" }}
+{{- range $i, $p := $projects }}
+{{- $code := dict "@type" "SoftwareSourceCode" "name" ($p.Title | plainify) "url" $p.Params.externalUrl "codeRepository" $p.Params.externalUrl "author" $author }}
+{{- with $p.Params.summary }}{{ $code = merge $code (dict "description" (. | plainify)) }}{{ end }}
+{{- with $p.Params.tags }}{{ $code = merge $code (dict "keywords" (delimit . ", ")) }}{{ end }}
+{{- $elements = $elements | append (dict "@type" "ListItem" "position" (add $i 1) "item" $code) }}
+{{- end }}
+{{- $ld := dict "@context" "https://schema.org" "@type" "CollectionPage" "name" (.Title | plainify) "url" .Permalink "mainEntity" (dict "@type" "ItemList" "numberOfItems" (len $elements) "itemListElement" $elements) }}
+<script type="application/ld+json">
+{{ jsonify $ld | safeJS }}
+</script>
+{{- end }}
