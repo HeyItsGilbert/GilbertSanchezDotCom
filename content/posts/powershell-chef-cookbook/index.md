@@ -4,7 +4,7 @@ date: 2023-10-16T00:15:08.921Z
 description: Manage PowerShell at enterprise scale with Meta's Chef cookbook. Learn system profile management, module deployment, telemetry control, and enterprise configuration automation.
 summary: Manage PowerShell at enterprise scale with Meta's Chef cookbook. Learn system profile management, module deployment, telemetry control, and enterprise configuration automation.
 draft: false
-lastmod: 2025-11-27T16:42:59.576Z
+lastmod: 2025-11-28T23:01:12.495Z
 slug: powershell-chef-cookbook
 tags:
   - Chef
@@ -39,7 +39,7 @@ Some highlights:
 ### System Profiles
 
 I'll spare you the long explanation of API Chef cookbooks
-([learn more](https://github.com/facebook/chef-cookbooks)), but the short
+(see [Facebook Chef Cookbooks](https://github.com/facebook/chef-cookbooks)), but the short
 version is that you can include an API cookbook, and it won't do anything until
 you set the appropriate attributes. All default settings are considered safe and
 sane. Here is an example of how you would configure the `fb_powershell` cookbook
