@@ -55,6 +55,9 @@ safe-outputs:
             script: |
               const fs = require('fs');
               const path = require('path');
+              const { reportAlreadyExists, writeReport, monthFromFilename } = await import(
+                path.join(process.env.GITHUB_WORKSPACE, 'seo-metrics/scripts/publish-report.mjs')
+              );
               const outputFile = process.env.GH_AW_AGENT_OUTPUT;
               if (!outputFile) {
                 core.setFailed('No GH_AW_AGENT_OUTPUT environment variable found');
@@ -66,10 +69,15 @@ safe-outputs:
                 core.setFailed('No publish_report item found in agent output');
                 return;
               }
-              const dir = 'seo-metrics/reports';
-              fs.mkdirSync(dir, { recursive: true });
-              const filePath = path.join(dir, item.filename);
-              fs.writeFileSync(filePath, item.content, 'utf8');
+              const reportsDir = 'seo-metrics/reports';
+              const month = monthFromFilename(item.filename);
+              if (reportAlreadyExists(reportsDir, month)) {
+                core.setFailed(
+                  `A report for ${month} already exists in ${reportsDir}; refusing to overwrite (expected filename: ${item.filename}).`
+                );
+                return;
+              }
+              const filePath = writeReport(reportsDir, item.filename, item.content);
               core.setOutput('file_path', filePath);
               core.setOutput('summary', item.summary);
 
@@ -87,7 +95,7 @@ safe-outputs:
               git push
             fi
 
-        - name: Notify Discord
+        - name: Notify Discord of success
           env:
             DISCORD_WEBHOOK: ${{ secrets.SEO_DISCORD_WEBHOOK }}
             FILE_PATH: ${{ steps.write_report.outputs.file_path }}
@@ -103,6 +111,22 @@ safe-outputs:
             PAYLOAD=$(jq -n --arg content "📊 **Monthly SEO report published**
             ${SUMMARY}
             ${FILE_URL}" '{content: $content}')
+            curl -sf -X POST "$DISCORD_WEBHOOK" -H 'Content-Type: application/json' -d "$PAYLOAD"
+
+        - name: Notify Discord of failure
+          if: failure()
+          env:
+            DISCORD_WEBHOOK: ${{ secrets.SEO_DISCORD_WEBHOOK }}
+            REPO: ${{ github.repository }}
+            RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          run: |
+            if [ -z "$DISCORD_WEBHOOK" ]; then
+              echo "SEO_DISCORD_WEBHOOK secret not configured, skipping failure notification"
+              exit 0
+            fi
+            PAYLOAD=$(jq -n --arg content "🚨 **SEO report publish failed**
+            ${REPO}
+            ${RUN_URL}" '{content: $content}')
             curl -sf -X POST "$DISCORD_WEBHOOK" -H 'Content-Type: application/json' -d "$PAYLOAD"
 
 ---
@@ -265,4 +289,5 @@ If data files are missing or incomplete:
 
 - Run `gh aw compile` to generate the GitHub Actions workflow
 - See https://github.github.com/gh-aw/ for complete configuration options and tools documentation
-- The `publish-report` job requires a `SEO_DISCORD_WEBHOOK` repository secret pointing at a Discord incoming webhook URL; if it's unset, the report still commits but the Discord notification step is skipped
+- The `publish-report` job requires a `SEO_DISCORD_WEBHOOK` repository secret pointing at a Discord incoming webhook URL; it's used for both the success notification and, if the job fails (e.g. a report for the month already exists), a failure notification — if the secret is unset, the report still commits (or the job still fails) but the Discord notification step is skipped
+- The job refuses to run (via `core.setFailed`, no write/commit/push) if `seo-metrics/reports/SEO-REVIEW-<month>.md` already exists for the month being analyzed, closing the gap that produced duplicate "SEO Review" issues; see `seo-metrics/scripts/publish-report.mjs` for the extracted, unit-tested logic

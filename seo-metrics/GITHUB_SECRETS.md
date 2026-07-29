@@ -12,7 +12,7 @@ Add these secrets:
 | `BING_SITE_URL` | `https://gilbertsanchez.com/` | Must match verified site |
 | `UMAMI_API_KEY` | Your Umami API key | From Umami Cloud settings |
 | `UMAMI_WEBSITE_ID` | Your website ID | UUID from dashboard URL |
-| `SEO_DISCORD_WEBHOOK` | Discord incoming webhook URL | Used by the `SEOReport` workflow to notify when a new monthly report is committed. Optional — if unset, the report still commits, notification is skipped. |
+| `SEO_DISCORD_WEBHOOK` | Discord incoming webhook URL | Used by the `SEOReport` workflow to notify on success when a new monthly report is committed, and on failure (e.g. a stale-month refusal because a report already exists) so a broken run doesn't go unnoticed. Also used by the `Monthly SEO Metrics` collection workflow to notify when a monthly fetch fails output verification (missing or empty source file) before the job fails. Optional — if unset, the report/fetch still runs (commits or fails as it would anyway) but the Discord notification is skipped. |
 
 ## Testing Locally
 
