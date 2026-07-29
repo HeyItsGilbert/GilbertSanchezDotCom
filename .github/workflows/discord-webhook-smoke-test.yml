@@ -1,0 +1,19 @@
+name: Discord Webhook Smoke Test (one-off)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post test message to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.SEO_DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "SEO_DISCORD_WEBHOOK secret not configured"
+            exit 1
+          fi
+          PAYLOAD=$(jq -n '{content: "🔧 SEO_DISCORD_WEBHOOK smoke test — if you see this, the secret is wired correctly. Safe to ignore."}')
+          curl -sf -X POST "$DISCORD_WEBHOOK" -H 'Content-Type: application/json' -d "$PAYLOAD"
