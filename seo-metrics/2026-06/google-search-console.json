@@ -1,0 +1,1636 @@
+{
+  "fetched_at": "2026-07-29T23:02:45.329302",
+  "site_url": "sc-domain:gilbertsanchez.com",
+  "period": {
+    "start": "2026-06-01",
+    "end": "2026-06-30"
+  },
+  "metrics": {
+    "top_queries": [
+      {
+        "keys": [
+          "wezterm config examples"
+        ],
+        "clicks": 10,
+        "impressions": 65,
+        "ctr": 0.15384615384615385,
+        "position": 4.015384615384615
+      },
+      {
+        "keys": [
+          "obsidian for adhd"
+        ],
+        "clicks": 5,
+        "impressions": 71,
+        "ctr": 0.07042253521126761,
+        "position": 4.929577464788732
+      },
+      {
+        "keys": [
+          "starship transient prompt"
+        ],
+        "clicks": 5,
+        "impressions": 126,
+        "ctr": 0.03968253968253968,
+        "position": 4.5396825396825395
+      },
+      {
+        "keys": [
+          "wezterm lua config"
+        ],
+        "clicks": 4,
+        "impressions": 61,
+        "ctr": 0.06557377049180328,
+        "position": 6.213114754098361
+      },
+      {
+        "keys": [
+          "adhd obsidian"
+        ],
+        "clicks": 3,
+        "impressions": 22,
+        "ctr": 0.13636363636363635,
+        "position": 5.045454545454546
+      },
+      {
+        "keys": [
+          "obsidian adhd"
+        ],
+        "clicks": 3,
+        "impressions": 84,
+        "ctr": 0.03571428571428571,
+        "position": 5.095238095238095
+      },
+      {
+        "keys": [
+          "wezterm config"
+        ],
+        "clicks": 3,
+        "impressions": 420,
+        "ctr": 0.007142857142857143,
+        "position": 7.752380952380952
+      },
+      {
+        "keys": [
+          "gilbert sanchez"
+        ],
+        "clicks": 2,
+        "impressions": 154,
+        "ctr": 0.012987012987012988,
+        "position": 8.61038961038961
+      },
+      {
+        "keys": [
+          "obsidian adhd template"
+        ],
+        "clicks": 2,
+        "impressions": 18,
+        "ctr": 0.1111111111111111,
+        "position": 3.2777777777777777
+      },
+      {
+        "keys": [
+          "wezterm config example"
+        ],
+        "clicks": 2,
+        "impressions": 12,
+        "ctr": 0.16666666666666666,
+        "position": 3.6666666666666665
+      },
+      {
+        "keys": [
+          "best wezterm config"
+        ],
+        "clicks": 1,
+        "impressions": 19,
+        "ctr": 0.05263157894736842,
+        "position": 7.526315789473684
+      },
+      {
+        "keys": [
+          "hey gilbert"
+        ],
+        "clicks": 1,
+        "impressions": 5,
+        "ctr": 0.2,
+        "position": 9.8
+      },
+      {
+        "keys": [
+          "transient prompt"
+        ],
+        "clicks": 1,
+        "impressions": 138,
+        "ctr": 0.007246376811594203,
+        "position": 7.231884057971015
+      },
+      {
+        "keys": [
+          "wezterm best config"
+        ],
+        "clicks": 1,
+        "impressions": 8,
+        "ctr": 0.125,
+        "position": 9
+      },
+      {
+        "keys": [
+          "wezterm config file"
+        ],
+        "clicks": 1,
+        "impressions": 102,
+        "ctr": 0.00980392156862745,
+        "position": 7.401960784313726
+      },
+      {
+        "keys": [
+          "wezterm configs"
+        ],
+        "clicks": 1,
+        "impressions": 29,
+        "ctr": 0.034482758620689655,
+        "position": 8.379310344827587
+      },
+      {
+        "keys": [
+          "wezterm configuration"
+        ],
+        "clicks": 1,
+        "impressions": 80,
+        "ctr": 0.0125,
+        "position": 7.4
+      },
+      {
+        "keys": [
+          "wezterm lua"
+        ],
+        "clicks": 1,
+        "impressions": 32,
+        "ctr": 0.03125,
+        "position": 8.34375
+      },
+      {
+        "keys": [
+          "wezterm lua config example"
+        ],
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 0.3333333333333333,
+        "position": 4
+      },
+      {
+        "keys": [
+          "wezterm powershell"
+        ],
+        "clicks": 1,
+        "impressions": 69,
+        "ctr": 0.014492753623188406,
+        "position": 6.840579710144928
+      },
+      {
+        "keys": [
+          "wezterm windows config"
+        ],
+        "clicks": 1,
+        "impressions": 35,
+        "ctr": 0.02857142857142857,
+        "position": 7.428571428571429
+      },
+      {
+        "keys": [
+          "\"add some code for working with ptys\" wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0,
+        "position": 7.136363636363637
+      },
+      {
+        "keys": [
+          "\"bucket of water\" \"four thousand weeks\""
+        ],
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 9.380952380952381
+      },
+      {
+        "keys": [
+          "\"cmd.exe ver\" without /c"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "\"four thousand weeks\" \"bucket of water\""
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 8.75
+      },
+      {
+        "keys": [
+          "\"it ain't broke: why software fundamentals matter more than ever\" transcript"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11.5
+      },
+      {
+        "keys": [
+          "\"mcr.microsoft.com/devcontainers/universal:2\""
+        ],
+        "clicks": 0,
+        "impressions": 107,
+        "ctr": 0,
+        "position": 8.177570093457945
+      },
+      {
+        "keys": [
+          "\"mcr.microsoft.com/devcontainers/universal:2\" devcontainers"
+        ],
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0,
+        "position": 8.333333333333332
+      },
+      {
+        "keys": [
+          "\"remove `until/1` in favor of `recurse_outer`\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "\"remove `until/1` in favor of `recurse_outer`, improve `while`.\""
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 6.8
+      },
+      {
+        "keys": [
+          "\"safegetvalue()\" \"$true\" powershell ast"
+        ],
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 6.2105263157894735
+      },
+      {
+        "keys": [
+          "\"setselection(_, selection_data)\" wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 26,
+        "ctr": 0,
+        "position": 6.346153846153846
+      },
+      {
+        "keys": [
+          "\"software fundamentals matter more than ever\" \"matt pocock\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "\"software fundamentals matter more than ever\" \"matt pocock\" \"ai engineer\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "\"v4f1gfy-hqg\" \"software fundamentals matter more than ever\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          ".wezterm.lua"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 9.4
+      },
+      {
+        "keys": [
+          "0ecda48f0172a50799f157e1dc9eb896adca7988 wezterm commit"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "184befae0949fbaf5700faf93fceb53ecce0b8aa wezterm commit"
+        ],
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "6e98b100273098ff68668c2cae5061317eb28c6f wezterm commit"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "active directory unix attributes"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 22.5
+      },
+      {
+        "keys": [
+          "adhd spoon"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 64.4
+      },
+      {
+        "keys": [
+          "adhd spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 75
+      },
+      {
+        "keys": [
+          "adhd spoons"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "keys": [
+          "adhd spoons theory"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 75.66666666666667
+      },
+      {
+        "keys": [
+          "ai memory system for writers"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 90
+      },
+      {
+        "keys": [
+          "ast code analysis"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 24
+      },
+      {
+        "keys": [
+          "ast vs regex"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 6.555555555555555
+      },
+      {
+        "keys": [
+          "atomics"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 75
+      },
+      {
+        "keys": [
+          "autism spoons"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 74.25
+      },
+      {
+        "keys": [
+          "autistic spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 80.25
+      },
+      {
+        "keys": [
+          "autistic spoons"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 76
+      },
+      {
+        "keys": [
+          "best obsidian plugins for adhd"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "best shell prompt"
+        ],
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 9.3
+      },
+      {
+        "keys": [
+          "best terminal prompt"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 7.0625
+      },
+      {
+        "keys": [
+          "best terminal prompts"
+        ],
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 7.176470588235294
+      },
+      {
+        "keys": [
+          "best wezterm config 2025 or 2026"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "best wezterm themes"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 26
+      },
+      {
+        "keys": [
+          "boris cherny"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 56.666666666666664
+      },
+      {
+        "keys": [
+          "boris claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 62
+      },
+      {
+        "keys": [
+          "choco force reinstall"
+        ],
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0,
+        "position": 5.913043478260869
+      },
+      {
+        "keys": [
+          "choco install force"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 8.833333333333332
+      },
+      {
+        "keys": [
+          "choco reinstall"
+        ],
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 7.428571428571429
+      },
+      {
+        "keys": [
+          "choco reinstall package"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 6.25
+      },
+      {
+        "keys": [
+          "chocolatey force reinstall"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 7.333333333333333
+      },
+      {
+        "keys": [
+          "chocolatey reinstall"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 11.666666666666666
+      },
+      {
+        "keys": [
+          "chris williamson twitter"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 9.777777777777779
+      },
+      {
+        "keys": [
+          "claude code founder"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 70
+      },
+      {
+        "keys": [
+          "colored terminal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "colorful terminal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "computer prompts"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 26
+      },
+      {
+        "keys": [
+          "config wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 7.666666666666667
+      },
+      {
+        "keys": [
+          "configure wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 8.555555555555555
+      },
+      {
+        "keys": [
+          "convertfrom-yaml"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "create a python virtual environment"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "create venv"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "create venv python"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "create virtual env"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "customize wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 20
+      },
+      {
+        "keys": [
+          "dev containers news"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 35.166666666666664
+      },
+      {
+        "keys": [
+          "devcontainer news"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 16.5
+      },
+      {
+        "keys": [
+          "devcontainers news"
+        ],
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 16.714285714285715
+      },
+      {
+        "keys": [
+          "e547f8c504df52cecc4db723cca8716b8eb1b6f7 wezterm commit"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 9.272727272727273
+      },
+      {
+        "keys": [
+          "enable transient prompt"
+        ],
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 8.571428571428571
+      },
+      {
+        "keys": [
+          "enable transient prompt?"
+        ],
+        "clicks": 0,
+        "impressions": 27,
+        "ctr": 0,
+        "position": 8.333333333333332
+      },
+      {
+        "keys": [
+          "explain"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "full form of repl in node js"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "githhb"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 37
+      },
+      {
+        "keys": [
+          "how to configure wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 7.6875
+      },
+      {
+        "keys": [
+          "https://www.youtube.com/watch?v=v4f1gfy-hqg"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "i do have access"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "i used winget"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "icon powershell"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "import-localizeddata"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 9.666666666666666
+      },
+      {
+        "keys": [
+          "invoke-expression (&starship init powershell)"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 15
+      },
+      {
+        "keys": [
+          "its not green"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "markdown alternatives"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 33.5
+      },
+      {
+        "keys": [
+          "memberuid active directory"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 38
+      },
+      {
+        "keys": [
+          "m\u00e9r l\u00edkar ekki \u00falpan \u00fe\u00edn"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "obsidian adhd workflow"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "obsidian powershell"
+        ],
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 4.466666666666667
+      }
+    ],
+    "top_pages": [
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/my-terminal-wezterm/"
+        ],
+        "clicks": 93,
+        "impressions": 13292,
+        "ctr": 0.006996689738188384,
+        "position": 7.111796569365032
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/obsidian-and-adhd/"
+        ],
+        "clicks": 43,
+        "impressions": 2158,
+        "ctr": 0.019925857275254866,
+        "position": 7.840593141797961
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/prompt-starship/"
+        ],
+        "clicks": 18,
+        "impressions": 2513,
+        "ctr": 0.00716275368085953,
+        "position": 7.4277755670513335
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/"
+        ],
+        "clicks": 7,
+        "impressions": 1345,
+        "ctr": 0.0052044609665427505,
+        "position": 7.810408921933085
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/"
+        ],
+        "clicks": 5,
+        "impressions": 413,
+        "ctr": 0.012106537530266344,
+        "position": 7.813559322033898
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/powershell_module_icons/"
+        ],
+        "clicks": 5,
+        "impressions": 540,
+        "ctr": 0.009259259259259259,
+        "position": 7.766666666666667
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/"
+        ],
+        "clicks": 5,
+        "impressions": 2251,
+        "ctr": 0.002221235006663705,
+        "position": 6.8249666814749
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/sharing-custom-psscriptanalyzer-rules/"
+        ],
+        "clicks": 3,
+        "impressions": 271,
+        "ctr": 0.01107011070110701,
+        "position": 9.095940959409594
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/"
+        ],
+        "clicks": 2,
+        "impressions": 286,
+        "ctr": 0.006993006993006993,
+        "position": 10.734265734265735
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/no-habla-ingles-powershell-localization-practice/"
+        ],
+        "clicks": 2,
+        "impressions": 118,
+        "ctr": 0.01694915254237288,
+        "position": 9.966101694915254
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/powershell-summit-2026/"
+        ],
+        "clicks": 2,
+        "impressions": 165,
+        "ctr": 0.012121212121212121,
+        "position": 10.612121212121211
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/regex-advanced-powershell-code-analysis-asts/"
+        ],
+        "clicks": 2,
+        "impressions": 1376,
+        "ctr": 0.0014534883720930232,
+        "position": 8.332122093023255
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/Dune"
+        ],
+        "clicks": 1,
+        "impressions": 2,
+        "ctr": 0.5,
+        "position": 2.5
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/how-to/installing-mqtt"
+        ],
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.16666666666666666,
+        "position": 7.333333333333333
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/controlling-a-cheap-led/"
+        ],
+        "clicks": 1,
+        "impressions": 38,
+        "ctr": 0.02631578947368421,
+        "position": 16.63157894736842
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/"
+        ],
+        "clicks": 1,
+        "impressions": 619,
+        "ctr": 0.0016155088852988692,
+        "position": 6.098546042003231
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/power-devcontainers/"
+        ],
+        "clicks": 1,
+        "impressions": 431,
+        "ctr": 0.002320185614849188,
+        "position": 9.517401392111369
+      },
+      {
+        "keys": [
+          "https://resume.gilbertsanchez.com/"
+        ],
+        "clicks": 1,
+        "impressions": 25,
+        "ctr": 0.04,
+        "position": 5.96
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/"
+        ],
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 22.285714285714285
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 20.4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Documentation"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 27
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Large-Language-Models"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 14.363636363636363
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/MkDocs"
+        ],
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 17.571428571428573
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Patrick-Winston"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 43.8
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Shape-Up"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 20.77777777777778
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Using-AI-Without-Losing-Your-Mind"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/YouTube-+-Google-Gemini-Mod-Tool"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 7.636363636363637
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/AI-Tooling-for-Software-Engineers-in-2026"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 4.5
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/From-IDEs-to-AI-Agents-With-Steve-Yegge"
+        ],
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 12.714285714285714
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/How-and-When-to-Disrupt-Your-Career,-and-Yourself"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8.666666666666668
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/How-to-Speak"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/It-Ain't-Broke--Why-Software-Fundamentals-Matter-More-Than-Ever-%E2%80%94-Matt-Pocock,-AI-Hero-@Mattpocockuk-(English-(Auto-Generated))"
+        ],
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0,
+        "position": 8.08
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Martin-Fowler--and--Kent-Beck--Frameworks-for-Reinventing-Software,-Again-and-Again"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Mitchell-Hashimoto%E2%80%99s-New-Way-of-Writing-Code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Speed-Trap"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/The-Ergo-56"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Trackd-TextMate--PowerShell-Module-Render-Code-Markdown-With-TextMate-+-Spectre.Console-in-the-Terminal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Why-Most-Developers-Are-Using-Claude-Code-Wrong-(Here's-What-You're-Missing)!-548f"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 31.5
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/You-Built-an-AI-Memory-System.-Now-Your-Agent-Needs-Hands.-Here-Are-6-Extensions-That-Compound-%E2%80%94-From-Household-Kn%E2%80%A6"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Your-Brain-Wasn't-Built-to-Hold-This-Much-Information-Richard-Cytowic"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/Artificial-Condition"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/Kill-It-With-Fire"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 6.333333333333333
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/Sapiens"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/The-Daily-Stoic"
+        ],
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 13.357142857142858
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/We-Are-Legion"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 14
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Books/You-Are-Now-Less-Dumb"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/A-Conjuring-of-Light"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/Harry-Potter-and-the-Sorcerer's-Stone"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/Randomize"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 36.2
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/The-Circle"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 8.2
+      }
+    ],
+    "daily_totals": [
+      {
+        "keys": [
+          "2026-06-01"
+        ],
+        "clicks": 9,
+        "impressions": 1430,
+        "ctr": 0.006293706293706294,
+        "position": 7.160839160839161
+      },
+      {
+        "keys": [
+          "2026-06-02"
+        ],
+        "clicks": 9,
+        "impressions": 987,
+        "ctr": 0.00911854103343465,
+        "position": 8.318135764944277
+      },
+      {
+        "keys": [
+          "2026-06-03"
+        ],
+        "clicks": 5,
+        "impressions": 806,
+        "ctr": 0.00620347394540943,
+        "position": 7.392059553349876
+      },
+      {
+        "keys": [
+          "2026-06-04"
+        ],
+        "clicks": 5,
+        "impressions": 1079,
+        "ctr": 0.004633920296570899,
+        "position": 7.265060240963855
+      },
+      {
+        "keys": [
+          "2026-06-05"
+        ],
+        "clicks": 7,
+        "impressions": 750,
+        "ctr": 0.009333333333333334,
+        "position": 7.789333333333333
+      },
+      {
+        "keys": [
+          "2026-06-06"
+        ],
+        "clicks": 0,
+        "impressions": 730,
+        "ctr": 0,
+        "position": 7.482191780821918
+      },
+      {
+        "keys": [
+          "2026-06-07"
+        ],
+        "clicks": 5,
+        "impressions": 757,
+        "ctr": 0.0066050198150594455,
+        "position": 7.793923381770146
+      },
+      {
+        "keys": [
+          "2026-06-08"
+        ],
+        "clicks": 5,
+        "impressions": 988,
+        "ctr": 0.005060728744939271,
+        "position": 7.428137651821863
+      },
+      {
+        "keys": [
+          "2026-06-09"
+        ],
+        "clicks": 4,
+        "impressions": 906,
+        "ctr": 0.004415011037527594,
+        "position": 7.616997792494481
+      },
+      {
+        "keys": [
+          "2026-06-10"
+        ],
+        "clicks": 8,
+        "impressions": 1112,
+        "ctr": 0.007194244604316547,
+        "position": 7.350719424460432
+      },
+      {
+        "keys": [
+          "2026-06-11"
+        ],
+        "clicks": 2,
+        "impressions": 1138,
+        "ctr": 0.0017574692442882249,
+        "position": 7.060632688927944
+      },
+      {
+        "keys": [
+          "2026-06-12"
+        ],
+        "clicks": 5,
+        "impressions": 815,
+        "ctr": 0.006134969325153374,
+        "position": 7.624539877300614
+      },
+      {
+        "keys": [
+          "2026-06-13"
+        ],
+        "clicks": 3,
+        "impressions": 931,
+        "ctr": 0.00322234156820623,
+        "position": 8.046186895810955
+      },
+      {
+        "keys": [
+          "2026-06-14"
+        ],
+        "clicks": 2,
+        "impressions": 705,
+        "ctr": 0.0028368794326241137,
+        "position": 8.697872340425532
+      },
+      {
+        "keys": [
+          "2026-06-15"
+        ],
+        "clicks": 1,
+        "impressions": 833,
+        "ctr": 0.0012004801920768306,
+        "position": 7.965186074429772
+      },
+      {
+        "keys": [
+          "2026-06-16"
+        ],
+        "clicks": 5,
+        "impressions": 933,
+        "ctr": 0.0053590568060021436,
+        "position": 7.720257234726688
+      },
+      {
+        "keys": [
+          "2026-06-17"
+        ],
+        "clicks": 5,
+        "impressions": 866,
+        "ctr": 0.005773672055427252,
+        "position": 8.321016166281755
+      },
+      {
+        "keys": [
+          "2026-06-18"
+        ],
+        "clicks": 7,
+        "impressions": 986,
+        "ctr": 0.007099391480730223,
+        "position": 8.440162271805274
+      },
+      {
+        "keys": [
+          "2026-06-19"
+        ],
+        "clicks": 4,
+        "impressions": 776,
+        "ctr": 0.005154639175257732,
+        "position": 8.748711340206185
+      },
+      {
+        "keys": [
+          "2026-06-20"
+        ],
+        "clicks": 5,
+        "impressions": 963,
+        "ctr": 0.005192107995846314,
+        "position": 9.331256490134995
+      },
+      {
+        "keys": [
+          "2026-06-21"
+        ],
+        "clicks": 9,
+        "impressions": 807,
+        "ctr": 0.011152416356877323,
+        "position": 8.517967781908302
+      },
+      {
+        "keys": [
+          "2026-06-22"
+        ],
+        "clicks": 8,
+        "impressions": 964,
+        "ctr": 0.008298755186721992,
+        "position": 9.020746887966805
+      },
+      {
+        "keys": [
+          "2026-06-23"
+        ],
+        "clicks": 8,
+        "impressions": 891,
+        "ctr": 0.008978675645342313,
+        "position": 8.210998877665546
+      },
+      {
+        "keys": [
+          "2026-06-24"
+        ],
+        "clicks": 11,
+        "impressions": 1081,
+        "ctr": 0.010175763182238668,
+        "position": 8.677150786308973
+      },
+      {
+        "keys": [
+          "2026-06-25"
+        ],
+        "clicks": 8,
+        "impressions": 878,
+        "ctr": 0.009111617312072893,
+        "position": 8.951025056947607
+      },
+      {
+        "keys": [
+          "2026-06-26"
+        ],
+        "clicks": 8,
+        "impressions": 995,
+        "ctr": 0.008040201005025126,
+        "position": 13.493467336683418
+      },
+      {
+        "keys": [
+          "2026-06-27"
+        ],
+        "clicks": 9,
+        "impressions": 831,
+        "ctr": 0.010830324909747292,
+        "position": 9.879663056558364
+      },
+      {
+        "keys": [
+          "2026-06-28"
+        ],
+        "clicks": 9,
+        "impressions": 1036,
+        "ctr": 0.008687258687258687,
+        "position": 9.371621621621621
+      },
+      {
+        "keys": [
+          "2026-06-29"
+        ],
+        "clicks": 11,
+        "impressions": 2004,
+        "ctr": 0.0054890219560878245,
+        "position": 7.2604790419161676
+      },
+      {
+        "keys": [
+          "2026-06-30"
+        ],
+        "clicks": 16,
+        "impressions": 1026,
+        "ctr": 0.015594541910331383,
+        "position": 8.450292397660819
+      }
+    ]
+  }
+}
