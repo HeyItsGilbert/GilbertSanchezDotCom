@@ -28,6 +28,13 @@ pip install -r requirements.txt
 python fetch_seo_metrics.py
 ```
 
+## Running Tests
+
+```bash
+pip install -r requirements-dev.txt
+pytest test_fetch_seo_metrics.py
+```
+
 ## Manual Workflow Run
 
 Go to your repo → **Actions** → **Monthly SEO Metrics** → **Run workflow**

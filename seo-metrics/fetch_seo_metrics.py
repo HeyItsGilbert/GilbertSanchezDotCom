@@ -255,6 +255,33 @@ def fetch_umami_metrics():
 
 
 # -----------------------------------------------------------------------------
+# Output verification
+# -----------------------------------------------------------------------------
+
+EXPECTED_SOURCE_FILES = (
+    "google-search-console.json",
+    "bing-webmaster.json",
+    "umami-analytics.json",
+)
+
+
+def verify_month_output(month_dir) -> list:
+    """Check a month's output directory for the three expected source files.
+
+    Returns the names of any expected files that are missing or empty
+    (zero bytes). An empty return list means all three files landed
+    successfully. Pure and filesystem-only: no network calls.
+    """
+    month_dir = Path(month_dir)
+    missing_or_empty = []
+    for filename in EXPECTED_SOURCE_FILES:
+        path = month_dir / filename
+        if not path.is_file() or path.stat().st_size == 0:
+            missing_or_empty.append(filename)
+    return missing_or_empty
+
+
+# -----------------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------------
 
@@ -340,23 +367,37 @@ def fetch_for_month(year: int, month: int):
 
 if __name__ == "__main__":
     import sys
-    
-    if len(sys.argv) > 1 and sys.argv[1] == "--backfill":
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--verify":
+        # Verify mode: check that a month's output directory has all three
+        # expected source files, non-empty. Used by the collection workflow
+        # to fail loudly instead of committing a partial/swallowed fetch.
+        if len(sys.argv) < 3:
+            print("Usage: fetch_seo_metrics.py --verify <month_dir>")
+            sys.exit(2)
+
+        target_dir = sys.argv[2]
+        missing = verify_month_output(target_dir)
+        if missing:
+            print(f"❌ Missing or empty source files in {target_dir}: {', '.join(missing)}")
+            sys.exit(1)
+        print(f"✅ All expected source files present in {target_dir}")
+    elif len(sys.argv) > 1 and sys.argv[1] == "--backfill":
         # Backfill mode: fetch last N months
         months_back = int(sys.argv[2]) if len(sys.argv) > 2 else 6
-        
+
         print(f"🔄 Backfilling {months_back} months...\n")
-        
+
         # Use calendar-accurate month arithmetic instead of assuming 30-day months
         base = datetime.now().replace(day=1)
         base_index = base.year * 12 + (base.month - 1)
-        
+
         for i in range(months_back, 0, -1):
             target_index = base_index - i
             target_year = target_index // 12
             target_month = (target_index % 12) + 1
             fetch_for_month(target_year, target_month)
-        
+
         print("\n✨ Backfill complete!\n")
     else:
         main()

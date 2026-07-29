@@ -18,7 +18,9 @@ on:
 jobs:
   fetch-metrics:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -44,10 +46,47 @@ jobs:
           UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
           OUTPUT_DIR: ./seo-metrics
         run: python ./seo-metrics/fetch_seo_metrics.py
-      
+
       - name: Upload SEO metrics artifact
         uses: actions/upload-artifact@v4
         with:
           name: seo-metrics-logs
           path: seo-metrics/
           retention-days: 90
+
+      - name: Determine fetched month
+        id: month
+        run: echo "value=$(date -u -d 'last month' +%Y-%m)" >> "$GITHUB_OUTPUT"
+
+      - name: Verify fetched data landed
+        run: python ./seo-metrics/fetch_seo_metrics.py --verify "./seo-metrics/${{ steps.month.outputs.value }}"
+
+      - name: Commit and push metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "seo-metrics/${{ steps.month.outputs.value }}"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "seo-metrics: add ${{ steps.month.outputs.value }} data"
+            git push
+          fi
+
+      - name: Notify Discord on verification failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.SEO_DISCORD_WEBHOOK }}
+          MONTH: ${{ steps.month.outputs.value }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "SEO_DISCORD_WEBHOOK secret not configured, skipping notification"
+            exit 0
+          fi
+          PAYLOAD=$(jq -n --arg content "🚨 **Monthly SEO Metrics collection failed**
+          Month: ${MONTH}
+          Repo: ${REPO}
+          ${RUN_URL}" '{content: $content}')
+          curl -sf -X POST "$DISCORD_WEBHOOK" -H 'Content-Type: application/json' -d "$PAYLOAD"
