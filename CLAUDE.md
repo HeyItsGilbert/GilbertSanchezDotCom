@@ -284,3 +284,17 @@ Run Vale: `vale content/posts/my-post/index.md`
 6. **Taxonomies are `tags` and `series`** only (no `categories`).
 7. **First person writing is standard** -- this is a personal blog.
 8. **Dark mode is the default** appearance, with auto-switch enabled.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues on `HeyItsGilbert/GilbertSanchezDotCom`, via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five canonical roles (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` + `docs/adr/` at the repo root (created lazily as decisions accrue). See `docs/agents/domain.md`.

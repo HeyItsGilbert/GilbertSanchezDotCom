@@ -12,6 +12,7 @@ Add these secrets:
 | `BING_SITE_URL` | `https://gilbertsanchez.com/` | Must match verified site |
 | `UMAMI_API_KEY` | Your Umami API key | From Umami Cloud settings |
 | `UMAMI_WEBSITE_ID` | Your website ID | UUID from dashboard URL |
+| `SEO_DISCORD_WEBHOOK` | Discord incoming webhook URL | Used by the `SEOReport` workflow to notify when a new monthly report is committed. Optional — if unset, the report still commits, notification is skipped. |
 
 ## Testing Locally
 
