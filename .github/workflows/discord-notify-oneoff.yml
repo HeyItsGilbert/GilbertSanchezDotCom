@@ -1,0 +1,19 @@
+name: Discord Notify One-off
+
+on:
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.SEO_DISCORD_WEBHOOK }}
+        run: |
+          FILE_URL="https://github.com/HeyItsGilbert/GilbertSanchezDotCom/blob/main/seo-metrics/reports/SEO-REVIEW-2026-07.md"
+          SUMMARY="July clicks held flat (+1.0%) while impressions dropped 29% and average position slipped from 8.3 to 9.7, partly explained by a 4-day-short data pull; Bing clicks were up 20.5%."
+          PAYLOAD=$(jq -n --arg content "📊 **Monthly SEO report published**
+          ${SUMMARY}
+          ${FILE_URL}" '{content: $content}')
+          curl -sf -X POST "$DISCORD_WEBHOOK" -H 'Content-Type: application/json' -d "$PAYLOAD"
