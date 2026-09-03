@@ -1,0 +1,1645 @@
+{
+  "fetched_at": "2026-09-03T09:03:55.893929",
+  "site_url": "sc-domain:gilbertsanchez.com",
+  "period": {
+    "start": "2026-08-01",
+    "end": "2026-08-31"
+  },
+  "metrics": {
+    "top_queries": [
+      {
+        "keys": [
+          "wezterm config"
+        ],
+        "clicks": 9,
+        "impressions": 415,
+        "ctr": 0.021686746987951807,
+        "position": 8.197590361445783
+      },
+      {
+        "keys": [
+          "obsidian for adhd"
+        ],
+        "clicks": 6,
+        "impressions": 57,
+        "ctr": 0.10526315789473684,
+        "position": 6.684210526315789
+      },
+      {
+        "keys": [
+          "wezterm config examples"
+        ],
+        "clicks": 6,
+        "impressions": 58,
+        "ctr": 0.10344827586206896,
+        "position": 4.586206896551724
+      },
+      {
+        "keys": [
+          "wezterm configs"
+        ],
+        "clicks": 3,
+        "impressions": 33,
+        "ctr": 0.09090909090909091,
+        "position": 8.212121212121211
+      },
+      {
+        "keys": [
+          "wezterm configuration file"
+        ],
+        "clicks": 3,
+        "impressions": 8,
+        "ctr": 0.375,
+        "position": 6.125
+      },
+      {
+        "keys": [
+          "best wezterm config"
+        ],
+        "clicks": 2,
+        "impressions": 26,
+        "ctr": 0.07692307692307693,
+        "position": 6.6923076923076925
+      },
+      {
+        "keys": [
+          "transient prompt"
+        ],
+        "clicks": 2,
+        "impressions": 173,
+        "ctr": 0.011560693641618497,
+        "position": 7.08092485549133
+      },
+      {
+        "keys": [
+          "wezterm best config"
+        ],
+        "clicks": 2,
+        "impressions": 12,
+        "ctr": 0.16666666666666666,
+        "position": 8.916666666666668
+      },
+      {
+        "keys": [
+          "wezterm config file"
+        ],
+        "clicks": 2,
+        "impressions": 85,
+        "ctr": 0.023529411764705882,
+        "position": 6.470588235294118
+      },
+      {
+        "keys": [
+          "adhd obsidian"
+        ],
+        "clicks": 1,
+        "impressions": 23,
+        "ctr": 0.043478260869565216,
+        "position": 6.3478260869565215
+      },
+      {
+        "keys": [
+          "configure wezterm"
+        ],
+        "clicks": 1,
+        "impressions": 8,
+        "ctr": 0.125,
+        "position": 8
+      },
+      {
+        "keys": [
+          "psake"
+        ],
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 1,
+        "position": 43
+      },
+      {
+        "keys": [
+          "shell prompts"
+        ],
+        "clicks": 1,
+        "impressions": 26,
+        "ctr": 0.038461538461538464,
+        "position": 3.576923076923077
+      },
+      {
+        "keys": [
+          "starship transient prompt"
+        ],
+        "clicks": 1,
+        "impressions": 79,
+        "ctr": 0.012658227848101266,
+        "position": 3.6202531645569622
+      },
+      {
+        "keys": [
+          "starship transient prompt zsh"
+        ],
+        "clicks": 1,
+        "impressions": 35,
+        "ctr": 0.02857142857142857,
+        "position": 6.914285714285715
+      },
+      {
+        "keys": [
+          "transient prompt meaning"
+        ],
+        "clicks": 1,
+        "impressions": 16,
+        "ctr": 0.0625,
+        "position": 5.875
+      },
+      {
+        "keys": [
+          "trmnl terminus"
+        ],
+        "clicks": 1,
+        "impressions": 9,
+        "ctr": 0.1111111111111111,
+        "position": 8.222222222222221
+      },
+      {
+        "keys": [
+          "wezterm config windows"
+        ],
+        "clicks": 1,
+        "impressions": 34,
+        "ctr": 0.029411764705882353,
+        "position": 8.411764705882353
+      },
+      {
+        "keys": [
+          "wezterm configuration"
+        ],
+        "clicks": 1,
+        "impressions": 68,
+        "ctr": 0.014705882352941176,
+        "position": 8.191176470588236
+      },
+      {
+        "keys": [
+          "\"add some code for working with ptys\" wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 7.375
+      },
+      {
+        "keys": [
+          "\"build systems a\u0300 la carte\" pdf mokhov mitchell peyton jones"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "\"cmd.exe ver\" output"
+        ],
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 7.666666666666667
+      },
+      {
+        "keys": [
+          "\"cmd.exe ver\" without /c"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "\"mcr.microsoft.com/devcontainers/universal:2\""
+        ],
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "\"mcr.microsoft.com/devcontainers/universal:2\" devcontainers"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8.5
+      },
+      {
+        "keys": [
+          "\"remove `until/1` in favor of `recurse_outer`\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "\"remove `until/1` in favor of `recurse_outer`, improve `while`\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "\"remove `until/1` in favor of `recurse_outer`, improve `while`.\""
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "\"setselection(_, selection_data)\" wezterm"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "\"start building out the terminal model\" \"wez furlong\""
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "\"wezterm config-dir\" command"
+        ],
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 5.153846153846154
+      },
+      {
+        "keys": [
+          ".wezterm.lua"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 9.5
+      },
+      {
+        "keys": [
+          "502 bad gateway claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 47
+      },
+      {
+        "keys": [
+          "?"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "active directory unix attributes"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 20
+      },
+      {
+        "keys": [
+          "adhd and spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 80
+      },
+      {
+        "keys": [
+          "adhd plugins"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "adhd spoon"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 70.8
+      },
+      {
+        "keys": [
+          "adhd spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 73
+      },
+      {
+        "keys": [
+          "adhd spoons"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "keys": [
+          "andy weir spreadsheet"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 62
+      },
+      {
+        "keys": [
+          "anthropic boris cherny"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 64
+      },
+      {
+        "keys": [
+          "ast java"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "ast vs regex"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "atomics"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 64.5
+      },
+      {
+        "keys": [
+          "autism spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 89
+      },
+      {
+        "keys": [
+          "autism spoons"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 79.25
+      },
+      {
+        "keys": [
+          "autistic spoon theory"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 89
+      },
+      {
+        "keys": [
+          "autistic spoons"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 70.25
+      },
+      {
+        "keys": [
+          "bash transient prompt"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "bcherny"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 50
+      },
+      {
+        "keys": [
+          "best shell for terminal"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "best shell prompt"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "best shell prompts"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 26.333333333333332
+      },
+      {
+        "keys": [
+          "best terminal prompt"
+        ],
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 6.454545454545454
+      },
+      {
+        "keys": [
+          "best terminal prompts"
+        ],
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 7.714285714285714
+      },
+      {
+        "keys": [
+          "boris anthropic"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 75
+      },
+      {
+        "keys": [
+          "boris anthropic claude"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 58
+      },
+      {
+        "keys": [
+          "boris anthropic claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "keys": [
+          "boris chemy"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 51
+      },
+      {
+        "keys": [
+          "boris cherney"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "boris cherney claude"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "boris cherny"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 46.5
+      },
+      {
+        "keys": [
+          "boris cherny best practices"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "boris cherny blog"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 60
+      },
+      {
+        "keys": [
+          "boris cherny claude"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 56.5
+      },
+      {
+        "keys": [
+          "boris cherny claude code"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 59.8
+      },
+      {
+        "keys": [
+          "boris cherny claude code best practices"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 69.5
+      },
+      {
+        "keys": [
+          "boris cherny claude code md"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "keys": [
+          "boris cherny claude code setup"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 63.5
+      },
+      {
+        "keys": [
+          "boris cherny claude code tips"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 70.5
+      },
+      {
+        "keys": [
+          "boris cherny claude code tutorial"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 70
+      },
+      {
+        "keys": [
+          "boris cherny claude code workflow"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "keys": [
+          "boris cherny claude code workshop"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 63
+      },
+      {
+        "keys": [
+          "boris cherny claude code x"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "boris cherny claude md github"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 54
+      },
+      {
+        "keys": [
+          "boris cherny experience"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 57
+      },
+      {
+        "keys": [
+          "boris cherny github claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 58
+      },
+      {
+        "keys": [
+          "boris cherny how i use claude code"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 68
+      },
+      {
+        "keys": [
+          "boris cherny how to use claude"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 70
+      },
+      {
+        "keys": [
+          "boris cherny how to use claude code"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 60.5
+      },
+      {
+        "keys": [
+          "boris cherny mastering claude code"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "keys": [
+          "boris cherny mastering claude code in 30 minutes"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 53
+      },
+      {
+        "keys": [
+          "boris cherny on graph engineering"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 22
+      },
+      {
+        "keys": [
+          "boris cherny on how to use claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 63
+      },
+      {
+        "keys": [
+          "boris cherny setup"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 65
+      },
+      {
+        "keys": [
+          "boris cherny tips for claude code"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 76
+      },
+      {
+        "keys": [
+          "boris cherny who is he"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 55
+      },
+      {
+        "keys": [
+          "boris cherny workflow"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 64.33333333333334
+      },
+      {
+        "keys": [
+          "boris cherny's claude.md"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 54
+      },
+      {
+        "keys": [
+          "boris claude code"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 66.66666666666667
+      },
+      {
+        "keys": [
+          "boris claude code creator"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 67.5
+      },
+      {
+        "keys": [
+          "boris claude code setup"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 71.5
+      },
+      {
+        "keys": [
+          "boris creator of claude code"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "keys": [
+          "borris claude"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 54
+      },
+      {
+        "keys": [
+          "brois cherny"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 51
+      },
+      {
+        "keys": [
+          "choco force reinstall"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 5.375
+      },
+      {
+        "keys": [
+          "choco install force"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "choco list packages"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "choco not recognized in powershell"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      }
+    ],
+    "top_pages": [
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/my-terminal-wezterm/"
+        ],
+        "clicks": 82,
+        "impressions": 7238,
+        "ctr": 0.011329096435479415,
+        "position": 7.4566178502348714
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/obsidian-and-adhd/"
+        ],
+        "clicks": 33,
+        "impressions": 1164,
+        "ctr": 0.028350515463917526,
+        "position": 7.3771477663230245
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/prompt-starship/"
+        ],
+        "clicks": 13,
+        "impressions": 2203,
+        "ctr": 0.005901044030866999,
+        "position": 7.955969133000454
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/terminals-shells-and-prompts/"
+        ],
+        "clicks": 8,
+        "impressions": 1156,
+        "ctr": 0.006920415224913495,
+        "position": 9.051038062283737
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/terminal-to-trmnl-with-powershell/"
+        ],
+        "clicks": 6,
+        "impressions": 777,
+        "ctr": 0.007722007722007722,
+        "position": 7.590733590733591
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/sharing-custom-psscriptanalyzer-rules/"
+        ],
+        "clicks": 4,
+        "impressions": 149,
+        "ctr": 0.026845637583892617,
+        "position": 10.926174496644295
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/powershell_module_icons/"
+        ],
+        "clicks": 3,
+        "impressions": 422,
+        "ctr": 0.0071090047393364926,
+        "position": 9.528436018957345
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/regex-advanced-powershell-code-analysis-asts/"
+        ],
+        "clicks": 3,
+        "impressions": 638,
+        "ctr": 0.004702194357366771,
+        "position": 11.550156739811912
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/"
+        ],
+        "clicks": 2,
+        "impressions": 194,
+        "ctr": 0.010309278350515464,
+        "position": 8.396907216494846
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/cidr-calculator-for-alfred/"
+        ],
+        "clicks": 2,
+        "impressions": 11,
+        "ctr": 0.18181818181818182,
+        "position": 14
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/no-habla-ingles-powershell-localization-practice/"
+        ],
+        "clicks": 2,
+        "impressions": 131,
+        "ctr": 0.015267175572519083,
+        "position": 13.290076335877863
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/using-ai-without-losing-your-mind/"
+        ],
+        "clicks": 2,
+        "impressions": 56,
+        "ctr": 0.03571428571428571,
+        "position": 7.357142857142857
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/readwise/articles/it-ain't-broke--why-software-fundamentals-matter-more-than-ever-%E2%80%94-matt-pocock,-ai-hero-@mattpocockuk-(english-(auto-generated))"
+        ],
+        "clicks": 1,
+        "impressions": 22,
+        "ctr": 0.045454545454545456,
+        "position": 18.636363636363637
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/efficient-disasters-remove-item-pipeline/"
+        ],
+        "clicks": 1,
+        "impressions": 341,
+        "ctr": 0.002932551319648094,
+        "position": 6.609970674486804
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/force-reinstalling-choco-packages/"
+        ],
+        "clicks": 1,
+        "impressions": 402,
+        "ctr": 0.0024875621890547263,
+        "position": 10.875621890547263
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/power-devcontainers/"
+        ],
+        "clicks": 1,
+        "impressions": 116,
+        "ctr": 0.008620689655172414,
+        "position": 14.28448275862069
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/powershell-chef-cookbook/"
+        ],
+        "clicks": 1,
+        "impressions": 333,
+        "ctr": 0.003003003003003003,
+        "position": 11.936936936936936
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/rac-resume-as-code/"
+        ],
+        "clicks": 1,
+        "impressions": 90,
+        "ctr": 0.011111111111111112,
+        "position": 12.88888888888889
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/stucco-create-powershell-module/"
+        ],
+        "clicks": 1,
+        "impressions": 128,
+        "ctr": 0.0078125,
+        "position": 16.171875
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/posts/the-system-ai-made-me-do-it/"
+        ],
+        "clicks": 1,
+        "impressions": 76,
+        "ctr": 0.013157894736842105,
+        "position": 10.302631578947368
+      },
+      {
+        "keys": [
+          "https://gilbertsanchez.com/presentations/stophandrollingchocolate/"
+        ],
+        "clicks": 1,
+        "impressions": 22,
+        "ctr": 0.045454545454545456,
+        "position": 19.681818181818183
+      },
+      {
+        "keys": [
+          "https://resume.gilbertsanchez.com/"
+        ],
+        "clicks": 1,
+        "impressions": 18,
+        "ctr": 0.05555555555555555,
+        "position": 12.5
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/"
+        ],
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 13.1
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/Flow"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Atomics/SCARF"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/MOC/Coding-MOC"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 86
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/EP37--Process-vs-Thread"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 27
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Articles/Your-Brain-Wasn't-Built-to-Hold-This-Much-Information-Richard-Cytowic"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 6.25
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Readwise/Supplementals/The-Circle"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 34
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/Reviews/Kill-It-With-Fire"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/"
+        ],
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 19.875
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/communication"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/concurrency"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/documentation"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/facebookism"
+        ],
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 12.083333333333334
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/inverted-pyramid"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 54
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/large-language-models"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/markdown"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 35.4
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/mqtt"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/patrick-winston"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/perfectionism"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 17.6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/pester-mock-output-variable"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 15.5
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/plain-text"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/s.m.a.r.t-goals"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 49.833333333333336
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/shape-up"
+        ],
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 35.285714285714285
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/static-site-generators"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 68.66666666666667
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/the-eight-fallacies-of-distributed-computing"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/toast-notifications"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 53.22222222222222
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/using-ai-without-losing-your-mind"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "https://garden.gilbertsanchez.com/atomics/writing"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 7.25
+      }
+    ],
+    "daily_totals": [
+      {
+        "keys": [
+          "2026-08-01"
+        ],
+        "clicks": 5,
+        "impressions": 499,
+        "ctr": 0.01002004008016032,
+        "position": 10.933867735470942
+      },
+      {
+        "keys": [
+          "2026-08-02"
+        ],
+        "clicks": 6,
+        "impressions": 456,
+        "ctr": 0.013157894736842105,
+        "position": 12.149122807017545
+      },
+      {
+        "keys": [
+          "2026-08-03"
+        ],
+        "clicks": 5,
+        "impressions": 515,
+        "ctr": 0.009708737864077669,
+        "position": 9.545631067961166
+      },
+      {
+        "keys": [
+          "2026-08-04"
+        ],
+        "clicks": 4,
+        "impressions": 510,
+        "ctr": 0.00784313725490196,
+        "position": 10.529411764705882
+      },
+      {
+        "keys": [
+          "2026-08-05"
+        ],
+        "clicks": 6,
+        "impressions": 746,
+        "ctr": 0.00804289544235925,
+        "position": 12.064343163538874
+      },
+      {
+        "keys": [
+          "2026-08-06"
+        ],
+        "clicks": 8,
+        "impressions": 523,
+        "ctr": 0.015296367112810707,
+        "position": 10.688336520076481
+      },
+      {
+        "keys": [
+          "2026-08-07"
+        ],
+        "clicks": 4,
+        "impressions": 544,
+        "ctr": 0.007352941176470588,
+        "position": 9.283088235294118
+      },
+      {
+        "keys": [
+          "2026-08-08"
+        ],
+        "clicks": 4,
+        "impressions": 471,
+        "ctr": 0.008492569002123142,
+        "position": 8.218683651804671
+      },
+      {
+        "keys": [
+          "2026-08-09"
+        ],
+        "clicks": 2,
+        "impressions": 508,
+        "ctr": 0.003937007874015748,
+        "position": 11.303149606299213
+      },
+      {
+        "keys": [
+          "2026-08-10"
+        ],
+        "clicks": 9,
+        "impressions": 725,
+        "ctr": 0.012413793103448275,
+        "position": 11.091034482758621
+      },
+      {
+        "keys": [
+          "2026-08-11"
+        ],
+        "clicks": 4,
+        "impressions": 650,
+        "ctr": 0.006153846153846154,
+        "position": 11.261538461538462
+      },
+      {
+        "keys": [
+          "2026-08-12"
+        ],
+        "clicks": 2,
+        "impressions": 611,
+        "ctr": 0.0032733224222585926,
+        "position": 11.078559738134206
+      },
+      {
+        "keys": [
+          "2026-08-13"
+        ],
+        "clicks": 2,
+        "impressions": 712,
+        "ctr": 0.0028089887640449437,
+        "position": 9.86938202247191
+      },
+      {
+        "keys": [
+          "2026-08-14"
+        ],
+        "clicks": 8,
+        "impressions": 584,
+        "ctr": 0.0136986301369863,
+        "position": 10.011986301369863
+      },
+      {
+        "keys": [
+          "2026-08-15"
+        ],
+        "clicks": 3,
+        "impressions": 543,
+        "ctr": 0.0055248618784530384,
+        "position": 12.204419889502763
+      },
+      {
+        "keys": [
+          "2026-08-16"
+        ],
+        "clicks": 8,
+        "impressions": 678,
+        "ctr": 0.011799410029498525,
+        "position": 12.908554572271386
+      },
+      {
+        "keys": [
+          "2026-08-17"
+        ],
+        "clicks": 9,
+        "impressions": 568,
+        "ctr": 0.01584507042253521,
+        "position": 11.943661971830986
+      },
+      {
+        "keys": [
+          "2026-08-18"
+        ],
+        "clicks": 10,
+        "impressions": 735,
+        "ctr": 0.013605442176870748,
+        "position": 10.15374149659864
+      },
+      {
+        "keys": [
+          "2026-08-19"
+        ],
+        "clicks": 4,
+        "impressions": 807,
+        "ctr": 0.004956629491945477,
+        "position": 9.356877323420074
+      },
+      {
+        "keys": [
+          "2026-08-20"
+        ],
+        "clicks": 6,
+        "impressions": 525,
+        "ctr": 0.011428571428571429,
+        "position": 14.702857142857143
+      },
+      {
+        "keys": [
+          "2026-08-21"
+        ],
+        "clicks": 5,
+        "impressions": 440,
+        "ctr": 0.011363636363636364,
+        "position": 11.947727272727272
+      },
+      {
+        "keys": [
+          "2026-08-22"
+        ],
+        "clicks": 4,
+        "impressions": 460,
+        "ctr": 0.008695652173913044,
+        "position": 11.441304347826087
+      },
+      {
+        "keys": [
+          "2026-08-23"
+        ],
+        "clicks": 5,
+        "impressions": 415,
+        "ctr": 0.012048192771084338,
+        "position": 11.028915662650602
+      },
+      {
+        "keys": [
+          "2026-08-24"
+        ],
+        "clicks": 5,
+        "impressions": 493,
+        "ctr": 0.010141987829614604,
+        "position": 9.578093306288032
+      },
+      {
+        "keys": [
+          "2026-08-25"
+        ],
+        "clicks": 6,
+        "impressions": 445,
+        "ctr": 0.01348314606741573,
+        "position": 14.950561797752808
+      },
+      {
+        "keys": [
+          "2026-08-26"
+        ],
+        "clicks": 4,
+        "impressions": 481,
+        "ctr": 0.008316008316008316,
+        "position": 13.814968814968815
+      },
+      {
+        "keys": [
+          "2026-08-27"
+        ],
+        "clicks": 6,
+        "impressions": 555,
+        "ctr": 0.010810810810810811,
+        "position": 11.365765765765765
+      },
+      {
+        "keys": [
+          "2026-08-28"
+        ],
+        "clicks": 7,
+        "impressions": 996,
+        "ctr": 0.007028112449799197,
+        "position": 10.29417670682731
+      },
+      {
+        "keys": [
+          "2026-08-29"
+        ],
+        "clicks": 4,
+        "impressions": 709,
+        "ctr": 0.005641748942172073,
+        "position": 12.062059238363894
+      },
+      {
+        "keys": [
+          "2026-08-30"
+        ],
+        "clicks": 4,
+        "impressions": 418,
+        "ctr": 0.009569377990430622,
+        "position": 14.861244019138756
+      },
+      {
+        "keys": [
+          "2026-08-31"
+        ],
+        "clicks": 11,
+        "impressions": 408,
+        "ctr": 0.02696078431372549,
+        "position": 11.602941176470589
+      }
+    ]
+  }
+}
