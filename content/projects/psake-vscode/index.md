@@ -5,8 +5,8 @@ externalUrl: https://github.com/psake/psake-vscode
 summary: "Language support, task integration, and snippets for psake in Visual Studio Code."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

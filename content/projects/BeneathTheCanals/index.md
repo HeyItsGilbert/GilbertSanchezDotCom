@@ -9,8 +9,8 @@ lastmod: 2025-11-27T17:00:43.525Z
 tags:
   - PowerShell
   - RPG
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 type: projects
 externalUrl: https://github.com/HeyItsGilbert/BeneathTheCanals

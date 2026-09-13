@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/TunnelGoons
 summary: "A fun game."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

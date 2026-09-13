@@ -6,8 +6,8 @@ summary: A vale.sh style for detecting and offer alternatives to communal words 
   are often biased against).
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2023-01-17T15:13:09.877Z
 tags:

@@ -5,8 +5,8 @@ externalUrl: https://github.com/PowerShellOrg/Plaster
 summary: I created the Plaster publishing workflow.
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2023-01-17T15:12:24.607Z
 type: projects

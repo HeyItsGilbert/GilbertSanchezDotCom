@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/Gatekeeper
 summary: "Helps implement feature flags in your PowerShell projects."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

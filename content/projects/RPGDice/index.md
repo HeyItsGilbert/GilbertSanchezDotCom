@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/RPGDice
 summary: A PowerShell module to create dice and roll them from PowerShell!
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 type: projects
 tags:

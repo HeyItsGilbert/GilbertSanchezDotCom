@@ -29,7 +29,7 @@ Work end-to-end and verify before yielding. Do not commit unless asked.
 ## 3. Write each entry
 
 Create `content/projects/<RepoName>/index.md`. Folder name = repo name. Match this
-frontmatter exactly (it renders as an external-link card — `render:"false"` + `externalUrl`):
+frontmatter exactly (it renders as an external-link card — `build.render: link` + `externalUrl`):
 
 ```yaml
 ---
@@ -39,8 +39,8 @@ externalUrl: <html_url>
 summary: "<one-line summary>"
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: <today, YYYY-MM-DD>
 type: projects

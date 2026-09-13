@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/dotfiles
 summary: "Gilbert's dotfiles, managed with chezmoi across Windows, macOS, and Codespaces."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

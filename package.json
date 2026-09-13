@@ -6,7 +6,7 @@
     "hugo-installer": "^4.0.1"
   },
   "otherDependencies": {
-    "hugo": "0.147.1"
+    "hugo": "0.165.0"
   },
   "scripts": {
     "build": "webpack",

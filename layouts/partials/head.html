@@ -38,23 +38,21 @@
   {{ end -}}
 
   {{/* Asset bundles */}}
-  {{ $assets := newScratch }}
+  {{ $cssResources := slice }}
   {{ $cssScheme := resources.Get (printf "css/schemes/%s.css" (.Site.Params.colorScheme | default "blowfish")) }}
   {{ if not $cssScheme }}
     {{ $cssScheme = resources.Get "css/schemes/blowfish.css" }}
   {{ end }}
-  {{ $assets.Add "css" (slice $cssScheme) }}
-  {{ $cssMain := resources.Get "css/compiled/main.css" }}
-  {{ $assets.Add "css" (slice $cssMain) }}
+  {{ $cssResources = $cssResources | append $cssScheme }}
+  {{ $cssResources = $cssResources | append (resources.Get "css/compiled/main.css") }}
   {{ $cssCustom := resources.Get "css/custom.css" }}
   {{ if $cssCustom }}
-    {{ $assets.Add "css" (slice $cssCustom) }}
+    {{ $cssResources = $cssResources | append $cssCustom }}
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
-    {{ $cssZoom := resources.Get "lib/zoom/style.css" }}
-    {{ $assets.Add "css" (slice $cssZoom) }}
+    {{ $cssResources = $cssResources | append (resources.Get "lib/zoom/style.css") }}
   {{ end }}
-  {{ $bundleCSS := $assets.Get "css" | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint
+  {{ $bundleCSS := $cssResources | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint
     (.Site.Params.fingerprintAlgorithm | default "sha512")
   }}
   <link
@@ -76,27 +74,28 @@
       src="{{ $jsA11y.RelPermalink }}"
       integrity="{{ $jsA11y.Data.Integrity }}"></script>
   {{ end }}
+  {{ $jsResources := slice }}
+  {{ if .Site.Params.footer.showScrollToTop | default true }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
+  {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
-    {{ $jsFuse := resources.Get "lib/fuse/fuse.min.js" }}
-    {{ $jsSearch := resources.Get "js/search.js" }}
-    {{ $assets.Add "js" (slice $jsFuse $jsSearch) }}
+    {{ $fuseRaw := resources.Get "lib/fuse/fuse.min.cjs" }}
+    {{ $fuse := resources.FromString "lib/fuse/fuse.min.js" (replace $fuseRaw.Content "module.exports=" "window.Fuse=") }}
+    {{ $jsResources = $jsResources | append $fuse }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/search.js") }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
-    {{ $jsCode := resources.Get "js/code.js" }}
-    {{ $assets.Add "js" (slice $jsCode) }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/code.js") }}
   {{ end }}
   {{ if .Site.Params.rtl | default false }}
-    {{ $jsRTL := resources.Get "js/rtl.js" }}
-    {{ $assets.Add "js" (slice $jsRTL) }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/rtl.js") }}
   {{ end }}
-  {{ $jsMobileMenu := resources.Get "js/mobilemenu.js" }}
-  {{ $assets.Add "js" (slice $jsMobileMenu) }}
-  {{ $buttonLikes := resources.Get "js/button-likes.js" }}
-  {{ $assets.Add "js" (slice $buttonLikes) }}
-  {{ $katexRender := resources.Get "js/katex-render.js" }}
-  {{ $assets.Add "js" (slice $katexRender) }}
-  {{ if $assets.Get "js" }}
-    {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint
+  {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/menu-a11y.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/email.js") }}
+  {{ if $jsResources }}
+    {{ $bundleJS := $jsResources | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint
       (.Site.Params.fingerprintAlgorithm | default "sha512")
     }}
     <script
@@ -110,7 +109,9 @@
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
     {{ $zoomJS := resources.Get "lib/zoom/zoom.min.umd.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
-    <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    <script defer src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    {{ $zoomInit := resources.Get "js/medium-zoom.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+    <script defer src="{{ $zoomInit.RelPermalink }}" integrity="{{ $zoomInit.Data.Integrity }}"></script>
   {{ end }}
 
   {{/* Icons */}}
@@ -172,33 +173,6 @@
   {{ if templates.Exists "partials/extend-head-uncached.html" }}
     {{ partial "extend-head-uncached.html" . }}
   {{ end }}
-
-  {{/* Firebase */}}
-  {{ with $.Site.Params.firebase }}
-    {{ if isset $.Site.Params "firebase" }}
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script>
-
-    const firebaseConfig = {
-      apiKey: {{ $.Site.Params.firebase.apiKey }},
-      authDomain: {{ $.Site.Params.firebase.apiKey }},
-      projectId: {{ $.Site.Params.firebase.projectId }},
-      storageBucket: {{ $.Site.Params.firebase.storageBucket }},
-      messagingSenderId: {{ $.Site.Params.firebase.messagingSenderId }},
-      appId: {{ $.Site.Params.firebase.appId }},
-      measurementId: {{ $.Site.Params.firebase.measurementId }}
-    };
-
-    var app = firebase.initializeApp(firebaseConfig);
-    var db = firebase.firestore();
-    var auth = firebase.auth();
-
-  </script>
-    {{ end }}
-  {{ end }}
-
   {{/* Advertisement */}}
   {{ with .Site.Params.advertisement.adsense }}
     <meta name="google-adsense-account" content="{{ . }}">
