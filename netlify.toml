@@ -4,7 +4,7 @@ publish = "public"
 command = "hugo --gc --minify"
 
 [build.environment]
-HUGO_VERSION = "0.147.1"
+HUGO_VERSION = "0.165.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 # Blowfish ships a demo Firebase API key in themes/blowfish/exampleSite.

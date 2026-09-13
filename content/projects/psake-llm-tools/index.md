@@ -5,8 +5,8 @@ externalUrl: https://github.com/psake/psake-llm-tools
 summary: "Skills, instructions, and other files that help with LLM usage of psake."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

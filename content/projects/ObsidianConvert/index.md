@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/ObsidianConvert
 summary: "Convert your Obsidian notes into different formats."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

@@ -7,7 +7,7 @@ Site URL: https://gilbertsanchez.com/
 
 | Component          | Details                                      |
 |--------------------|----------------------------------------------|
-| Static Site Gen    | Hugo (Extended) v0.141.0–0.149.x             |
+| Static Site Gen    | Hugo (Extended) v0.162.0–0.165.x             |
 | Theme              | Blowfish (git submodule, `themes/blowfish/`) |
 | Hosting            | Netlify                                      |
 | Comments           | Disqus (`gilbertsanchez`)                    |
@@ -242,7 +242,7 @@ Configuration is split across `config/_default/` files:
 
 Netlify handles builds automatically on push.
 
-- **Production build:** `hugo --gc --minify` with Hugo v0.147.1
+- **Production build:** `hugo --gc --minify` with Hugo v0.165.0
 - **Deploy previews:** Include `--buildFuture --buildDrafts` flags
 - **Environment:** `HUGO_ENV=production`, `HUGO_ENABLEGITINFO=true`
 - **Publish directory:** `public/`

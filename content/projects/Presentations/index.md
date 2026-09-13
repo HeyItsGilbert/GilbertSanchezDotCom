@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/Presentations
 summary: "Slides, images, and code from my presentations."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

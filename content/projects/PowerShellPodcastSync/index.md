@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/PowerShellPodcastSync
 summary: Github repo with a PowerShell script to sync speakers to a Twitter list and to
   mastadon.
 showReadingTime: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2023-01-17T15:12:53.303Z
 showDateUpdated: false

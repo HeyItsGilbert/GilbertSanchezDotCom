@@ -5,8 +5,8 @@ externalUrl: https://github.com/psake/psake
 summary: "A build automation tool written in PowerShell."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects

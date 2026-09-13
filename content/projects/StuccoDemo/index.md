@@ -5,8 +5,8 @@ externalUrl: https://github.com/HeyItsGilbert/StuccoDemo
 summary: "A walkthrough demo of PSStucco, the PowerShell module scaffolding tool."
 showReadingTime: false
 showDateUpdated: false
-_build:
-  render: "false"
+build:
+  render: link
   list: local
 lastmod: 2026-06-29
 type: projects
