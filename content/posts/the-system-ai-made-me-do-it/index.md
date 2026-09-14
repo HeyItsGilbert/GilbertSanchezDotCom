@@ -11,7 +11,7 @@ slug: the-system-ai-made-me-do-it
 tags:
     - APIs
     - FOSS
-    - LLMs
+    - AI
     - Automation
     - YouTube
     - ADHD

@@ -11,6 +11,7 @@ tags:
   - ADHD
   - PowerShell
   - PKM
+  - Obsidian
 keywords:
   - obsidian
   - adhd
