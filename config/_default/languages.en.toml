@@ -2,7 +2,6 @@ disabled = false
 weight = 1
 title = "Hey! It's Gilbert!"
 
-[languages.en]
 locale = "en"
 label = "English"
 
