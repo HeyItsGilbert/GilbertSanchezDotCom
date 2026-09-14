@@ -1,8 +1,9 @@
 disabled = false
-languageCode = "en"
-languageName = "English"
 weight = 1
 title = "Hey! It's Gilbert!"
+
+locale = "en"
+label = "English"
 
 [params]
 displayName = "EN"

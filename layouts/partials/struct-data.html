@@ -13,7 +13,7 @@
     "@type": "WebSite",
     "@id": "{{ .Site.BaseURL }}",
     "name": "{{ .Site.Title | plainify | safeJS }}",
-    {{- with .Site.LanguageCode }}
+    {{- with .Language.Locale }}
     "inLanguage": "{{ . }}",
     {{- end }}
     "url": "{{ .Site.BaseURL }}",
@@ -72,7 +72,7 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    {{- with .Site.LanguageCode }}
+    {{- with .Language.Locale }}
     "inLanguage": "{{ . }}",
     {{- end }}
     "headline": "{{ .Title | plainify | safeJS }}",
