@@ -9,6 +9,7 @@ tags:
   - FOSS
   - open-source
   - community
+  - ADHD
 type: presentations
 preview: feature.png
 slideshow: /slides/Burnout.html

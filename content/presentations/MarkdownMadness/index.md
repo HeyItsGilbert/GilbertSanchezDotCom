@@ -9,6 +9,7 @@ tags:
   - Hugo
   - static-sites
   - PowerShell
+  - ADHD
 type: presentations
 preview: feature.png
 slideshow: /slides/MarkdownMadness.html
