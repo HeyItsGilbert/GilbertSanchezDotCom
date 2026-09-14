@@ -6,12 +6,13 @@ summary: Three talks, two major releases, one domain bought live on stage - here
 showReadingTime: true
 draft: false
 preview: feature.jpg
-lastmod: 2026-04-26T23:10:53.834Z
+lastmod: 2026-04-27T03:28:15.813Z
 slug: powershell-summit-2026
 tags:
     - FOSS
     - PowerShell
     - Presentation
+    - ADHD
 keywords:
     - PowerShell Summit 2026
     - PowerShell Summit recap

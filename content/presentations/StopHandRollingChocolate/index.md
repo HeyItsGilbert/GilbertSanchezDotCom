@@ -9,6 +9,7 @@ tags:
   - Chocolatey
   - psake
   - automation
+  - ADHD
 type: presentations
 preview: feature.png
 slideshow: /slides/stop-hand-rolling-chocolate.html
