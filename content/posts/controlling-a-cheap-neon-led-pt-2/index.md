@@ -5,7 +5,7 @@ draft = false
 aliases = [ "/controlling-a-cheap-neon-led-pt-2/" ]
 slug = "controlling-a-cheap-neon-led-pt-2"
 summary = "Part 2 of turning a cheap LED light and making it smart. We use MQTT, HomeAssistant, and PowerShell!"
-tags = [ "PowerShell", "MQTT", "IOT", "HomeAssistant" ]
+tags = [ "PowerShell", "MQTT", "IoT", "HomeAssistant", "Arduino" ]
 title = 'Controlling a Cheap "Neon" LED, Pt 2'
 keywords = [
   "powershell",
