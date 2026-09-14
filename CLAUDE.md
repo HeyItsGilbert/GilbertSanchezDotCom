@@ -228,6 +228,56 @@ Configuration is split across `config/_default/` files:
 - `tags` - Standard tag taxonomy
 - `series` - Groups related posts (e.g., "Terminals, Shells, and Prompts")
 
+#### Term pages (custom intro content for a tag/series)
+
+Every tag and series already gets an auto-generated listing page (e.g.
+`/tags/adhd/`) rendered by `themes/blowfish/layouts/_default/term.html`,
+showing all pages carrying that term. To add a curated intro above that
+listing, create a **branch bundle**:
+
+```
+content/tags/<term-slug>/_index.md
+content/series/<term-slug>/_index.md
+```
+
+```yaml
+---
+title: ADHD
+date: 2026-09-13T00:00:00.000Z
+description: One-line SEO description.
+summary: One-line summary shown in cards/lists.
+draft: false
+lastmod: 2026-09-13T00:00:00.000Z
+showDateUpdated: false
+groupByYear: false
+cascade:
+  showReadingTime: true
+---
+
+Intro prose goes here. It renders above the auto-generated list of
+tagged/series content.
+```
+
+**Critical: it must be `_index.md` inside a folder, not a flat
+`content/tags/<term-slug>.md` file.** A flat file is a Hugo *leaf bundle* —
+Hugo treats it as an ordinary standalone page (`Kind: page`) that shadows
+the term's URL, rendering with `single.html` instead of `term.html`. That
+silently drops the real `.Pages` listing and replaces it with the
+"Related Content" widget (which surfaces unrelated recent posts, not the
+tagged ones). Only `_index.md` in a branch bundle keeps `Kind: term`, so
+the real member listing still renders. `content/series/terminals-shells-and-prompts.md`
+is a pre-existing example of the broken flat-file pattern -- don't copy it.
+
+After adding or editing a term page, verify the fix worked by checking the
+built page uses `term.html`'s markup (an `<h1>` with the term title) and
+lists the expected member pages, not just that the build succeeds:
+
+```bash
+hugo --quiet   # plain build; --minify changes attribute quoting and breaks this grep
+grep -o '<h1[^>]*>[^<]*</h1>' public/tags/<term-slug>/index.html
+grep -oE 'href="/(posts|presentations)/[^"]*"' public/tags/<term-slug>/index.html | sort -u
+```
+
 ### Custom Layouts
 
 - **`layouts/partials/head.html`** - Asset bundling with fingerprinting, analytics (Firebase, Umami), verification meta tags, social link rel tags
