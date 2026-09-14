@@ -5,7 +5,7 @@ summary = "Add professional icons to your PowerShell modules. Complete guide to 
 draft = false
 slug = "powershell_module_icons"
 title = "Add an Icon to Your PowerShell Module"
-tags = [ "PowerShell", "Github" ]
+tags = [ "PowerShell", "GitHub" ]
 keywords = [
   "powershell",
   "module",

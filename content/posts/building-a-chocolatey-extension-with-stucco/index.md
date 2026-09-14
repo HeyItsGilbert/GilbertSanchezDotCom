@@ -6,8 +6,15 @@ summary: ""
 draft: true
 lastmod: 2025-11-27T16:42:50.118Z
 slug: building-chocolatey-extension-stucco
-tags: ""
+tags:
+  - PowerShell
+  - Chocolatey
+  - Stucco
 preview: feature.webp
-keywords: <failed to process>
+keywords:
+  - powershell
+  - chocolatey
+  - stucco
+  - extension
 type: posts
 ---
