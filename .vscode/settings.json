@@ -1,5 +1,8 @@
 {
-  "[markdown]": {},
+  "[markdown]": {
+    "editor.defaultFormatter": "marvhen.reflow-markdown",
+    "editor.formatOnSave": true
+  },
   "python.formatting.provider": "black",
   "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
     "pipedream",
@@ -9,6 +12,7 @@
   "cSpell.words": [
     "devcontainer",
     "devcontainers",
-    "lastmod"
+    "lastmod",
+    "Théoden"
   ]
 }
